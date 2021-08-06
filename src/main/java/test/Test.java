@@ -6,9 +6,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            SameTree
-            PhoneNumberMnemonic
-            BFSTreeTraverse
             LongestIncrSubSeq5
             LargestRange
             StaircaseTraversal
@@ -28,6 +25,9 @@ public class Test {
             Powerset
             DFSTreeTraverseRec
             FourSome
+            SameTree5
+            PhoneNumberMnemonic3
+            BFSTreeTraverse
          */
 
         int[] arr = {1,2,3,4,5,6, 7};
