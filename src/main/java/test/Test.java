@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncrSubSeq5
+            LongestNonDecrSubseq3
             LargestRange
             StaircaseTraversal
             MergeIntervals
@@ -28,6 +28,7 @@ public class Test {
             SameTree5
             PhoneNumberMnemonic3
             BFSTreeTraverse
+            LongestIncrSubSeq5
          */
 
         int[] arr = {1,2,3,4,5,6, 7};

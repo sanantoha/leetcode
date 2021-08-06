@@ -55,8 +55,8 @@ public class LongestIncrSubseq {
     public static List<Integer> lisList(int[] arr) {
         if (arr.length == 0) return Collections.emptyList();
 
-        int[] ind = new int[arr.length];
-        ind[0] = -1;
+        int[] prev = new int[arr.length];
+        prev[0] = -1;
         int[] dp = new int[arr.length];
         dp[0] = 1;
 
@@ -65,11 +65,11 @@ public class LongestIncrSubseq {
             for (int j = 0; j < i; j++) {
                 if (arr[j] < arr[i] && dp[i] < dp[j] + 1) {
                     dp[i] = dp[j] + 1;
-                    ind[i] = j;
+                    prev[i] = j;
                 }
             }
             if (dp[i] == 1) {
-                ind[i] = -1;
+                prev[i] = -1;
             }
         }
 
@@ -86,7 +86,7 @@ public class LongestIncrSubseq {
         Deque<Integer> lst = new LinkedList<>();
         while (ni >= 0) {
             lst.addFirst(arr[ni]);
-            ni = ind[ni];
+            ni = prev[ni];
         }
         return new ArrayList<>(lst);
     }
