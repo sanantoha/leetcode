@@ -6,10 +6,9 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestNonDecrSubseq3
-            LargestRange
             StaircaseTraversal
             MergeIntervals
+            MinRewards - https://www.algoexpert.io/questions/Min%20Rewards
             ReverseLinkedList
             PalindromSubstrings
             PopulatingNextRightPointerInEachNode
@@ -29,6 +28,8 @@ public class Test {
             PhoneNumberMnemonic3
             BFSTreeTraverse
             LongestIncrSubSeq5
+            LongestNonDecrSubseq3
+            LargestRange
          */
 
         int[] arr = {1,2,3,4,5,6, 7};
@@ -36,5 +37,12 @@ public class Test {
         System.out.println(Arrays.stream(arr).sum());
 
         System.out.println(IntStream.of(arr).sum());
+
+        PriorityQueue<int[]> queue =
+                new PriorityQueue(3, Comparator.comparingInt((int[] o) -> o[1]));
+
+        queue.add(new int[] {1, 2});
+
+        System.out.println(queue);
     }
 }
