@@ -6,8 +6,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            StaircaseTraversal
-            MergeIntervals
             MinRewards - https://www.algoexpert.io/questions/Min%20Rewards
             ReverseLinkedList
             PalindromSubstrings
@@ -15,6 +13,7 @@ public class Test {
             SortList
             LongestDecrSubseq4
             TopologicalSortDFSCycleGraph3
+            StaircaseTraversal
             ProductOfArrayExceptSelf
             LowestCommonAncestorOfBinarySearchTree3
             DFSTreeTraverse
@@ -30,6 +29,7 @@ public class Test {
             LongestIncrSubSeq5
             LongestNonDecrSubseq3
             LargestRange
+            MergeIntervals
          */
 
         int[] arr = {1,2,3,4,5,6, 7};
