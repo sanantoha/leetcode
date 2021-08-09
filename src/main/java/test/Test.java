@@ -6,14 +6,12 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            ThreeSum
-            MinRewards - https://www.algoexpert.io/questions/Min%20Rewards
-            ReverseLinkedList
             PalindromSubstrings
             PopulatingNextRightPointerInEachNode
             SortList
             LongestDecrSubseq4
             TopologicalSortDFSCycleGraph3
+            ReverseLinkedList
             StaircaseTraversal
             ProductOfArrayExceptSelf
             LowestCommonAncestorOfBinarySearchTree3
@@ -31,6 +29,8 @@ public class Test {
             LongestNonDecrSubseq3
             LargestRange
             MergeIntervals
+            ThreeSum
+            MinRewards1
          */
     }
 }

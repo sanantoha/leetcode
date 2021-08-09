@@ -12,7 +12,7 @@ public class ThreeSum4 {
 
         Arrays.sort(arr);
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length - 2; i++) {
             if (i > 0 && arr[i - 1] == arr[i]) continue;
 
             int l = i + 1;
