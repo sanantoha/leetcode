@@ -32,6 +32,7 @@ public class Test {
             MinRewards1
             PalindromicSubstrings
             PopulatingNextRightPointerInEachNode
+            MaximumSubarray
          */
 
         Queue<Item> queue = new LinkedList<>();
@@ -40,7 +41,6 @@ public class Test {
 
         System.out.println(queue.peek());
         System.out.println(queue);
-        queue.stream().map(Item::getTree).map(Tree::getValue).collect(Collectors.toList());
     }
 
     static class Tree {
