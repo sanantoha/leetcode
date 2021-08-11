@@ -7,8 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortList
-            LongestDecrSubseq4
             TopologicalSortDFSCycleGraph3
             ReverseLinkedList
             StaircaseTraversal
@@ -33,6 +31,8 @@ public class Test {
             PalindromicSubstrings
             PopulatingNextRightPointerInEachNode
             MaximumSubarray
+            SortList
+            LongestDecrSubseq4
          */
 
         Queue<Item> queue = new LinkedList<>();

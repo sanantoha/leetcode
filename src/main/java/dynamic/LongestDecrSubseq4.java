@@ -1,33 +1,26 @@
 package dynamic;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
-public class LongestDesrSubseq3 {
+public class LongestDecrSubseq4 {
 
     public static int lds(int[] arr) {
-        if (arr == null || arr.length == 0) return -1;
+        if (arr == null || arr.length == 0) return 0;
 
         int[] dp = new int[arr.length];
-        dp[0] = 1;
+        Arrays.fill(dp, 1);
 
         for (int i = 1; i < arr.length; i++) {
-            dp[i] = 1;
             for (int j = 0; j < i; j++) {
                 if (arr[j] > arr[i] && dp[i] < dp[j] + 1) {
                     dp[i] = dp[j] + 1;
                 }
             }
         }
-
         int max = Integer.MIN_VALUE;
         for (int v : dp) {
-            if (v > max) max = v;
+            max = Math.max(v, max);
         }
-
         return max;
     }
 
@@ -35,36 +28,35 @@ public class LongestDesrSubseq3 {
         if (arr == null || arr.length == 0) return Collections.emptyList();
 
         int[] dp = new int[arr.length];
-        dp[0] = 1;
+        Arrays.fill(dp, 1);
         int[] prev = new int[arr.length];
-        prev[0] = -1;
+        Arrays.fill(prev, -1);
 
         for (int i = 1; i < arr.length; i++) {
-            dp[i] = 1;
             for (int j = 0; j < i; j++) {
                 if (arr[j] > arr[i] && dp[i] < dp[j] + 1) {
                     dp[i] = dp[j] + 1;
                     prev[i] = j;
                 }
             }
-            if (dp[i] == 1) prev[i] = -1;
         }
 
         int max = Integer.MIN_VALUE;
-        int maxInd = 0;
+        int maxIdx = 0;
         for (int i = 0; i < dp.length; i++) {
-            if (dp[i] > max) {
+            if (max < dp[i]) {
                 max = dp[i];
-                maxInd = i;
+                maxIdx = i;
             }
         }
 
+        int idx = maxIdx;
         Deque<Integer> stack = new LinkedList<>();
-        int n = maxInd;
-        while (n >= 0) {
-            stack.push(arr[n]);
-            n = prev[n];
+        while (idx >= 0) {
+            stack.push(arr[idx]);
+            idx = prev[idx];
         }
+
         return new ArrayList<>(stack);
     }
 
