@@ -7,32 +7,41 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
+            Pow
+            CombinationSum4
+            CloneGraph
+            SearchInRotatedSortedArray
+            Powerset
+            PhoneNumberMnemonic3
+            MergeIntervals
+            LRUCache
+            MedianOfTwoSortedArrays
+
+            DFSTreeTraverseRec
+            FourSum
+            BFSTreeTraverse
+            LongestIncrSubSeq5
+            LongestNonDecrSubseq3
+            LargestRange
+            ThreeSum
+            LowestCommonAncestorOfBinaryTree4
+            MinRewards1
+            PopulatingNextRightPointerInEachNode
+            SortList
+            LongestDecrSubseq4
             TopologicalSortDFSCycleGraph3
             ReverseLinkedList
             StaircaseTraversal
             ProductOfArrayExceptSelf
             LowestCommonAncestorOfBinarySearchTree3
+            SameTree
+            SymmetricTree2
             DFSTreeTraverse
             SearchForRange
-            LowestCommonAncestorOfBinaryTree
-            MedianOfTwoSortedArrays
-            Powerset
-            DFSTreeTraverseRec
-            FourSome
-            SameTree5
-            PhoneNumberMnemonic3
-            BFSTreeTraverse
-            LongestIncrSubSeq5
-            LongestNonDecrSubseq3
-            LargestRange
-            MergeIntervals
-            ThreeSum
-            MinRewards1
+            ReverseBinaryTree7
             PalindromicSubstrings
-            PopulatingNextRightPointerInEachNode
+            ReverseWordsInString2
             MaximumSubarray
-            SortList
-            LongestDecrSubseq4
          */
 
         Queue<Item> queue = new LinkedList<>();
