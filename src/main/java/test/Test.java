@@ -7,16 +7,7 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            Pow
-            CombinationSum4
-            CloneGraph
-            SearchInRotatedSortedArray
-            Powerset
-            PhoneNumberMnemonic3
-            MergeIntervals
-            LRUCache
-            MedianOfTwoSortedArrays
-
+            CombinationSum5
             DFSTreeTraverseRec
             FourSum
             BFSTreeTraverse
@@ -42,6 +33,15 @@ public class Test {
             PalindromicSubstrings
             ReverseWordsInString2
             MaximumSubarray
+            Pow
+            CloneGraph
+            SearchInRotatedSortedArray
+            Powerset
+            AddTwoNumbers1
+            PhoneNumberMnemonic3
+            MergeIntervals
+            LRUCache
+            MedianOfTwoSortedArrays
          */
 
         Queue<Item> queue = new LinkedList<>();
