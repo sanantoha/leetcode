@@ -7,7 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            DepthFirstSearch3
             BreadthSearchFirst3
             DijkstraShortestPaths3
             FourSum
@@ -30,6 +29,7 @@ public class Test {
             SymmetricTree2
             DFSTreeTraverse
             SearchForRange
+            DepthFirstSearch4
             ReverseBinaryTree7
             PalindromicSubstrings
             ReverseWordsInString2
