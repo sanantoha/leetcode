@@ -13,7 +13,7 @@ public class StringPermutation5 {
 
     private static void backtrack(String str, String ans, List<String> res) {
         if (str.length() == 0) {
-            res.add(str);
+            res.add(ans);
             return;
         }
 

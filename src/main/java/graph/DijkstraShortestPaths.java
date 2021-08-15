@@ -18,8 +18,6 @@ public class DijkstraShortestPaths {
             ShortestPath sp = shortestPath(graph, 0);
             System.out.println(sp);
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

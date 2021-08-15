@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            BreadthSearchFirst3
-            DijkstraShortestPaths3
-            FourSum
             BFSTreeTraverse
             LongestIncrSubSeq5
             LongestNonDecrSubseq3
@@ -31,6 +28,7 @@ public class Test {
             SearchForRange
             DepthFirstSearch4
             ReverseBinaryTree7
+            FourSum
             PalindromicSubstrings
             ReverseWordsInString2
             MaximumSubarray
@@ -48,6 +46,8 @@ public class Test {
             FirstPermutationIsSubstrSecondStr4
             CombinationSum5
             DFSTreeTraverseRec
+            BreadthSearchFirst3
+            DijkstraShortestPaths4
          */
     }
 }

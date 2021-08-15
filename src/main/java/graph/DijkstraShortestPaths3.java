@@ -52,8 +52,6 @@ public class DijkstraShortestPaths3 {
 
             System.out.println(findShortestPath(graph, 0));
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

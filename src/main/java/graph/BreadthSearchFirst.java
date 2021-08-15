@@ -17,10 +17,8 @@ public class BreadthSearchFirst {
             EdgeWeightedDigraph graph = new EdgeWeightedDigraph(scanner);
             System.out.println(graph);
 
-            System.out.println(bfs(graph, 2));
+            System.out.println(bfs(graph, 0));
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -29,6 +27,7 @@ public class BreadthSearchFirst {
     private static List<Integer> bfs(EdgeWeightedDigraph graph, int start) {
 
         List<Integer> ans = new ArrayList<>();
+        ans.add(start);
         boolean[] visited = new boolean[graph.V()];
 
         Queue<Integer> queue = new ArrayDeque<>();
