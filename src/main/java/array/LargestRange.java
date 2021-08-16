@@ -42,19 +42,18 @@ public class LargestRange {
         }
         int[] bestRange = null;
         int longestRange = 0;
-        for (int i = 1; i < array.length - 1; i++) {
-            int num = array[i];
+        for (int num : array) {
             if (!map.get(num)) continue;
 
             int currRange = 1;
             int l = num - 1;
-            while (l >= 0 && map.containsKey(l)) {
+            while (map.containsKey(l)) {
                 currRange++;
                 map.put(l, false);
                 l--;
             }
             int r = num + 1;
-            while (r < array.length && map.containsKey(r)) {
+            while (map.containsKey(r)) {
                 currRange++;
                 map.put(r, false);
                 r++;
