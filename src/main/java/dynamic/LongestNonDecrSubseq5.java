@@ -61,33 +61,10 @@ public class LongestNonDecrSubseq5 {
         return new ArrayList<>(stack);
     }
 
-    // does not work
-    public static int lnds0(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
-
-        List<Integer> res = new ArrayList<>();
-        res.add(arr[0]);
-
-        for (int i = 1; i < arr.length; i++) {
-            int last = res.get(res.size() - 1);
-            if (last <= arr[i]) res.add(arr[i]);
-            else {
-                int j = Collections.binarySearch(res, arr[i]);
-                if (j < 0) {
-                    j = -(j + 1);
-                }
-                res.set(j, arr[i]);
-            }
-        }
-        System.out.println(res);
-        return res.size();
-    }
-
     public static void main(String[] args) {
         int[] arr = {-2, -1,3,4,5,2,2,2,2};
 
         System.out.println(lnds(arr));
-        System.out.println(lnds0(arr));
         System.out.println(lndsList(arr));
     }
 }
