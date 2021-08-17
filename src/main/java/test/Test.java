@@ -7,15 +7,12 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestNonDecrSubseq3
-            ThreeSum
-            LowestCommonAncestorOfBinaryTree4
             MinRewards1
+            TopologicalSortDFSCycleGraph3
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SortList
             LongestDecrSubseq4
-            TopologicalSortDFSCycleGraph3
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
             KthSmallestElementInArray3
@@ -36,6 +33,7 @@ public class Test {
             FourSum
             InsertSort6
             PalindromicSubstrings
+            LowestCommonAncestorOfBinaryTree4
             SelectSort
             ReverseWordsInString2
             MaximumSubarray
@@ -51,6 +49,7 @@ public class Test {
             LRUCache
             MedianOfTwoSortedArrays
             Permutations3
+            LongestNonDecrSubseq3
             StringPermutation
             FirstPermutationIsSubstrSecondStr4
             CombinationSum5
@@ -59,6 +58,7 @@ public class Test {
             DijkstraShortestPaths4
             BFSTreeTraverse
             LongestIncrSubSeq5
+            ThreeSum
          */
     }
 }
