@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinRewards1
-            TopologicalSortDFSCycleGraph3
-            ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SortList
             LongestDecrSubseq4
@@ -59,6 +56,9 @@ public class Test {
             BFSTreeTraverse
             LongestIncrSubSeq5
             ThreeSum
+            MinRewards1
+            TopologicalSortDFSCycleGraph3
+            ValidIPAddress
          */
     }
 }
