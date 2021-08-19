@@ -1,37 +1,67 @@
 package dynamic;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Deque;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 
-public class LongestDecrSubseq {
+public class LongestDecrSubseq5 {
 
-    // O (N^2) time | O(N) space
     public static int lds(int[] arr) {
-        if (arr.length == 0) return 0;
+        if (arr == null || arr.length == 0) return 0;
 
         int[] dp = new int[arr.length];
         Arrays.fill(dp, 1);
 
         for (int i = 1; i < arr.length; i++) {
             for (int j = 0; j < i; j++) {
-                if (arr[i] < arr[j]) {
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                if (arr[j] > arr[i] && dp[i] < dp[j] + 1) {
+                    dp[i] = dp[j] + 1;
                 }
             }
         }
 
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         for (int v : dp) {
             max = Math.max(max, v);
         }
         return max;
     }
 
-    // O (N * log(N)) time | O(N) space
+    public static List<Integer> ldsList(int[] arr) {
+        if (arr == null || arr.length == 0) return Collections.emptyList();
+
+        int[] dp = new int[arr.length];
+        Arrays.fill(dp, 1);
+        int[] prev = new int[arr.length];
+        Arrays.fill(prev, -1);
+
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[i] && dp[i] < dp[j] + 1) {
+                    dp[i] = dp[j] + 1;
+                    prev[i] = j;
+                }
+            }
+        }
+
+        int max = Integer.MIN_VALUE;
+        int maxIdx = 0;
+        for (int i = 0; i < dp.length; i++) {
+            if (max < dp[i]) {
+                max = dp[i];
+                maxIdx = i;
+            }
+        }
+
+        int idx = maxIdx;
+        Deque<Integer> stack = new LinkedList<>();
+        while (idx >= 0) {
+            stack.push(arr[idx]);
+            idx = prev[idx];
+        }
+
+        return new ArrayList<>(stack);
+    }
+
     public static int lds1(int[] arr) {
         if (arr == null || arr.length == 0) return 0;
 
@@ -68,45 +98,8 @@ public class LongestDecrSubseq {
         return arr.get(l) == target ? l : -(l + 1);
     }
 
-    // O (N^2) time | O(N) space
-    public static List<Integer> ldsList(int[] arr) {
-        if (arr.length == 0) return Collections.emptyList();
-
-        int[] prev = new int[arr.length];
-        prev[0] = -1;
-        int[] dp = new int[arr.length];
-        dp[0] = 1;
-
-        for (int i = 1; i < arr.length; i++) {
-            dp[i] = 1;
-            for (int j = 0; j < i; j++) {
-                if (arr[j] > arr[i] && (dp[i] < dp[j] + 1)) {
-                    dp[i] = dp[i] + 1;
-                    prev[i] = j;
-                }
-            }
-            if (dp[i] == 1) prev[i] = -1;
-        }
-
-        int maxInd = 0, max = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (dp[i] > max) {
-                max = dp[i];
-                maxInd = i;
-            }
-        }
-
-        Deque<Integer> lst = new ArrayDeque<>();
-        int ni = maxInd;
-        while (ni >= 0) {
-            lst.addFirst(arr[ni]);
-            ni = prev[ni];
-        }
-        return new ArrayList<>(lst);
-    }
-
     public static void main(String[] args) {
-        int[] arr = {10, 9, 9, 11, 7, 100, 2};
+        int[] arr = {5,6,7,6,5,4,3,10,14,12};
 
         System.out.println(lds(arr));
         System.out.println(lds1(arr));
@@ -116,10 +109,18 @@ public class LongestDecrSubseq {
         System.out.println(lds(arr1));
         System.out.println(lds1(arr1));
         System.out.println(ldsList(arr1));
-
-        int[] arr2 = {};
-        System.out.println(lds(arr2));
-        System.out.println(lds1(arr2));
-        System.out.println(ldsList(arr2));
+//
+//        List<Integer> lst = new ArrayList<>();
+//        lst.add(10);
+//        lst.add(9);
+//        lst.add(7);
+//        lst.add(5);
+//        lst.add(3);
+//        lst.add(2);
+//        lst.add(1);
+//
+//        System.out.println(lst);
+//
+//        System.out.println(revBinarySearch(lst, 8));
     }
 }

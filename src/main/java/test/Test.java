@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            PopulatingNextRightPointerInEachNode
-            SortList
-            LongestDecrSubseq4
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
             KthSmallestElementInArray3
@@ -59,6 +56,9 @@ public class Test {
             MinRewards1
             TopologicalSortDFSCycleGraph3
             ValidIPAddress
+            PopulatingNextRightPointerInEachNode
+            SortList
+            LongestDecrSubseq4
          */
     }
 }
