@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeZigzagLevelOrderTraverse
-            ReverseLinkedList
-            KthSmallestElementInArray3
             StaircaseTraversal
             ProductOfArrayExceptSelf
             CountingSort
@@ -59,6 +56,9 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             SortList
             LongestDecrSubseq4
+            BinaryTreeZigzagLevelOrderTraverse
+            ReverseLinkedList
+            KthSmallestElementInArray4
          */
     }
 }
