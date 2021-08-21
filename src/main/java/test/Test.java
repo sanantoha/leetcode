@@ -7,13 +7,11 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            StaircaseTraversal
-            ProductOfArrayExceptSelf
-            CountingSort
             LowestCommonAncestorOfBinarySearchTree3
             SameTree
             HeapSort2
             LargestRange
+            PalindromeLinkedList
             SymmetricTree2
             DFSTreeTraverse
             SearchForRange
@@ -26,13 +24,15 @@ public class Test {
             PalindromicSubstrings
             LowestCommonAncestorOfBinaryTree4
             SelectSort
+            RemoveNthNodeFromEndOfList
             ReverseWordsInString2
             MaximumSubarray
             IntersectionLinkedList3
             Pow
             CloneGraph
-            SearchInRotatedSortedArray
+            SearchInRotatedSortedArray3
             Powerset
+            Sqrt
             QuickSort3
             AddTwoNumbers1
             PhoneNumberMnemonic3
@@ -59,6 +59,10 @@ public class Test {
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
             KthSmallestElementInArray4
+            ProductOfArrayExceptSelf6
+            CountingSort
+            StaircaseTraversal
+            BinarySearch
          */
     }
 }
