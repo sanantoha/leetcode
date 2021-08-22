@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            LowestCommonAncestorOfBinarySearchTree3
-            SameTree
-            HeapSort2
             LargestRange
             PalindromeLinkedList
             SymmetricTree2
@@ -63,6 +60,9 @@ public class Test {
             CountingSort
             StaircaseTraversal
             BinarySearch
+            LowestCommonAncestorOfBinarySearchTree4
+            SameTree8
+            HeapSort3
          */
     }
 }
