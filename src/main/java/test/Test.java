@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            PalindromeLinkedList
-            SymmetricTree2
-            DFSTreeTraverse
             SearchForRange
             DepthFirstSearch4
             CycleLinkedList
@@ -63,6 +60,9 @@ public class Test {
             SameTree8
             HeapSort3
             LargestRange
+            PalindromeLinkedList2
+            SymmetricTree3
+            DFSTreeTraverse
          */
     }
 }
