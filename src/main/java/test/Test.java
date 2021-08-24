@@ -10,6 +10,7 @@ public class Test {
             MergeSort
             ReverseBinaryTree7
             FourSum
+            SortKSortedArray
             InsertSort6
             PalindromicSubstrings
             LowestCommonAncestorOfBinaryTree4
@@ -64,5 +65,19 @@ public class Test {
             DepthFirstSearch4
             CycleLinkedList5
          */
+        int[] arr = {1,2,3,4,5};
+        PriorityQueue<Integer> heap = new PriorityQueue<Integer>();
+        heap.add(5);
+        heap.add(4);
+        heap.add(3);
+        System.out.println(heap);
+        System.out.println(heap.contains(3));
+        System.out.println(heap.remove());
+        System.out.println(heap.remove());
+        System.out.println(heap.remove());
+
+
     }
+
+
 }
