@@ -23,12 +23,13 @@ public class DepthFirstSearch4 {
 
     public static List<Integer> dfs(EdgeWeightedDigraph graph, int start) {
         List<Integer> res = new ArrayList<>();
-        res.add(0);
+        res.add(start);
         Deque<Integer> stack = new LinkedList<>();
         stack.push(start);
         boolean[] visited = new boolean[graph.V()];
         visited[start] = true;
 
+        @SuppressWarnings("unchecked")
         Iterator<DirectedEdge>[] adjArr = new Iterator[graph.V()];
         for (int i = 0; i < graph.V(); i++) {
             adjArr[i] = graph.adj(i).iterator();

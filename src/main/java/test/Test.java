@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchForRange
-            DepthFirstSearch4
-            CycleLinkedList
             MergeSort
             ReverseBinaryTree7
             FourSum
@@ -26,6 +23,7 @@ public class Test {
             SearchInRotatedSortedArray3
             Powerset
             Sqrt
+            SearchForRange
             QuickSort3
             AddTwoNumbers1
             PhoneNumberMnemonic3
@@ -63,6 +61,8 @@ public class Test {
             PalindromeLinkedList2
             SymmetricTree3
             DFSTreeTraverse
+            DepthFirstSearch4
+            CycleLinkedList5
          */
     }
 }
