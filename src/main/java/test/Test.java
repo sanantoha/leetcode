@@ -8,6 +8,7 @@ public class Test {
     public static void main(String[] args) {
         /*
             MergeSort
+            MinHeap
             ReverseBinaryTree7
             FourSum
             SortKSortedArray

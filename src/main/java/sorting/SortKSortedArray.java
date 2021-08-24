@@ -10,7 +10,6 @@ public class SortKSortedArray {
 
     // O(N * log(k)) time | O(k) space
     public static int[] sortKSortedArray(int[] array, int k) {
-        int[] res = new int[array.length];
         int idx = 0;
 
         PriorityQueue<Integer> heap = new PriorityQueue<>();
@@ -18,16 +17,16 @@ public class SortKSortedArray {
 
         for (int i = k + 1; i < array.length; i++) {
             int minVal = heap.remove();
-            res[idx++] = minVal;
+            array[idx++] = minVal;
 
             heap.add(array[i]);
         }
 
         while (!heap.isEmpty()) {
-            res[idx++] = heap.remove();
+            array[idx++] = heap.remove();
         }
 
-        return res;
+        return array;
     }
 
     public static void main(String[] args) {
