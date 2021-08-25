@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            MergeSort
-            MinHeap
-            ReverseBinaryTree7
             FourSum
             SortKSortedArray
             InsertSort6
@@ -21,8 +18,10 @@ public class Test {
             MaximumSubarray
             IntersectionLinkedList3
             Pow
+            MergeSort7
             CloneGraph
             SearchInRotatedSortedArray3
+            MinHeap
             Powerset
             Sqrt
             SearchForRange
@@ -65,19 +64,8 @@ public class Test {
             DFSTreeTraverse
             DepthFirstSearch4
             CycleLinkedList5
+            ReverseBinaryTree7
          */
-        int[] arr = {1,2,3,4,5};
-        PriorityQueue<Integer> heap = new PriorityQueue<Integer>();
-        heap.add(5);
-        heap.add(4);
-        heap.add(3);
-        System.out.println(heap);
-        System.out.println(heap.contains(3));
-        System.out.println(heap.remove());
-        System.out.println(heap.remove());
-        System.out.println(heap.remove());
-
-
     }
 
 
