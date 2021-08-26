@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            FourSum
-            SortKSortedArray
-            InsertSort6
             PalindromicSubstrings
             LowestCommonAncestorOfBinaryTree4
             SelectSort
@@ -65,7 +62,11 @@ public class Test {
             DepthFirstSearch4
             CycleLinkedList5
             ReverseBinaryTree7
+            FourSum3
+            SortKSortedArray2
+            InsertSort7
          */
+        System.out.println("test");
     }
 
 
