@@ -9,10 +9,13 @@ public class RemoveNthNodeFromEndOfList {
 
         ListNode fst = dummy;
         ListNode snd = dummy;
-
-        for (int i = 0; i <= n; i++) {
+        int k = n;
+        while (fst != null && k >= 0) {
             fst = fst.next;
+            k--;
         }
+
+        if (fst == null && k >= 0) return dummy.next;
 
         while (fst != null) {
             fst = fst.next;
@@ -27,7 +30,7 @@ public class RemoveNthNodeFromEndOfList {
     public static void main(String[] args) {
         ListNode lst = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
 
-        ListNode res = removeNthFromEnd(lst, 2);
+        ListNode res = removeNthFromEnd(lst, 6);
 
         System.out.println(res);
     }

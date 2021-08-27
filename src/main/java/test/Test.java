@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            LowestCommonAncestorOfBinaryTree4
-            SelectSort
-            RemoveNthNodeFromEndOfList
             ReverseWordsInString2
             MaximumSubarray
             SpiralMatrixTraverse
@@ -17,6 +14,7 @@ public class Test {
             IntersectionLinkedList3
             UniquePaths
             Pow
+            SelectSort
             WordSearch
             ValidateBinarySearchTree
             MergeSort7
@@ -78,6 +76,8 @@ public class Test {
             InsertSort7
             PalindromicSubstrings
             ReverseString
+            LowestCommonAncestorOfBinaryTree4
+            RemoveNthNodeFromEndOfList2
          */
         System.out.println("test");
     }
