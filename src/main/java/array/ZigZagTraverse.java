@@ -16,7 +16,7 @@ public class ZigZagTraverse {
         int width = array.get(0).size() - 1;
         boolean goingDown = true;
 
-        while (!isOutBound(row, col, height, width)) {
+        while (!isOutOfBound(row, col, height, width)) {
             res.add(array.get(row).get(col));
             if (goingDown) {
                 if (col == 0 || row == height) {
@@ -48,7 +48,7 @@ public class ZigZagTraverse {
         return res;
     }
 
-    private static boolean isOutBound(int row, int col, int height, int width) {
+    private static boolean isOutOfBound(int row, int col, int height, int width) {
         return row < 0 || col < 0 || row > height || col > width;
     }
 
