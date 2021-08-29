@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePaths
-            Pow
-            SelectSort
             WordSearch
             ValidateBinarySearchTree
             MergeSort7
@@ -18,6 +15,7 @@ public class Test {
             MinHeap
             Powerset
             Sqrt
+            ZigZagTraverse
             SearchForRange
             QuickSort3
             AddTwoNumbers6
@@ -79,6 +77,9 @@ public class Test {
             SpiralMatrixTraverse
             DeleteNodeInLinkedList1
             IntersectionLinkedList
+            UniquePaths
+            Pow
+            SelectSort
          */
         System.out.println("test");
     }
