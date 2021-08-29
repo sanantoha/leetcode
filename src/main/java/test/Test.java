@@ -7,7 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordSearch
             ValidateBinarySearchTree
             MergeSort7
             CloneGraph
@@ -15,7 +14,6 @@ public class Test {
             MinHeap
             Powerset
             Sqrt
-            ZigZagTraverse
             SearchForRange
             QuickSort3
             AddTwoNumbers6
@@ -28,6 +26,7 @@ public class Test {
             RotateImage
             ClimbingStairs
             LongestNonDecrSubseq3
+            ZigZagTraverse
             StringPermutation
             FirstPermutationIsSubstrSecondStr4
             CombinationSum5
@@ -39,6 +38,7 @@ public class Test {
             BFSTreeTraverse
             LongestIncrSubSeq5
             ThreeSum
+            WordSearch
             MinRewards1
             TopologicalSortDFSCycleGraph3
             ValidIPAddress
