@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidateBinarySearchTree
-            MergeSort7
-            CloneGraph
             SearchInRotatedSortedArray3
             MinHeap
             Powerset
@@ -80,6 +77,9 @@ public class Test {
             UniquePaths
             Pow
             SelectSort
+            ValidateBinarySearchTree
+            MergeSort
+            CloneGraph
          */
         System.out.println("test");
     }
