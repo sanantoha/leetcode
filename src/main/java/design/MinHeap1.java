@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MinHeap {
+public class MinHeap1 {
 
     private final List<Integer> heap;
 
-    public MinHeap(List<Integer> array) {
+    public MinHeap1(List<Integer> array) {
         heap = buildHeap(array);
     }
 
-    public List<Integer> buildHeap(List<Integer> array) {
+    private List<Integer> buildHeap(List<Integer> array) {
         List<Integer> heap = new ArrayList<>(array);
         for (int i = array.size() / 2; i >= 0; i--) {
-            siftDown(i, heap.size() - 1, heap);
+            siftDown(i, array.size() - 1, heap);
         }
         return heap;
     }
@@ -24,16 +24,17 @@ public class MinHeap {
         int l = left(currentIdx);
         int r = right(currentIdx);
 
-        int minIdx = currentIdx;
-        if (l <= endIdx && heap.get(minIdx) > heap.get(l)) {
-            minIdx = l;
+        int maxIdx = currentIdx;
+        if (l <= endIdx && heap.get(maxIdx) > heap.get(l)) {
+            maxIdx = l;
         }
-        if (r <= endIdx && heap.get(minIdx) > heap.get(r)) {
-            minIdx = r;
+        if (r <= endIdx && heap.get(maxIdx) > heap.get(r)) {
+            maxIdx = r;
         }
-        if (minIdx != currentIdx) {
-            Collections.swap(heap, minIdx, currentIdx);
-            siftDown(minIdx, endIdx, heap);
+
+        if (maxIdx != currentIdx) {
+            Collections.swap(heap, currentIdx, maxIdx);
+            siftDown(maxIdx, endIdx, heap);
         }
     }
 
@@ -77,7 +78,7 @@ public class MinHeap {
     }
 
     private int parent(int i) {
-        return (i - 1) / 2;
+        return (i - 2) / 2;
     }
 
     public static void main(String[] args) {
@@ -85,7 +86,7 @@ public class MinHeap {
         res.add(0);
         res.add(1);
         res.add(2);
-        MinHeap heap = new MinHeap(res);
+        MinHeap1 heap = new MinHeap1(res);
         heap.insert(3);
         heap.insert(4);
         heap.insert(5);

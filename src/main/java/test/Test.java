@@ -7,8 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchInRotatedSortedArray3
-            MinHeap
             Powerset
             Sqrt
             SearchForRange
@@ -23,8 +21,9 @@ public class Test {
             RotateImage
             ClimbingStairs
             LongestNonDecrSubseq3
-            ZigZagTraverse
+            SearchInRotatedSortedArray
             StringPermutation
+            ZigZagTraverse
             FirstPermutationIsSubstrSecondStr4
             CombinationSum5
             FirstDuplicateValue
@@ -80,6 +79,7 @@ public class Test {
             ValidateBinarySearchTree
             MergeSort
             CloneGraph
+            MinHeap
          */
         System.out.println("test");
     }
