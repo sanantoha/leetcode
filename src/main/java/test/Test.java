@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            Powerset
-            Sqrt
-            SearchForRange
             QuickSort3
             AddTwoNumbers6
             PhoneNumberMnemonic3
@@ -19,6 +16,7 @@ public class Test {
             MedianOfTwoSortedArrays
             Permutations3
             RotateImage
+            Sqrt
             ClimbingStairs
             LongestNonDecrSubseq3
             SearchInRotatedSortedArray
@@ -28,6 +26,7 @@ public class Test {
             CombinationSum5
             FirstDuplicateValue
             DFSTreeTraverseRec
+            SearchForRange
             HouseRober
             BreadthSearchFirst3
             DijkstraShortestPaths4
@@ -80,6 +79,7 @@ public class Test {
             MergeSort
             CloneGraph
             MinHeap
+            Powerset
          */
         System.out.println("test");
     }
