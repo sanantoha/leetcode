@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            QuickSort3
-            AddTwoNumbers6
-            PhoneNumberMnemonic3
             RiverSizes3
             MergeIntervals
             LRUCache
@@ -26,6 +23,7 @@ public class Test {
             CombinationSum5
             FirstDuplicateValue
             DFSTreeTraverseRec
+            PhoneNumberMnemonic
             SearchForRange
             HouseRober
             BreadthSearchFirst3
@@ -80,6 +78,9 @@ public class Test {
             CloneGraph
             MinHeap
             Powerset
+            FindClosestValueInBST
+            QuickSort
+            AddTwoNumbers
          */
         System.out.println("test");
     }
