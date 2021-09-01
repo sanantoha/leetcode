@@ -80,7 +80,9 @@ public class Test {
             Powerset
             FindClosestValueInBST
             QuickSort
+            NodeDepths
             AddTwoNumbers
+            BranchSums
          */
         System.out.println("test");
     }
