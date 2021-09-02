@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            RiverSizes3
-            MergeIntervals
-            LRUCache
             MedianOfTwoSortedArrays
             Permutations3
             RotateImage
@@ -83,6 +80,9 @@ public class Test {
             NodeDepths
             AddTwoNumbers
             BranchSums
+            RiverSizes
+            MergeIntervals
+            LRUCache
          */
         System.out.println("test");
     }
