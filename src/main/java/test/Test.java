@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            MedianOfTwoSortedArrays
-            Permutations3
-            RotateImage
             Sqrt
             ClimbingStairs
             LongestNonDecrSubseq3
@@ -19,11 +16,13 @@ public class Test {
             FirstPermutationIsSubstrSecondStr4
             CombinationSum5
             FirstDuplicateValue
+            Permutations
             DFSTreeTraverseRec
             PhoneNumberMnemonic
             SearchForRange
             HouseRober
             BreadthSearchFirst3
+            RotateImage
             DijkstraShortestPaths4
             BFSTreeTraverse
             LongestIncrSubSeq5
@@ -83,6 +82,7 @@ public class Test {
             RiverSizes
             MergeIntervals
             LRUCache
+            MedianOfTwoSortedArrays
          */
         System.out.println("test");
     }
