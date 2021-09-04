@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            Sqrt
-            ClimbingStairs
-            LongestNonDecrSubseq3
             SearchInRotatedSortedArray
             StringPermutation
             ZigZagTraverse
@@ -83,6 +80,9 @@ public class Test {
             MergeIntervals
             LRUCache
             MedianOfTwoSortedArrays
+            Sqrt
+            ClimbingStairs
+            LongestNonDecrSubseq
          */
         System.out.println("test");
     }
