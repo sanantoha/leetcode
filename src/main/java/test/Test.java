@@ -7,8 +7,8 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            FirstPermutationIsSubstrSecondStr4
-            CombinationSum5
+            FirstPermutationIsSubstrSecondStr
+            CombinationSum
             FirstDuplicateValue
             Permutations
             DFSTreeTraverseRec
