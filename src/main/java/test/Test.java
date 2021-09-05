@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchInRotatedSortedArray
-            StringPermutation
-            ZigZagTraverse
             FirstPermutationIsSubstrSecondStr4
             CombinationSum5
             FirstDuplicateValue
@@ -19,6 +16,7 @@ public class Test {
             SearchForRange
             HouseRober
             BreadthSearchFirst3
+            SameBSTs
             RotateImage
             DijkstraShortestPaths4
             BFSTreeTraverse
@@ -83,8 +81,10 @@ public class Test {
             Sqrt
             ClimbingStairs
             LongestNonDecrSubseq
+            SearchInRotatedSortedArray
+            StringPermutation
+            ZigZagTraverse
          */
-        System.out.println("test");
     }
 
 
