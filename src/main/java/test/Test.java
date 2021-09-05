@@ -42,7 +42,7 @@ public class Test {
             HeapSort3
             GenerateParentheses
             LargestRange
-            PalindromeLinkedList2
+            PalindromeLinkedList (use new approach)
             SymmetricTree3
             DFSTreeTraverse
             DepthFirstSearch4
