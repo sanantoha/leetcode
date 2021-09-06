@@ -7,14 +7,13 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            FirstPermutationIsSubstrSecondStr
-            CombinationSum
-            FirstDuplicateValue
+            LeftViewBinaryTree (Bonus)
             Permutations
             DFSTreeTraverseRec
             PhoneNumberMnemonic
             SearchForRange
             HouseRober
+            FirstDuplicateValue
             BreadthSearchFirst3
             SameBSTs
             RotateImage
@@ -84,6 +83,8 @@ public class Test {
             SearchInRotatedSortedArray
             StringPermutation
             ZigZagTraverse
+            FirstPermutationIsSubstrSecondStr
+            CombinationSum
          */
     }
 

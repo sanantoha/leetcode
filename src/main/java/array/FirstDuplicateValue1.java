@@ -7,6 +7,13 @@ package array;
 public class FirstDuplicateValue1 {
 
     public static int firstDuplicateValue(int[] array) {
+        if (array == null || array.length == 0) return -1;
+
+        for (int val : array) {
+            int absVal = Math.abs(val);
+            if (array[absVal - 1] < 0) return absVal;
+            array[absVal - 1] *= -1;
+        }
         return -1;
     }
 
