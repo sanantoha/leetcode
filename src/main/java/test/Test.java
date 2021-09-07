@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            Permutations
-            DFSTreeTraverseRec
-            PhoneNumberMnemonic
             SearchForRange
             HouseRober
             FirstDuplicateValue
@@ -58,6 +55,7 @@ public class Test {
             MaximumSubarray4
             SpiralMatrixTraverse
             DeleteNodeInLinkedList1
+            PhoneNumberMnemonic
             IntersectionLinkedList
             UniquePaths
             Pow
@@ -85,6 +83,8 @@ public class Test {
             FirstPermutationIsSubstrSecondStr
             CombinationSum
             LeftViewBinaryTree
+            Permutations
+            DFSTreeTraverseRec
          */
     }
 
