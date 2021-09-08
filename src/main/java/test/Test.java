@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchForRange
-            HouseRober
-            FirstDuplicateValue
             BreadthSearchFirst3
             SameBSTs
             RotateImage
@@ -23,6 +20,7 @@ public class Test {
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SortList
+            FirstDuplicateValue
             LongestDecrSubseq4
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
@@ -85,6 +83,8 @@ public class Test {
             LeftViewBinaryTree
             Permutations
             DFSTreeTraverseRec
+            SearchForRange
+            HouseRobber
          */
     }
 

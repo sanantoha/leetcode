@@ -1,6 +1,6 @@
 package dynamic;
 
-public class HouseRober {
+public class HouseRobber {
 
     public static int rob(int[] arr) {
         if (arr == null || arr.length == 0) return 0;
