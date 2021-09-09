@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            BreadthSearchFirst3
-            SameBSTs
-            RotateImage
             DijkstraShortestPaths4
             BFSTreeTraverse
             LongestIncrSubSeq5
@@ -84,7 +81,10 @@ public class Test {
             Permutations
             DFSTreeTraverseRec
             SearchForRange
+            BreadthSearchFirst
             HouseRobber
+            SameBSTs
+            RotateImage
          */
     }
 
