@@ -27,14 +27,14 @@ public class DijkstraShortestPaths4 {
         while (!queue.isEmpty()) {
             DirectedEdge minEdge = queue.remove();
             for (DirectedEdge edge : graph.adj(minEdge.to())) {
-                relax(graph, shortest, prev, edge, queue);
+                relax(shortest, prev, edge, queue);
             }
         }
 
         return new ShortestPath(shortest, prev);
     }
 
-    private static void relax(EdgeWeightedDigraph graph, double[] shortest, int[] prev, DirectedEdge edge, PriorityQueue<DirectedEdge> queue) {
+    private static void relax(double[] shortest, int[] prev, DirectedEdge edge, PriorityQueue<DirectedEdge> queue) {
         double newWeight = shortest[edge.from()] + edge.weight();
         if (newWeight < shortest[edge.to()]) {
             shortest[edge.to()] = newWeight;

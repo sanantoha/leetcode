@@ -6,7 +6,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LongestIncrSubSeq3 {
+public class LongestIncrSubseq3 {
 
     public static int lis(int[] arr) {
         if (arr == null || arr.length == 0) return -1;

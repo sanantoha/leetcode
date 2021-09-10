@@ -2,14 +2,15 @@ package dynamic;
 
 import java.util.*;
 
-public class LongestIncrSubSeq4 {
+public class LongestIncrSubseq5 {
 
     public static int lis(int[] arr) {
         if (arr == null || arr.length == 0) return 0;
 
         int[] dp = new int[arr.length];
+        dp[0] = 1;
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             dp[i] = 1;
             for (int j = 0; j < i; j++) {
                 if (arr[j] < arr[i] && dp[i] < dp[j] + 1) {
@@ -22,6 +23,7 @@ public class LongestIncrSubSeq4 {
         for (int v : dp) {
             max = Math.max(v, max);
         }
+
         return max;
     }
 
@@ -29,23 +31,21 @@ public class LongestIncrSubSeq4 {
         if (arr == null || arr.length == 0) return Collections.emptyList();
 
         int[] dp = new int[arr.length];
-        int[] prev= new int[arr.length];
-        prev[0] = -1;
+        int[] prev = new int[arr.length];
+        Arrays.fill(dp, 1);
+        Arrays.fill(prev, -1);
 
-        for (int i = 0; i < arr.length; i++) {
-            dp[i] = 1;
-
+        for (int i = 1; i < arr.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (arr[j] < arr[i] && dp[i] < dp[j] + 1) {
                     dp[i] = dp[j] + 1;
                     prev[i] = j;
                 }
             }
-            if (dp[i] == 1) prev[i] = -1;
         }
 
-        int max = -1;
-        int maxInd = -1;
+        int maxInd = 0;
+        int max = Integer.MIN_VALUE;
         for (int i = 0; i < dp.length; i++) {
             if (max < dp[i]) {
                 max = dp[i];
@@ -59,6 +59,7 @@ public class LongestIncrSubSeq4 {
             stack.push(arr[n]);
             n = prev[n];
         }
+
         return new ArrayList<>(stack);
     }
 
@@ -77,4 +78,7 @@ public class LongestIncrSubSeq4 {
         System.out.println(lis(arr2));
         System.out.println(lisList(arr2));
     }
+
+    // 1,2,3,4,3,2,1,5,6,7,8
+    // 1 2 3
 }

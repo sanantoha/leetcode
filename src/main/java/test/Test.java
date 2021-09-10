@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            DijkstraShortestPaths4
-            BFSTreeTraverse
-            LongestIncrSubSeq5
             ThreeSum
             WordSearch
             MinRewards1
@@ -85,6 +82,9 @@ public class Test {
             HouseRobber
             SameBSTs
             RotateImage
+            DijkstraShortestPaths
+            BFSTreeTraverse
+            LongestIncrSubSeq
          */
     }
 

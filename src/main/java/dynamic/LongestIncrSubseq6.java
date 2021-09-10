@@ -2,7 +2,7 @@ package dynamic;
 
 import java.util.*;
 
-public class LongestIncrSubSeq6 {
+public class LongestIncrSubseq6 {
 
     // O(N ^ 2) time | O(N) space
     public static int lis(int[] arr) {
