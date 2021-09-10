@@ -4,6 +4,7 @@ import java.util.*;
 
 public class LongestIncrSubseq7 {
 
+    // O(n * log(n)) time | O(n) space
     public static int lis0(int[] arr) {
         if (arr == null || arr.length == 0) return 0;
         List<Integer> res = new ArrayList<>();
@@ -25,6 +26,7 @@ public class LongestIncrSubseq7 {
         return res.size();
     }
 
+    // O(n ^ 2) time | O(n) space
     public static int lis(int[] arr) {
         if (arr == null || arr.length == 0) return 0;
 
@@ -45,6 +47,7 @@ public class LongestIncrSubseq7 {
         return max;
     }
 
+    // O(n ^ 2) time | O(n) space
     public static List<Integer> lisList(int[] arr) {
         if (arr == null || arr.length == 0) return Collections.emptyList();
 

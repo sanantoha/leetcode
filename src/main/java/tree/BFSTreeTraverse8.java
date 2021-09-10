@@ -7,6 +7,7 @@ import java.util.Queue;
 
 public class BFSTreeTraverse8 {
 
+    // O(n) time | O(n) space
     public static List<Integer> bfs(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) return res;
