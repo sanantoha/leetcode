@@ -1,4 +1,4 @@
-package tree;
+package graph;
 
 public class RiverSizes2 {
 

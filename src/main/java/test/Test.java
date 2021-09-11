@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            ThreeSum
-            WordSearch
-            MinRewards1
             TopologicalSortDFSCycleGraph3
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
@@ -85,6 +82,9 @@ public class Test {
             DijkstraShortestPaths
             BFSTreeTraverse
             LongestIncrSubSeq
+            ThreeSum
+            WordSearch
+            MinRewards
          */
     }
 
