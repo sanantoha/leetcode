@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            TopologicalSortDFSCycleGraph3
-            ValidIPAddress
-            PopulatingNextRightPointerInEachNode
             SortList
             FirstDuplicateValue
             LongestDecrSubseq4
@@ -85,6 +82,9 @@ public class Test {
             ThreeSum
             WordSearch
             MinRewards
+            TopologicalSortDFSCycleGraph
+            ValidIPAddress
+            PopulatingNextRightPointerInEachNode
          */
     }
 
