@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortList
-            FirstDuplicateValue
-            LongestDecrSubseq4
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
             KthSmallestElementInArray4
@@ -85,6 +82,9 @@ public class Test {
             TopologicalSortDFSCycleGraph
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
+            SortList
+            FirstDuplicateValue
+            LongestDecrSubseq
          */
     }
 
