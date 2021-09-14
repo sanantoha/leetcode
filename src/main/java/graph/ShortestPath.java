@@ -6,26 +6,26 @@ public class ShortestPath {
 
     private double[] shortest;
 
-    private int[] pred;
+    private int[] prev;
 
-    public ShortestPath(double[] shortest, int[] pred) {
+    public ShortestPath(double[] shortest, int[] prev) {
         this.shortest = shortest;
-        this.pred = pred;
+        this.prev = prev;
     }
 
     public double[] getShortest() {
         return shortest;
     }
 
-    public int[] getPred() {
-        return pred;
+    public int[] getPrev() {
+        return prev;
     }
 
     @Override
     public String toString() {
         return "ShortestPath{" +
                 "shortest=" + Arrays.toString(shortest) +
-                ", pred=" + Arrays.toString(pred) +
+                ", prev=" + Arrays.toString(prev) +
                 '}';
     }
 }

@@ -27,6 +27,7 @@ public class BellmanFord {
         }
     }
 
+    // O(V * E) time | O(V) space
     private static ShortestPath shortestPath(EdgeWeightedDigraph graph, int start) {
 
         double[] shortest = new double[graph.V()];
@@ -58,7 +59,7 @@ public class BellmanFord {
 
     private static int[] findNegativeWeightCycle(EdgeWeightedDigraph graph, ShortestPath shortestPath) {
         double[] shortest = shortestPath.getShortest();
-        int[] pred = shortestPath.getPred();
+        int[] pred = shortestPath.getPrev();
         int v = -1;
         for (DirectedEdge edge : graph.edges()) {
             if (shortest[edge.to()] > shortest[edge.from()] + edge.weight()) {

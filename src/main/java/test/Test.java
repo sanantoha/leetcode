@@ -15,8 +15,10 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree4
             SameTree8
             HeapSort3
+            BellmanFord
             GenerateParentheses
             LargestRange
+            KruskalMinSpanningTree
             PalindromeLinkedList (use new approach)
             SymmetricTree3
             DFSTreeTraverse
@@ -34,6 +36,7 @@ public class Test {
             ReverseWordsInString2
             MaximumSubarray4
             SpiralMatrixTraverse
+            PrimMinSpanningTree
             DeleteNodeInLinkedList1
             PhoneNumberMnemonic
             IntersectionLinkedList
