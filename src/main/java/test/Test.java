@@ -7,10 +7,7 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeZigzagLevelOrderTraverse
-            ReverseLinkedList
-            KthSmallestElementInArray4
-            ProductOfArrayExceptSelf6
+            ProductOfArrayExceptSelf
             CountingSort
             ReverseInteger
             StaircaseTraversal
@@ -85,6 +82,9 @@ public class Test {
             SortList
             FirstDuplicateValue
             LongestDecrSubseq
+            BinaryTreeZigzagLevelOrderTraverse
+            ReverseLinkedList
+            KthSmallestElementInArray
          */
     }
 

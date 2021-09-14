@@ -1,10 +1,6 @@
 package sorting;
 
-import java.util.Random;
-
-public class KthSmallestElementInArray4 {
-
-    private static Random rand = new Random();
+public class KthSmallestElementInArray5 {
 
     public static int kthSmallestElement(int[] arr, int k) {
         return kthSmallestElement(arr, 0, arr.length - 1, k);
@@ -14,20 +10,19 @@ public class KthSmallestElementInArray4 {
         if (l > r) return Integer.MAX_VALUE;
 
         int p = partition(arr, l, r);
-        if (k - 1 == p) return arr[p];
-        if (k - 1 < p) return kthSmallestElement(arr, l, p - 1, k);
-        return kthSmallestElement(arr, p + 1, r, k);
+        if (p + 1 == k) return arr[p];
+        if (p + 1 < k) return kthSmallestElement(arr, p + 1, r, k);
+        return kthSmallestElement(arr, l, p - 1, k);
     }
 
     private static int partition(int[] arr, int l, int r) {
-        int p = arr[l + rand.nextInt(r - l + 1)];
         int j = l;
         for (int i = l; i < r; i++) {
             if (arr[i] <= arr[r]) {
-                swap(arr, i, j++);
+                swap(arr, j++, i);
             }
         }
-        swap(arr, r, j);
+        swap(arr, j, r);
         return j;
     }
 
@@ -47,5 +42,6 @@ public class KthSmallestElementInArray4 {
         System.out.println(kthSmallestElement(arr, -1));
         System.out.println(kthSmallestElement(arr, 0));
         System.out.println(kthSmallestElement(arr, 11));
+
     }
 }
