@@ -22,10 +22,7 @@ public class PrimMinSpanningTree {
         System.out.println("=========================================");
         // [4-5 2.00000, 0-1 7.00000, 2-4 3.00000, 1-2 3.00000, 3-4 2.00000]
         System.out.println(mst(graph));
-        System.out.println(mst1(graph));
-
-//        ResultSet[] resultSets = mst1(graph);
-//        printMST(resultSets, graph.V());
+        printMST(mst1(graph), 6);
 
         System.out.println();
         System.out.println("=========================================");
@@ -45,9 +42,9 @@ public class PrimMinSpanningTree {
 
         System.out.println(graph1);
         // [5-6 2.00000, 0-2 3.00000, 2-4 1.00000, 0-1 2.00000, 1-6 3.00000, 3-4 5.00000]
-        // [2-4 1.00000, 1-6 3.00000, 5-6 2.00000, 0-1 2.00000, 0-2 3.00000, 3-4 5.00000]
         System.out.println("=========================================");
         System.out.println(mst(graph1));
+        printMST(mst1(graph1), 7);
 
     }
 
@@ -95,53 +92,21 @@ public class PrimMinSpanningTree {
 
     public static Set<Edge> mst(EdgeWeightedGraph graph) {
         Set<Edge> res = new HashSet<>();
-        Set<Integer> visited = new HashSet<>();
-
-        PriorityQueue<Edge> heap = new PriorityQueue<>(graph.V(), Comparator.comparing(Edge::weight));
-        int start = 0;
-        for (Edge edge : graph.adj(start)) {
-            heap.add(edge);
-        }
-
-        while (!heap.isEmpty()) {
-            Edge minEdge = heap.remove();
-            int from = minEdge.either();
-            int to = minEdge.other(from);
-
-            if (!visited.contains(from)) {
-                res.add(minEdge);
-                visited.add(from);
-            }
-
-            if (!visited.contains(to)) {
-                res.add(minEdge);
-                visited.add(to);
-                for (Edge edge : graph.adj(to)) {
-                    heap.add(edge);
-                }
-            }
-        }
-
-        return res;
-    }
-
-    public static List<Edge> mst1(EdgeWeightedGraph graph) {
-//        Set<Edge> res = new HashSet<>();
-        List<Edge> res = new ArrayList<>();
         int start = 0;
 
         boolean[] visited = new boolean[graph.V()];
         visited[start] = true;
         int inTree = 1;
 
-        PriorityQueue<Edge> heap = new PriorityQueue<>(graph.V(), Comparator.comparing(Edge::weight));
+        PriorityQueue<Pair<Edge, Integer>> heap = new PriorityQueue<>(graph.V(), Comparator.comparing(x -> x.getKey().weight()));
         for (Edge edge : graph.adj(start)) {
-            heap.add(edge);
+            heap.add(new Pair(edge, start));
         }
 
         while (!heap.isEmpty() && inTree < graph.V()) {
-            Edge minEdge = heap.remove();
-            int to = minEdge.other(minEdge.either());
+            Pair<Edge, Integer> pair = heap.remove();
+            Edge minEdge = pair.getKey();
+            int to = minEdge.other(pair.getValue());
 
             if (visited[to]) continue;
 
@@ -150,17 +115,17 @@ public class PrimMinSpanningTree {
             res.add(minEdge);
 
             for (Edge edge : graph.adj(to)) {
-                if (!visited[edge.other(edge.either())]) heap.add(edge);
+                heap.add(new Pair(edge, to));
             }
         }
         if (inTree < graph.V()) {
-            return Collections.emptyList();
+            return Collections.emptySet();
         }
 
         return res;
     }
 
-    public static ResultSet[] mst2(EdgeWeightedGraph graph) {
+    public static ResultSet[] mst1(EdgeWeightedGraph graph) {
         boolean[] mst = new boolean[graph.V()];
         ResultSet[] resultSets = new ResultSet[graph.V()];
         for (int i = 0; i < resultSets.length; i++) {
@@ -178,19 +143,19 @@ public class PrimMinSpanningTree {
         resultSets[0].parent = -1;
 
         while (!pq.isEmpty()) {
-            Pair<Double, Integer> pair = pq.remove();
+            Pair<Double, Integer> extractedPair = pq.remove();
 
-            int v = pair.getValue();
-            mst[v] = true;
+            int extractedVertex = extractedPair.getValue();
+            mst[extractedVertex] = true;
 
-            for (Edge edge : graph.adj(v)) {
-                int destination = edge.other(edge.either());
+            for (Edge edge : graph.adj(extractedVertex)) {
+                int destination = edge.other(extractedVertex);
+                double newKey = edge.weight();
                 if (!mst[destination]) {
-                    double newKey = edge.weight();
                     if (key[destination] > newKey) {
                         Pair<Double, Integer> p = new Pair<>(newKey, destination);
                         pq.add(p);
-                        resultSets[destination].parent = v;
+                        resultSets[destination].parent = extractedVertex;
                         resultSets[destination].weight = newKey;
                         key[destination] = newKey;
                     }
