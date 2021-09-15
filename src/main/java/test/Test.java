@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            ProductOfArrayExceptSelf
-            CountingSort
-            ReverseInteger
             StaircaseTraversal
             BinarySearch
             LowestCommonAncestorOfBinarySearchTree4
@@ -88,6 +85,9 @@ public class Test {
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
             KthSmallestElementInArray
+            ProductOfArrayExceptSelf
+            CountingSort
+            ReverseInteger
          */
     }
 

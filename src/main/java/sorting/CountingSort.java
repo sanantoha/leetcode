@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class CountingSort {
 
+    // O(n) time | O(d) space - where d unique values in array
     private static void countingSort(int[] arr) {
         if (arr == null || arr.length == 0) return;
 

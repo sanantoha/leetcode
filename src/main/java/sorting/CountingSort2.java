@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class CountingSort2 {
 
+    // O(n) time | O(d) space - where d unique values in array
     public static void countingSort(int[] arr) {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
