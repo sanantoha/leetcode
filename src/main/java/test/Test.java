@@ -8,8 +8,6 @@ public class Test {
     public static void main(String[] args) {
         /*
             StaircaseTraversal
-            BinarySearch
-            LowestCommonAncestorOfBinarySearchTree4
             SameTree8
             HeapSort3
             BellmanFord
@@ -88,6 +86,8 @@ public class Test {
             ProductOfArrayExceptSelf
             CountingSort
             ReverseInteger
+            BinarySearch
+            LowestCommonAncestorOfBinarySearchTree
          */
     }
 
