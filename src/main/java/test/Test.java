@@ -7,10 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            StaircaseTraversal
-            SameTree8
-            HeapSort3
-            BellmanFord
             GenerateParentheses
             LargestRange
             KruskalMinSpanningTree
@@ -88,6 +84,10 @@ public class Test {
             ReverseInteger
             BinarySearch
             LowestCommonAncestorOfBinarySearchTree
+            StaircaseTraversal
+            SameTree
+            HeapSort
+            BellmanFord
          */
     }
 
