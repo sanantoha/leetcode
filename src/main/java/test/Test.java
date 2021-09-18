@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            GenerateParentheses
-            LargestRange
-            KruskalMinSpanningTree
             PalindromeLinkedList (use new approach)
             SymmetricTree3
             DFSTreeTraverse
@@ -88,6 +85,9 @@ public class Test {
             SameTree
             HeapSort
             BellmanFord
+            GenerateParentheses
+            LargestRange
+            KruskalMinSpanningTree
          */
     }
 

@@ -5,7 +5,58 @@ import java.util.HashSet;
 import java.util.PriorityQueue;
 import java.util.Set;
 
-public class KruskalMinSpanningTree {
+public class KruskalMinSpanningTree1 {
+
+    public static Set<Edge> mst(EdgeWeightedGraph graph) {
+        Set<Edge> mst = new HashSet<>();
+
+        int[] parent = makeSet(graph);
+
+        PriorityQueue<Edge> queue = new PriorityQueue<>(graph.E(), Comparator.comparing(Edge::weight));
+        for (Edge edge : graph.edges()) {
+            queue.add(edge);
+        }
+
+        int cnt = 0;
+        while (cnt < graph.V() - 1) {
+            Edge minEdge = queue.remove();
+            int from = minEdge.either();
+            int to = minEdge.other(from);
+
+            int fromParent = find(parent, from);
+            int toParent = find(parent, to);
+            if (fromParent != toParent) {
+                mst.add(minEdge);
+                union(parent, fromParent, toParent);
+                cnt++;
+            }
+        }
+
+        return mst;
+    }
+
+    private static void union(int[] parent, int x, int y) {
+        int xParent = find(parent, x);
+        int yParent = find(parent, y);
+
+        parent[yParent] = xParent;
+    }
+
+    private static int find(int[] parent, int v) {
+        if (parent[v] != v) {
+            return find(parent, parent[v]);
+        }
+        return v;
+    }
+
+    private static int[] makeSet(EdgeWeightedGraph graph) {
+        int[] parent = new int[graph.V()];
+        for (int v = 0; v < graph.V(); v++) {
+            parent[v] = v;
+        }
+        return parent;
+    }
+
     public static void main(String[] args) {
         EdgeWeightedGraph graph = new EdgeWeightedGraph(6);
         graph.addEdge(new Edge(0, 1, 7.0));
@@ -41,56 +92,5 @@ public class KruskalMinSpanningTree {
         // [5-6 2.00000, 0-2 3.00000, 2-4 1.00000, 0-1 2.00000, 1-6 3.00000, 3-4 5.00000]
         System.out.println("=========================================");
         System.out.println(mst(graph1));
-    }
-
-    public static Set<Edge> mst(EdgeWeightedGraph graph) {
-
-        Set<Edge> mst = new HashSet<>();
-
-        PriorityQueue<Edge> heap = new PriorityQueue<>(graph.E(), Comparator.comparing(Edge::weight));
-        for (Edge edge : graph.edges()) {
-            heap.add(edge);
-        }
-
-        int[] parent = makeSet(graph);
-
-        int idx = 0;
-        while (idx < graph.V() - 1) {
-            Edge minEdge = heap.remove();
-            int x = minEdge.either();
-            int y = minEdge.other(x);
-
-            int xSet = find(parent, x);
-            int ySet = find(parent, y);
-
-            if (xSet != ySet) {
-                mst.add(minEdge);
-                union(parent, xSet, ySet);
-                idx++;
-            }
-        }
-        return mst;
-    }
-
-    private static int[] makeSet(EdgeWeightedGraph graph) {
-        int[] parent = new int[graph.V()];
-        for (int i = 0; i < graph.V(); i++) {
-            parent[i] = i;
-        }
-        return parent;
-    }
-
-    private static int find(int[] parent, int v) {
-        if (parent[v] != v) {
-            return find(parent, parent[v]);
-        }
-        return v;
-    }
-
-    private static void union(int[] parent, int x, int y) {
-        int xParent = find(parent, x);
-        int yParent = find(parent, y);
-
-        parent[yParent] = xParent;
     }
 }
