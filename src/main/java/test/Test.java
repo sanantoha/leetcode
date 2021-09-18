@@ -6,15 +6,11 @@ import java.util.stream.IntStream;
 
 public class Test {
     public static void main(String[] args) {
-        /*
-            PalindromeLinkedList (use new approach)
-            SymmetricTree3
-            DFSTreeTraverse
-            DepthFirstSearch4
-            CycleLinkedList5
-            ReverseBinaryTree7
-            FourSum3
-            SortKSortedArray2
+        /*  4
+            CycleLinkedList
+            ReverseBinaryTree
+            FourSum
+            SortKSortedArray
             InsertSort7
             PalindromicSubstrings
             ReverseString
@@ -88,6 +84,10 @@ public class Test {
             GenerateParentheses
             LargestRange
             KruskalMinSpanningTree
+            PalindromeLinkedList
+            SymmetricTree
+            DFSTreeTraverse
+            DepthFirstSearch
          */
     }
 

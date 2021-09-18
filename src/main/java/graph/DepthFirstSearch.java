@@ -47,7 +47,8 @@ public class DepthFirstSearch {
         }
     }
 
-    private static List<Integer> dfsIter(EdgeWeightedDigraph graph,  int start) {
+    // O(V + E) time | O(V) space
+    public static List<Integer> dfsIter(EdgeWeightedDigraph graph,  int start) {
         List<Integer> ans = new ArrayList<>(graph.V());
 
         boolean[] visited = new boolean[graph.V()];
