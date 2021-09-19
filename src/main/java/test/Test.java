@@ -6,10 +6,7 @@ import java.util.stream.IntStream;
 
 public class Test {
     public static void main(String[] args) {
-        /*  4
-            CycleLinkedList
-            ReverseBinaryTree
-            FourSum
+        /*
             SortKSortedArray
             InsertSort7
             PalindromicSubstrings
@@ -88,6 +85,9 @@ public class Test {
             SymmetricTree
             DFSTreeTraverse
             DepthFirstSearch
+            CycleLinkedList
+            ReverseBinaryTree
+            FourSum
          */
     }
 
