@@ -1,10 +1,6 @@
 package strings;
 
-public class PalindromicSubstrings7 {
-    public static void main(String[] args) {
-        System.out.println(countSubstrings("abba"));
-        System.out.println(countSubstrings("aabbbaa"));
-    }
+public class PalindromicSubstrings9 {
 
     private static int countPalindrome(String str, int l, int r) {
         int count = 0;
@@ -18,14 +14,19 @@ public class PalindromicSubstrings7 {
     }
 
     // O(n ^ 2) time | O(1) space
-    private static int countSubstrings(String str) {
+    public static int countSubstrings(String str) {
         int count = 0;
         if (str == null || str.isEmpty()) return count;
 
         for (int i = 0; i < str.length(); i++) {
+            count += countPalindrome(str, i, i);
             count += countPalindrome(str, i, i + 1);
-            count += countPalindrome(str, i - 1, i + 1);
         }
         return count;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(countSubstrings("abba"));
+        System.out.println(countSubstrings("aabbbaa"));
     }
 }

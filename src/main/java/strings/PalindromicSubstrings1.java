@@ -13,6 +13,7 @@ public class PalindromicSubstrings1 {
         return count;
     }
 
+    // O(n ^ 2) time | O(1) space
     public static int countSubstrings(String s) {
         int count = 0;
         if (s == null || s.isEmpty()) return count;

@@ -2,7 +2,7 @@ package strings;
 
 public class PalindromicSubstrings6 {
 
-    private static int countPalindrom(String str, int l, int r) {
+    private static int countPalindrome(String str, int l, int r) {
         int count = 0;
         while (l >= 0 && r < str.length()) {
             if (str.charAt(l) != str.charAt(r)) break;
@@ -13,13 +13,14 @@ public class PalindromicSubstrings6 {
         return count;
     }
 
+    // O(n ^ 2) time | O(1) space
     public static int countSubstrings(String str) {
         if (str == null || str.isEmpty()) return 0;
 
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
-            count += countPalindrom(str, i, i);
-            count += countPalindrom(str, i, i + 1);
+            count += countPalindrome(str, i, i);
+            count += countPalindrome(str, i, i + 1);
         }
 
         return count;

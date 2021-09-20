@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortKSortedArray
-            InsertSort7
-            PalindromicSubstrings
             ReverseString
             LowestCommonAncestorOfBinaryTree4
             SurroundedRegions
@@ -88,6 +85,9 @@ public class Test {
             CycleLinkedList
             ReverseBinaryTree
             FourSum
+            SortKSortedArray
+            InsertSort
+            PalindromicSubstrings
          */
     }
 
