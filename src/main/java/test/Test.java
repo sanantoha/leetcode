@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseString
-            LowestCommonAncestorOfBinaryTree4
-            SurroundedRegions
             RemoveNthNodeFromEndOfList2
             ReverseWordsInString2
             MaximumSubarray4
@@ -88,6 +85,9 @@ public class Test {
             SortKSortedArray
             InsertSort
             PalindromicSubstrings
+            ReverseString
+            LowestCommonAncestorOfBinaryTree
+            SurroundedRegions
          */
     }
 
