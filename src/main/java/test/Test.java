@@ -7,15 +7,13 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            RemoveNthNodeFromEndOfList2
-            ReverseWordsInString2
-            MaximumSubarray4
             SpiralMatrixTraverse
+            DeleteNodeInLinkedList
             PrimMinSpanningTree
-            DeleteNodeInLinkedList1
             PhoneNumberMnemonic
             IntersectionLinkedList
             UniquePaths
+            StringWithoutAAAorBBB
             Pow
             SelectSort
             ValidateBinarySearchTree
@@ -88,6 +86,9 @@ public class Test {
             ReverseString
             LowestCommonAncestorOfBinaryTree
             SurroundedRegions
+            RemoveNthNodeFromEndOfList
+            ReverseWordsInString
+            MaximumSubarray
          */
     }
 

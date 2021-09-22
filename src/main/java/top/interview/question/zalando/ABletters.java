@@ -1,31 +1,52 @@
 package top.interview.question.zalando;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ABletters {
 
     public static String solution(int a, int b) {
-        return solution(a, b, "");
-    }
+        StringBuilder res = new StringBuilder();
 
-    private static String solution(int a, int b, String ans) {
-        if (a + b == 0) return ans;
-
-        if (a > b) {
-            if (ans.endsWith("b") && a > 1) {
-                return solution(a - 2, b, ans + "aa");
+        while (a > 0 && b > 0) {
+            if (a > b) {
+                res.append("aa").append("b");
+                a -= 2;
+                b--;
+            } else {
+                if (a == b && a == 1) {
+                    res.append("a").append("b");
+                    a--;
+                    b--;
+                    break;
+                }
+                res.append("a").append("bb");
+                b -= 2;
+                a--;
             }
-            return solution(a - 1, b, ans + "a");
-        } else {
-            if (ans.endsWith("a") && b > 1) {
-                return solution(a, b - 2, ans + "bb");
-            }
-            return solution(a, b - 1, ans + "b");
         }
+
+        while (a > 0) {
+            res.append("a");
+            a--;
+        }
+        while (b > 0) {
+            res.insert(0, "b");
+            b--;
+        }
+
+        return res.toString();
     }
+
 
     public static void main(String[] args) {
-//        System.out.println(solution(5, 3));
+        System.out.println(solution(1, 1));
+        System.out.println(solution(3, 3));
+        System.out.println(solution(2, 5));
+
+        System.out.println(solution(5, 3));
 //
-//        System.out.println(solution(3, 3));
+        System.out.println(solution(3, 3));
 
         System.out.println(solution(1, 4));
     }
