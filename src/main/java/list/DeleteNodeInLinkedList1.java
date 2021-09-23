@@ -2,8 +2,21 @@ package list;
 
 public class DeleteNodeInLinkedList1 {
 
-    public static void deleteNode(ListNode node) {
+    public static void deleteNode(ListNode head) {
+        if (head == null) return;
 
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            if (next != null) {
+                curr.val = next.val;
+                if (next.next == null) {
+                    curr.next = null;
+                }
+            }
+
+            curr = curr.next;
+        }
     }
 
     public static void main(String[] args) {

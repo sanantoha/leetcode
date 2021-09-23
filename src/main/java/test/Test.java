@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            SpiralMatrixTraverse
-            DeleteNodeInLinkedList
-            PrimMinSpanningTree
             PhoneNumberMnemonic
             IntersectionLinkedList
             UniquePaths
@@ -60,6 +57,7 @@ public class Test {
             LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
+            PrimMinSpanningTree
             KthSmallestElementInArray
             ProductOfArrayExceptSelf
             CountingSort
@@ -89,6 +87,8 @@ public class Test {
             RemoveNthNodeFromEndOfList
             ReverseWordsInString
             MaximumSubarray
+            SpiralMatrixTraverse
+            DeleteNodeInLinkedList
          */
     }
 
