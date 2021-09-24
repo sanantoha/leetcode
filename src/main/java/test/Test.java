@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            PhoneNumberMnemonic
-            IntersectionLinkedList
-            UniquePaths
             StringWithoutAAAorBBB
             Pow
             SelectSort
@@ -89,6 +86,9 @@ public class Test {
             MaximumSubarray
             SpiralMatrixTraverse
             DeleteNodeInLinkedList
+            PhoneNumberMnemonic
+            IntersectionLinkedList
+            UniquePaths
          */
     }
 

@@ -5,6 +5,7 @@ import java.util.Set;
 
 public class IntersectionLinkedList {
 
+    // O(n) time | O(n) space where l1 + l2 = n
     public static ListNode intersection(ListNode left, ListNode right) {
         if (left == null || right == null) return null;
 
@@ -25,6 +26,7 @@ public class IntersectionLinkedList {
         return null;
     }
 
+    // O(n) time | O(1) space where l1 + l2 = n
     public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 
         ListNode currA = headA;
