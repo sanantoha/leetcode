@@ -1,8 +1,5 @@
 package top.interview.question.zalando;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class ABletters {
 
     public static String solution(int a, int b) {
