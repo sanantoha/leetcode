@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidateBinarySearchTree
-            MergeSort
-            CloneGraph
             MinHeap
             Powerset
             FindClosestValueInBST
@@ -89,6 +86,9 @@ public class Test {
             StringWithoutAAAorBBB
             Pow
             SelectSort
+            ValidateBinarySearchTree
+            MergeSort
+            CloneGraph
          */
     }
 
