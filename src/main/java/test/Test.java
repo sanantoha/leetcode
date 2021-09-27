@@ -7,10 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            QuickSort
-            NodeDepths
-            AddTwoNumbers
-            BranchSums
             RiverSizes
             MergeIntervals
             LRUCache
@@ -19,6 +15,7 @@ public class Test {
             ClimbingStairs
             LongestNonDecrSubseq
             SearchInRotatedSortedArray
+            BranchSums
             StringPermutation
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
@@ -30,6 +27,7 @@ public class Test {
             BreadthSearchFirst
             HouseRobber
             SameBSTs
+            NodeDepths
             RotateImage
             DijkstraShortestPaths
             BFSTreeTraverse
@@ -89,6 +87,8 @@ public class Test {
             Powerset
             FindClosestValueInBST
             MinHeap
+            QuickSort
+            AddTwoNumbers
          */
     }
 

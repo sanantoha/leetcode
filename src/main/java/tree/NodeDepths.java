@@ -1,9 +1,51 @@
 package tree;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class NodeDepths {
 
+    static class Pair {
+        TreeNode node;
+        int depth;
+
+        public Pair(TreeNode node, int depth) {
+            this.node = node;
+            this.depth = depth;
+        }
+    }
+
+    // O(n) time | O(h) space
     public static int nodeDepths(TreeNode root) {
-        return -1;
+        int sumOfDepths = 0;
+
+        Deque<Pair> stack = new LinkedList<>();
+        stack.push(new Pair(root, 0));
+
+        while (!stack.isEmpty()) {
+            Pair p = stack.pop();
+            TreeNode curr = p.node;
+            int depth = p.depth;
+            if (curr == null) continue;
+
+            sumOfDepths += depth;
+
+            stack.push(new Pair(curr.left, depth + 1));
+            stack.push(new Pair(curr.right, depth + 1));
+        }
+
+
+        return sumOfDepths;
+    }
+
+    // O(n) time | O(h) space
+    public static int nodeDepthsRec(TreeNode root) {
+        return nodeDepthsRec(root, 0);
+    }
+
+    private static int nodeDepthsRec(TreeNode root, int depth) {
+        if (root == null) return 0;
+        return depth + nodeDepthsRec(root.left, depth + 1) + nodeDepthsRec(root.right, depth + 1);
     }
 
     public static void main(String[] args) {
@@ -18,5 +60,6 @@ public class NodeDepths {
                         new TreeNode(7)));
 
         System.out.println(nodeDepths(root) == 16);
+        System.out.println(nodeDepthsRec(root) == 16);
     }
 }
