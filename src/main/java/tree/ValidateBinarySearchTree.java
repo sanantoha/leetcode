@@ -4,7 +4,9 @@ public class ValidateBinarySearchTree {
 
     public static boolean isValidBST(TreeNode node, long min, long max) {
         if (node == null) return true;
-        if (node.val <= min || node.val >= max) return false;
+        // condition depends on BST property: left node is less and right is less or equal the root node.
+
+        if (node.val < min || node.val >= max) return false;
 
         return isValidBST(node.left, min, node.val) && isValidBST(node.right, node.val, max);
     }

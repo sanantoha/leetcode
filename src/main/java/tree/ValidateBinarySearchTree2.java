@@ -10,7 +10,7 @@ public class ValidateBinarySearchTree2 {
 
     private static boolean isValid(TreeNode root, double lo, double hi) {
         if (root == null) return true;
-        if (root.val <= lo || root.val >= hi) {
+        if (root.val < lo || root.val >= hi) {
             return false;
         }
 

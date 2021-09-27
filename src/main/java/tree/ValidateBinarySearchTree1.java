@@ -4,9 +4,7 @@ public class ValidateBinarySearchTree1 {
 
     private static boolean isValidBST(TreeNode node, double min, double max) {
         if (node == null) return true;
-        if (node.val <= min || node.val >= max) {
-            System.out.println(min + " " + max);
-            System.out.println(node.val);
+        if (node.val < min || node.val >= max) {
             return false;
         }
 

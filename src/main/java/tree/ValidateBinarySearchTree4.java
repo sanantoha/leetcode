@@ -8,7 +8,7 @@ public class ValidateBinarySearchTree4 {
 
     private static boolean validate(TreeNode root, double min, double max) {
         if (root == null) return true;
-        if (root.val <= min || root.val >= max) return false;
+        if (root.val < min || root.val >= max) return false;
 
         return validate(root.left, min, root.val) && validate(root.right, root.val, max);
     }
