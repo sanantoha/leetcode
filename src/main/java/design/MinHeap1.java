@@ -24,17 +24,17 @@ public class MinHeap1 {
         int l = left(currentIdx);
         int r = right(currentIdx);
 
-        int maxIdx = currentIdx;
-        if (l <= endIdx && heap.get(maxIdx) > heap.get(l)) {
-            maxIdx = l;
+        int minIdx = currentIdx;
+        if (l <= endIdx && heap.get(minIdx) > heap.get(l)) {
+            minIdx = l;
         }
-        if (r <= endIdx && heap.get(maxIdx) > heap.get(r)) {
-            maxIdx = r;
+        if (r <= endIdx && heap.get(minIdx) > heap.get(r)) {
+            minIdx = r;
         }
 
-        if (maxIdx != currentIdx) {
-            Collections.swap(heap, currentIdx, maxIdx);
-            siftDown(maxIdx, endIdx, heap);
+        if (minIdx != currentIdx) {
+            Collections.swap(heap, currentIdx, minIdx);
+            siftDown(minIdx, endIdx, heap);
         }
     }
 
@@ -78,7 +78,7 @@ public class MinHeap1 {
     }
 
     private int parent(int i) {
-        return (i - 2) / 2;
+        return (i - 1) / 2;
     }
 
     public static void main(String[] args) {
