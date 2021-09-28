@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            RiverSizes
-            MergeIntervals
-            LRUCache
             MedianOfTwoSortedArrays
             Sqrt
             ClimbingStairs
@@ -77,6 +74,7 @@ public class Test {
             DeleteNodeInLinkedList
             PhoneNumberMnemonic
             IntersectionLinkedList
+            LRUCache
             UniquePaths
             StringWithoutAAAorBBB
             Pow
@@ -89,6 +87,8 @@ public class Test {
             MinHeap
             QuickSort
             AddTwoNumbers
+            MergeIntervals
+            RiverSizes
          */
     }
 
