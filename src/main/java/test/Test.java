@@ -7,9 +7,6 @@ import java.util.stream.IntStream;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestNonDecrSubseq
-            SearchInRotatedSortedArray
-            BranchSums
             StringPermutation
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
@@ -89,6 +86,9 @@ public class Test {
             MedianOfTwoSortedArrays
             Sqrt
             ClimbingStairs
+            LongestNonDecrSubseq
+            SearchInRotatedSortedArray
+            BranchSums
          */
     }
 
