@@ -14,7 +14,7 @@ public class AStarAlgo {
         startNode.distanceFromStart = 0;
         startNode.estimatedDistanceToEnd = calculateManhattanDistance(startNode, endNode);
 
-        PriorityQueue<Node> pq = new PriorityQueue<>(Comparator.comparing(Node::getFScore));
+        PriorityQueue<Node> pq = new PriorityQueue<>(Comparator.comparing(Node::getEstimatedDistanceToEnd));
         pq.add(startNode);
 
         while (!pq.isEmpty()) {
@@ -37,7 +37,7 @@ public class AStarAlgo {
 
                 neighbor.prev = minNode;
                 neighbor.distanceFromStart = tentativeDistance;
-                neighbor.estimatedDistanceToEnd = calculateManhattanDistance(neighbor, endNode);
+                neighbor.estimatedDistanceToEnd = tentativeDistance + calculateManhattanDistance(neighbor, endNode);
 
                 if (pq.contains(neighbor)) {
                     pq.remove(neighbor);
@@ -119,8 +119,8 @@ public class AStarAlgo {
             this.distanceFromStart = Integer.MAX_VALUE;
         }
 
-        public int getFScore() {
-            return estimatedDistanceToEnd + distanceFromStart;
+        public int getEstimatedDistanceToEnd() {
+            return estimatedDistanceToEnd;
         }
     }
 
