@@ -15,6 +15,7 @@ public class Test {
             Permutations
             DFSTreeTraverseRec
             SearchForRange
+            AStarAlgo
             BreadthSearchFirst
             HouseRobber
             SameBSTs
