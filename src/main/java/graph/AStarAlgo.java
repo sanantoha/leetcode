@@ -6,6 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class AStarAlgo {
 
+    // O(w * h * log(w * h)) time | O(h * w) space
     public static int[][] aStarAlgorithm(int startRow, int startCol, int endRow, int endCol, int[][] graph) {
         List<List<Node>> nodes = initNodes(graph);
         Node startNode = nodes.get(startRow).get(startCol);
