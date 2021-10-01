@@ -5,6 +5,7 @@ import java.util.List;
 
 public class StringPermutation4 {
 
+    // O(n * n!) time | O(n!) space
     public static List<String> permute(String src) {
         List<String> result = new ArrayList<>();
         backtrack(src, "", result);

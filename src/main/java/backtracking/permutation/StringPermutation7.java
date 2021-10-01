@@ -3,7 +3,7 @@ package backtracking.permutation;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StringPermutation6 {
+public class StringPermutation7 {
 
     // O(n * n!) time | O(n!) space
     public static List<String> permute(String str) {

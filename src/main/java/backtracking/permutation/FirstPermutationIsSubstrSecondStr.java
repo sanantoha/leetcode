@@ -27,6 +27,7 @@ public class FirstPermutationIsSubstrSecondStr {
         }
     }
 
+    // O(s1 * s1! + s1! * s2) time | O(s1!) space
     public static boolean findPermutation(String s1, String s2) {
         for (String permute : permutation(s1)) {
             if (s2.contains(permute)) return true;
@@ -41,6 +42,7 @@ public class FirstPermutationIsSubstrSecondStr {
      * @param s2
      * @return
      */
+    // O(s1 + s2) time | O(1) space
     public static boolean findPermutation1(String s1, String s2) {
         if (s1.length() > s2.length()) return false;
 
@@ -48,8 +50,6 @@ public class FirstPermutationIsSubstrSecondStr {
         for (int i = 0; i < s1.length(); i++) {
             alpha[s1.charAt(i) - 'a']++;
         }
-
-        System.out.println(Arrays.toString(alpha));
 
         for (int i = 0; i < s2.length(); i++) {
             alpha[s2.charAt(i) - 'a']--;

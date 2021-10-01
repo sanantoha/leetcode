@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ZigZagTraverse {
 
+    // O(n) time | O(n) space
     public static List<Integer> zigzagTraverse(List<List<Integer>> array) {
         List<Integer> res = new ArrayList<>();
         if (array == null || array.size() == 0) return res;

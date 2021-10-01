@@ -23,6 +23,7 @@ public class FirstPermutationIsSubstrSecondStr1 {
         }
     }
 
+    // O(s1 * s1! + s1! * s2) time | O(s1!) space
     public static boolean findPermutation(String s1, String s2) {
         if (s1.length() > s2.length()) return false;
 
@@ -39,6 +40,7 @@ public class FirstPermutationIsSubstrSecondStr1 {
         return true;
     }
 
+    // O(s1 + s2) time | O(1) space
     public static boolean findPermutation1(String s1, String s2) {
         if (s1.length() > s2.length()) return false;
 
