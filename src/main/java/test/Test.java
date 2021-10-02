@@ -3,12 +3,8 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CombinationSum
-            LeftViewBinaryTree
-            Permutations
             DFSTreeTraverseRec
             SearchForRange
-            AStarAlgo
             BreadthSearchFirst
             HouseRobber
             SameBSTs
@@ -25,6 +21,7 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             SortList
             FirstDuplicateValue
+            AStarAlgo
             LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
@@ -86,6 +83,9 @@ public class Test {
             StringPermutation
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
+            CombinationSum
+            LeftViewBinaryTree
+            Permutations
          */
     }
 

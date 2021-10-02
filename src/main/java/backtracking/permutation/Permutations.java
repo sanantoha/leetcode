@@ -32,6 +32,7 @@ public class Permutations {
         }
     }
 
+    // O(n * n!) time | O(n * n!) space
     public static List<List<Integer>> permute(int[] arr) {
         List<List<Integer>> result = new ArrayList<>();
         backtracking(result, arr, 0);
