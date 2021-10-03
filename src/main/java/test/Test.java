@@ -19,6 +19,7 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             SortList
             FirstDuplicateValue
+            BSTSuccessorSearch
             AStarAlgo
             LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse

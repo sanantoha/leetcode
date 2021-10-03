@@ -8,7 +8,7 @@ public class BSTSuccessorSearch1 {
         if (node == null) return null;
 
         if (node.right != null) {
-            BSTSuccessorSearch.Node curr = node.right;
+            Node curr = node.right;
             while (curr.left != null) {
                 curr = curr.left;
             }
