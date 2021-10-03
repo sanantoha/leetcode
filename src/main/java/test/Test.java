@@ -8,6 +8,7 @@ public class Test {
             NodeDepths
             RotateImage
             DijkstraShortestPaths
+            BinaryTreeDiameter
             BFSTreeTraverse
             LongestIncrSubSeq
             ThreeSum
