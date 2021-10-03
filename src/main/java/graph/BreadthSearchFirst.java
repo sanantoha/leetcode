@@ -24,6 +24,7 @@ public class BreadthSearchFirst {
         }
     }
 
+    // O(v * e) time | O(v) space
     private static List<Integer> bfs(EdgeWeightedDigraph graph, int start) {
 
         List<Integer> ans = new ArrayList<>();

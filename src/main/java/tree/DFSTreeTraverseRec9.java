@@ -3,10 +3,9 @@ package tree;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DFSTreeTraverseRec {
+public class DFSTreeTraverseRec9 {
 
-    // avg: O(n) time | O(log(n)) space
-    // worst: O(n) time | O(n) space
+    // O(n) time | O(n) space
     public static List<Integer> preOrderRec(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         preOrderRec(root, res);
@@ -21,8 +20,7 @@ public class DFSTreeTraverseRec {
         preOrderRec(root.right, res);
     }
 
-    // avg: O(n) time | O(log(n)) space
-    // worst: O(n) time | O(n) space
+    // O(n) time | O(n) space
     public static List<Integer> inOrderRec(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         inOrderRec(root, res);
@@ -37,8 +35,7 @@ public class DFSTreeTraverseRec {
         inOrderRec(root.right, res);
     }
 
-    // avg: O(n) time | O(log(n)) space
-    // worst: O(n) time | O(n) space
+    // O(n) time | O(n) space
     public static List<Integer> postOrderRec(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         postOrderRec(root, res);

@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DFSTreeTraverseRec
-            SearchForRange
-            BreadthSearchFirst
             HouseRobber
             SameBSTs
             NodeDepths
@@ -86,6 +83,9 @@ public class Test {
             CombinationSum
             LeftViewBinaryTree
             Permutations
+            DFSTreeTraverseRec
+            SearchForRange
+            BreadthSearchFirst
          */
     }
 
