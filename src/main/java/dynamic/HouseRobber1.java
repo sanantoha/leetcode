@@ -5,6 +5,7 @@ public class HouseRobber1 {
     // O(n) time | O(n) space
     public static int rob(int[] houses) {
         if (houses == null || houses.length == 0) return 0;
+        if (houses.length == 1) return houses[0];
 
         int[] dp = new int[houses.length];
         dp[0] = houses[0];

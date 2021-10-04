@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            HouseRobber
-            SameBSTs
-            NodeDepths
             RotateImage
             DijkstraShortestPaths
             BinaryTreeDiameter
@@ -88,6 +85,9 @@ public class Test {
             DFSTreeTraverseRec
             SearchForRange
             BreadthSearchFirst
+            HouseRobber
+            NodeDepths
+            SameBSTs
          */
     }
 

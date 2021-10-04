@@ -4,45 +4,43 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class SameBSTs {
+public class SameBSTs1 {
 
-    // O(n ^ 2) time | O(n ^ 2) space
+    static class Pair {
+        List<Integer> lessArr;
+        List<Integer> gtEqArr;
+
+        public Pair(List<Integer> lessArr, List<Integer> gtEqArr) {
+            this.lessArr = lessArr;
+            this.gtEqArr = gtEqArr;
+        }
+    }
+
     public static boolean sameBsts(List<Integer> arrayOne, List<Integer> arrayTwo) {
         if ((arrayOne == null || arrayOne.size() == 0) && (arrayTwo == null || arrayTwo.size() == 0)) return true;
         if (arrayOne.size() != arrayTwo.size()) return false;
         if (arrayOne.get(0) != arrayTwo.get(0)) return false;
 
-        Pair fst = partition(arrayOne);
-        Pair snd = partition(arrayTwo);
+        Pair one = partition(arrayOne);
+        Pair two = partition(arrayTwo);
 
-        return sameBsts(fst.arrayOne, snd.arrayOne) && sameBsts(fst.arrayTwo, snd.arrayTwo);
+        return sameBsts(one.lessArr, two.lessArr) && sameBsts(one.gtEqArr, two.gtEqArr);
     }
 
     private static Pair partition(List<Integer> array) {
-        List<Integer> fst = new ArrayList<>();
-        List<Integer> snd = new ArrayList<>();
+        List<Integer> lessArr = new ArrayList<>();
+        List<Integer> gtEqArr = new ArrayList<>();
+
         for (int i = 1; i < array.size(); i++) {
-            if (array.get(i) < array.get(0)) {
-                fst.add(array.get(i));
+            if (array.get(0) < array.get(i)) {
+                lessArr.add(array.get(i));
             } else {
-                snd.add(array.get(i));
+                gtEqArr.add(array.get(i));
             }
         }
-        return new Pair(fst, snd);
+
+        return new Pair(lessArr, gtEqArr);
     }
-
-    static class Pair {
-        List<Integer> arrayOne;
-        List<Integer> arrayTwo;
-
-        public Pair(List<Integer> arrayOne, List<Integer> arrayTwo) {
-            this.arrayOne = arrayOne;
-            this.arrayTwo = arrayTwo;
-        }
-    }
-
-
-// =======================================================================================================
 
     // O(n ^ 2) time | O(d) space
     public static boolean sameBsts1(List<Integer> arrayOne, List<Integer> arrayTwo) {
@@ -50,31 +48,34 @@ public class SameBSTs {
     }
 
     private static boolean areSameBsts(List<Integer> arrayOne, List<Integer> arrayTwo, int idxOne, int idxTwo, int minValue, int maxValue) {
-
         if (idxOne == -1 || idxTwo == -1) return idxOne == idxTwo;
         if (arrayOne.get(idxOne).intValue() != arrayTwo.get(idxTwo).intValue()) return false;
 
         int smallerIdxOne = getSmallerIdx(arrayOne, idxOne, minValue);
-        int greaterIdxOne = getBiggerOrEqualsIdx(arrayOne, idxOne, maxValue);
+        int greaterIdxOne = getGreaterOrEqualIdx(arrayOne, idxOne, maxValue);
         int smallerIdxTwo = getSmallerIdx(arrayTwo, idxTwo, minValue);
-        int greaterIdxTwo = getBiggerOrEqualsIdx(arrayTwo, idxTwo, maxValue);
+        int greaterIdxTwo = getGreaterOrEqualIdx(arrayTwo, idxTwo, maxValue);
 
+        int currValue = arrayOne.get(idxOne);
 
-        int curr = arrayOne.get(idxOne);
-        return areSameBsts(arrayOne, arrayTwo, smallerIdxOne, smallerIdxTwo, minValue, curr) &&
-                areSameBsts(arrayOne, arrayTwo, greaterIdxOne, greaterIdxTwo, curr, maxValue);
+        return areSameBsts(arrayOne, arrayTwo, smallerIdxOne, smallerIdxTwo, minValue, currValue) &&
+                areSameBsts(arrayOne, arrayTwo, greaterIdxOne, greaterIdxTwo, currValue, maxValue);
     }
 
-    private static int getSmallerIdx(List<Integer> array, int startIdx, int minVal) {
+    private static int getSmallerIdx(List<Integer> array, int startIdx, int minValue) {
         for (int i = startIdx + 1; i < array.size(); i++) {
-            if (array.get(startIdx) > array.get(i) && array.get(i) >= minVal) return i;
+            if (array.get(i) >= minValue && array.get(i) < array.get(startIdx)) {
+                return i;
+            }
         }
         return -1;
     }
 
-    private static int getBiggerOrEqualsIdx(List<Integer> array, int startIdx, int maxVal) {
+    private static int getGreaterOrEqualIdx(List<Integer> array, int startIdx, int maxValue) {
         for (int i = startIdx + 1; i < array.size(); i++) {
-            if (array.get(startIdx) <= array.get(i) && array.get(i) < maxVal) return i;
+            if (array.get(i) < maxValue && array.get(i) >= array.get(startIdx)) {
+                return i;
+            }
         }
         return -1;
     }

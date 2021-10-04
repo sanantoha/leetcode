@@ -1,6 +1,6 @@
 package dynamic;
 
-public class HouseRobber {
+public class HouseRobber2 {
 
     // O(n) time | O(n) space
     public static int rob(int[] arr) {
@@ -12,10 +12,9 @@ public class HouseRobber {
         dp[1] = Math.max(arr[0], arr[1]);
 
         for (int i = 2; i < arr.length; i++) {
-            dp[i] = Math.max(dp[i - 1], dp[i - 2] + arr[i]);
+            dp[i] = Math.max(arr[i] + dp[i - 2], dp[i - 1]);
         }
-
-        return dp[dp.length - 1];
+        return dp[arr.length - 1];
     }
 
     public static void main(String[] args) {
