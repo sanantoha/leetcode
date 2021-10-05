@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RotateImage
-            DijkstraShortestPaths
-            BinaryTreeDiameter
             BFSTreeTraverse
             LongestIncrSubSeq
             ThreeSum
@@ -88,6 +85,9 @@ public class Test {
             HouseRobber
             NodeDepths
             SameBSTs
+            RotateImage
+            DijkstraShortestPaths
+            BinaryTreeDiameter
          */
     }
 
