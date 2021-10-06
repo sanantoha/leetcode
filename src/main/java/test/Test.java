@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BFSTreeTraverse
-            LongestIncrSubSeq
-            ThreeSum
             WordSearch
             MinRewards
             TopologicalSortDFSCycleGraph
@@ -88,6 +85,9 @@ public class Test {
             RotateImage
             DijkstraShortestPaths
             BinaryTreeDiameter
+            BFSTreeTraverse
+            LongestIncrSubSeq
+            ThreeSum
          */
     }
 
