@@ -3,9 +3,7 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordSearch
-            MinRewards
-            TopologicalSortDFSCycleGraph
+            NumberOfWaysToMakeChange
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SortList
@@ -88,6 +86,9 @@ public class Test {
             BFSTreeTraverse
             LongestIncrSubSeq
             ThreeSum
+            WordSearch
+            MinRewards
+            TopologicalSortDFSCycleGraph
          */
     }
 

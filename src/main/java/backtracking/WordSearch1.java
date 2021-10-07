@@ -2,6 +2,7 @@ package backtracking;
 
 public class WordSearch1 {
 
+    // O(n) time | O(n) space
     public static boolean exist(char[][] board, String word) {
         if (board == null || board.length == 0) return false;
 

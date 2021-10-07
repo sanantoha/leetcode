@@ -6,6 +6,7 @@ import java.util.List;
 
 public class MinRewards {
 
+    // O(n ^ 2) time | O(n) space
     public static int minRewards(int[] scores) {
         if (scores == null || scores.length == 0) return 0;
         int[] rewards = new int[scores.length];
@@ -61,7 +62,7 @@ public class MinRewards {
         }
 
         for (int i = 0; i < scores.length; i++) {
-            if (i == 0 && scores[i] > scores[i + 1]) lowerIdxs.add(i);
+            if (i == 0 && scores[i] < scores[i + 1]) lowerIdxs.add(i);
             if (i == scores.length - 1 && scores[i - 1] > scores[i]) lowerIdxs.add(i);
             if (i == 0 || i == scores.length - 1) continue;
             if (scores[i - 1] > scores[i] && scores[i] < scores[i + 1]) lowerIdxs.add(i);
