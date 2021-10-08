@@ -11,9 +11,11 @@ public class Test {
             LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
+            LevenshteinDistance
             PrimMinSpanningTree
             KthSmallestElementInArray
             ProductOfArrayExceptSelf
+            BestTimeToBuyAndSellStock
             CountingSort
             ReverseInteger
             BinarySearch
