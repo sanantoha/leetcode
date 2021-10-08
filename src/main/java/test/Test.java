@@ -3,11 +3,9 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NumberOfWaysToMakeChange
-            ValidIPAddress
-            PopulatingNextRightPointerInEachNode
             SortList
             FirstDuplicateValue
+            MinNumberOfCoinsForChange
             BSTSuccessorSearch
             AStarAlgo
             LongestDecrSubseq
@@ -89,6 +87,9 @@ public class Test {
             WordSearch
             MinRewards
             TopologicalSortDFSCycleGraph
+            NumberOfWaysToMakeChange
+            ValidIPAddress
+            PopulatingNextRightPointerInEachNode
          */
     }
 

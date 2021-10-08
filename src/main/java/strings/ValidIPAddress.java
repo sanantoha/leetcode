@@ -5,6 +5,7 @@ import java.util.List;
 
 public class ValidIPAddress {
 
+    // O(1) time | O(1) space - because length of valid string is short not more than 12 (ip pattern: xxx.xxx.xxx.xxx)
     public static List<String> validIPAddresses(String string) {
         List<String> result = new ArrayList<>();
 

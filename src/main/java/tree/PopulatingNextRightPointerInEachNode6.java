@@ -3,7 +3,7 @@ package tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class PopulatingNextRightPointerInEachNode {
+public class PopulatingNextRightPointerInEachNode6 {
 
     // O(n) time | O(1) space
     public static Node connect(Node root) {
@@ -24,15 +24,11 @@ public class PopulatingNextRightPointerInEachNode {
                 }
                 prev = curr;
 
-                if (curr.left != null) {
-                    queue.add(curr.left);
-                }
-
-                if (curr.right != null) {
-                    queue.add(curr.right);
-                }
+                if (curr.left != null) queue.add(curr.left);
+                if (curr.right != null) queue.add(curr.right);
             }
         }
+
         return root;
     }
 
