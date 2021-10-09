@@ -6,6 +6,7 @@ package array;
  */
 public class FirstDuplicateValue {
 
+    // O(n) time | O(1) space
     public static int firstDuplicateValue(int[] array) {
         if (array == null || array.length == 0) return -1;
 
