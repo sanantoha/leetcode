@@ -13,26 +13,28 @@ public class BSTSuccessorSearch {
         }
     }
 
-    static Node findInOrderSuccessor(Node node) {
-        Node result = null;
+    // O(h) time | O(1) space
+    public static Node findInOrderSuccessor(Node node) {
+        if (node == null) return null;
         if (node.right != null) {
-            Node curr = node.right;
-            while (curr != null) {
-                result = curr;
-                curr = curr.left;
-            }
-            return result;
+            return getLeftMostChild(node.right);
         }
+        return getRightMostParent(node);
+    }
 
-        Node parent = node.parent;
-        Node child = node;
-        while (parent != null) {
-            if (parent.left == child) return parent;
-            parent = parent.parent;
-            child = child.parent;
+    private static Node getRightMostParent(Node node) {
+        Node curr = node;
+        while (curr.parent != null && curr.parent.left != curr) {
+            curr = curr.parent;
         }
+        return curr.parent;
+    }
 
-        return null;
+    private static Node getLeftMostChild(Node node) {
+        if (node.left == null) {
+            return node;
+        }
+        return getLeftMostChild(node.left);
     }
 
     public static void main(String[] args) {

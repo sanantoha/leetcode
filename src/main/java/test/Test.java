@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BSTSuccessorSearch
-            AStarAlgo
-            LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
             LevenshteinDistance
@@ -92,6 +89,9 @@ public class Test {
             SortList
             FirstDuplicateValue
             MinNumberOfCoinsForChange
+            BSTSuccessorSearch
+            AStarAlgo
+            LongestDecrSubseq
          */
     }
 
