@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeZigzagLevelOrderTraverse
-            ReverseLinkedList
-            LevenshteinDistance
             PrimMinSpanningTree
             KthSmallestElementInArray
             ProductOfArrayExceptSelf
@@ -92,6 +89,9 @@ public class Test {
             BSTSuccessorSearch
             AStarAlgo
             LongestDecrSubseq
+            BinaryTreeZigzagLevelOrderTraverse
+            ReverseLinkedList
+            LevenshteinDistance
          */
     }
 
