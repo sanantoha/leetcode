@@ -90,6 +90,7 @@ public class PrimMinSpanningTree {
         }
     }
 
+    // O(E * log(V)) time | O(V) space
     public static Set<Edge> mst(EdgeWeightedGraph graph) {
         Set<Edge> res = new HashSet<>();
         int start = 0;

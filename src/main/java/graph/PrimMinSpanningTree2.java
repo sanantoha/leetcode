@@ -2,7 +2,7 @@ package graph;
 
 import java.util.*;
 
-public class PrimMinSpanningTree1 {
+public class PrimMinSpanningTree2 {
     public static void main(String[] args) {
         EdgeWeightedGraph graph = new EdgeWeightedGraph(6);
         graph.addEdge(new Edge(0, 1, 7.0));
@@ -60,15 +60,14 @@ public class PrimMinSpanningTree1 {
         int start = 0;
         visited[start] = true;
 
-        PriorityQueue<Pair> pq =
-                new PriorityQueue<>(graph.V(), Comparator.comparing(p -> p.edge.weight()));
+        PriorityQueue<Pair> pq = new PriorityQueue<>(graph.V(), Comparator.comparing(p -> p.edge.weight()));
         for (Edge edge : graph.adj(start)) {
             pq.add(new Pair(edge, start));
         }
 
-        int inTree = 1;
+        int inThree = 1;
 
-        while (!pq.isEmpty() && inTree < graph.V()) {
+        while (!pq.isEmpty() && inThree < graph.V()) {
             Pair pair = pq.remove();
             Edge minEdge = pair.edge;
             int to = minEdge.other(pair.from);
@@ -76,7 +75,7 @@ public class PrimMinSpanningTree1 {
             if (visited[to]) continue;
 
             visited[to] = true;
-            inTree++;
+            inThree++;
             res.add(minEdge);
 
             for (Edge edge : graph.adj(to)) {
@@ -84,7 +83,7 @@ public class PrimMinSpanningTree1 {
             }
         }
 
-        if (inTree < graph.V()) {
+        if (inThree < graph.V()) {
             return Collections.emptySet();
         }
 

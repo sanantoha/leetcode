@@ -3,10 +3,10 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PrimMinSpanningTree
             KthSmallestElementInArray
             ProductOfArrayExceptSelf
             BestTimeToBuyAndSellStock
+            KruskalMinSpanningTree
             CountingSort
             ReverseInteger
             BinarySearch
@@ -17,7 +17,7 @@ public class Test {
             BellmanFord
             GenerateParentheses
             LargestRange
-            KruskalMinSpanningTree
+            PrimMinSpanningTree
             PalindromeLinkedList
             SymmetricTree
             DFSTreeTraverse
