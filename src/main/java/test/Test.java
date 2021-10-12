@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KruskalMinSpanningTree
             CountingSort
             ReverseInteger
             BinarySearch
@@ -18,6 +17,7 @@ public class Test {
             PalindromeLinkedList
             SymmetricTree
             DFSTreeTraverse
+            KruskalMinSpanningTree
             DepthFirstSearch
             CycleLinkedList
             ReverseBinaryTree

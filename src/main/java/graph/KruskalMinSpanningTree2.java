@@ -5,60 +5,56 @@ import java.util.HashSet;
 import java.util.PriorityQueue;
 import java.util.Set;
 
-public class KruskalMinSpanningTree {
+public class KruskalMinSpanningTree2 {
 
-    // There is a way to impl. with O(E * log(E) + E * log(V)) time
-    // O(E * log(E) + V * log(E)) time | O(V + E) space
+    // O(V * log(E) + E * log(E)) time | O(E + V) space
     public static Set<Edge> mst(EdgeWeightedGraph graph) {
+        Set<Edge> res = new HashSet<>();
 
-        Set<Edge> mst = new HashSet<>();
+        int[] parents = makeSet(graph);
 
-        // O(E * log(E))
-        PriorityQueue<Edge> heap = new PriorityQueue<>(graph.E(), Comparator.comparing(Edge::weight));
+        PriorityQueue<Edge> pq = new PriorityQueue<>(graph.E(), Comparator.comparing(Edge::weight));
         for (Edge edge : graph.edges()) {
-            heap.add(edge);
+            pq.add(edge);
         }
 
-        int[] parent = makeSet(graph);
+        int cnt = 0;
+        while (cnt < graph.V() - 1) {
+            Edge minEdge = pq.remove();
+            int from = minEdge.either();
+            int to = minEdge.other(from);
 
-        int idx = 0;
-        while (idx < graph.V() - 1) { // O(V)
-            Edge minEdge = heap.remove(); // O(log(E))
-            int x = minEdge.either();
-            int y = minEdge.other(x);
-
-            int xSet = find(parent, x);
-            int ySet = find(parent, y);
-
-            if (xSet != ySet) {
-                mst.add(minEdge);
-                union(parent, xSet, ySet);
-                idx++;
+            int fromParent = find(parents, from);
+            int toParent = find(parents, to);
+            if (fromParent != toParent) {
+                union(parents, fromParent, toParent);
+                res.add(minEdge);
+                cnt++;
             }
         }
-        return mst;
+
+        return res;
     }
 
-    private static int[] makeSet(EdgeWeightedGraph graph) {
-        int[] parent = new int[graph.V()];
-        for (int i = 0; i < graph.V(); i++) {
-            parent[i] = i;
-        }
-        return parent;
+    private static void union(int[] parents, int v, int u) {
+        int vParent = find(parents, v);
+        int uParent = find(parents, u);
+        parents[uParent] = vParent;
     }
 
-    private static int find(int[] parent, int v) {
-        if (parent[v] != v) {
-            return find(parent, parent[v]);
+    private static int find(int[] parents, int v) {
+        if (parents[v] != v) {
+            return find(parents, parents[v]);
         }
         return v;
     }
 
-    private static void union(int[] parent, int x, int y) {
-        int xParent = find(parent, x);
-        int yParent = find(parent, y);
-
-        parent[yParent] = xParent;
+    private static int[] makeSet(EdgeWeightedGraph graph) {
+        int[] parents = new int[graph.V()];
+        for (int v = 0 ; v < graph.V(); v++) {
+            parents[v] = v;
+        }
+        return parents;
     }
 
     public static void main(String[] args) {
