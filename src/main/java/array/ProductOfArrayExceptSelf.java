@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class ProductOfArrayExceptSelf {
 
+    // O(n) time | O(n) space
     public int[] productExceptSelf(int[] nums) {
         int product = 1;
         int cntZero = 0;

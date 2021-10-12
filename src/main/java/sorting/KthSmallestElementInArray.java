@@ -22,6 +22,8 @@ public class KthSmallestElementInArray {
         System.out.println(Arrays.toString(arr));
     }
 
+    // Best, Average: O(n) time | O(log(n)) space
+    // Worst: O(n ^ 2) time | O(log(n)) space
     public static int findKthSmallest(int[] arr, int k) {
         return findKthSmallestRec(arr, 0, arr.length - 1, k);
     }

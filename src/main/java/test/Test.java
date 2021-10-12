@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KthSmallestElementInArray
-            ProductOfArrayExceptSelf
-            BestTimeToBuyAndSellStock
             KruskalMinSpanningTree
             CountingSort
             ReverseInteger
@@ -92,6 +89,9 @@ public class Test {
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
             LevenshteinDistance
+            KthSmallestElementInArray
+            ProductOfArrayExceptSelf
+            BestTimeToBuyAndSellStock
          */
     }
 
