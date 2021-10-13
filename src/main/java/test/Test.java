@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CountingSort
-            ReverseInteger
-            BinarySearch
             LowestCommonAncestorOfBinarySearchTree
             StaircaseTraversal
             SameTree
@@ -92,6 +89,9 @@ public class Test {
             KthSmallestElementInArray
             ProductOfArrayExceptSelf
             BestTimeToBuyAndSellStock
+            CountingSort
+            ReverseInteger
+            BinarySearch
          */
     }
 

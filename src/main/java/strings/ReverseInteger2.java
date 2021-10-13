@@ -1,22 +1,21 @@
 package strings;
 
-public class ReverseInteger {
+public class ReverseInteger2 {
 
     // O(1) time | O(1) space - because digit length is limited for int type
-    public static int reverse(int x) {
-        long result = 0;
+    public static int reverse(int n) {
+        long res = 0;
 
-        while (x != 0) {
-            result = result * 10 + x % 10;
-            if (result < Integer.MIN_VALUE || result > Integer.MAX_VALUE) return 0;
-            x /= 10;
+        while (n != 0) {
+            if (res < Integer.MIN_VALUE || res > Integer.MAX_VALUE) return 0;
+            res = res * 10 + n % 10;
+            n /= 10;
         }
 
-        return (int) result;
+        return (int) res;
     }
 
     public static void main(String[] args) {
-
         System.out.println(reverse(123));
 
         System.out.println(reverse(0));
