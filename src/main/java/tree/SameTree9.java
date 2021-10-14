@@ -5,14 +5,14 @@ import java.util.Queue;
 
 public class SameTree9 {
 
-    // O(t1 + t2) time | O(h1 + h2) space
+    // O(n) time | O(h) space
     public static boolean isSameTree(TreeNode t1, TreeNode t2) {
         if (t1 == null && t2 == null) return true;
         if (t1 == null || t2 == null) return false;
         return t1.val == t2.val && isSameTree(t1.left, t2.left) && isSameTree(t1.right, t2.right);
     }
 
-    // O(t1 + t2) time | O(h1 + h2) space
+    // O(n) time | O(h) space
     public static boolean isSameTreeIter(TreeNode t1, TreeNode t2) {
 
         Queue<TreeNode> queue = new LinkedList<>();
