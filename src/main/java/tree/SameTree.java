@@ -5,6 +5,7 @@ import java.util.Queue;
 
 public class SameTree {
 
+    // O(t1 + t2) time | O(h1 + h2) space
     public static boolean isSameTree0(TreeNode p, TreeNode q) {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(p);
@@ -28,6 +29,7 @@ public class SameTree {
         return true;
     }
 
+    // O(t1 + t2) time | O(h1 + h2) space
     public static boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) return true;
         if (p == null || q == null) return false;

@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LowestCommonAncestorOfBinarySearchTree
-            StaircaseTraversal
-            SameTree
             HeapSort
             BellmanFord
             GenerateParentheses
@@ -92,6 +89,9 @@ public class Test {
             CountingSort
             ReverseInteger
             BinarySearch
+            LowestCommonAncestorOfBinarySearchTree
+            StaircaseTraversal
+            SameTree
          */
     }
 
