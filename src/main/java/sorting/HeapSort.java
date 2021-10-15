@@ -43,6 +43,7 @@ public class HeapSort {
         }
     }
 
+    // O(n * log(n)) time | O(1) time
     public static void heapSort(int[] arr) {
         int size = arr.length - 1;
 

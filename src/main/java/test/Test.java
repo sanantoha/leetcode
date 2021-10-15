@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            HeapSort
-            BellmanFord
-            GenerateParentheses
             LargestRange
             PrimMinSpanningTree
             PalindromeLinkedList
@@ -33,6 +30,7 @@ public class Test {
             UniquePaths
             StringWithoutAAAorBBB
             Pow
+            BellmanFord
             SelectSort
             ValidateBinarySearchTree
             MergeSort
@@ -56,6 +54,7 @@ public class Test {
             CombinationSum
             LeftViewBinaryTree
             Permutations
+            GenerateParentheses // check the complexity
             DFSTreeTraverseRec
             SearchForRange
             BreadthSearchFirst
@@ -92,6 +91,7 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             StaircaseTraversal
             SameTree
+            HeapSort
          */
     }
 
