@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LargestRange
-            PrimMinSpanningTree
-            PalindromeLinkedList
             SymmetricTree
             DFSTreeTraverse
             KruskalMinSpanningTree
@@ -34,6 +31,7 @@ public class Test {
             SelectSort
             ValidateBinarySearchTree
             MergeSort
+            PrimMinSpanningTree
             CloneGraph
             Powerset
             FindClosestValueInBST
@@ -92,6 +90,8 @@ public class Test {
             StaircaseTraversal
             SameTree
             HeapSort
+            LargestRange
+            PalindromeLinkedList
          */
     }
 

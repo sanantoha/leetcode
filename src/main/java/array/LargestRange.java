@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class LargestRange {
 
+    // O(n * log(n)) time | O(1) space
     public static int[] largestRange(int[] array) {
         if (array == null || array.length == 0) return new int[] {};
 
@@ -33,6 +34,7 @@ public class LargestRange {
         return new int[] {startVal, endVal};
     }
 
+    // O(n) time | O(n) space
     public static int[] largestRange1(int[] array) {
         if (array == null || array.length == 0) return new int[] {};
 
