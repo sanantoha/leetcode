@@ -1,42 +1,35 @@
 package tree;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-public class DFSTreeTraverse {
+public class DFSTreeTraverse10 {
 
     // O(n) time | O(n) space
     public static List<Integer> preOrder(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
-        if (root == null) return result;
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
 
         Deque<TreeNode> stack = new LinkedList<>();
         stack.push(root);
 
         while (!stack.isEmpty()) {
             TreeNode curr = stack.pop();
+            res.add(curr.val);
 
-            result.add(curr.val);
-
-            if (curr.right != null) {
-                stack.push(curr.right);
-            }
-
-            if (curr.left != null) {
-                stack.push(curr.left);
-            }
+            if (curr.right != null) stack.push(curr.right);
+            if (curr.left != null) stack.push(curr.left);
         }
 
-        return result;
+        return res;
     }
 
     // O(n) time | O(n) space
     public static List<Integer> inOrder(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
-        if (root == null) return result;
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
 
         Deque<TreeNode> stack = new LinkedList<>();
         TreeNode curr = root;
@@ -49,41 +42,35 @@ public class DFSTreeTraverse {
 
             curr = stack.pop();
 
-            result.add(curr.val);
+            res.add(curr.val);
 
             curr = curr.right;
         }
 
-        return result;
+        return res;
     }
 
     // O(n) time | O(n) space
     public static List<Integer> postOrder(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
-        if (root == null) return result;
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
 
-        Deque<TreeNode> fstStack = new LinkedList<>();
-        Deque<TreeNode> sndStack = new LinkedList<>();
+        Deque<TreeNode> fst = new LinkedList<>();
+        fst.push(root);
+        Deque<TreeNode> snd = new LinkedList<>();
 
-        fstStack.push(root);
+        while (!fst.isEmpty()) {
+            TreeNode curr = fst.pop();
+            snd.push(curr);
 
-        while (!fstStack.isEmpty()) {
-            TreeNode curr = fstStack.pop();
-            sndStack.push(curr);
-
-            if (curr.left != null) {
-                fstStack.push(curr.left);
-            }
-
-            if (curr.right != null) {
-                fstStack.push(curr.right);
-            }
+            if (curr.left != null) fst.push(curr.left);
+            if (curr.right != null) fst.push(curr.right);
         }
 
-        while (!sndStack.isEmpty()) {
-            result.add(sndStack.pop().val);
+        while (!snd.isEmpty()) {
+            res.add(snd.pop().val);
         }
-        return result;
+        return res;
     }
 
     public static void main(String[] args) {

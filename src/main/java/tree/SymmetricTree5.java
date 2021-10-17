@@ -3,21 +3,7 @@ package tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class SymmetricTree {
-
-    // O(n) time | O(h) space
-    public static boolean isSymmetricRec(TreeNode root) {
-        if (root == null) return true;
-        return isMirror(root, root);
-    }
-
-    private static boolean isMirror(TreeNode l, TreeNode r) {
-        if (l == null && r == null) return true;
-        if (l == null || r == null) return false;
-        if (l.val != r.val) return false;
-
-        return isMirror(l.left, r.right) && isMirror(l.right, r.left);
-    }
+public class SymmetricTree5 {
 
     // O(n) time | O(n) time
     public static boolean isSymmetric(TreeNode root) {
@@ -28,18 +14,33 @@ public class SymmetricTree {
         queue.add(root.right);
 
         while (!queue.isEmpty()) {
-            TreeNode currL = queue.remove();
-            TreeNode currR = queue.remove();
-            if (currL == null && currR == null) continue;
-            if (currL == null || currR == null) return false;
-            if (currL.val != currR.val) return false;
-            queue.add(currL.left);
-            queue.add(currR.right);
-            queue.add(currL.right);
-            queue.add(currR.left);
-        }
+            TreeNode l = queue.remove();
+            TreeNode r = queue.remove();
 
+            if (l == null && r == null) continue;
+            if (l == null || r == null) return false;
+            if (l.val != r.val) return false;
+
+            queue.add(l.left);
+            queue.add(r.right);
+
+            queue.add(l.right);
+            queue.add(r.left);
+        }
         return true;
+    }
+
+    // O(n) time | O(h) space
+    public static boolean isSymmetricRec(TreeNode root) {
+        if (root == null) return true;
+        return isSymmetricRec(root.left, root.right);
+    }
+
+    private static boolean isSymmetricRec(TreeNode l, TreeNode r) {
+        if (l == null && r == null) return true;
+        if (l == null || r == null) return false;
+
+        return l.val == r.val && isSymmetricRec(l.left, r.right) && isSymmetricRec(l.right, r.left);
     }
 
     public static void main(String[] args) {
@@ -47,12 +48,12 @@ public class SymmetricTree {
                 new TreeNode(2,
                         new TreeNode(3),
                         new TreeNode(4)
-                            ),
+                ),
                 new TreeNode(2,
                         new TreeNode(4),
                         new TreeNode(3)
-                            )
-                );
+                )
+        );
 
         System.out.println(isSymmetric(root));
         System.out.println(isSymmetricRec(root));

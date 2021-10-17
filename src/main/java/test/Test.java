@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SymmetricTree
-            DFSTreeTraverse
-            KruskalMinSpanningTree
             DepthFirstSearch
             CycleLinkedList
             ReverseBinaryTree
@@ -39,6 +36,7 @@ public class Test {
             QuickSort
             AddTwoNumbers
             MergeIntervals
+            KruskalMinSpanningTree
             RiverSizes
             MedianOfTwoSortedArrays
             Sqrt
@@ -92,6 +90,8 @@ public class Test {
             HeapSort
             LargestRange
             PalindromeLinkedList
+            SymmetricTree
+            DFSTreeTraverse
          */
     }
 
