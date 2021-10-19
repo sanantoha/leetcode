@@ -4,6 +4,7 @@ import java.util.*;
 
 public class FourSum {
 
+    // O(n ^ 4) time | O(n ^ 2) space
     public static List<Integer[]> fourNumberSum(int[] array, int targetSum) {
         List<Integer[]> result = new ArrayList<>();
         if (array == null || array.length < 4) return result;
@@ -23,6 +24,8 @@ public class FourSum {
         return result;
     }
 
+    // Avg: O(n ^ 2) time | O(n ^ 2) space
+    // Worst: O(n ^ 3) time | O(n ^ 2) space
     public static List<Integer[]> fourNumberSum1(int[] array, int targetSum) {
         List<Integer[]> result = new ArrayList<>();
         if (array == null || array.length < 4) return result;

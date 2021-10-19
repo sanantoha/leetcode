@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FourSum
-            SortKSortedArray
-            InsertSort
             PalindromicSubstrings
             ReverseString
             LowestCommonAncestorOfBinaryTree
@@ -59,6 +56,7 @@ public class Test {
             BinaryTreeDiameter
             BFSTreeTraverse
             LongestIncrSubSeq
+            SortKSortedArray
             ThreeSum
             WordSearch
             MinRewards
@@ -92,6 +90,8 @@ public class Test {
             DepthFirstSearch
             CycleLinkedList
             ReverseBinaryTree
+            FourSum
+            InsertSort
          */
     }
 
