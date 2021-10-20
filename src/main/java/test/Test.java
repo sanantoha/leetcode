@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PalindromicSubstrings
-            ReverseString
-            LowestCommonAncestorOfBinaryTree
             SurroundedRegions
             RemoveNthNodeFromEndOfList
             ReverseWordsInString
@@ -62,6 +59,7 @@ public class Test {
             MinRewards
             TopologicalSortDFSCycleGraph
             NumberOfWaysToMakeChange
+            LowestCommonAncestorOfBinaryTree
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SortList
@@ -92,6 +90,8 @@ public class Test {
             ReverseBinaryTree
             FourSum
             InsertSort
+            PalindromicSubstrings
+            ReverseString
          */
     }
 

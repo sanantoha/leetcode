@@ -2,9 +2,13 @@ package strings;
 
 public class ReverseString {
 
+    // O(n) time | O(1) space
     public static void reverseString(char[] s) {
+        if (s == null || s.length == 0) return;
+
         int l = 0;
         int r = s.length - 1;
+
         while (l < r) {
             char tmp = s[l];
             s[l] = s[r];
