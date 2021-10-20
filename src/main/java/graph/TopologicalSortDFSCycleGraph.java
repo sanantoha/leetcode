@@ -18,6 +18,7 @@ public class TopologicalSortDFSCycleGraph {
         System.out.println(Arrays.toString(sort(digraph)));
     }
 
+    // O(E + V) time | O(V) space
     public static int[] sort(Digraph digraph) {
 
         int[] visited = new int[digraph.V()];
