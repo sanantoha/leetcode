@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SurroundedRegions
-            RemoveNthNodeFromEndOfList
-            ReverseWordsInString
             MaximumSubarray
             SpiralMatrixTraverse
             DeleteNodeInLinkedList
@@ -58,8 +55,10 @@ public class Test {
             WordSearch
             MinRewards
             TopologicalSortDFSCycleGraph
+            ReverseWordsInString
             NumberOfWaysToMakeChange
             LowestCommonAncestorOfBinaryTree
+            RemoveNthNodeFromEndOfList
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SortList
@@ -92,6 +91,7 @@ public class Test {
             InsertSort
             PalindromicSubstrings
             ReverseString
+            SurroundedRegions
          */
     }
 

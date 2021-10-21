@@ -2,6 +2,7 @@ package list;
 
 public class RemoveNthNodeFromEndOfList {
 
+    // O(n) time | O(1) space
     public static ListNode removeNthFromEnd(ListNode head, int n) {
 
         ListNode dummy = new ListNode();

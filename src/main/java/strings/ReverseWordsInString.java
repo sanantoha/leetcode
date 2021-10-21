@@ -2,6 +2,7 @@ package strings;
 
 public class ReverseWordsInString {
 
+    // O(n) time | O(n) space
     public static String reverseWords(String s) {
         if (s == null || s.isEmpty()) return "";
 
@@ -25,6 +26,7 @@ public class ReverseWordsInString {
         return sb.substring(0, sb.length() - 1);
     }
 
+    // O(n) time | O(n) space
     public static String reverseWordsInString(String string) {
         char[] chars = string.toCharArray();
         reverseSubStr(chars, 0, chars.length - 1);
