@@ -1,12 +1,15 @@
 package list;
 
-public class DeleteNodeInLinkedList {
+public class DeleteNodeInLinkedList2 {
 
     // O(n) time | O(1) space
     public static void deleteNode(ListNode node) {
+        if (node == null) return;
+
         ListNode curr = node;
 
         while (curr != null) {
+
             ListNode next = curr.next;
             if (next != null) {
                 curr.val = next.val;
@@ -14,6 +17,7 @@ public class DeleteNodeInLinkedList {
                     curr.next = null;
                 }
             }
+
             curr = next;
         }
     }

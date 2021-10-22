@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MaximumSubarray
-            SpiralMatrixTraverse
-            DeleteNodeInLinkedList
             PhoneNumberMnemonic
             IntersectionLinkedList
             LRUCache
@@ -15,6 +12,7 @@ public class Test {
             BellmanFord
             SelectSort
             ValidateBinarySearchTree
+            MinimumPassesOfMatrix
             MergeSort
             PrimMinSpanningTree
             CloneGraph
@@ -92,6 +90,9 @@ public class Test {
             PalindromicSubstrings
             ReverseString
             SurroundedRegions
+            MaximumSubarray
+            SpiralMatrixTraverse
+            DeleteNodeInLinkedList
          */
     }
 

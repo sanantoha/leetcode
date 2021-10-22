@@ -2,6 +2,7 @@ package dynamic;
 
 public class MaximumSubarray {
 
+    // O(n) time | O(1) space
     public static int maxSubArray(int[] arr) {
         if (arr == null || arr.length == 0) return 0;
 
