@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PhoneNumberMnemonic
-            IntersectionLinkedList
-            LRUCache
             UniquePaths
             StringWithoutAAAorBBB
             Pow
@@ -93,6 +90,9 @@ public class Test {
             MaximumSubarray
             SpiralMatrixTraverse
             DeleteNodeInLinkedList
+            PhoneNumberMnemonic
+            IntersectionLinkedList
+            LRUCache
          */
     }
 }
