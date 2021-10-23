@@ -14,6 +14,7 @@ public class Test {
             PrimMinSpanningTree
             CloneGraph
             Powerset
+            ValidateStartingCity
             FindClosestValueInBST
             MinHeap
             QuickSort
