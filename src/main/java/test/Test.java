@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePaths
-            StringWithoutAAAorBBB
-            Pow
             BellmanFord
             SelectSort
             ValidateBinarySearchTree
@@ -29,6 +26,7 @@ public class Test {
             SearchInRotatedSortedArray
             BranchSums
             StringPermutation
+            StringWithoutAAAorBBB
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
             CombinationSum
@@ -94,6 +92,8 @@ public class Test {
             PhoneNumberMnemonic
             IntersectionLinkedList
             LRUCache
+            UniquePaths
+            Pow
          */
     }
 }
