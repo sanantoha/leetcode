@@ -2,6 +2,7 @@ package tree;
 
 public class ValidateBinarySearchTree {
 
+    // O(n) time | O(h) space
     public static boolean isValidBST(TreeNode node, long min, long max) {
         if (node == null) return true;
         // condition depends on BST property: left node is less and right is less or equal the root node.

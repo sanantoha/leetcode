@@ -3,18 +3,19 @@ package sorting;
 import java.util.Arrays;
 import java.util.Random;
 
-public class SelectSort {
+public class SelectSort5 {
 
     // O(n ^ 2) time | O(1) space
     public static void selectSort(int[] arr) {
-        for (int i = 0; i < arr.length - 1; i++) {
+
+        for (int i = 0; i < arr.length; i++) {
             int min = i;
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[min] > arr[j]) {
+                if (arr[j] < arr[min]) {
                     min = j;
                 }
             }
-            swap(arr, min, i);
+            if (i != min) swap(arr, i, min);
         }
     }
 
@@ -25,7 +26,7 @@ public class SelectSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[30];
+        int[] arr = new int[10];
         Random rand = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = rand.nextInt(100);

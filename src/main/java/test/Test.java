@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BellmanFord
-            SelectSort
-            ValidateBinarySearchTree
             MinimumPassesOfMatrix
             MergeSort
             PrimMinSpanningTree
@@ -57,6 +54,7 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             SortList
             FirstDuplicateValue
+            BellmanFord
             MinNumberOfCoinsForChange
             BSTSuccessorSearch
             AStarAlgo
@@ -94,6 +92,8 @@ public class Test {
             LRUCache
             UniquePaths
             Pow
+            SelectSort
+            ValidateBinarySearchTree
          */
     }
 }
