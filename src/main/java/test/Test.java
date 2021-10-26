@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinimumPassesOfMatrix
-            MergeSort
-            PrimMinSpanningTree
             CloneGraph
             Powerset
             ValidateStartingCity
@@ -56,11 +53,13 @@ public class Test {
             FirstDuplicateValue
             BellmanFord
             MinNumberOfCoinsForChange
+            MinimumPassesOfMatrix
             BSTSuccessorSearch
             AStarAlgo
             LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
+            PrimMinSpanningTree
             LevenshteinDistance
             KthSmallestElementInArray
             ProductOfArrayExceptSelf
@@ -94,6 +93,7 @@ public class Test {
             Pow
             SelectSort
             ValidateBinarySearchTree
+            MergeSort
          */
     }
 }

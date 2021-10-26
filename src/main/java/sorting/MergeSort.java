@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class MergeSort {
 
+    // O(n * log(n)) time | O(n) space
     public static int[] mergeSort(int[] array) {
         int[] result = array.clone();
         sort(array, 0, array.length - 1, result);
