@@ -1,14 +1,10 @@
 package graph;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
-import java.util.Queue;
 
-public class CloneGraph {
-
+public class CloneGraph10 {
+    
     static class Node {
         public int val;
         public List<Node> neighbors;
@@ -26,34 +22,8 @@ public class CloneGraph {
         }
     }
 
-    // O(V + E) time | O(V) space
     public static Node cloneGraph(Node node) {
-        if (node == null) return null;
-
-        Map<Node, Node> map = new HashMap<>();
-        map.put(node, new Node(node.val));
-
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(node);
-
-        while (!queue.isEmpty()) {
-            Node curr = queue.remove();
-            Node currClone = map.get(curr);
-
-            for (Node v : curr.neighbors) {
-                Node vClone;
-                if (map.containsKey(v)) {
-                    vClone = map.get(v);
-                } else {
-                    queue.add(v);
-                    vClone = new Node(v.val);
-                    map.put(v, vClone);
-                }
-                currClone.neighbors.add(vClone);
-            }
-        }
-
-        return map.get(node);
+        return null;
     }
 
     public static void main(String[] args) {

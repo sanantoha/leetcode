@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CloneGraph
-            Powerset
-            ValidateStartingCity
             FindClosestValueInBST
             MinHeap
             QuickSort
@@ -59,6 +56,7 @@ public class Test {
             LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
+            ValidateStartingCity
             PrimMinSpanningTree
             LevenshteinDistance
             KthSmallestElementInArray
@@ -94,6 +92,8 @@ public class Test {
             SelectSort
             ValidateBinarySearchTree
             MergeSort
+            CloneGraph
+            Powerset
          */
     }
 }

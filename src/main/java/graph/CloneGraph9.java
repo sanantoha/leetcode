@@ -1,13 +1,8 @@
 package graph;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 
-public class CloneGraph {
+public class CloneGraph9 {
 
     static class Node {
         public int val;
@@ -38,24 +33,21 @@ public class CloneGraph {
 
         while (!queue.isEmpty()) {
             Node curr = queue.remove();
-            Node currClone = map.get(curr);
-
+            Node cCopy = map.get(curr);
             for (Node v : curr.neighbors) {
-                Node vClone;
-                if (map.containsKey(v)) {
-                    vClone = map.get(v);
-                } else {
+                Node vCopy = map.get(v);
+                if (vCopy == null) {
+                    vCopy = new Node(v.val);
+                    map.put(v, vCopy);
                     queue.add(v);
-                    vClone = new Node(v.val);
-                    map.put(v, vClone);
                 }
-                currClone.neighbors.add(vClone);
+                cCopy.neighbors.add(vCopy);
             }
         }
 
         return map.get(node);
     }
-
+    
     public static void main(String[] args) {
         Node n1 = new Node(1);
         Node n2 = new Node(2);

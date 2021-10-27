@@ -11,6 +11,7 @@ public class Powerset {
         System.out.println(powersetRec(arr));
     }
 
+    // O(n * 2 ^ n) time | O(n * 2 ^ n) space
     public static List<List<Integer>> powerset(int[] arr) {
         List<List<Integer>> result = new ArrayList<>();
         result.add(new ArrayList<>());
@@ -29,6 +30,7 @@ public class Powerset {
         return result;
     }
 
+    // O(n * 2 ^ n) time | O(n * 2 ^ n) space
     public static List<List<Integer>> powersetRec(int[] arr) {
         return powersetRecursion(arr, arr.length - 1);
     }
