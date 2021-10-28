@@ -3,15 +3,13 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FindClosestValueInBST
-            MinHeap
-            QuickSort
             AddTwoNumbers
             MergeIntervals
             KruskalMinSpanningTree
             RiverSizes
             MedianOfTwoSortedArrays
             Sqrt
+            FindClosestValueInBST
             ClimbingStairs
             LongestNonDecrSubseq
             SearchInRotatedSortedArray
@@ -94,6 +92,8 @@ public class Test {
             MergeSort
             CloneGraph
             Powerset
+            MinHeap
+            QuickSort
          */
     }
 }
