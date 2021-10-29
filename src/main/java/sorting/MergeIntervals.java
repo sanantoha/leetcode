@@ -8,6 +8,7 @@ import java.util.List;
 
 public class MergeIntervals {
 
+    // O(n) time | O(n) space
     public static int[][] merge(int[][] intervals) {
         if (intervals.length <= 1) return intervals;
 
@@ -34,6 +35,7 @@ public class MergeIntervals {
         return res.toArray(new int[0][0]);
     }
 
+    // O(n) time | O(n) space
     public static int[][] merge1(int[][] intervals) {
         if (intervals.length <= 1) return intervals;
 

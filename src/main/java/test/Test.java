@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AddTwoNumbers
-            MergeIntervals
-            KruskalMinSpanningTree
             RiverSizes
             MedianOfTwoSortedArrays
             Sqrt
@@ -59,6 +56,7 @@ public class Test {
             LevenshteinDistance
             KthSmallestElementInArray
             ProductOfArrayExceptSelf
+            KruskalMinSpanningTree
             BestTimeToBuyAndSellStock
             CountingSort
             ReverseInteger
@@ -94,6 +92,8 @@ public class Test {
             Powerset
             MinHeap
             QuickSort
+            AddTwoNumbers
+            MergeIntervals
          */
     }
 }
