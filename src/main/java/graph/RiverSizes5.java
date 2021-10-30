@@ -3,8 +3,8 @@ package graph;
 import java.util.ArrayList;
 import java.util.List;
 
+public class RiverSizes5 {
 
-public class RiverSizes {
     // O(w * h) time | O(w * h) space
     public static List<Integer> riverSizes(int[][] matrix) {
         List<Integer> res = new ArrayList<>();
@@ -56,7 +56,7 @@ public class RiverSizes {
                 {1, 0, 1, 0, 1},
                 {1, 0, 1, 1, 0}
         };
-        // [2, 1, 5, 2, 2]
+
         System.out.println(riverSizes(matrix));
     }
 }

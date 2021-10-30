@@ -22,6 +22,7 @@ public class MedianOfTwoSortedArrays {
         return result;
     }
 
+    // O(n) time | O(n) space
     public static double median(int[] arr1, int[] arr2) {
         int[] merged;
         if (arr1 == null && arr2 == null) return 0d;
@@ -36,6 +37,7 @@ public class MedianOfTwoSortedArrays {
         } else return merged[merged.length / 2]; // O(1)
     }
 
+    // O(log(n)) time | O(1) space
     public static double median1(int[] arr1, int[] arr2) {
         if (arr1 == null && arr2 == null) return 0d;
 

@@ -2,6 +2,7 @@ package math;
 
 public class Sqrt {
 
+    // O(log(n)) time | O(1) space
     public static int mySqrt(int x) {
         if (x < 0) return -1;
 

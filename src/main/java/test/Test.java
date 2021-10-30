@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RiverSizes
-            MedianOfTwoSortedArrays
-            Sqrt
             FindClosestValueInBST
             ClimbingStairs
             LongestNonDecrSubseq
@@ -76,6 +73,7 @@ public class Test {
             InsertSort
             PalindromicSubstrings
             ReverseString
+            MedianOfTwoSortedArrays
             SurroundedRegions
             MaximumSubarray
             SpiralMatrixTraverse
@@ -94,6 +92,8 @@ public class Test {
             QuickSort
             AddTwoNumbers
             MergeIntervals
+            RiverSizes
+            Sqrt
          */
     }
 }
