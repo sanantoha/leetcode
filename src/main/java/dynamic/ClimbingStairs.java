@@ -8,6 +8,7 @@ package dynamic;
 
 public class ClimbingStairs {
 
+    // O(n) time | O(n) space
     public static int climbStairsDP(int n) {
         if (n == 0) return 0;
         if (n == 1) return 1;

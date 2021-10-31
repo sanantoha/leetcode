@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FindClosestValueInBST
-            ClimbingStairs
-            LongestNonDecrSubseq
             SearchInRotatedSortedArray
             BranchSums
             StringPermutation
@@ -94,6 +91,9 @@ public class Test {
             MergeIntervals
             RiverSizes
             Sqrt
+            FindClosestValueInBST
+            ClimbingStairs
+            LongestNonDecrSubseq
          */
     }
 }
