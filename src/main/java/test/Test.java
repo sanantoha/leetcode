@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchInRotatedSortedArray
-            BranchSums
-            StringPermutation
             StringWithoutAAAorBBB
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
@@ -59,6 +56,7 @@ public class Test {
             StaircaseTraversal
             SameTree
             HeapSort
+            BranchSums
             LargestRange
             PalindromeLinkedList
             SymmetricTree
@@ -81,6 +79,7 @@ public class Test {
             UniquePaths
             Pow
             SelectSort
+            SearchInRotatedSortedArray
             ValidateBinarySearchTree
             MergeSort
             CloneGraph
@@ -94,6 +93,7 @@ public class Test {
             FindClosestValueInBST
             ClimbingStairs
             LongestNonDecrSubseq
+            StringPermutation
          */
     }
 }
