@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StringWithoutAAAorBBB
-            ZigZagTraverse
-            FirstPermutationIsSubstrSecondStr
             CombinationSum
             LeftViewBinaryTree
             Permutations
@@ -58,6 +55,7 @@ public class Test {
             HeapSort
             BranchSums
             LargestRange
+            StringWithoutAAAorBBB
             PalindromeLinkedList
             SymmetricTree
             DFSTreeTraverse
@@ -94,6 +92,8 @@ public class Test {
             ClimbingStairs
             LongestNonDecrSubseq
             StringPermutation
+            ZigZagTraverse
+            FirstPermutationIsSubstrSecondStr
          */
     }
 }

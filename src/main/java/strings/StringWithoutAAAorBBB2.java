@@ -2,8 +2,40 @@ package strings;
 
 public class StringWithoutAAAorBBB2 {
 
+    // O(a + b) time | O(a + b) space
     public static String stringWithoutAAAorBBB(int a, int b) {
-        return null;
+        StringBuilder res = new StringBuilder();
+
+        while (a > 0 && b > 0) {
+            if (a > b) {
+                res.append("aa").append("b");
+                a -= 2;
+                b--;
+            } else {
+                if (a == b && a == 1) {
+                    res.append("a").append("b");
+                    a--;
+                    b--;
+                    break;
+                }
+
+                res.append("a").append("bb");
+                a--;
+                b -= 2;
+            }
+        }
+
+        while (a > 0) {
+            res.append("a");
+            a--;
+        }
+
+        while (b > 0) {
+            res.insert(0, "b");
+            b--;
+        }
+
+        return res.toString();
     }
 
     public static void main(String[] args) {
