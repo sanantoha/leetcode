@@ -5,20 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-/**
- * left view of binary tree
- *          1
- *        /   \
- *       2     3
- *           /  \
- *          4    8
- *        /  \
- *       5    6
- *             \
- *              7
- *  output: [1, 2, 4, 5, 7]
- */
-public class LeftViewBinaryTree {
+public class LeftViewBinaryTree2 {
 
     // O(n) time | O(n) space
     public static List<Integer> leftView(TreeNode root) {
@@ -31,22 +18,36 @@ public class LeftViewBinaryTree {
         while (!queue.isEmpty()) {
             int size = queue.size();
 
-            boolean isFirstElem = true;
+            boolean isFstFromLeft = false;
 
             while (size-- > 0) {
                 TreeNode curr = queue.remove();
-                if (isFirstElem) {
+                if (!isFstFromLeft) {
                     res.add(curr.val);
-                    isFirstElem = false;
+                    isFstFromLeft = true;
                 }
 
                 if (curr.left != null) queue.add(curr.left);
                 if (curr.right != null) queue.add(curr.right);
             }
         }
+
         return res;
     }
 
+    /**
+     * left view of binary tree
+     *          1
+     *        /   \
+     *       2     3
+     *           /  \
+     *          4    8
+     *        /  \
+     *       5    6
+     *             \
+     *              7
+     *  output: [1, 2, 4, 5, 7]
+     */
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1,
                 new TreeNode(2),

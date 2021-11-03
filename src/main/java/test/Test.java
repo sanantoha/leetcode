@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CombinationSum
-            LeftViewBinaryTree
-            Permutations
             GenerateParentheses // check the complexity
             DFSTreeTraverseRec
             SearchForRange
@@ -64,6 +61,7 @@ public class Test {
             ReverseBinaryTree
             FourSum
             InsertSort
+            CombinationSum
             PalindromicSubstrings
             ReverseString
             MedianOfTwoSortedArrays
@@ -76,6 +74,7 @@ public class Test {
             LRUCache
             UniquePaths
             Pow
+            LeftViewBinaryTree
             SelectSort
             SearchInRotatedSortedArray
             ValidateBinarySearchTree
@@ -94,6 +93,7 @@ public class Test {
             StringPermutation
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
+            Permutations
          */
     }
 }

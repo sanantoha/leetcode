@@ -6,6 +6,11 @@ import java.util.List;
 
 public class CombinationSum {
 
+    // O(N ^ (M / T + 1)) time | O(T / M) space
+    // where N is the number of candidates, M is the smallest candidate among all the given integers,
+    // and T is the target value.
+    // Thus the time complexity is exponential and this is expected because the algorithm is
+    // recursive backtracking.
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
         backtracking(candidates, target, 0, new ArrayList<>(), res);
