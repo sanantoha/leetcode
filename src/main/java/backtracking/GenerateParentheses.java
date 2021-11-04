@@ -15,7 +15,7 @@ public class GenerateParentheses {
         if (close < open) backtracking(result, answer + ')', open, close + 1, maxInd);
     }
 
-    // O((4 ^ n)/sqrt(n)) time | O(n) space // found in leetcode https://leetcode.com/problems/generate-parentheses/solution/
+    // O((4 ^ n) / sqrt(n)) time | O((4 ^ n) / sqrt(n)) space // found in leetcode https://leetcode.com/problems/generate-parentheses/solution/
     public static List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
         backtracking(result, "", 0,0, n);

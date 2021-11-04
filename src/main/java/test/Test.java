@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            GenerateParentheses // check the complexity
-            DFSTreeTraverseRec
-            SearchForRange
             BreadthSearchFirst
             HouseRobber
             NodeDepths
@@ -60,6 +57,7 @@ public class Test {
             CycleLinkedList
             ReverseBinaryTree
             FourSum
+            SearchForRange
             InsertSort
             CombinationSum
             PalindromicSubstrings
@@ -94,6 +92,8 @@ public class Test {
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
             Permutations
+            GenerateParentheses
+            DFSTreeTraverseRec
          */
     }
 }
