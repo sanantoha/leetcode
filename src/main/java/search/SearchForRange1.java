@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class SearchForRange1 {
 
+    // O(log(n)) time | O(1) space
     public static int[] searchRange(int[] arr, int target) {
         if (arr == null || arr.length == 0) return new int[] {-1, -1};
         int l = leftBinarySearch(arr, target);
