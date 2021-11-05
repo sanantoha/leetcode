@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BreadthSearchFirst
-            HouseRobber
-            NodeDepths
             SameBSTs
             RotateImage
             DijkstraShortestPaths
@@ -29,6 +26,7 @@ public class Test {
             MinNumberOfCoinsForChange
             MinimumPassesOfMatrix
             BSTSuccessorSearch
+            NodeDepths
             AStarAlgo
             LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse
@@ -94,6 +92,8 @@ public class Test {
             Permutations
             GenerateParentheses
             DFSTreeTraverseRec
+            BreadthSearchFirst
+            HouseRobber
          */
     }
 }

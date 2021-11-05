@@ -3,18 +3,7 @@ package tree;
 import java.util.Deque;
 import java.util.LinkedList;
 
-/**
- *  Write function that takes in a Binary Tree and return the sum of its node's depths.
- *  https://www.algoexpert.io/questions/Node%20Depths
- *            1
- *          /   \
- *         2     3
- *       /  \  /  \
- *     4    5 6    7
- *   / \
- *  8   9
- */
-public class NodeDepths {
+public class NodeDepths2 {
 
     static class Pair {
         TreeNode node;
@@ -28,25 +17,25 @@ public class NodeDepths {
 
     // O(n) time | O(h) space
     public static int nodeDepths(TreeNode root) {
-        int sumOfDepths = 0;
 
         Deque<Pair> stack = new LinkedList<>();
         stack.push(new Pair(root, 0));
+        int sumOfDepth = 0;
 
         while (!stack.isEmpty()) {
-            Pair p = stack.pop();
-            TreeNode curr = p.node;
-            int depth = p.depth;
+            Pair pair = stack.pop();
+            int depth = pair.depth;
+            TreeNode curr = pair.node;
+
             if (curr == null) continue;
 
-            sumOfDepths += depth;
+            sumOfDepth += depth;
 
             stack.push(new Pair(curr.left, depth + 1));
             stack.push(new Pair(curr.right, depth + 1));
         }
 
-
-        return sumOfDepths;
+        return sumOfDepth;
     }
 
     // O(n) time | O(h) space
