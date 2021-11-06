@@ -23,7 +23,7 @@ public class DijkstraShortestPaths {
         }
     }
 
-    // O(E + V * log(V)) time | O(V) space
+    // O((E + V) * log(V)) time | O(V) space
     private static ShortestPath shortestPath(EdgeWeightedDigraph graph, int start) {
 
         double[] shortest = new double[graph.V()];
@@ -38,7 +38,7 @@ public class DijkstraShortestPaths {
         queue.add(new DirectedEdge(0, start, 0d));
 
         while(!queue.isEmpty()) {
-            DirectedEdge minEdge = queue.poll();
+            DirectedEdge minEdge = queue.poll(); // log(V)
             for (DirectedEdge edge : graph.adj(minEdge.to())) {
                 relax(queue, edge, shortest, pred);
             }

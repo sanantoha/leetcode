@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SameBSTs
-            RotateImage
-            DijkstraShortestPaths
             BinaryTreeDiameter
             BFSTreeTraverse
             LongestIncrSubSeq
@@ -30,6 +27,7 @@ public class Test {
             AStarAlgo
             LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse
+            SameBSTs
             ReverseLinkedList
             ValidateStartingCity
             PrimMinSpanningTree
@@ -58,6 +56,7 @@ public class Test {
             SearchForRange
             InsertSort
             CombinationSum
+            RotateImage
             PalindromicSubstrings
             ReverseString
             MedianOfTwoSortedArrays
@@ -79,6 +78,7 @@ public class Test {
             Powerset
             MinHeap
             QuickSort
+            DijkstraShortestPaths
             AddTwoNumbers
             MergeIntervals
             RiverSizes

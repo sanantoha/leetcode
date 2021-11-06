@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class DijkstraShortestPaths3 {
 
-    // O(E + V * log(V)) time | O(V) space
+    // O((E + V) * log(V)) time | O(V) space
     public static ShortestPath findShortestPath(EdgeWeightedDigraph graph, int start) {
         double[] shortest = new double[graph.V()];
         int[] prev = new int[graph.V()];

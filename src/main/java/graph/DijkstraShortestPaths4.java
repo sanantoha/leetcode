@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class DijkstraShortestPaths4 {
 
     //ShortestPath{shortest=[0.0, 5.0, 8.0, 4.0, 7.0], pred=[-1, 3, 1, 0, 3]}
-    // O(E + V * log(V)) time | O(V) space
+    // O((E + V) * log(V)) time | O(V) space
     public static ShortestPath shortestPath(EdgeWeightedDigraph graph, int start) {
         double[] shortest = new double[graph.V()];
         int[] prev = new int[graph.V()];
