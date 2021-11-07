@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeDiameter
-            BFSTreeTraverse
-            LongestIncrSubSeq
             SortKSortedArray
             ThreeSum
             WordSearch
@@ -29,6 +26,7 @@ public class Test {
             BinaryTreeZigzagLevelOrderTraverse
             SameBSTs
             ReverseLinkedList
+            BinaryTreeDiameters
             ValidateStartingCity
             PrimMinSpanningTree
             LevenshteinDistance
@@ -94,6 +92,8 @@ public class Test {
             DFSTreeTraverseRec
             BreadthSearchFirst
             HouseRobber
+            BFSTreeTraverse
+            LongestIncrSubSeq
          */
     }
 }
