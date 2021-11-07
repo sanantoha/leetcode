@@ -58,6 +58,7 @@ public class Test {
             PalindromicSubstrings
             ReverseString
             MedianOfTwoSortedArrays
+            BalancedBrackets
             SurroundedRegions
             MaximumSubarray
             SpiralMatrixTraverse
