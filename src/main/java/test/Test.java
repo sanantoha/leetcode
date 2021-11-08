@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortKSortedArray
-            ThreeSum
-            WordSearch
             MinRewards
             TopologicalSortDFSCycleGraph
             ReverseWordsInString
@@ -79,12 +76,15 @@ public class Test {
             QuickSort
             DijkstraShortestPaths
             AddTwoNumbers
+            SortKSortedArray
+            ThreeSum
             MergeIntervals
             RiverSizes
             Sqrt
             FindClosestValueInBST
             ClimbingStairs
             LongestNonDecrSubseq
+            WordSearch
             StringPermutation
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr

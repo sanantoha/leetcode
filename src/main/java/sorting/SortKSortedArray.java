@@ -12,7 +12,7 @@ public class SortKSortedArray {
     public static int[] sortKSortedArray(int[] array, int k) {
         int idx = 0;
 
-        PriorityQueue<Integer> heap = new PriorityQueue<>();
+        PriorityQueue<Integer> heap = new PriorityQueue<>(k + 1);
         for (int i = 0; i < Math.min(k + 1, array.length); i++) heap.add(array[i]);
 
         for (int i = k + 1; i < array.length; i++) {

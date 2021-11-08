@@ -2,7 +2,7 @@ package backtracking;
 
 public class WordSearch1 {
 
-    // O(n) time | O(n) space
+    // O(n * 3 ^ l) time | O(l) space - where l is length of word and n is total amount of cells
     public static boolean exist(char[][] board, String word) {
         if (board == null || board.length == 0) return false;
 
