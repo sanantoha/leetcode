@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinRewards
-            TopologicalSortDFSCycleGraph
-            ReverseWordsInString
             NumberOfWaysToMakeChange
             LowestCommonAncestorOfBinaryTree
             RemoveNthNodeFromEndOfList
@@ -41,6 +38,7 @@ public class Test {
             BranchSums
             LargestRange
             StringWithoutAAAorBBB
+            TopologicalSortDFSCycleGraph
             PalindromeLinkedList
             SymmetricTree
             DFSTreeTraverse
@@ -60,6 +58,8 @@ public class Test {
             MaximumSubarray
             SpiralMatrixTraverse
             DeleteNodeInLinkedList
+            ReverseWordsInString
+            MinRewards
             PhoneNumberMnemonic
             IntersectionLinkedList
             LRUCache
