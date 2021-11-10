@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NumberOfWaysToMakeChange
-            LowestCommonAncestorOfBinaryTree
-            RemoveNthNodeFromEndOfList
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SortList
@@ -29,6 +26,7 @@ public class Test {
             KruskalMinSpanningTree
             BestTimeToBuyAndSellStock
             CountingSort
+            NumberOfWaysToMakeChange
             ReverseInteger
             BinarySearch
             LowestCommonAncestorOfBinarySearchTree
@@ -59,6 +57,7 @@ public class Test {
             SpiralMatrixTraverse
             DeleteNodeInLinkedList
             ReverseWordsInString
+            RemoveNthNodeFromEndOfList
             MinRewards
             PhoneNumberMnemonic
             IntersectionLinkedList
@@ -78,6 +77,7 @@ public class Test {
             AddTwoNumbers
             SortKSortedArray
             ThreeSum
+            LowestCommonAncestorOfBinaryTree
             MergeIntervals
             RiverSizes
             Sqrt
