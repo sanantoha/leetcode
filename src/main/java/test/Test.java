@@ -5,6 +5,7 @@ public class Test {
         /*
             FirstDuplicateValue
             BellmanFord
+            NextGreaterElement
             MinNumberOfCoinsForChange
             MinimumPassesOfMatrix
             BSTSuccessorSearch
