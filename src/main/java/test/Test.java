@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidIPAddress
-            PopulatingNextRightPointerInEachNode
-            SortList
             FirstDuplicateValue
             BellmanFord
             MinNumberOfCoinsForChange
@@ -95,6 +92,9 @@ public class Test {
             HouseRobber
             BFSTreeTraverse
             LongestIncrSubSeq
+            ValidIPAddress
+            PopulatingNextRightPointerInEachNode
+            SortList
          */
     }
 }
