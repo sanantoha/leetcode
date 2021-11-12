@@ -2,10 +2,8 @@ package test;
 
 public class Test {
     public static void main(String[] args) {
+        new Object();
         /*
-            FirstDuplicateValue
-            BellmanFord
-            NextGreaterElement
             MinNumberOfCoinsForChange
             MinimumPassesOfMatrix
             BSTSuccessorSearch
@@ -20,6 +18,7 @@ public class Test {
             PrimMinSpanningTree
             LevenshteinDistance
             KthSmallestElementInArray
+            NextGreaterElement
             ProductOfArrayExceptSelf
             KruskalMinSpanningTree
             BestTimeToBuyAndSellStock
@@ -27,6 +26,7 @@ public class Test {
             NumberOfWaysToMakeChange
             ReverseInteger
             BinarySearch
+            FirstDuplicateValue
             LowestCommonAncestorOfBinarySearchTree
             StaircaseTraversal
             SameTree
@@ -68,6 +68,7 @@ public class Test {
             ValidateBinarySearchTree
             MergeSort
             CloneGraph
+            BellmanFord
             Powerset
             MinHeap
             QuickSort
