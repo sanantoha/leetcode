@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class MinimumPassesOfMatrix {
 
-    // O(w * h) time | O(w * h)
+    // O(w * h) time | O(w * h) space
     public static int minimumPassesOfMatrix(int[][] matrix) {
         if (matrix == null || matrix.length == 0) return 0;
 

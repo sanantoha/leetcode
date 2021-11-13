@@ -2,11 +2,7 @@ package test;
 
 public class Test {
     public static void main(String[] args) {
-        new Object();
         /*
-            MinNumberOfCoinsForChange
-            MinimumPassesOfMatrix
-            BSTSuccessorSearch
             NodeDepths
             AStarAlgo
             LongestDecrSubseq
@@ -30,10 +26,12 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             StaircaseTraversal
             SameTree
+            MinNumberOfCoinsForChange
             HeapSort
             BranchSums
             LargestRange
             StringWithoutAAAorBBB
+            BSTSuccessorSearch
             TopologicalSortDFSCycleGraph
             PalindromeLinkedList
             SymmetricTree
@@ -58,6 +56,7 @@ public class Test {
             RemoveNthNodeFromEndOfList
             MinRewards
             PhoneNumberMnemonic
+            MinimumPassesOfMatrix
             IntersectionLinkedList
             LRUCache
             UniquePaths

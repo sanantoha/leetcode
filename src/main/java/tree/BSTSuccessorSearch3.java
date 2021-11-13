@@ -1,21 +1,13 @@
 package tree;
 
-public class BSTSuccessorSearch {
+import tree.BSTSuccessorSearch.Node;
 
-    public static class Node {
-        public int key;
-        public Node left;
-        public Node right;
-        public Node parent;
-
-        public Node(int key) {
-            this.key = key;
-        }
-    }
+public class BSTSuccessorSearch3 {
 
     // O(h) time | O(1) space
     public static Node findInOrderSuccessor(Node node) {
         if (node == null) return null;
+
         if (node.right != null) {
             return getLeftMostChild(node.right);
         }
@@ -39,13 +31,13 @@ public class BSTSuccessorSearch {
     }
 
     public static void main(String[] args) {
-        Node node5 = new Node(5);
-        Node node9 = new Node(9);
-        Node node11 = new Node(11);
-        Node node12 = new Node(12);
-        Node node14 = new Node(14);
-        Node node20 = new Node(20);
-        Node node25 = new Node(25);
+        BSTSuccessorSearch.Node node5 = new BSTSuccessorSearch.Node(5);
+        BSTSuccessorSearch.Node node9 = new BSTSuccessorSearch.Node(9);
+        BSTSuccessorSearch.Node node11 = new BSTSuccessorSearch.Node(11);
+        BSTSuccessorSearch.Node node12 = new BSTSuccessorSearch.Node(12);
+        BSTSuccessorSearch.Node node14 = new BSTSuccessorSearch.Node(14);
+        BSTSuccessorSearch.Node node20 = new BSTSuccessorSearch.Node(20);
+        BSTSuccessorSearch.Node node25 = new BSTSuccessorSearch.Node(25);
 
         node5.parent = node9;
 
@@ -65,7 +57,15 @@ public class BSTSuccessorSearch {
         node20.right = node25;
 
         node25.parent = node20;
-
+/*
+          20
+        /    \
+       9      25
+     /   \
+    5     12
+         /   \
+        11   14
+ */
 
         System.out.println(findInOrderSuccessor(node5).key == 9);
         System.out.println(findInOrderSuccessor(node9).key == 11);
