@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NodeDepths
-            AStarAlgo
-            LongestDecrSubseq
             BinaryTreeZigzagLevelOrderTraverse
             SameBSTs
             ReverseLinkedList
@@ -28,6 +25,7 @@ public class Test {
             SameTree
             MinNumberOfCoinsForChange
             HeapSort
+            NodeDepths
             BranchSums
             LargestRange
             StringWithoutAAAorBBB
@@ -43,6 +41,7 @@ public class Test {
             SearchForRange
             InsertSort
             CombinationSum
+            LongestDecrSubseq
             RotateImage
             PalindromicSubstrings
             ReverseString
@@ -52,6 +51,7 @@ public class Test {
             MaximumSubarray
             SpiralMatrixTraverse
             DeleteNodeInLinkedList
+            AStarAlgo
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
             MinRewards

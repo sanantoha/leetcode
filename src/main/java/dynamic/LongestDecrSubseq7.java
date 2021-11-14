@@ -2,7 +2,7 @@ package dynamic;
 
 import java.util.*;
 
-public class LongestDescSubseq7 {
+public class LongestDecrSubseq7 {
 
     // O(n ^ 2) time | O(n) space
     public static int lds(int[] arr) {
