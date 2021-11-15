@@ -3,7 +3,19 @@ package list;
 public class ReverseLinkedList2 {
 
     public static ListNode reverse(ListNode head) {
-        return null;
+
+        ListNode next = null;
+        ListNode curr = head;
+        ListNode prev = null;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        return prev;
     }
 
     public static void main(String[] args) {

@@ -3,14 +3,19 @@ package tree;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class SameBSTs {
 
     // O(n ^ 2) time | O(n ^ 2) space
     public static boolean sameBsts(List<Integer> arrayOne, List<Integer> arrayTwo) {
-        if ((arrayOne == null || arrayOne.size() == 0) && (arrayTwo == null || arrayTwo.size() == 0)) return true;
+        if (arrayOne == null && arrayTwo == null) return true;
+        if (arrayOne == null || arrayTwo == null) return false;
+        if (arrayOne.size() == 0 && arrayTwo.size() == 0) {
+            return true;
+        }
         if (arrayOne.size() != arrayTwo.size()) return false;
-        if (arrayOne.get(0) != arrayTwo.get(0)) return false;
+        if (!Objects.equals(arrayOne.get(0), arrayTwo.get(0))) return false;
 
         Pair fst = partition(arrayOne);
         Pair snd = partition(arrayTwo);
@@ -46,6 +51,11 @@ public class SameBSTs {
 
     // O(n ^ 2) time | O(d) space
     public static boolean sameBsts1(List<Integer> arrayOne, List<Integer> arrayTwo) {
+        if (arrayOne == null && arrayTwo == null) return true;
+        if (arrayOne == null || arrayTwo == null) return false;
+        if (arrayOne.size() == 0 && arrayTwo.size() == 0) {
+            return true;
+        }
         return areSameBsts(arrayOne, arrayTwo, 0, 0, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
 

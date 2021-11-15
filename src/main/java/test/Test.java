@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeZigzagLevelOrderTraverse
-            SameBSTs
-            ReverseLinkedList
             BinaryTreeDiameters
             ValidateStartingCity
             PrimMinSpanningTree
@@ -60,6 +57,7 @@ public class Test {
             IntersectionLinkedList
             LRUCache
             UniquePaths
+            SameBSTs
             Pow
             LeftViewBinaryTree
             SelectSort
@@ -96,6 +94,8 @@ public class Test {
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SortList
+            BinaryTreeZigzagLevelOrderTraverse
+            ReverseLinkedList
          */
     }
 }
