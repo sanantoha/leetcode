@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeDiameters
-            ValidateStartingCity
-            PrimMinSpanningTree
             LevenshteinDistance
             KthSmallestElementInArray
             NextGreaterElement
@@ -20,6 +17,7 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             StaircaseTraversal
             SameTree
+            ValidateStartingCity
             MinNumberOfCoinsForChange
             HeapSort
             NodeDepths
@@ -41,6 +39,7 @@ public class Test {
             LongestDecrSubseq
             RotateImage
             PalindromicSubstrings
+            PrimMinSpanningTree
             ReverseString
             MedianOfTwoSortedArrays
             BalancedBrackets
@@ -59,6 +58,7 @@ public class Test {
             UniquePaths
             SameBSTs
             Pow
+            BinaryTreeDiameter
             LeftViewBinaryTree
             SelectSort
             SearchInRotatedSortedArray

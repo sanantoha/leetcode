@@ -5,8 +5,32 @@ package tree;
  */
 public class BinaryTreeDiameter2 {
 
+    static class TreeInfo {
+        int height;
+        int diameter;
+
+        public TreeInfo(int height, int diameter) {
+            this.height = height;
+            this.diameter = diameter;
+        }
+    }
+
+    // O(n) time | O(h) space
     public static int binaryTreeDiameter(TreeNode root) {
-        return -1;
+        return getTreeInfo(root).diameter;
+    }
+
+    private static TreeInfo getTreeInfo(TreeNode root) {
+        if (root == null) return new TreeInfo(0, 0);
+
+        TreeInfo li = getTreeInfo(root.left);
+        TreeInfo ri = getTreeInfo(root.right);
+        int height = 1 + Math.max(li.height, ri.height);
+
+        int maxDiameter = Math.max(li.diameter, ri.diameter);
+        int diameter = Math.max(maxDiameter, li.height + ri.height);
+
+        return new TreeInfo(height, diameter);
     }
 
     public static void main(String[] args) {

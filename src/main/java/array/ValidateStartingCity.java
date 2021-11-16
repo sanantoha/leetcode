@@ -24,7 +24,7 @@ public class ValidateStartingCity {
     // O(n) time | O(1) space
     public static int validStartingCity1(int[] distances, int[] fuel, int mpg) {
         int remainDistance = 0;
-        int minRemainDistance = Integer.MAX_VALUE;
+        int minRemainDistance = 0;
         int minIdx = 0;
 
         for (int i = 1; i < fuel.length; i++) {
