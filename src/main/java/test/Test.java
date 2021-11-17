@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LevenshteinDistance
-            KthSmallestElementInArray
-            NextGreaterElement
             ProductOfArrayExceptSelf
             KruskalMinSpanningTree
             BestTimeToBuyAndSellStock
@@ -51,6 +48,7 @@ public class Test {
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
             MinRewards
+            NextGreaterElement
             PhoneNumberMnemonic
             MinimumPassesOfMatrix
             IntersectionLinkedList
@@ -58,6 +56,7 @@ public class Test {
             UniquePaths
             SameBSTs
             Pow
+            LevenshteinDistance
             BinaryTreeDiameter
             LeftViewBinaryTree
             SelectSort
@@ -96,6 +95,7 @@ public class Test {
             SortList
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
+            KthSmallestElementInArray
          */
     }
 }

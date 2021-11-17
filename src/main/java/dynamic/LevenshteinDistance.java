@@ -1,5 +1,7 @@
 package dynamic;
 
+import java.util.Arrays;
+
 /**
  * https://www.algoexpert.io/questions/Levenshtein%20Distance
  */
@@ -63,7 +65,7 @@ public class LevenshteinDistance {
             }
         }
 
-        return (big.length() % 2 == 0) ? even[small.length() - 1] : odd[small.length() - 1];
+        return (big.length() % 2 == 0) ? even[small.length()] : odd[small.length()];
     }
 
     public static void main(String[] args) {
