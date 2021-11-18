@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ProductOfArrayExceptSelf
-            KruskalMinSpanningTree
-            BestTimeToBuyAndSellStock
             CountingSort
             NumberOfWaysToMakeChange
             ReverseInteger
@@ -60,6 +57,7 @@ public class Test {
             BinaryTreeDiameter
             LeftViewBinaryTree
             SelectSort
+            KruskalMinSpanningTree
             SearchInRotatedSortedArray
             ValidateBinarySearchTree
             MergeSort
@@ -69,6 +67,7 @@ public class Test {
             MinHeap
             QuickSort
             DijkstraShortestPaths
+            ProductOfArrayExceptSelf
             AddTwoNumbers
             SortKSortedArray
             ThreeSum
@@ -96,6 +95,7 @@ public class Test {
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
             KthSmallestElementInArray
+            BestTimeToBuyAndSellStock
          */
     }
 }
