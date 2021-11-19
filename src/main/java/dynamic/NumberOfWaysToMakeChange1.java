@@ -25,6 +25,8 @@ public class NumberOfWaysToMakeChange1 {
 
     public static void main(String[] args) {
         int[] input = {1, 5};
-        System.out.println(numberOfWaysToMakeChange(6, input) == 2);
+        int actual = numberOfWaysToMakeChange(6, input);
+        System.out.println(actual);
+        System.out.println(actual == 2);
     }
 }

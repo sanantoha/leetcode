@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CountingSort
-            NumberOfWaysToMakeChange
-            ReverseInteger
             BinarySearch
             FirstDuplicateValue
             LowestCommonAncestorOfBinarySearchTree
@@ -30,6 +27,7 @@ public class Test {
             SearchForRange
             InsertSort
             CombinationSum
+            NumberOfWaysToMakeChange
             LongestDecrSubseq
             RotateImage
             PalindromicSubstrings
@@ -70,6 +68,7 @@ public class Test {
             ProductOfArrayExceptSelf
             AddTwoNumbers
             SortKSortedArray
+            ReverseInteger
             ThreeSum
             LowestCommonAncestorOfBinaryTree
             MergeIntervals
@@ -79,6 +78,7 @@ public class Test {
             ClimbingStairs
             LongestNonDecrSubseq
             WordSearch
+            CountingSort
             StringPermutation
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
