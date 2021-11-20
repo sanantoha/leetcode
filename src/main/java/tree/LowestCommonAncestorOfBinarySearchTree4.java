@@ -2,6 +2,7 @@ package tree;
 
 public class LowestCommonAncestorOfBinarySearchTree4 {
 
+    // O(h) time | O(h) space
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode q, TreeNode p) {
         if (root == null || q == null || p == null) return null;
 

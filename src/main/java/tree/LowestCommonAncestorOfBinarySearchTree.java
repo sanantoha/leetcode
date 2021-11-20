@@ -2,7 +2,7 @@ package tree;
 
 public class LowestCommonAncestorOfBinarySearchTree {
 
-    // O(h) time | O(1) space
+    // O(h) time | O(h) space
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (p.val < root.val && q.val < root.val) {
             return lowestCommonAncestor(root.left, p, q);

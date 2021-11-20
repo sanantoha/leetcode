@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinarySearch
-            FirstDuplicateValue
-            LowestCommonAncestorOfBinarySearchTree
             StaircaseTraversal
             SameTree
             ValidateStartingCity
@@ -96,6 +93,9 @@ public class Test {
             ReverseLinkedList
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
+            BinarySearch
+            FirstDuplicateValue
+            LowestCommonAncestorOfBinarySearchTree
          */
     }
 }
