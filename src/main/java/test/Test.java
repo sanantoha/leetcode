@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StaircaseTraversal
-            SameTree
-            ValidateStartingCity
             MinNumberOfCoinsForChange
             HeapSort
             NodeDepths
@@ -71,6 +68,7 @@ public class Test {
             MergeIntervals
             RiverSizes
             Sqrt
+            ValidateStartingCity
             FindClosestValueInBST
             ClimbingStairs
             LongestNonDecrSubseq
@@ -79,6 +77,7 @@ public class Test {
             StringPermutation
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
+            StaircaseTraversal
             Permutations
             GenerateParentheses
             DFSTreeTraverseRec
@@ -96,6 +95,7 @@ public class Test {
             BinarySearch
             FirstDuplicateValue
             LowestCommonAncestorOfBinarySearchTree
+            SameTree
          */
     }
 }

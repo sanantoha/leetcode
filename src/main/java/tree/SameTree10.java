@@ -1,13 +1,41 @@
 package tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class SameTree10 {
 
+    // O(n) time | O(h) space
     public static boolean isSameTree(TreeNode t1, TreeNode t2) {
-        return false;
+        if (t1 == null && t2 == null) return true;
+        if (t1 == null || t2 == null) return false;
+
+        return t1.val == t2.val && isSameTree(t1.left, t2.left) && isSameTree(t1.right, t2.right);
     }
 
+    // O(n) time | O(h) space
     public static boolean isSameTreeIter(TreeNode t1, TreeNode t2) {
-        return false;
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(t1);
+        queue.add(t2);
+
+        while (!queue.isEmpty()) {
+            TreeNode c1 = queue.remove();
+            TreeNode c2 = queue.remove();
+
+            if (c1 == null && c2 == null) continue;
+            if (c1 == null || c2 == null) return false;
+            if (c1.val != c2.val) return false;
+
+            queue.add(c1.left);
+            queue.add(c2.left);
+
+            queue.add(c1.right);
+            queue.add(c2.right);
+        }
+
+        return true;
     }
 
     public static void main(String[] args) {
