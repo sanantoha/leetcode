@@ -1,13 +1,51 @@
 package tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class NodeDepths4 {
 
-    public static int nodeDepths(TreeNode root) {
-        return -1;
+    static class TreeInfo {
+        TreeNode node;
+        int depth;
+
+        public TreeInfo(TreeNode node, int depth) {
+            this.node = node;
+            this.depth = depth;
+        }
     }
 
+    // O(n) time | O(h) space
+    public static int nodeDepths(TreeNode root) {
+
+        Queue<TreeInfo> queue = new LinkedList<>();
+        queue.add(new TreeInfo(root, 0));
+
+        int sumOfDepths = 0;
+
+        while (!queue.isEmpty()) {
+            TreeInfo ti = queue.remove();
+            int depth = ti.depth;
+            TreeNode node = ti.node;
+            if (node == null) continue;
+
+            sumOfDepths += depth;
+
+            queue.add(new TreeInfo(node.left, depth + 1));
+            queue.add(new TreeInfo(node.right, depth + 1));
+        }
+
+        return sumOfDepths;
+    }
+
+    // O(n) time | O(h) space
     public static int nodeDepthsRec(TreeNode root) {
-        return -1;
+        return nodeDepthsRec(root, 0);
+    }
+
+    private static int nodeDepthsRec(TreeNode root, int depth) {
+        if (root == null) return 0;
+        return depth + nodeDepthsRec(root.left, depth + 1) + nodeDepthsRec(root.right, depth + 1);
     }
 
     /**

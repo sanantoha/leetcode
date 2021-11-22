@@ -24,7 +24,7 @@ public class MinNumberOfCoinsForChange1 {
             }
         }
 
-        return ways[n];
+        return ways[n] == Integer.MAX_VALUE ? -1 : ways[n];
     }
 
     public static void main(String[] args) {

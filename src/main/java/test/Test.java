@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfCoinsForChange
-            HeapSort
-            NodeDepths
             BranchSums
             LargestRange
             StringWithoutAAAorBBB
@@ -69,6 +66,7 @@ public class Test {
             RiverSizes
             Sqrt
             ValidateStartingCity
+            MinNumberOfCoinsForChange
             FindClosestValueInBST
             ClimbingStairs
             LongestNonDecrSubseq
@@ -79,6 +77,7 @@ public class Test {
             FirstPermutationIsSubstrSecondStr
             StaircaseTraversal
             Permutations
+            NodeDepths
             GenerateParentheses
             DFSTreeTraverseRec
             BreadthSearchFirst
@@ -96,6 +95,7 @@ public class Test {
             FirstDuplicateValue
             LowestCommonAncestorOfBinarySearchTree
             SameTree
+            HeapSort
          */
     }
 }
