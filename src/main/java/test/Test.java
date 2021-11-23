@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BranchSums
-            LargestRange
-            StringWithoutAAAorBBB
             BSTSuccessorSearch
             TopologicalSortDFSCycleGraph
             PalindromeLinkedList
@@ -61,6 +58,7 @@ public class Test {
             SortKSortedArray
             ReverseInteger
             ThreeSum
+            LargestRange
             LowestCommonAncestorOfBinaryTree
             MergeIntervals
             RiverSizes
@@ -96,6 +94,8 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             SameTree
             HeapSort
+            BranchSums
+            StringWithoutAAAorBBB
          */
     }
 }
