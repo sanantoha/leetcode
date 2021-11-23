@@ -9,6 +9,7 @@ public class Test {
             SymmetricTree
             DFSTreeTraverse
             DepthFirstSearch
+            SubarraySort
             CycleLinkedList
             ReverseBinaryTree
             FourSum
