@@ -3,8 +3,10 @@ package graph;
 import java.util.Arrays;
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class TopologicalSortDFSCycleGraph {
+
     public static void main(String[] args) {
         Digraph digraph = new Digraph(5);
         digraph.addEdge(0, 1);
@@ -16,6 +18,7 @@ public class TopologicalSortDFSCycleGraph {
         System.out.println(digraph);
 
         System.out.println(Arrays.toString(sort(digraph)));
+        System.out.println(Arrays.toString(sortIter(digraph)));
     }
 
     // O(E + V) time | O(V) space
@@ -50,5 +53,47 @@ public class TopologicalSortDFSCycleGraph {
         }
         visited[v] = 2;
         stack.push(v);
+    }
+
+    //================================================================================================
+
+    // O(V + E) time | O(V) space
+    public static int[] sortIter(Digraph graph) {
+
+        int[] res = new int[graph.V()];
+
+        int[] cnt = new int[graph.V()];
+        for (int v = 0; v < graph.V(); v++) {
+            for (int u : graph.adj(v)) {
+                cnt[u]++;
+            }
+        }
+
+        Queue<Integer> queue = new LinkedList<>();
+        boolean flag = false;
+        for (int v = 0; v < cnt.length; v++) {
+            if (cnt[v] == 0) {
+                queue.add(v);
+                flag = true;
+            }
+        }
+        if (!flag) throw new IllegalStateException("Graph has cycle");
+
+        int idx = 0;
+        while (!queue.isEmpty()) {
+            int v = queue.remove();
+            res[idx++] = v;
+
+            for (int u : graph.adj(v)) {
+                cnt[u]--;
+                if (cnt[u] == 0) {
+                    queue.add(u);
+                }
+            }
+        }
+
+        if (idx != graph.V()) throw new IllegalStateException("Graph has cycle");
+
+        return res;
     }
 }

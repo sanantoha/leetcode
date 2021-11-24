@@ -2,76 +2,20 @@ package tree;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.List;
 
 public class DFSTreeTraverse1 {
 
-    public static void preOrder(TreeNode root) {
-        if (root == null) return;
-
-        Deque<TreeNode> stack = new ArrayDeque<>();
-        stack.push(root);
-
-        while (!stack.isEmpty()) {
-            TreeNode node = stack.poll();
-
-            System.out.print(node.val + " ");
-
-            if (node.right != null) {
-                stack.push(node.right);
-            }
-
-            if (node.left != null) {
-                stack.push(node.left);
-            }
-        }
+    public static List<Integer> preOrder(TreeNode root) {
+        return null;
     }
 
-    public static void inOrder(TreeNode root) {
-        if (root == null) return;
-
-        Deque<TreeNode> stack = new ArrayDeque<>();
-        TreeNode curr = root;
-
-        while (!stack.isEmpty() || curr != null) {
-
-            while(curr != null) {
-                stack.push(curr);
-                curr = curr.left;
-            }
-
-            curr = stack.poll();
-
-            System.out.print(curr.val + " ");
-
-            curr = curr.right;
-        }
+    public static List<Integer> inOrder(TreeNode root) {
+        return null;
     }
 
-    public static void postOrder(TreeNode root) {
-        if (root == null) return;
-
-        Deque<TreeNode> fst = new ArrayDeque<>();
-        Deque<TreeNode> snd = new ArrayDeque<>();
-
-        fst.push(root);
-
-        while (!fst.isEmpty()) {
-            TreeNode node = fst.poll();
-            snd.push(node);
-
-            if (node.left != null) {
-                fst.push(node.left);
-            }
-
-            if (node.right != null) {
-                fst.push(node.right);
-            }
-        }
-
-        while (!snd.isEmpty()) {
-            TreeNode node = snd.poll();
-            System.out.print(node.val + " ");
-        }
+    public static List<Integer> postOrder(TreeNode root) {
+        return null;
     }
 
     public static void main(String[] args) {

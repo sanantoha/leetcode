@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BSTSuccessorSearch
-            TopologicalSortDFSCycleGraph
-            PalindromeLinkedList
             SymmetricTree
             DFSTreeTraverse
             DepthFirstSearch
@@ -21,6 +18,7 @@ public class Test {
             RotateImage
             PalindromicSubstrings
             PrimMinSpanningTree
+            TopologicalSortDFSCycleGraph
             ReverseString
             MedianOfTwoSortedArrays
             BalancedBrackets
@@ -97,6 +95,8 @@ public class Test {
             HeapSort
             BranchSums
             StringWithoutAAAorBBB
+            BSTSuccessorSearch
+            PalindromeLinkedList
          */
     }
 }
