@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SymmetricTree
-            DFSTreeTraverse
-            DepthFirstSearch
             SubarraySort
             CycleLinkedList
             ReverseBinaryTree
@@ -83,6 +80,7 @@ public class Test {
             LongestIncrSubSeq
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
+            DepthFirstSearch
             SortList
             BinaryTreeZigzagLevelOrderTraverse
             ReverseLinkedList
@@ -97,6 +95,8 @@ public class Test {
             StringWithoutAAAorBBB
             BSTSuccessorSearch
             PalindromeLinkedList
+            SymmetricTree
+            DFSTreeTraverse
          */
     }
 }

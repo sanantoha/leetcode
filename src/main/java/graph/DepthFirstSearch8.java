@@ -2,8 +2,7 @@ package graph;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class DepthFirstSearch8 {
 
@@ -20,11 +19,57 @@ public class DepthFirstSearch8 {
         }
     }
 
+    // O(E + V) time | O(V) space
     public static List<Integer> dfsRec(EdgeWeightedDigraph graph, int start) {
-        return null;
+        List<Integer> res = new ArrayList<>();
+        boolean[] visited = new boolean[graph.V()];
+        dfsRec(graph, start, visited, res);
+        return res;
     }
 
+    private static void dfsRec(EdgeWeightedDigraph graph, int v, boolean[] visited, List<Integer> res) {
+        if (visited[v]) return;
+
+        res.add(v);
+        visited[v] = true;
+
+        for (DirectedEdge edge : graph.adj(v)) {
+            if (!visited[edge.to()]) {
+                dfsRec(graph, edge.to(), visited, res);
+            }
+        }
+    }
+
+    // O(E + V) time | O(V) space
     public static List<Integer> dfsIter(EdgeWeightedDigraph graph, int start) {
-        return null;
+        List<Integer> res = new ArrayList<>();
+        res.add(start);
+
+        boolean[] visited = new boolean[graph.V()];
+        visited[start] = true;
+
+        Iterator<DirectedEdge>[] adjArr = new Iterator[graph.V()];
+        for (int i = 0; i < graph.V(); i++) {
+            adjArr[i] = graph.adj(i).iterator();
+        }
+
+        Deque<Integer> stack = new LinkedList<>();
+        stack.push(start);
+
+        while (!stack.isEmpty()) {
+            int v = stack.peek();
+            if (adjArr[v].hasNext()) {
+                DirectedEdge edge = adjArr[v].next();
+                if (!visited[edge.to()]) {
+                    visited[edge.to()] = true;
+                    stack.push(edge.to());
+                    res.add(edge.to());
+                }
+            } else {
+                stack.pop();
+            }
+        }
+
+        return res;
     }
 }
