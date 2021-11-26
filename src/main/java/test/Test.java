@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SubarraySort
-            CycleLinkedList
-            ReverseBinaryTree
             FourSum
             SearchForRange
             InsertSort
@@ -41,6 +38,7 @@ public class Test {
             SelectSort
             KruskalMinSpanningTree
             SearchInRotatedSortedArray
+            SubarraySort
             ValidateBinarySearchTree
             MergeSort
             CloneGraph
@@ -97,6 +95,8 @@ public class Test {
             PalindromeLinkedList
             SymmetricTree
             DFSTreeTraverse
+            CycleLinkedList
+            ReverseBinaryTree
          */
     }
 }

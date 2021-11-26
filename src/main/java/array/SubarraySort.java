@@ -7,8 +7,40 @@ import java.util.Arrays;
  */
 public class SubarraySort {
 
+    // O(n) time | O(1) space
     public static int[] subarraySort(int[] array) {
-        return null;
+        if (array == null || array.length == 0) return new int[] {-1, -1};
+
+        int minOutOfOrder = Integer.MAX_VALUE;
+        int maxOutOfOrder = Integer.MIN_VALUE;
+
+        for (int i = 0; i < array.length; i++) {
+            if (isOutOfBound(i, array)) {
+                minOutOfOrder = Math.min(minOutOfOrder, array[i]);
+                maxOutOfOrder = Math.max(maxOutOfOrder, array[i]);
+            }
+        }
+
+        if (minOutOfOrder == Integer.MAX_VALUE) return new int[] {-1, -1};
+
+        int lidx = 0;
+        while (minOutOfOrder >= array[lidx]) {
+            lidx++;
+        }
+
+        int ridx = array.length - 1;
+        while (maxOutOfOrder <= array[ridx]) {
+            ridx--;
+        }
+
+        return new int[] {lidx, ridx};
+    }
+
+    private static boolean isOutOfBound(int i, int[] array) {
+        int num = array[i];
+        if (i == 0) return num > array[i + 1];
+        else if (i == array.length - 1) return num < array[i - 1];
+        else return num > array[i + 1] || num < array[i - 1];
     }
 
     public static void main(String[] args) {
