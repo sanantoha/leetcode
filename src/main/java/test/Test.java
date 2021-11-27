@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FourSum
-            SearchForRange
-            InsertSort
             CombinationSum
             NumberOfWaysToMakeChange
             LongestDecrSubseq
@@ -28,6 +25,7 @@ public class Test {
             PhoneNumberMnemonic
             MinimumPassesOfMatrix
             IntersectionLinkedList
+            InsertSort
             LRUCache
             UniquePaths
             SameBSTs
@@ -97,6 +95,8 @@ public class Test {
             DFSTreeTraverse
             CycleLinkedList
             ReverseBinaryTree
+            FourSum
+            SearchForRange
          */
     }
 }

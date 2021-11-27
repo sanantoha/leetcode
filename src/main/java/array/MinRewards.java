@@ -27,6 +27,7 @@ public class MinRewards {
         return Arrays.stream(rewards).sum();
     }
 
+    // O(n) time | O(n) space
     public static int minRewards1(int[] scores) {
         if (scores == null || scores.length == 0) return 0;
         int[] rewards = new int[scores.length];
@@ -70,6 +71,7 @@ public class MinRewards {
         return lowerIdxs;
     }
 
+    // O(n) time | O(n) space
     public static int minRewards2(int[] scores) {
         if (scores == null || scores.length == 0) return 0;
         int[] rewards = new int[scores.length];
