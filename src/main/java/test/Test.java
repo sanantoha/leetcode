@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CombinationSum
-            NumberOfWaysToMakeChange
-            LongestDecrSubseq
             RotateImage
             PalindromicSubstrings
             PrimMinSpanningTree
@@ -34,6 +31,7 @@ public class Test {
             BinaryTreeDiameter
             LeftViewBinaryTree
             SelectSort
+            LongestIncrSubSeq
             KruskalMinSpanningTree
             SearchInRotatedSortedArray
             SubarraySort
@@ -49,6 +47,7 @@ public class Test {
             AddTwoNumbers
             SortKSortedArray
             ReverseInteger
+            CombinationSum
             ThreeSum
             LargestRange
             LowestCommonAncestorOfBinaryTree
@@ -73,12 +72,13 @@ public class Test {
             BreadthSearchFirst
             HouseRobber
             BFSTreeTraverse
-            LongestIncrSubSeq
+            LongestDecrSubseq
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             DepthFirstSearch
             SortList
             BinaryTreeZigzagLevelOrderTraverse
+            NumberOfWaysToMakeChange
             ReverseLinkedList
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
