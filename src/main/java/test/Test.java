@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RotateImage
-            PalindromicSubstrings
-            PrimMinSpanningTree
             TopologicalSortDFSCycleGraph
             ReverseString
             MedianOfTwoSortedArrays
@@ -71,6 +68,7 @@ public class Test {
             DFSTreeTraverseRec
             BreadthSearchFirst
             HouseRobber
+            PrimMinSpanningTree
             BFSTreeTraverse
             LongestDecrSubseq
             ValidIPAddress
@@ -97,6 +95,8 @@ public class Test {
             ReverseBinaryTree
             FourSum
             SearchForRange
+            RotateImage
+            PalindromicSubstrings
          */
     }
 }

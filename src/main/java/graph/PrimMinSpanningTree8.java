@@ -1,8 +1,8 @@
 package graph;
 
-import java.util.*;
+import java.util.Set;
 
-public class PrimMinSpanningTree7 {
+public class PrimMinSpanningTree8 {
     public static void main(String[] args) {
         EdgeWeightedGraph graph = new EdgeWeightedGraph(6);
         graph.addEdge(new Edge(0, 1, 7.0));
@@ -42,52 +42,7 @@ public class PrimMinSpanningTree7 {
         System.out.println(mst(graph1));
     }
 
-    static class Pair {
-        Edge edge;
-        int from;
-
-        public Pair(Edge edge, int from) {
-            this.edge = edge;
-            this.from = from;
-        }
-    }
-
-    // O(E * log(V)) time | O(V) space
     public static Set<Edge> mst(EdgeWeightedGraph graph) {
-        Set<Edge> mst = new HashSet<>();
-
-        PriorityQueue<Pair> heap = new PriorityQueue<>(graph.V(), Comparator.comparingDouble(p -> p.edge.weight()));
-
-        int start = 0;
-        for (Edge edge : graph.adj(start)) {
-            heap.add(new Pair(edge, start));
-        }
-
-        boolean[] visited = new boolean[graph.V()];
-        visited[start] = true;
-
-        int inThree = 1;
-
-        while (!heap.isEmpty() && inThree < graph.V()) {
-            Pair p = heap.remove();
-            Edge minEdge = p.edge;
-            int to = minEdge.other(p.from);
-
-            if (visited[to]) continue;
-
-            inThree++;
-            visited[to] = true;
-            mst.add(minEdge);
-
-            for (Edge edge : graph.adj(to)) {
-                heap.add(new Pair(edge, to));
-            }
-        }
-
-        if (inThree < graph.V()) {
-            return Collections.emptySet();
-        }
-
-        return mst;
+        return null;
     }
 }
