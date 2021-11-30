@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            TopologicalSortDFSCycleGraph
-            ReverseString
-            MedianOfTwoSortedArrays
             BalancedBrackets
             SurroundedRegions
             MaximumSubarray
@@ -24,6 +21,7 @@ public class Test {
             UniquePaths
             SameBSTs
             Pow
+            TopologicalSortDFSCycleGraph
             LevenshteinDistance
             BinaryTreeDiameter
             LeftViewBinaryTree
@@ -97,6 +95,8 @@ public class Test {
             SearchForRange
             RotateImage
             PalindromicSubstrings
+            ReverseString
+            MedianOfTwoSortedArrays
          */
     }
 }
