@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BalancedBrackets
-            SurroundedRegions
-            MaximumSubarray
             SpiralMatrixTraverse
             DeleteNodeInLinkedList
             AStarAlgo
@@ -97,6 +94,9 @@ public class Test {
             PalindromicSubstrings
             ReverseString
             MedianOfTwoSortedArrays
+            BalancedBrackets
+            SurroundedRegions
+            MaximumSubarray
          */
     }
 }
