@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SpiralMatrixTraverse
-            DeleteNodeInLinkedList
-            AStarAlgo
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
             MinRewards
@@ -61,6 +58,7 @@ public class Test {
             NodeDepths
             GenerateParentheses
             DFSTreeTraverseRec
+            AStarAlgo
             BreadthSearchFirst
             HouseRobber
             PrimMinSpanningTree
@@ -97,6 +95,8 @@ public class Test {
             BalancedBrackets
             SurroundedRegions
             MaximumSubarray
+            SpiralMatrixTraverse
+            DeleteNodeInLinkedList
          */
     }
 }

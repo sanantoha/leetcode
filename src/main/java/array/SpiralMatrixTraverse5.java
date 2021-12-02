@@ -3,7 +3,7 @@ package array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SpiralMatrixTraverse {
+public class SpiralMatrixTraverse5 {
 
     // O(w * h) time | O(w * h) space
     public static List<Integer> spiral(int[][] matrix) {
