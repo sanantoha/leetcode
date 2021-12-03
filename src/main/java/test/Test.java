@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinRewards
             NextGreaterElement
             PhoneNumberMnemonic
             MinimumPassesOfMatrix
@@ -97,6 +96,7 @@ public class Test {
             DeleteNodeInLinkedList
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
+            MinRewards
          */
     }
 }
