@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseWordsInString
-            RemoveNthNodeFromEndOfList
             MinRewards
             NextGreaterElement
             PhoneNumberMnemonic
@@ -97,6 +95,8 @@ public class Test {
             MaximumSubarray
             SpiralMatrixTraverse
             DeleteNodeInLinkedList
+            ReverseWordsInString
+            RemoveNthNodeFromEndOfList
          */
     }
 }
