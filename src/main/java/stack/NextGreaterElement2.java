@@ -1,15 +1,56 @@
 package stack;
 
 import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
 
 public class NextGreaterElement2 {
 
-    public static int[] nextGreaterElement(int[] array) {
+    // O(n) time | O(n) space
+    public static int[] nextGreaterElement(int[] arr) {
+        if (arr == null || arr.length == 0) return new int[] {};
+
+        Deque<Integer> stack = new LinkedList<>();
+        int[] res = new int[arr.length];
+        Arrays.fill(res, -1);
+
+        for (int i = 0; i < 2 * arr.length; i++) {
+            int currIdx = i % arr.length;
+
+            while (!stack.isEmpty() && arr[stack.peek()] <= arr[currIdx]) {
+                int top = stack.pop();
+                res[top] = arr[currIdx];
+            }
+
+            stack.push(currIdx);
+        }
+
         return null;
     }
 
-    public static int[] nextGreaterElement1(int[] array) {
-        return null;
+    // O(n) time | O(n) space
+    public static int[] nextGreaterElement1(int[] arr) {
+        if (arr == null || arr.length == 0) return new int[] {};
+
+        Deque<Integer> stack = new LinkedList<>();
+        int[] res = new int[arr.length];
+        Arrays.fill(res, -1);
+
+        for (int i = 2 * arr.length - 1; i >= 0; i--) {
+            int currIdx = i % arr.length;
+            int currVal = arr[currIdx];
+            while (!stack.isEmpty()) {
+                if (currVal >= stack.peek()) {
+                    stack.pop();
+                } else {
+                    res[currIdx] = stack.peek();
+                    break;
+                }
+            }
+
+            stack.push(arr[currIdx]);
+        }
+        return res;
     }
 
     public static void main(String[] args) {

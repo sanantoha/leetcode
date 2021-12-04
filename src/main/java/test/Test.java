@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NextGreaterElement
-            PhoneNumberMnemonic
-            MinimumPassesOfMatrix
             IntersectionLinkedList
             InsertSort
             LRUCache
@@ -22,6 +19,7 @@ public class Test {
             SearchInRotatedSortedArray
             SubarraySort
             ValidateBinarySearchTree
+            NextGreaterElement
             MergeSort
             CloneGraph
             BellmanFord
@@ -33,6 +31,7 @@ public class Test {
             AddTwoNumbers
             SortKSortedArray
             ReverseInteger
+            MinimumPassesOfMatrix
             CombinationSum
             ThreeSum
             LargestRange
@@ -43,6 +42,7 @@ public class Test {
             ValidateStartingCity
             MinNumberOfCoinsForChange
             FindClosestValueInBST
+            PhoneNumberMnemonic
             ClimbingStairs
             LongestNonDecrSubseq
             WordSearch
