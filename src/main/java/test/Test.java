@@ -8,6 +8,7 @@ public class Test {
             LRUCache
             UniquePaths
             SameBSTs
+            MaxPathSumInBinaryTree
             Pow
             TopologicalSortDFSCycleGraph
             LevenshteinDistance
