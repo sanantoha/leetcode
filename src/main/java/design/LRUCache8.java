@@ -1,17 +1,75 @@
 package design;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class LRUCache8 {
 
-    public LRUCache8(int capacity) {
+    static class Node {
+        int key;
+        int val;
+        Node next;
+        Node prev;
+    }
 
+    private final int capacity;
+    private final Map<Integer, Node> cache;
+    private final Node head = new Node();
+    private final Node tail = new Node();
+
+    public LRUCache8(int capacity) {
+        if (capacity <= 0) throw new IllegalStateException("Capacity has to be more than zero");
+        this.capacity = capacity;
+        this.cache = new HashMap<>(capacity);
+        this.head.next = tail;
+        this.tail.next = head;
     }
 
     public int get(int key) {
+        Node node = cache.get(key);
+        if (node != null) {
+            remove(node);
+            add(node);
+            return node.val;
+        }
         return -1;
     }
 
     public void put(int key, int value) {
+        Node node = cache.get(key);
+        if (node != null) {
+            remove(node);
+            add(node);
+            node.val = value;
+        } else {
+            if (capacity == cache.size()) {
+                cache.remove(tail.prev.key);
+                remove(tail.prev);
+            }
 
+            Node newNode = new Node();
+            newNode.key = key;
+            newNode.val = value;
+            cache.put(key, newNode);
+            add(newNode);
+        }
+    }
+
+    private void add(Node node) {
+        Node headNext = head.next;
+
+        head.next = node;
+        node.prev = head;
+        node.next = headNext;
+        headNext.prev = node;
+    }
+
+    private void remove(Node node) {
+        Node next = node.next;
+        Node prev = node.prev;
+
+        prev.next = next;
+        next.prev = prev;
     }
 
 

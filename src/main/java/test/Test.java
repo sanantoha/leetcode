@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            IntersectionLinkedList
-            InsertSort
-            LRUCache
             UniquePaths
             SameBSTs
             MaxPathSumInBinaryTree
@@ -80,6 +77,7 @@ public class Test {
             StringWithoutAAAorBBB
             BSTSuccessorSearch
             PalindromeLinkedList
+            InsertSort
             SymmetricTree
             DFSTreeTraverse
             CycleLinkedList
@@ -98,6 +96,8 @@ public class Test {
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
             MinRewards
+            IntersectionLinkedList
+            LRUCache
          */
     }
 }
