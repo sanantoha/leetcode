@@ -2,6 +2,7 @@ package dynamic;
 
 public class UniquePaths {
 
+    // O(m * n) time | O(m * n) time
     public static int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];
 

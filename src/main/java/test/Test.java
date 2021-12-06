@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePaths
-            SameBSTs
-            MaxPathSumInBinaryTree
             Pow
             TopologicalSortDFSCycleGraph
             LevenshteinDistance
@@ -17,6 +14,7 @@ public class Test {
             SearchInRotatedSortedArray
             SubarraySort
             ValidateBinarySearchTree
+            FindNodesDistanceK
             NextGreaterElement
             MergeSort
             CloneGraph
@@ -25,6 +23,7 @@ public class Test {
             MinHeap
             QuickSort
             DijkstraShortestPaths
+            MaxPathSumInBinaryTree
             ProductOfArrayExceptSelf
             AddTwoNumbers
             SortKSortedArray
@@ -58,6 +57,7 @@ public class Test {
             HouseRobber
             PrimMinSpanningTree
             BFSTreeTraverse
+            UniquePaths
             LongestDecrSubseq
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
@@ -98,6 +98,7 @@ public class Test {
             MinRewards
             IntersectionLinkedList
             LRUCache
+            SameBSTs
          */
     }
 }
