@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Pow
-            TopologicalSortDFSCycleGraph
-            LevenshteinDistance
             BinaryTreeDiameter
             LeftViewBinaryTree
             SelectSort
@@ -25,6 +22,7 @@ public class Test {
             DijkstraShortestPaths
             MaxPathSumInBinaryTree
             ProductOfArrayExceptSelf
+            TopologicalSortDFSCycleGraph
             AddTwoNumbers
             SortKSortedArray
             ReverseInteger
@@ -49,6 +47,7 @@ public class Test {
             FirstPermutationIsSubstrSecondStr
             StaircaseTraversal
             Permutations
+            LevenshteinDistance
             NodeDepths
             GenerateParentheses
             DFSTreeTraverseRec
@@ -89,6 +88,7 @@ public class Test {
             ReverseString
             MedianOfTwoSortedArrays
             BalancedBrackets
+            Pow
             SurroundedRegions
             MaximumSubarray
             SpiralMatrixTraverse

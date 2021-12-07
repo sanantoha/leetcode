@@ -2,7 +2,7 @@ package math;
 
 public class Pow7 {
 
-    // O(log(n)) time | O(1) space
+    // O(log(n)) time | O(log(n)) space
     public static double pow(double x, int n) {
         if (n == 0) return 1d;
         if (n == 1) return x;
