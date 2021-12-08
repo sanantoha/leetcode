@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeDiameter
-            LeftViewBinaryTree
-            SelectSort
             LongestIncrSubSeq
             KruskalMinSpanningTree
             SearchInRotatedSortedArray
@@ -29,6 +26,7 @@ public class Test {
             MinimumPassesOfMatrix
             CombinationSum
             ThreeSum
+            BinaryTreeDiameter
             LargestRange
             LowestCommonAncestorOfBinaryTree
             MergeIntervals
@@ -80,6 +78,7 @@ public class Test {
             SymmetricTree
             DFSTreeTraverse
             CycleLinkedList
+            SelectSort
             ReverseBinaryTree
             FourSum
             SearchForRange
@@ -89,6 +88,7 @@ public class Test {
             MedianOfTwoSortedArrays
             BalancedBrackets
             Pow
+            LeftViewBinaryTree
             SurroundedRegions
             MaximumSubarray
             SpiralMatrixTraverse
