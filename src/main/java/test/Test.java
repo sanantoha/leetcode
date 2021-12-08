@@ -27,6 +27,7 @@ public class Test {
             CombinationSum
             ThreeSum
             BinaryTreeDiameter
+            MaxSumIncreasingSubsequence
             LargestRange
             LowestCommonAncestorOfBinaryTree
             MergeIntervals
