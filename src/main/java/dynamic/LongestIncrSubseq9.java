@@ -91,7 +91,7 @@ public class LongestIncrSubseq9 {
         int[] arr0 = {1, 2, 3, 6, -100, -90, -80, -70, -60, 7, 8, 9, 10, -50, -40};
         System.out.println(lis0(arr0));
         System.out.println(lis(arr0));
-        System.out.println(lisList(arr0)); // 6
+        System.out.println(lisList(arr0)); // 9
         System.out.println("==============================");
 
         int[] arr = {10, 22, 9, 33, 21, 50, 41, 60, 80};

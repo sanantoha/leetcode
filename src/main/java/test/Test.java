@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncrSubSeq
-            KruskalMinSpanningTree
-            SearchInRotatedSortedArray
             SubarraySort
             ValidateBinarySearchTree
             FindNodesDistanceK
@@ -29,6 +26,7 @@ public class Test {
             BinaryTreeDiameter
             MaxSumIncreasingSubsequence
             LargestRange
+            LongestIncrSubSeq
             LowestCommonAncestorOfBinaryTree
             MergeIntervals
             RiverSizes
@@ -39,6 +37,7 @@ public class Test {
             PhoneNumberMnemonic
             ClimbingStairs
             LongestNonDecrSubseq
+            SearchInRotatedSortedArray
             WordSearch
             CountingSort
             StringPermutation
@@ -49,6 +48,7 @@ public class Test {
             LevenshteinDistance
             NodeDepths
             GenerateParentheses
+            KruskalMinSpanningTree
             DFSTreeTraverseRec
             AStarAlgo
             BreadthSearchFirst
