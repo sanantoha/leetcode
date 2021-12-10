@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SubarraySort
-            ValidateBinarySearchTree
-            FindNodesDistanceK
             NextGreaterElement
             MergeSort
             CloneGraph
@@ -31,6 +28,7 @@ public class Test {
             MergeIntervals
             RiverSizes
             Sqrt
+            FindNodesDistanceK
             ValidateStartingCity
             MinNumberOfCoinsForChange
             FindClosestValueInBST
@@ -59,6 +57,7 @@ public class Test {
             LongestDecrSubseq
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
+            SubarraySort
             DepthFirstSearch
             SortList
             BinaryTreeZigzagLevelOrderTraverse
@@ -69,6 +68,7 @@ public class Test {
             BinarySearch
             FirstDuplicateValue
             LowestCommonAncestorOfBinarySearchTree
+            ValidateBinarySearchTree
             SameTree
             HeapSort
             BranchSums
