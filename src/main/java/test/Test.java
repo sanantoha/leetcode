@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NextGreaterElement
-            MergeSort
-            CloneGraph
             BellmanFord
             Powerset
             MinHeap
@@ -39,6 +36,7 @@ public class Test {
             WordSearch
             CountingSort
             StringPermutation
+            NextGreaterElement
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
             StaircaseTraversal
@@ -100,6 +98,8 @@ public class Test {
             IntersectionLinkedList
             LRUCache
             SameBSTs
+            MergeSort
+            CloneGraph
          */
     }
 }

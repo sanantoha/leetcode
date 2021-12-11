@@ -1,9 +1,9 @@
 package graph;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class CloneGraph10 {
-    
+public class CloneGraph11 {
     static class Node {
         public int val;
         public List<Node> neighbors;
@@ -21,33 +21,8 @@ public class CloneGraph10 {
         }
     }
 
-    // O(V + E) time | O(V) space
     public static Node cloneGraph(Node node) {
-        if (node == null) return null;
-
-        Map<Node, Node> oldNewNodeMap = new HashMap<>();
-        oldNewNodeMap.put(node, new Node(node.val));
-
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(node);
-
-        while (!queue.isEmpty()) {
-            Node curr = queue.remove();
-            Node currCopy = oldNewNodeMap.get(curr);
-
-            for (Node neighbor : curr.neighbors) {
-                Node neighborCopy = oldNewNodeMap.get(neighbor);
-                if (neighborCopy == null) {
-                    neighborCopy = new Node(neighbor.val);
-                    oldNewNodeMap.put(neighbor, neighborCopy);
-                    queue.add(neighbor);
-                }
-                currCopy.neighbors.add(neighborCopy);
-            }
-
-        }
-
-        return oldNewNodeMap.get(node);
+        return null;
     }
 
     public static void main(String[] args) {

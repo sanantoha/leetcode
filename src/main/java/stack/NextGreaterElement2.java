@@ -17,7 +17,7 @@ public class NextGreaterElement2 {
         for (int i = 0; i < 2 * arr.length; i++) {
             int currIdx = i % arr.length;
 
-            while (!stack.isEmpty() && arr[stack.peek()] <= arr[currIdx]) {
+            while (!stack.isEmpty() && arr[stack.peek()] < arr[currIdx]) {
                 int top = stack.pop();
                 res[top] = arr[currIdx];
             }
@@ -25,7 +25,7 @@ public class NextGreaterElement2 {
             stack.push(currIdx);
         }
 
-        return null;
+        return res;
     }
 
     // O(n) time | O(n) space
