@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BellmanFord
-            Powerset
-            MinHeap
             QuickSort
             DijkstraShortestPaths
             MaxPathSumInBinaryTree
@@ -60,6 +57,7 @@ public class Test {
             SortList
             BinaryTreeZigzagLevelOrderTraverse
             NumberOfWaysToMakeChange
+            Powerset
             ReverseLinkedList
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
@@ -69,6 +67,7 @@ public class Test {
             ValidateBinarySearchTree
             SameTree
             HeapSort
+            BellmanFord
             BranchSums
             StringWithoutAAAorBBB
             BSTSuccessorSearch
@@ -100,6 +99,7 @@ public class Test {
             SameBSTs
             MergeSort
             CloneGraph
+            MinHeap
          */
     }
 }
