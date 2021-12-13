@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            QuickSort
-            DijkstraShortestPaths
-            MaxPathSumInBinaryTree
             ProductOfArrayExceptSelf
             TopologicalSortDFSCycleGraph
             AddTwoNumbers
@@ -41,6 +38,7 @@ public class Test {
             LevenshteinDistance
             NodeDepths
             GenerateParentheses
+            MaxPathSumInBinaryTree
             KruskalMinSpanningTree
             DFSTreeTraverseRec
             AStarAlgo
@@ -80,6 +78,7 @@ public class Test {
             ReverseBinaryTree
             FourSum
             SearchForRange
+            DijkstraShortestPaths
             RotateImage
             PalindromicSubstrings
             ReverseString
@@ -100,6 +99,7 @@ public class Test {
             MergeSort
             CloneGraph
             MinHeap
+            QuickSort
          */
     }
 }
