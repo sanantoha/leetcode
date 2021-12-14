@@ -4,7 +4,7 @@ import java.util.List;
 
 public class AddTwoNumbers8 {
 
-    // O(l1 + l2) time | O(1) time
+    // O(max(l1, l2)) time | O(max(l1, l2)) space
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         ListNode c1 = l1;

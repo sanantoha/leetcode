@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ProductOfArrayExceptSelf
-            TopologicalSortDFSCycleGraph
-            AddTwoNumbers
             SortKSortedArray
             ReverseInteger
             MinimumPassesOfMatrix
@@ -70,6 +67,7 @@ public class Test {
             StringWithoutAAAorBBB
             BSTSuccessorSearch
             PalindromeLinkedList
+            TopologicalSortDFSCycleGraph
             InsertSort
             SymmetricTree
             DFSTreeTraverse
@@ -89,6 +87,7 @@ public class Test {
             SurroundedRegions
             MaximumSubarray
             SpiralMatrixTraverse
+            ProductOfArrayExceptSelf
             DeleteNodeInLinkedList
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
@@ -100,6 +99,7 @@ public class Test {
             CloneGraph
             MinHeap
             QuickSort
+            AddTwoNumbers
          */
     }
 }

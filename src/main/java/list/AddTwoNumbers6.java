@@ -2,6 +2,7 @@ package list;
 
 public class AddTwoNumbers6 {
 
+    // O(max(l1, l2)) time | O(max(l1, l2)) space
     public static ListNode addTwoNumbers(ListNode headA, ListNode headB) {
         if (headA == null) return headB;
         if (headB == null) return headA;
