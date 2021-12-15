@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortKSortedArray
-            ReverseInteger
-            MinimumPassesOfMatrix
             CombinationSum
             ThreeSum
             BinaryTreeDiameter
@@ -61,6 +58,7 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             ValidateBinarySearchTree
             SameTree
+            MinimumPassesOfMatrix
             HeapSort
             BellmanFord
             BranchSums
@@ -76,9 +74,11 @@ public class Test {
             ReverseBinaryTree
             FourSum
             SearchForRange
+            SortKSortedArray
             DijkstraShortestPaths
             RotateImage
             PalindromicSubstrings
+            ReverseInteger
             ReverseString
             MedianOfTwoSortedArrays
             BalancedBrackets

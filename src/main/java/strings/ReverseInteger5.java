@@ -1,17 +1,9 @@
 package strings;
 
-public class ReverseInteger4 {
+public class ReverseInteger5 {
 
-    // O(1) time | O(1) space
     public static int reverse(int n) {
-        long res = 0;
-
-        while (n != 0) {
-            res = 10 * res + n % 10;
-            if (res > Integer.MAX_VALUE || res < Integer.MIN_VALUE) return -1;
-            n /= 10;
-        }
-        return (int) res;
+        return -1;
     }
 
     public static void main(String[] args) {
