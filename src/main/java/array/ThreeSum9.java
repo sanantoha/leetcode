@@ -24,7 +24,7 @@ public class ThreeSum9 {
         return res;
     }
 
-    // O(n * log(n)) time | O(n) space
+    // O(n ^ 2) time | O(n) space
     public static List<Integer[]> threeNumberSum1(int[] arr, int target) {
         List<Integer[]> res = new ArrayList<>();
         if (arr == null || arr.length == 0) return res;

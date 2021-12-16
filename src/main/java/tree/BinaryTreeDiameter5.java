@@ -3,32 +3,10 @@ package tree;
 /**
  *   https://www.algoexpert.io/questions/Binary%20Tree%20Diameter
  */
-public class BinaryTreeDiameter4 {
+public class BinaryTreeDiameter5 {
 
-    // O(n) time | O(h) space
     public static int binaryTreeDiameter(TreeNode root) {
-        return getTreeInfo(root).diameter;
-    }
-
-    private static TreeInfo getTreeInfo(TreeNode root) {
-        if (root == null) return new TreeInfo(0, 0);
-
-        TreeInfo li = getTreeInfo(root.left);
-        TreeInfo ri = getTreeInfo(root.right);
-
-        int height = 1 + Math.max(li.height, ri.height);
-        int diameter = Math.max(Math.max(li.diameter, ri.diameter), li.height + ri.height);
-        return new TreeInfo(height, diameter);
-    }
-
-    static class TreeInfo {
-        int height;
-        int diameter;
-
-        public TreeInfo(int height, int diameter) {
-            this.height = height;
-            this.diameter = diameter;
-        }
+        return -1;
     }
 
     public static void main(String[] args) {

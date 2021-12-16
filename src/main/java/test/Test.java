@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CombinationSum
-            ThreeSum
-            BinaryTreeDiameter
             MaxSumIncreasingSubsequence
             LargestRange
             LongestIncrSubSeq
@@ -51,6 +48,7 @@ public class Test {
             NumberOfWaysToMakeChange
             Powerset
             ReverseLinkedList
+            BinaryTreeDiameter
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
@@ -59,6 +57,7 @@ public class Test {
             ValidateBinarySearchTree
             SameTree
             MinimumPassesOfMatrix
+            CombinationSum
             HeapSort
             BellmanFord
             BranchSums
@@ -79,6 +78,7 @@ public class Test {
             RotateImage
             PalindromicSubstrings
             ReverseInteger
+            ThreeSum
             ReverseString
             MedianOfTwoSortedArrays
             BalancedBrackets
