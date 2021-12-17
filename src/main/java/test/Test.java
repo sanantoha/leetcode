@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MaxSumIncreasingSubsequence
-            LargestRange
-            LongestIncrSubSeq
             LowestCommonAncestorOfBinaryTree
             MergeIntervals
             RiverSizes
@@ -54,11 +51,13 @@ public class Test {
             BinarySearch
             FirstDuplicateValue
             LowestCommonAncestorOfBinarySearchTree
+            LongestIncrSubSeq
             ValidateBinarySearchTree
             SameTree
             MinimumPassesOfMatrix
             CombinationSum
             HeapSort
+            MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
             StringWithoutAAAorBBB
@@ -69,6 +68,7 @@ public class Test {
             SymmetricTree
             DFSTreeTraverse
             CycleLinkedList
+            LargestRange
             SelectSort
             ReverseBinaryTree
             FourSum
