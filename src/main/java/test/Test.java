@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LowestCommonAncestorOfBinaryTree
-            MergeIntervals
-            RiverSizes
             Sqrt
             FindNodesDistanceK
             ValidateStartingCity
@@ -69,6 +66,7 @@ public class Test {
             DFSTreeTraverse
             CycleLinkedList
             LargestRange
+            LowestCommonAncestorOfBinaryTree
             SelectSort
             ReverseBinaryTree
             FourSum
@@ -100,6 +98,8 @@ public class Test {
             MinHeap
             QuickSort
             AddTwoNumbers
+            MergeIntervals
+            RiverSizes
          */
     }
 }
