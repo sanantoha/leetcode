@@ -1,12 +1,47 @@
 package tree;
 
 public class FindClosestValueInBST3 {
+
+    // O(h) time | O(1) space
     public static int findClosestValueInBst(TreeNode root, int target) {
-        return -1;
+        if (root == null) return -1;
+
+        TreeNode curr = root;
+        int closest = root.val;
+
+        while (curr != null) {
+            if (Math.abs(curr.val - target) < Math.abs(closest - target)) {
+                closest = curr.val;
+            }
+
+            if (curr.val < target) {
+                curr = curr.right;
+            } else if (curr.val > target) {
+                curr = curr.left;
+            } else return curr.val;
+        }
+
+        return closest;
     }
 
+    // O(h) time | O(h) space
     public static int findClosestValueInBstRec(TreeNode root, int target) {
-        return -1;
+        return findClosestValueInBstRec(root, root.val, target);
+    }
+
+    private static int findClosestValueInBstRec(TreeNode root, int closest, int target) {
+        if (root == null) return closest;
+
+        if (Math.abs(root.val - target) < Math.abs(closest - target)) {
+            closest = root.val;
+        }
+
+        if (root.val < target) {
+            return findClosestValueInBstRec(root.right, closest, target);
+        } else if (root.val > target) {
+            return findClosestValueInBstRec(root.left, closest, target);
+        }
+        return root.val;
     }
 
     public static void main(String[] args) {

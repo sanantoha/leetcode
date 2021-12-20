@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfCoinsForChange
-            FindClosestValueInBST
-            PhoneNumberMnemonic
             ClimbingStairs
             LongestNonDecrSubseq
             SearchInRotatedSortedArray
@@ -39,6 +36,7 @@ public class Test {
             Sqrt
             FindNodesDistanceK
             ValidateStartingCity
+            MinNumberOfCoinsForChange
             NumberOfWaysToMakeChange
             Powerset
             ReverseLinkedList
@@ -59,6 +57,7 @@ public class Test {
             BranchSums
             StringWithoutAAAorBBB
             BSTSuccessorSearch
+            FindClosestValueInBST
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
             InsertSort
@@ -69,6 +68,7 @@ public class Test {
             LowestCommonAncestorOfBinaryTree
             SelectSort
             ReverseBinaryTree
+            PhoneNumberMnemonic
             FourSum
             SearchForRange
             SortKSortedArray
