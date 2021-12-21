@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ClimbingStairs
-            LongestNonDecrSubseq
-            SearchInRotatedSortedArray
             WordSearch
             CountingSort
             StringPermutation
@@ -30,6 +27,7 @@ public class Test {
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SubarraySort
+            LongestCommonSubsequence
             DepthFirstSearch
             SortList
             BinaryTreeZigzagLevelOrderTraverse
@@ -40,6 +38,7 @@ public class Test {
             NumberOfWaysToMakeChange
             Powerset
             ReverseLinkedList
+            LongestNonDecrSubseq
             BinaryTreeDiameter
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
@@ -70,6 +69,7 @@ public class Test {
             ReverseBinaryTree
             PhoneNumberMnemonic
             FourSum
+            ClimbingStairs
             SearchForRange
             SortKSortedArray
             DijkstraShortestPaths
@@ -82,6 +82,7 @@ public class Test {
             BalancedBrackets
             Pow
             LeftViewBinaryTree
+            SearchInRotatedSortedArray
             SurroundedRegions
             MaximumSubarray
             SpiralMatrixTraverse

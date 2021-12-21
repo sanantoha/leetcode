@@ -5,38 +5,14 @@ package dynamic;
  *
  * Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
  */
-public class ClimbingStairs4 {
+public class ClimbingStairs5 {
 
-    // O(n) time | O(n) space
     public static int climbStairsDP(int n) {
-        if (n <= 0) return 0;
-        if (n == 1) return 1;
-
-        int[] ways = new int[n + 1];
-        ways[0] = 0;
-        ways[1] = 1;
-        ways[2] = 2;
-
-        for (int i = 3; i <= n; i++) {
-            ways[i] = ways[i - 1] + ways[i - 2];
-        }
-        return ways[n];
+        return -1;
     }
 
-    // O(n) time | O(1) space
     public static int climbStairs(int n) {
-        if (n <= 0) return 0;
-        if (n == 1) return 1;
-
-        int x = 1;
-        int y = 2;
-
-        for (int i = 2; i <= n; i++) {
-            int tmp = y;
-            y = x + y;
-            x = tmp;
-        }
-        return x;
+        return -1;
     }
 
     public static void main(String[] args) {
