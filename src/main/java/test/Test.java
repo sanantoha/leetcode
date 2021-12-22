@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordSearch
-            CountingSort
-            StringPermutation
             NextGreaterElement
             ZigZagTraverse
             FirstPermutationIsSubstrSecondStr
@@ -61,6 +58,7 @@ public class Test {
             TopologicalSortDFSCycleGraph
             InsertSort
             SymmetricTree
+            StringPermutation
             DFSTreeTraverse
             CycleLinkedList
             LargestRange
@@ -69,6 +67,7 @@ public class Test {
             ReverseBinaryTree
             PhoneNumberMnemonic
             FourSum
+            WordSearch
             ClimbingStairs
             SearchForRange
             SortKSortedArray
@@ -101,6 +100,7 @@ public class Test {
             AddTwoNumbers
             MergeIntervals
             RiverSizes
+            CountingSort
          */
     }
 }
