@@ -2,12 +2,58 @@ package array;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ZigZagTraverse4 {
 
+    // O(w * h) time | O(w * h) space
     public static List<Integer> zigzagTraverse(List<List<Integer>> array) {
-        return null;
+        if (array == null || array.size() == 0) return Collections.emptyList();
+
+        List<Integer> res = new ArrayList<>();
+        int row = 0;
+        int col = 0;
+        int height = array.size() - 1;
+        int width = array.get(0).size() - 1;
+
+        boolean isGoingDown = true;
+
+        while (!isOutOfBound(row, col, height, width)) {
+            res.add(array.get(row).get(col));
+
+            if (isGoingDown) {
+                if (col == 0 || row == height) {
+                    isGoingDown = false;
+                    if (row == height) {
+                        col++;
+                    } else {
+                        row++;
+                    }
+                } else {
+                    row++;
+                    col--;
+                }
+            } else {
+                if (row == 0 || col == width) {
+                    isGoingDown = true;
+                    if (col == width) {
+                        row++;
+                    } else {
+                        col++;
+                    }
+                } else {
+                    row--;
+                    col++;
+                }
+            }
+        }
+
+        return res;
+    }
+
+    private static boolean isOutOfBound(int row, int col, int height, int width) {
+        return row < 0 || col < 0 || row > height || col > width;
     }
 
     public static void main(String[] args) {

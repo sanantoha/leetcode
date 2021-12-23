@@ -6,6 +6,7 @@ import java.util.List;
 
 public class FirstPermutationIsSubstrSecondStr {
 
+    // (s1 ^ 2 * s1!) time | O(s1 ^ 2 * s1!) space
     private static List<String> permutation(String s) {
         List<String> ans = new ArrayList<>();
         permute(s, "", ans);
@@ -27,7 +28,7 @@ public class FirstPermutationIsSubstrSecondStr {
         }
     }
 
-    // O(s1 * s1! + s1! * s2) time | O(s1!) space
+    // (n ^ 2 * n! + s1! * s2) time | O(n ^ 2 * n!) space
     public static boolean findPermutation(String s1, String s2) {
         for (String permute : permutation(s1)) {
             if (s2.contains(permute)) return true;

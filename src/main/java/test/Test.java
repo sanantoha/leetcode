@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NextGreaterElement
-            ZigZagTraverse
-            FirstPermutationIsSubstrSecondStr
             StaircaseTraversal
             Permutations
             LevenshteinDistance
@@ -51,6 +48,7 @@ public class Test {
             MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
+            FirstPermutationIsSubstrSecondStr
             StringWithoutAAAorBBB
             BSTSuccessorSearch
             FindClosestValueInBST
@@ -69,6 +67,7 @@ public class Test {
             FourSum
             WordSearch
             ClimbingStairs
+            NextGreaterElement
             SearchForRange
             SortKSortedArray
             DijkstraShortestPaths
@@ -79,6 +78,7 @@ public class Test {
             ReverseString
             MedianOfTwoSortedArrays
             BalancedBrackets
+            ZigZagTraverse
             Pow
             LeftViewBinaryTree
             SearchInRotatedSortedArray
