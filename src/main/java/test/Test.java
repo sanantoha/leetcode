@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StaircaseTraversal
-            Permutations
-            LevenshteinDistance
             NodeDepths
             GenerateParentheses
             MaxPathSumInBinaryTree
@@ -60,6 +57,7 @@ public class Test {
             DFSTreeTraverse
             CycleLinkedList
             LargestRange
+            Permutations
             LowestCommonAncestorOfBinaryTree
             SelectSort
             ReverseBinaryTree
@@ -69,6 +67,7 @@ public class Test {
             ClimbingStairs
             NextGreaterElement
             SearchForRange
+            StaircaseTraversal
             SortKSortedArray
             DijkstraShortestPaths
             RotateImage
@@ -86,6 +85,7 @@ public class Test {
             MaximumSubarray
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
+            LevenshteinDistance
             DeleteNodeInLinkedList
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
