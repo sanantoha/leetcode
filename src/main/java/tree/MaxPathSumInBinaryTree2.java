@@ -17,8 +17,33 @@ public class MaxPathSumInBinaryTree2 {
         }
     }
 
+    static class TreeInfo {
+        int maxSumBranch;
+        int maxPath;
+
+        public TreeInfo(int maxSumBranch, int maxPath) {
+            this.maxSumBranch = maxSumBranch;
+            this.maxPath = maxPath;
+        }
+    }
+
+    // O(n) time | O(h) space
     public static int maxPathSum(BinaryTree tree) {
-        return -1;
+        return getTreeInfo(tree).maxPath;
+    }
+
+    private static TreeInfo getTreeInfo(BinaryTree tree) {
+        if (tree == null) return new TreeInfo(0, 0);
+
+        TreeInfo tiLeft = getTreeInfo(tree.left);
+        TreeInfo tiRight = getTreeInfo(tree.right);
+
+        int maxPathAsChildNodes = Math.max(tiLeft.maxPath, tiRight.maxPath);
+        int maxPathAsBranch = Math.max(maxPathAsChildNodes + tree.value, tree.value);
+        int maxPathAsRoot = Math.max(maxPathAsBranch, tiLeft.maxSumBranch + tree.value + tiRight.maxSumBranch);
+
+        int maxPath = Math.max(Math.max(maxPathAsRoot, tiLeft.maxPath), tiRight.maxPath);
+        return new TreeInfo(maxPathAsBranch, maxPath);
     }
 
 

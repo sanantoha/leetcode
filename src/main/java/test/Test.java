@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NodeDepths
-            GenerateParentheses
-            MaxPathSumInBinaryTree
             KruskalMinSpanningTree
             DFSTreeTraverseRec
             AStarAlgo
@@ -29,6 +26,8 @@ public class Test {
             NumberOfWaysToMakeChange
             Powerset
             ReverseLinkedList
+            NodeDepths
+            MaxPathSumInBinaryTree
             LongestNonDecrSubseq
             BinaryTreeDiameter
             KthSmallestElementInArray
@@ -46,6 +45,7 @@ public class Test {
             BellmanFord
             BranchSums
             FirstPermutationIsSubstrSecondStr
+            GenerateParentheses
             StringWithoutAAAorBBB
             BSTSuccessorSearch
             FindClosestValueInBST
