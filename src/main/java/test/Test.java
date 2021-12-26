@@ -12,6 +12,7 @@ public class Test {
             UniquePaths
             LongestDecrSubseq
             ValidIPAddress
+            MinNumberOfJumps
             PopulatingNextRightPointerInEachNode
             SubarraySort
             LongestCommonSubsequence
