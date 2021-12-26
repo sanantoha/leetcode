@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KruskalMinSpanningTree
             DFSTreeTraverseRec
             AStarAlgo
             BreadthSearchFirst
@@ -69,6 +68,7 @@ public class Test {
             SearchForRange
             StaircaseTraversal
             SortKSortedArray
+            KruskalMinSpanningTree
             DijkstraShortestPaths
             RotateImage
             PalindromicSubstrings
