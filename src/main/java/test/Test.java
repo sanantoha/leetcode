@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DFSTreeTraverseRec
-            AStarAlgo
             BreadthSearchFirst
             HouseRobber
             PrimMinSpanningTree
@@ -102,6 +100,8 @@ public class Test {
             MergeIntervals
             RiverSizes
             CountingSort
+            DFSTreeTraverseRec
+            AStarAlgo
          */
     }
 }
