@@ -2,9 +2,10 @@ package graph;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.List;
+import java.util.Scanner;
 
-public class BreadthSearchFirst8 {
+public class BreadthSearchFirst9 {
     public static void main(String[] args) {
         try (FileReader reader = new FileReader("src/main/java/graph/bfs.txt")) {
             Scanner scanner = new Scanner(reader);
@@ -18,27 +19,7 @@ public class BreadthSearchFirst8 {
         }
     }
 
-    // O(E * V) time | O(V) space
     public static List<Integer> bfs(EdgeWeightedDigraph graph, int start) {
-        List<Integer> res = new ArrayList<>();
-
-        boolean[] visited = new boolean[graph.V()];
-
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(start);
-
-        while (!queue.isEmpty()) {
-            int v = queue.remove();
-            res.add(v);
-            visited[v] = true;
-
-            for (DirectedEdge edge : graph.adj(v)) {
-                if (!visited[edge.to()]) {
-                    queue.add(edge.to());
-                }
-            }
-        }
-
-        return res;
+        return null;
     }
 }

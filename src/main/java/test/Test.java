@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BreadthSearchFirst
             HouseRobber
             PrimMinSpanningTree
             BFSTreeTraverse
@@ -102,6 +101,7 @@ public class Test {
             CountingSort
             DFSTreeTraverseRec
             AStarAlgo
+            BreadthSearchFirst
          */
     }
 }
