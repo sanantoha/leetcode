@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PrimMinSpanningTree
             BFSTreeTraverse
             UniquePaths
             LongestDecrSubseq
@@ -102,6 +101,7 @@ public class Test {
             AStarAlgo
             BreadthSearchFirst
             HouseRobber
+            PrimMinSpanningTree
          */
     }
 }
