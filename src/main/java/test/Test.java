@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePaths
             LongestDecrSubseq
             ValidIPAddress
             MinNumberOfJumps
@@ -102,6 +101,7 @@ public class Test {
             HouseRobber
             PrimMinSpanningTree
             BFSTreeTraverse
+            UniquePaths
          */
     }
 }
