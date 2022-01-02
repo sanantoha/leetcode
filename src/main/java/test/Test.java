@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestDecrSubseq
             ValidIPAddress
             MinNumberOfJumps
             PopulatingNextRightPointerInEachNode
@@ -102,6 +101,7 @@ public class Test {
             PrimMinSpanningTree
             BFSTreeTraverse
             UniquePaths
+            LongestDecrSubseq
          */
     }
 }

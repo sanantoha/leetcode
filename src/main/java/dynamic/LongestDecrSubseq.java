@@ -1,39 +1,74 @@
 package dynamic;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
 
 public class LongestDecrSubseq {
 
-    // O (N^2) time | O(N) space
+    // O(n ^ 2) time | O(n) space
     public static int lds(int[] arr) {
-        if (arr.length == 0) return 0;
+        if (arr == null || arr.length == 0) return -1;
 
-        int[] dp = new int[arr.length];
-        Arrays.fill(dp, 1);
+        int[] lengths = new int[arr.length];
+        Arrays.fill(lengths, 1);
+
+        int max = Integer.MIN_VALUE;
 
         for (int i = 1; i < arr.length; i++) {
             for (int j = 0; j < i; j++) {
-                if (arr[i] < arr[j]) {
-                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                if (arr[j] > arr[i] && lengths[i] < lengths[j] + 1) {
+                    lengths[i] = lengths[j] + 1;
                 }
+            }
+            if (max < lengths[i]) {
+                max = lengths[i];
             }
         }
 
-        int max = 0;
-        for (int v : dp) {
-            max = Math.max(max, v);
-        }
         return max;
     }
 
-    // O (N * log(N)) time | O(N) space
+    // O(n ^ 2) time | O(n) space
+    public static List<Integer> ldsList(int[] arr) {
+        List<Integer> res = new ArrayList<>();
+        if (arr == null || arr.length == 0) return res;
+
+        int[] lengths = new int[arr.length];
+        Arrays.fill(lengths, 1);
+        int[] prev = new int[arr.length];
+        Arrays.fill(prev, -1);
+
+        int max = Integer.MIN_VALUE;
+        int maxIdx = 0;
+
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[i] && lengths[i] < lengths[j] + 1) {
+                    lengths[i] = lengths[j] + 1;
+                    prev[i] = j;
+                }
+            }
+            if (max < lengths[i]) {
+                max = lengths[i];
+                maxIdx = i;
+            }
+        }
+
+        return buildList(arr, prev, maxIdx);
+    }
+
+    private static List<Integer> buildList(int[] arr, int[] prev, int maxIdx) {
+        Deque<Integer> stack = new LinkedList<>();
+        while (maxIdx != -1) {
+            stack.push(arr[maxIdx]);
+            maxIdx = prev[maxIdx];
+        }
+
+        return new ArrayList<>(stack);
+    }
+
+    // O(n * log(n)) time | O(n) space
     public static int lds1(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
+        if (arr == null || arr.length == 0) return -1;
 
         List<Integer> res = new ArrayList<>();
         res.add(arr[0]);
@@ -43,7 +78,7 @@ public class LongestDecrSubseq {
             if (prev > arr[i]) {
                 res.add(arr[i]);
             } else {
-                int j = revBinarySearch(res, arr[i]);
+                int j = binarySearch(res, arr[i]);
                 if (j < 0) {
                     j = -(j + 1);
                 }
@@ -54,72 +89,67 @@ public class LongestDecrSubseq {
         return res.size();
     }
 
-    private static int revBinarySearch(List<Integer> arr, int target) {
-        int l = 0;
-        int r = arr.size() - 1;
-        while (l < r) {
-            int mid = (l + r) / 2;
-            if (target < arr.get(mid)) {
-                l = mid + 1;
-            } else {
-                r = mid;
-            }
-        }
-        return arr.get(l) == target ? l : -(l + 1);
-    }
+    // O(n * log(n)) time | O(n) space
+    public static List<Integer> ldsList1(int[] arr) {
+        if (arr == null || arr.length == 0) return Collections.emptyList();
 
-    // O (N^2) time | O(N) space
-    public static List<Integer> ldsList(int[] arr) {
-        if (arr.length == 0) return Collections.emptyList();
+        int[] indices = new int[arr.length + 1];
+        Arrays.fill(indices, -1);
 
         int[] prev = new int[arr.length];
-        prev[0] = -1;
-        int[] dp = new int[arr.length];
-        dp[0] = 1;
+        Arrays.fill(prev, -1);
 
-        for (int i = 1; i < arr.length; i++) {
-            dp[i] = 1;
-            for (int j = 0; j < i; j++) {
-                if (arr[j] > arr[i] && (dp[i] < dp[j] + 1)) {
-                    dp[i] = dp[i] + 1;
-                    prev[i] = j;
-                }
-            }
-            if (dp[i] == 1) prev[i] = -1;
-        }
+        int length = 0;
 
-        int maxInd = 0, max = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (dp[i] > max) {
-                max = dp[i];
-                maxInd = i;
-            }
+            int newLength = binarySearch(arr, indices, 1, length, arr[i]);
+            prev[i] = indices[newLength - 1];
+            indices[newLength] = i;
+            length = Math.max(length, newLength);
         }
 
-        Deque<Integer> lst = new ArrayDeque<>();
-        int ni = maxInd;
-        while (ni >= 0) {
-            lst.addFirst(arr[ni]);
-            ni = prev[ni];
+        return buildList(arr, prev, indices[length]);
+    }
+
+    private static int binarySearch(int[] arr, int[] indices, int l, int r, int target) {
+        while (l <= r) {
+            int mid = (l + r) >>> 1;
+            if (target > arr[indices[mid]]) {
+                r = mid - 1;
+            } else {
+                l = mid + 1;
+            }
         }
-        return new ArrayList<>(lst);
+        return l;
+    }
+
+    private static int binarySearch(List<Integer> lst, int target) {
+        int l = 0;
+        int r = lst.size() - 1;
+
+        while (l <= r) {
+            int mid = (l + r) >>> 1;
+            if (target <= lst.get(mid)) {
+                l = mid + 1;
+            } else {
+                r = mid - 1;
+            }
+        }
+        return lst.get(l) == target ? l : -(l + 1);
     }
 
     public static void main(String[] args) {
-        int[] arr = {10, 9, 9, 11, 7, 100, 2};
+        int[] arr = {5,6,7,6,5,4,3,10,14,12};
 
         System.out.println(lds(arr));
         System.out.println(lds1(arr));
         System.out.println(ldsList(arr));
+        System.out.println(ldsList1(arr));
 
         int[] arr1 = {100, 10, 9, 8, 7, 6, 5, 90, 80, 70, 60, 50, 40, 30, 20};
         System.out.println(lds(arr1));
         System.out.println(lds1(arr1));
         System.out.println(ldsList(arr1));
-
-        int[] arr2 = {};
-        System.out.println(lds(arr2));
-        System.out.println(lds1(arr2));
-        System.out.println(ldsList(arr2));
+        System.out.println(ldsList1(arr1));
     }
 }
