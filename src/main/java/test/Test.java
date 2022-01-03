@@ -8,6 +8,7 @@ public class Test {
             SubarraySort
             LongestCommonSubsequence
             DepthFirstSearch
+            WaterArea
             SortList
             BinaryTreeZigzagLevelOrderTraverse
             Sqrt
