@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfJumps
             PopulatingNextRightPointerInEachNode
             SubarraySort
             LongestCommonSubsequence
@@ -39,6 +38,7 @@ public class Test {
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
             StringWithoutAAAorBBB
+            MinNumberOfJumps
             BSTSuccessorSearch
             FindClosestValueInBST
             PalindromeLinkedList
