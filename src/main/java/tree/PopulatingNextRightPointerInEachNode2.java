@@ -1,39 +1,9 @@
 package tree;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class PopulatingNextRightPointerInEachNode2 {
 
     public static Node connect(Node root) {
-        if (root == null) return root;
-
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(root);
-
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-
-            Node prev = null;
-
-            while (size-- > 0) {
-                Node curr = queue.remove();
-                if (prev != null) {
-                    prev.next = curr;
-                }
-                prev = curr;
-
-                if (curr.left != null) {
-                    queue.add(curr.left);
-                }
-
-                if (curr.right != null) {
-                    queue.add(curr.right);
-                }
-            }
-        }
-
-        return root;
+        return null;
     }
 
     public static void main(String[] args) {

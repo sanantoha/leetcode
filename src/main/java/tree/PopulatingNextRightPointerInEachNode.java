@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class PopulatingNextRightPointerInEachNode {
 
-    // O(n) time | O(1) space
+    // O(n) time | O(n) space
     public static Node connect(Node root) {
         if (root == null) return null;
 

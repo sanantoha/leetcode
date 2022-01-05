@@ -5,37 +5,29 @@ import java.util.Queue;
 
 public class PopulatingNextRightPointerInEachNode1 {
 
+    // O(n) time | O(n) space
     public static Node connect(Node root) {
-        if (root == null) return null;
+        if (root == null) return root;
 
         Queue<Node> queue = new LinkedList<>();
         queue.add(root);
 
-
         while (!queue.isEmpty()) {
             int size = queue.size();
-
+            System.out.println(size);
             Node prev = null;
 
             while (size-- > 0) {
-                Node node = queue.remove();
+                Node curr = queue.remove();
                 if (prev != null) {
-                    prev.next = node;
+                    prev.next = curr;
                 }
-                prev = node;
+                prev = curr;
 
-                if (node.left != null) {
-                    queue.add(node.left);
-                }
-
-                if (node.right != null) {
-                    queue.add(node.right);
-                }
+                if (curr.left != null) queue.add(curr.left);
+                if (curr.right != null) queue.add(curr.right);
             }
         }
-
-
-
         return root;
     }
 
