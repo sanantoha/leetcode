@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestCommonSubsequence
             DepthFirstSearch
             WaterArea
             SortList
@@ -43,6 +42,7 @@ public class Test {
             TopologicalSortDFSCycleGraph
             InsertSort
             SymmetricTree
+            LongestCommonSubsequence
             StringPermutation
             DFSTreeTraverse
             CycleLinkedList
