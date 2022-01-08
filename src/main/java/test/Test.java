@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DepthFirstSearch
             WaterArea
             SortList
             BinaryTreeZigzagLevelOrderTraverse
@@ -103,6 +102,7 @@ public class Test {
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SubarraySort
+            DepthFirstSearch
          */
     }
 }
