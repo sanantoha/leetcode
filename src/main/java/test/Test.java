@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WaterArea
             SortList
             BinaryTreeZigzagLevelOrderTraverse
             Sqrt
@@ -49,6 +48,7 @@ public class Test {
             Permutations
             LowestCommonAncestorOfBinaryTree
             SelectSort
+            WaterArea
             ReverseBinaryTree
             PhoneNumberMnemonic
             FourSum
