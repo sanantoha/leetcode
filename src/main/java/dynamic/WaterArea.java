@@ -60,8 +60,13 @@ public class WaterArea {
 
     public static void main(String[] args) {
         int[] input = {0, 8, 0, 0, 5, 0, 0, 10, 0, 0, 1, 1, 0, 3};
-        System.out.println(waterArea(input) == 48);
+//        int[] input = {0, 0, 1};
+        int wa = waterArea(input);
+        System.out.println(wa);
+        System.out.println(wa == 48);
 
-        System.out.println(waterArea1(input) == 48);
+        int wa1 = waterArea1(input);
+        System.out.println(wa1);
+        System.out.println(wa1 == 48);
     }
 }
