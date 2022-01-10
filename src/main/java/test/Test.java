@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortList
             BinaryTreeZigzagLevelOrderTraverse
             Sqrt
             FindNodesDistanceK
@@ -103,6 +102,7 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             SubarraySort
             DepthFirstSearch
+            SortList
          */
     }
 }
