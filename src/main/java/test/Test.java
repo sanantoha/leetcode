@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeZigzagLevelOrderTraverse
             Sqrt
             FindNodesDistanceK
             ValidateStartingCity
@@ -103,6 +102,7 @@ public class Test {
             SubarraySort
             DepthFirstSearch
             SortList
+            BinaryTreeZigzagLevelOrderTraverse
          */
     }
 }
