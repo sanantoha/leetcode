@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Sqrt
-            FindNodesDistanceK
             ValidateStartingCity
             MinNumberOfCoinsForChange
             NumberOfWaysToMakeChange
@@ -103,6 +101,8 @@ public class Test {
             DepthFirstSearch
             SortList
             BinaryTreeZigzagLevelOrderTraverse
+            Sqrt
+            FindNodesDistanceK
          */
     }
 }

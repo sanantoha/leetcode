@@ -17,21 +17,104 @@ public class FindNodesDistanceK2 {
         }
     }
 
+    // O(n) time | O(n) space
     public static List<Integer> findNodesDistanceK(BinaryTree tree, int target, int k) {
-        return null;
+        if (tree == null || k < 0) return Collections.emptyList();
+
+        List<Integer> res = new ArrayList<>();
+
+        Map<Integer, BinaryTree> parents = new HashMap<>();
+        enrichParents(tree, null, parents);
+
+        BinaryTree targetNode = getNodeByTargetValue(tree, parents, target);
+        Set<Integer> seen = new HashSet<>();
+        seen.add(target);
+        Queue<TreeInfo> queue = new LinkedList<>();
+        queue.add(new TreeInfo(targetNode, 0));
+
+        while (!queue.isEmpty()) {
+            TreeInfo ti = queue.remove();
+            int distance = ti.distance;
+            BinaryTree curr = ti.tree;
+
+            if (distance == k) {
+                res.add(curr.value);
+                while (!queue.isEmpty()) {
+                    res.add(queue.remove().tree.value);
+                }
+                return res;
+            }
+
+            List<BinaryTree> nodes = Arrays.asList(curr.left, curr.right, parents.get(curr.value));
+            for (BinaryTree node : nodes) {
+                if (node == null || seen.contains(node.value)) continue;
+                queue.add(new TreeInfo(node, distance + 1));
+            }
+        }
+
+        return Collections.emptyList();
     }
 
+    private static class TreeInfo {
+        BinaryTree tree;
+        int distance;
 
-    private static BinaryTree getNodeByValue(BinaryTree tree, Map<Integer, BinaryTree> parents, int val) {
-        if (tree.value == val) return tree;
+        public TreeInfo(BinaryTree tree, int distance) {
+            this.tree = tree;
+            this.distance = distance;
+        }
+    }
 
-        BinaryTree parent = parents.get(val);
-        if (parent != null && parent.left.value == val) return parent.left;
+    private static void enrichParents(BinaryTree tree, BinaryTree parent, Map<Integer, BinaryTree> parents) {
+        if (tree == null) return;
+
+        parents.put(tree.value, parent);
+
+        enrichParents(tree.left, tree, parents);
+        enrichParents(tree.right, tree, parents);
+    }
+
+    private static BinaryTree getNodeByTargetValue(BinaryTree tree, Map<Integer, BinaryTree> parents, int target) {
+        if (tree.value == target) return tree;
+
+        BinaryTree parent = parents.get(target);
+
+        if (parent != null && parent.left.value == target) return parent.left;
         else return parent.right;
     }
 
+    // O(n) time | O(n) space
     public static List<Integer> findNodesDistanceKRec(BinaryTree tree, int target, int k) {
-        return new ArrayList<>();
+        if (tree == null || k < 0) return Collections.emptyList();
+
+        List<Integer> res = new ArrayList<>();
+
+        Map<Integer, BinaryTree> parents = new HashMap<>();
+        enrichParents(tree, null, parents);
+
+        BinaryTree targetNode = getNodeByTargetValue(tree, parents, target);
+        Set<Integer> seen = new HashSet<>();
+
+        findNodesDistanceKRec(targetNode, 0, k, parents, seen, res);
+        return res;
+    }
+
+    private static void findNodesDistanceKRec(BinaryTree node,
+                                              int distance,
+                                              int k,
+                                              Map<Integer, BinaryTree> parents,
+                                              Set<Integer> seen,
+                                              List<Integer> res) {
+        if (node == null || seen.contains(node.value)) return;
+        seen.add(node.value);
+
+        if (distance == k) {
+            res.add(node.value);
+        } else {
+            findNodesDistanceKRec(node.left, distance + 1, k, parents, seen, res);
+            findNodesDistanceKRec(node.right, distance + 1, k, parents, seen, res);
+            findNodesDistanceKRec(parents.get(node.value), distance + 1, k, parents, seen, res);
+        }
     }
 
 
