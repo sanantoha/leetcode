@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidateStartingCity
-            MinNumberOfCoinsForChange
             NumberOfWaysToMakeChange
             Powerset
             ReverseLinkedList
@@ -103,6 +101,8 @@ public class Test {
             BinaryTreeZigzagLevelOrderTraverse
             Sqrt
             FindNodesDistanceK
+            ValidateStartingCity
+            MinNumberOfCoinsForChange
          */
     }
 }
