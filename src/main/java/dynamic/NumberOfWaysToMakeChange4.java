@@ -1,13 +1,28 @@
 package dynamic;
 
+import java.util.Arrays;
+
 /**
  * https://www.algoexpert.io/questions/Number%20Of%20Ways%20To%20Make%20Change
  * 2 // 1x1  + 1x5 and 6x1
  */
 public class NumberOfWaysToMakeChange4 {
 
+    // O(d * n) time | O(n) space
     public static int numberOfWaysToMakeChange(int n, int[] denoms) {
-        return -1;
+        if (n < 0 || denoms.length == 0) return 0;
+
+        int[] ways = new int[n + 1];
+        ways[0] = 1;
+
+        for (int denom : denoms) {
+            for (int amount = 0; amount <= n; amount++) {
+                if (amount >= denom) {
+                    ways[amount] += ways[amount - denom];
+                }
+            }
+        }
+        return ways[n];
     }
 
     public static void main(String[] args) {

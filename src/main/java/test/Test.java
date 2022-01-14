@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NumberOfWaysToMakeChange
-            Powerset
             ReverseLinkedList
             NodeDepths
             MaxPathSumInBinaryTree
@@ -103,6 +101,8 @@ public class Test {
             FindNodesDistanceK
             ValidateStartingCity
             MinNumberOfCoinsForChange
+            NumberOfWaysToMakeChange
+            Powerset
          */
     }
 }
