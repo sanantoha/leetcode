@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MaxPathSumInBinaryTree
-            LongestNonDecrSubseq
             BinaryTreeDiameter
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
@@ -103,6 +101,8 @@ public class Test {
             Powerset
             ReverseLinkedList
             NodeDepths
+            MaxPathSumInBinaryTree
+            LongestNonDecrSubseq
          */
     }
 }
