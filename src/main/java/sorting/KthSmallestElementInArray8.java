@@ -1,9 +1,43 @@
 package sorting;
 
+import java.util.Random;
+
 public class KthSmallestElementInArray8 {
 
+    private static Random rand = new Random();
+
+    // Worst: O(n ^ 2) time | O(log(n)) space
+    // O(n) time | O(log(n)) space
     public static int kthSmallestElement(int[] arr, int k) {
-        return -1;
+        return kthSmallestElement(arr, 0, arr.length - 1, k);
+    }
+
+    private static int kthSmallestElement(int[] arr, int l, int r, int k) {
+        if (l > r) return Integer.MIN_VALUE;
+
+        int p = partition(arr, l, r);
+        if (p == k - 1) return arr[p];
+        if (p > k - 1) return kthSmallestElement(arr, l, p - 1, k);
+        return kthSmallestElement(arr, p + 1, r, k);
+    }
+
+    private static int partition(int[] arr, int l, int r) {
+        int pIdx = l + rand.nextInt(r - l + 1);
+        swap(arr, pIdx, r);
+        int j = l;
+        for (int i = l; i < r; i++) {
+            if (arr[i] <= arr[r]) {
+                swap(arr, i, j++);
+            }
+        }
+        swap(arr, j, r);
+        return j;
+    }
+
+    private static void swap(int[] arr, int i, int j) {
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
     }
 
     public static void main(String[] args) {
