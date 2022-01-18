@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BestTimeToBuyAndSellStock
-            BinarySearch
             FirstDuplicateValue
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
@@ -103,6 +101,8 @@ public class Test {
             LongestNonDecrSubseq
             BinaryTreeDiameter
             KthSmallestElementInArray
+            BestTimeToBuyAndSellStock
+            BinarySearch
          */
     }
 }
