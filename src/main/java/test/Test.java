@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FirstDuplicateValue
-            LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
             SameTree
@@ -103,6 +101,8 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
+            FirstDuplicateValue
+            LowestCommonAncestorOfBinarySearchTree
          */
     }
 }

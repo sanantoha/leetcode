@@ -1,18 +1,8 @@
 package array;
 
-public class FirstDuplicateValue7 {
+public class FirstDuplicateValue8 {
 
-    // O(n) time | O(1) space
     public static int firstDuplicateValue(int[] arr) {
-        if (arr == null || arr.length == 0) return -1;
-
-        for (int num : arr) {
-            int val = Math.abs(num);
-            if (arr[val] < 0) {
-                return val;
-            }
-            arr[val] *= -1;
-        }
         return -1;
     }
 
