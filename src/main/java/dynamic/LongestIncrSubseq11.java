@@ -108,7 +108,7 @@ public class LongestIncrSubseq11 {
     private static int binarySearch(int[] arr, int[] indices, int l, int r, int target) {
         while (l <= r) {
             int mid = (l + r) >>> 1;
-            if (target < arr[indices[mid]]) {
+            if (target <= arr[indices[mid]]) {
                 r = mid - 1;
             } else {
                 l = mid + 1;
