@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SameTree
-            MinimumPassesOfMatrix
             CombinationSum
             HeapSort
             MaxSumIncreasingSubsequence
@@ -103,6 +101,8 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
+            SameTree
+            MinimumPassesOfMatrix
          */
     }
 }

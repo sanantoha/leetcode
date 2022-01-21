@@ -10,6 +10,7 @@ import java.util.Queue;
  */
 public class MinimumPassesOfMatrix3 {
 
+    // O(w * h) time | O(w * h) space
     public static int minimumPassesOfMatrix(int[][] matrix) {
         int minPasses = 0;
         if (matrix == null || matrix.length == 0) return minPasses;
