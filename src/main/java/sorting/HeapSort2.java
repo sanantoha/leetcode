@@ -5,56 +5,13 @@ import java.util.Random;
 
 public class HeapSort2 {
 
-    private static int left(int i) {
-        return 2 * i + 1;
-    }
-
-    private static int right(int i) {
-        return 2 * i + 2;
-    }
-
-    private static void heapify(int[] arr, int i, int size) {
-        int l = left(i);
-        int r = right(i);
-
-        int maxind = i;
-        if (l <= size && arr[maxind] < arr[l]) {
-            maxind = l;
-        }
-        if (r <= size && arr[maxind] < arr[r]) {
-            maxind = r;
-        }
-        if (maxind != i) {
-            swap(arr, maxind, i);
-            heapify(arr, maxind, size);
-        }
-    }
-
-    private static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
-    }
-
-    private static void buildHeadp(int[] arr, int size) {
-        for (int i = size / 2; i >= 0; i--) {
-            heapify(arr, i, size);
-        }
-    }
-
     public static void heapSort(int[] arr) {
-        int size = arr.length - 1;
-        buildHeadp(arr, size);
-        while (size > 0) {
-            swap(arr, 0, size);
-            size--;
-            heapify(arr, 0, size);
-        }
+
     }
 
     public static void main(String[] args) {
+        int[] arr = new int[10];
         Random rand = new Random();
-        int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = rand.nextInt(100);
         }

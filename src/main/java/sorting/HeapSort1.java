@@ -5,6 +5,45 @@ import java.util.Random;
 
 public class HeapSort1 {
 
+    // O(n * log(n)) time | O(1) space
+    public static void heapSort(int[] arr) {
+        int size = arr.length - 1;
+        buildHeap(arr, size);
+
+        while (size > 0) {
+            swap(arr, 0, size);
+            size--;
+            heapify(arr, 0, size);
+        }
+    }
+
+    private static void buildHeap(int[] arr, int size) {
+        for (int i = arr.length / 2; i >= 0; i--) {
+            heapify(arr, i, size);
+        }
+    }
+
+    private static void heapify(int[] arr, int idx, int size) {
+        int currIdx = idx;
+
+        while (true) {
+            int l = left(currIdx);
+            int r = right(currIdx);
+            int maxIdx = currIdx;
+
+            if (l <= size && arr[maxIdx] < arr[l]) {
+                maxIdx = l;
+            }
+            if (r <= size && arr[maxIdx] < arr[r]) {
+                maxIdx = r;
+            }
+
+            if (maxIdx != currIdx) {
+                swap(arr, maxIdx, currIdx);
+                currIdx = maxIdx;
+            } else return;
+        }
+    }
 
     private static int left(int i) {
         return i * 2 + 1;
@@ -20,46 +59,11 @@ public class HeapSort1 {
         arr[j] = tmp;
     }
 
-    private static void heapify(int[] arr, int i, int size) {
-        int l = left(i);
-        int r = right(i);
-
-        int maxInd = i;
-        if (l <= size && arr[maxInd] < arr[l]) {
-            maxInd = l;
-        }
-        if (r <= size && arr[maxInd] < arr[r]) {
-            maxInd = r;
-        }
-
-        if (maxInd != i) {
-            swap(arr, i, maxInd);
-            heapify(arr, maxInd, size);
-        }
-    }
-
-    private static void buildHead(int[] arr, int size) {
-        for (int i = size / 2; i >= 0; i--) {
-            heapify(arr, i, size);
-        }
-    }
-
-    private static void heapSort(int[] arr) {
-        int size = arr.length - 1;
-        buildHead(arr, size);
-
-        while(size > 0) {
-            swap(arr, 0, size);
-            size--;
-            heapify(arr, 0, size);
-        }
-    }
-
     public static void main(String[] args) {
+        int[] arr = new int[10];
         Random rand = new Random();
-        int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = rand.nextInt(50);
+            arr[i] = rand.nextInt(100);
         }
 
         System.out.println(Arrays.toString(arr));

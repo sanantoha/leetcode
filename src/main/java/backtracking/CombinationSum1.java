@@ -5,35 +5,32 @@ import java.util.List;
 
 public class CombinationSum1 {
 
-    public static List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> result = new ArrayList<>();
-        backtracking(candidates, 0, target, new ArrayList<>(), result);
-        return result;
+    // O(N ^ (M / T - 1)) time | O(T / M) space -
+    // where N number of candidates, T is the target value, M - the smallest candidate among all given integers
+    public static List<List<Integer>> combinationSum(int[] arr, int target) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (arr == null || arr.length == 0) return res;
+        backtrack(arr, target, 0, new ArrayList<>(), res);
+        return res;
     }
 
-    private static void backtracking(int[] candidates, int start, int target, List<Integer> answer, List<List<Integer>> result) {
+    private static void backtrack(int[] arr, int target, int idx, List<Integer> ans, List<List<Integer>> res) {
         if (target < 0) return;
         if (target == 0) {
-            result.add(new ArrayList<>(answer));
+            res.add(new ArrayList<>(ans));
             return;
         }
 
-        for (int i = start; i < candidates.length; i++) {
-            answer.add(candidates[i]);
-            backtracking(candidates, i, target - candidates[i], answer, result);
-            answer.remove(answer.size() - 1);
+        for (int i = idx; i < arr.length; i++) {
+            ans.add(arr[i]);
+            backtrack(arr, target - arr[i], i, ans, res);
+            ans.remove(ans.size() - 1);
         }
-
     }
 
     public static void main(String[] args) {
-        int[] candidates = {2, 3, 6, 7};
-        int target = 7;
+        int[] arr = {2, 3, 5, 7};
 
-        System.out.println(combinationSum(candidates, target));
-
-        int[] coins = {1,2};
-
-        System.out.println(combinationSum(coins, 4));
+        System.out.println(combinationSum(arr, 7)); // [[2, 2, 3], [2, 5], [7]]
     }
 }

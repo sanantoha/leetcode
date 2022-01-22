@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CombinationSum
-            HeapSort
             MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
@@ -103,6 +101,8 @@ public class Test {
             ValidateBinarySearchTree
             SameTree
             MinimumPassesOfMatrix
+            CombinationSum
+            HeapSort
          */
     }
 }

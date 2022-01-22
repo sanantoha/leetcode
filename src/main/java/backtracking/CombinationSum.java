@@ -13,6 +13,7 @@ public class CombinationSum {
     // recursive backtracking.
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
+        if (candidates == null || candidates.length == 0) return res;
         backtracking(candidates, target, 0, new ArrayList<>(), res);
         return res;
     }
