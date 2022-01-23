@@ -32,14 +32,14 @@ public class BellmanFord6 {
 
         for (int v = 0; v < graph.V() - 1; v++) {
             for (DirectedEdge edge : graph.edges()) {
-                relax(graph, shortests, prev, edge);
+                relax(shortests, prev, edge);
             }
         }
 
         return new ShortestPath(shortests, prev);
     }
 
-    private static void relax(EdgeWeightedDigraph graph, double[] shortests, int[] prev, DirectedEdge edge) {
+    private static void relax(double[] shortests, int[] prev, DirectedEdge edge) {
         double newWeight = shortests[edge.from()] + edge.weight();
         if (shortests[edge.to()] > newWeight) {
             shortests[edge.to()] = newWeight;
