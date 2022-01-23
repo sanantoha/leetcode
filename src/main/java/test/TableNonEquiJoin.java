@@ -9,7 +9,7 @@ public class TableNonEquiJoin {
         TreeSet<Integer> t1 = new TreeSet<>(); // n
         t1.add(1);
         t1.add(3);
-        t1.add(5); // n * log(n)
+        t1.add(5); // n * log(n) // no need to create first tree
 
         TreeSet<Integer> t2 = new TreeSet<>(); // m
         t2.add(2);
