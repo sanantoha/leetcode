@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BranchSums
-            FirstPermutationIsSubstrSecondStr
             GenerateParentheses
             StringWithoutAAAorBBB
             MinNumberOfJumps
@@ -103,6 +101,8 @@ public class Test {
             HeapSort
             MaxSumIncreasingSubsequence
             BellmanFord
+            BranchSums
+            FirstPermutationIsSubstrSecondStr
          */
     }
 }

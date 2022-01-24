@@ -1,28 +1,11 @@
 package tree;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class BranchSums4 {
+public class BranchSums5 {
 
-    // O(n) time | O(h) space
     public static List<Integer> branchSums(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        backtrack(root, 0, res);
-        return res;
-    }
-
-    private static void backtrack(TreeNode root, int sum, List<Integer> res) {
-        if (root == null) return;
-
-        sum += root.val;
-        if (root.left == null && root.right == null) {
-            res.add(sum);
-            return;
-        }
-
-        backtrack(root.left, sum, res);
-        backtrack(root.right, sum, res);
+        return null;
     }
 
     public static void main(String[] args) {
