@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            GenerateParentheses
-            StringWithoutAAAorBBB
             MinNumberOfJumps
             BSTSuccessorSearch
             FindClosestValueInBST
@@ -103,6 +101,8 @@ public class Test {
             BellmanFord
             BranchSums
             FirstPermutationIsSubstrSecondStr
+            GenerateParentheses
+            StringWithoutAAAorBBB
          */
     }
 }
