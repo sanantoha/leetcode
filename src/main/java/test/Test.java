@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfJumps
-            BSTSuccessorSearch
             FindClosestValueInBST
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
@@ -79,6 +77,7 @@ public class Test {
             FindNodesDistanceK
             ValidateStartingCity
             MinNumberOfCoinsForChange
+            MinNumberOfJumps
             NumberOfWaysToMakeChange
             Powerset
             ReverseLinkedList
@@ -103,6 +102,7 @@ public class Test {
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
             StringWithoutAAAorBBB
+            BSTSuccessorSearch
          */
     }
 }
