@@ -1,47 +1,13 @@
 package tree;
 
-import java.util.LinkedList;
-import java.util.Queue;
+public class SymmetricTree8 {
 
-public class SymmetricTree7 {
-
-    // O(n) time | O(h) space
     public static boolean isSymmetric(TreeNode root) {
-        if (root == null) return true;
-
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root.left);
-        queue.add(root.right);
-
-        while (!queue.isEmpty()) {
-            TreeNode left = queue.remove();
-            TreeNode right = queue.remove();
-
-            if (left == null && right == null) continue;
-            if (left == null || right == null) return false;
-            if (left.val != right.val) return false;
-
-            queue.add(left.left);
-            queue.add(right.right);
-
-            queue.add(left.right);
-            queue.add(right.left);
-        }
-
-        return true;
+        return false;
     }
 
-    // O(n) time | O(h) space
     public static boolean isSymmetricRec(TreeNode root) {
-        if (root == null) return true;
-        return isSymmetricRec(root.left, root.right);
-    }
-
-    private static boolean isSymmetricRec(TreeNode left, TreeNode right) {
-        if (left == null && right == null) return true;
-        if (left == null || right == null) return false;
-
-        return left.val == right.val && isSymmetricRec(left.left, right.right) && isSymmetricRec(left.right, right.left);
+        return false;
     }
 
     public static void main(String[] args) {

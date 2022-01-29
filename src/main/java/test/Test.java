@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SymmetricTree
-            LongestCommonSubsequence
             StringPermutation
             DFSTreeTraverse
             CycleLinkedList
@@ -27,6 +25,7 @@ public class Test {
             RotateImage
             PalindromicSubstrings
             ReverseInteger
+            LongestCommonSubsequence
             ThreeSum
             ReverseString
             MedianOfTwoSortedArrays
@@ -103,6 +102,7 @@ public class Test {
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
             InsertSort
+            SymmetricTree
          */
     }
 }
