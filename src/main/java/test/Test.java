@@ -10,6 +10,7 @@ public class Test {
             SelectSort
             WaterArea
             ReverseBinaryTree
+            ReconstructBST
             PhoneNumberMnemonic
             FourSum
             WordSearch
