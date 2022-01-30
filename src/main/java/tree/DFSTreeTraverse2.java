@@ -7,16 +7,70 @@ import java.util.List;
 
 public class DFSTreeTraverse2 {
 
+    // O(n) time | O(n) space
     public static List<Integer> preOrder(TreeNode root) {
-        return null;
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
+
+        Deque<TreeNode> stack = new LinkedList<>();
+        stack.push(root);
+
+        while (!stack.isEmpty()) {
+            TreeNode curr = stack.pop();
+
+            res.add(curr.val);
+
+            if (curr.right != null) stack.push(curr.right);
+            if (curr.left != null) stack.push(curr.left);
+        }
+
+        return res;
     }
 
+    // O(n) time | O(n) space
     public static List<Integer> inOrder(TreeNode root) {
-        return null;
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
+
+        Deque<TreeNode> stack = new LinkedList<>();
+        TreeNode curr = root;
+
+        while (!stack.isEmpty() || curr != null) {
+            while (curr != null) {
+                stack.push(curr);
+                curr = curr.left;
+            }
+
+            curr = stack.pop();
+
+            res.add(curr.val);
+
+            curr = curr.right;
+        }
+        return res;
     }
 
+    // O(n) time | O(n) space
     public static List<Integer> postOrder(TreeNode root) {
-        return null;
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
+
+        Deque<TreeNode> fst = new LinkedList<>();
+        fst.push(root);
+        Deque<TreeNode> snd = new LinkedList<>();
+
+        while (!fst.isEmpty()) {
+            TreeNode curr = fst.pop();
+            snd.push(curr);
+
+            if (curr.left != null) fst.push(curr.left);
+            if (curr.right != null) fst.push(curr.right);
+        }
+
+        while (!snd.isEmpty()) {
+            res.add(snd.pop().val);
+        }
+        return res;
     }
 
 

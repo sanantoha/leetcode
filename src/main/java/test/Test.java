@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StringPermutation
-            DFSTreeTraverse
             CycleLinkedList
             LargestRange
             Permutations
@@ -17,6 +15,7 @@ public class Test {
             WordSearch
             ClimbingStairs
             NextGreaterElement
+            ConvertedSortedArrayToBST
             SearchForRange
             StaircaseTraversal
             SortKSortedArray
@@ -25,6 +24,7 @@ public class Test {
             RotateImage
             PalindromicSubstrings
             ReverseInteger
+            ConstructBinaryTreeFromPreorderAndInorderTraversal
             LongestCommonSubsequence
             ThreeSum
             ReverseString
@@ -103,6 +103,8 @@ public class Test {
             TopologicalSortDFSCycleGraph
             InsertSort
             SymmetricTree
+            StringPermutation
+            DFSTreeTraverse
          */
     }
 }
