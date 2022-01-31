@@ -1,13 +1,43 @@
 package list;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class CycleLinkedList8 {
 
+    // O(n) time | O(n) space
     public static boolean isCycle(ListNode head) {
+        if (head == null) return false;
+
+        ListNode curr = head;
+        Set<ListNode> seen = new HashSet<>();
+
+        while (curr != null) {
+            if (seen.contains(curr)) {
+                return true;
+            }
+            seen.add(curr);
+            curr = curr.next;
+        }
+
         return false;
     }
 
+    // O(n) time | O(1) space
     public static boolean isCycleWS(ListNode head) {
-        return false;
+        if (head == null) return false;
+
+        ListNode slow = head;
+        ListNode fast = head.next;
+
+        while (slow != fast) {
+            if (fast == null || fast.next == null) {
+                return false;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return true;
     }
 
     public static void main(String[] args) {

@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CycleLinkedList
-            LargestRange
             Permutations
             LowestCommonAncestorOfBinaryTree
             SelectSort
@@ -106,6 +104,8 @@ public class Test {
             SymmetricTree
             StringPermutation
             DFSTreeTraverse
+            CycleLinkedList
+            LargestRange
          */
     }
 }
