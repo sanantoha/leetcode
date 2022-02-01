@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Permutations
-            LowestCommonAncestorOfBinaryTree
             SelectSort
             WaterArea
             ReverseBinaryTree
@@ -31,6 +29,7 @@ public class Test {
             BalancedBrackets
             ZigZagTraverse
             Pow
+            Permutations
             LeftViewBinaryTree
             SearchInRotatedSortedArray
             SurroundedRegions
@@ -106,6 +105,7 @@ public class Test {
             DFSTreeTraverse
             CycleLinkedList
             LargestRange
+            LowestCommonAncestorOfBinaryTree
          */
     }
 }
