@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SelectSort
-            WaterArea
             ReverseBinaryTree
             ReconstructBST
             PhoneNumberMnemonic
@@ -21,6 +19,7 @@ public class Test {
             RotateImage
             PalindromicSubstrings
             ReverseInteger
+            WaterArea
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             LongestCommonSubsequence
             ThreeSum
@@ -106,6 +105,7 @@ public class Test {
             CycleLinkedList
             LargestRange
             LowestCommonAncestorOfBinaryTree
+            SelectSort
          */
     }
 }
