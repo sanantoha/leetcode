@@ -2,28 +2,33 @@ package tree;
 
 public class ReverseBinaryTree2 {
 
+    // O(n) time | O(h) space
     public static void reverse(TreeNode root) {
         if (root == null) return;
 
-        TreeNode left = root.left;
-        TreeNode right = root.right;
-        root.left = right;
-        root.right = left;
+        TreeNode l = root.left;
+        TreeNode r = root.right;
+
+        root.left = r;
+        root.right = l;
+
         reverse(root.left);
         reverse(root.right);
     }
 
     public static void main(String[] args) {
-        TreeNode tree = new TreeNode(5,
+        TreeNode root = new TreeNode(5,
                 new TreeNode(2,
                         new TreeNode(1),
                         new TreeNode(3)),
                 new TreeNode(10,
                         new TreeNode(7),
-                        new TreeNode(15)));
+                        new TreeNode(15,
+                                new TreeNode(14),
+                                new TreeNode(17))));
 
-        reverse(tree);
+        reverse(root);
 
-        System.out.println(tree);
+        System.out.println(root);
     }
 }

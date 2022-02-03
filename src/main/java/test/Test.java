@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseBinaryTree
-            ReconstructBST
             PhoneNumberMnemonic
             FourSum
             WordSearch
@@ -29,6 +27,7 @@ public class Test {
             ZigZagTraverse
             Pow
             Permutations
+            ReconstructBST
             LeftViewBinaryTree
             SearchInRotatedSortedArray
             SurroundedRegions
@@ -106,6 +105,7 @@ public class Test {
             LargestRange
             LowestCommonAncestorOfBinaryTree
             SelectSort
+            ReverseBinaryTree
          */
     }
 }
