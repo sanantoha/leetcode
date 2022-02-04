@@ -5,29 +5,32 @@ import java.util.List;
 
 public class PhoneNumberMnemonic2 {
 
-    public static List<String> phoneNumberMnemonic(String str) {
-        List<String> result = new ArrayList<>();
+    // O(4 ^ n * n) time | O(4 ^ n * n) space
+    public static List<String> phoneNumberMnemonics(String str) {
+        List<String> res = new ArrayList<>();
         String[] letters = {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        backtrack(str, "", letters, 0, result);
-        return result;
+        backtrack(str, letters, 0, "", res);
+        return res;
     }
 
-    private static void backtrack(String str, String ans, String[] letters, int start, List<String> result) {
-        if (start == str.length()) {
-            result.add(ans);
+    private static void backtrack(String str, String[] letters, int idx, String ans, List<String> res) {
+        if (str.length() == ans.length()) {
+            res.add(ans);
             return;
         }
-        char c = str.charAt(start);
+
+        char c = str.charAt(idx);
         int digit = Character.getNumericValue(c);
         String letter = letters[digit];
 
         for (int i = 0; i < letter.length(); i++) {
-            backtrack(str, ans + letter.charAt(i), letters, start + 1, result);
+            backtrack(str, letters, idx + 1, ans + letter.charAt(i), res);
         }
     }
 
     public static void main(String[] args) {
-        String str = "1902";
-        System.out.println(phoneNumberMnemonic(str));
+        String str = "1905";
+
+        System.out.println(phoneNumberMnemonics(str));
     }
 }

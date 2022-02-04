@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PhoneNumberMnemonic
-            FourSum
             WordSearch
             ClimbingStairs
             NextGreaterElement
@@ -106,6 +104,8 @@ public class Test {
             LowestCommonAncestorOfBinaryTree
             SelectSort
             ReverseBinaryTree
+            PhoneNumberMnemonic
+            FourSum
          */
     }
 }
