@@ -15,6 +15,7 @@ public class Test {
             DijkstraShortestPaths
             RotateImage
             PalindromicSubstrings
+            KnapsackProblem
             ReverseInteger
             WaterArea
             ConstructBinaryTreeFromPreorderAndInorderTraversal
