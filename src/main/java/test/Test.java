@@ -7,6 +7,7 @@ public class Test {
             ClimbingStairs
             NextGreaterElement
             ConvertedSortedArrayToBST
+            FirstDuplicateValue
             SearchForRange
             StaircaseTraversal
             SortKSortedArray
@@ -77,7 +78,6 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
-            FirstDuplicateValue
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
