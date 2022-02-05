@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordSearch
-            ClimbingStairs
             NextGreaterElement
             ConvertedSortedArrayToBST
             FirstDuplicateValue
@@ -107,6 +105,8 @@ public class Test {
             ReverseBinaryTree
             PhoneNumberMnemonic
             FourSum
+            WordSearch
+            ClimbingStairs
          */
     }
 }
