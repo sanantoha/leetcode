@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NextGreaterElement
-            ConvertedSortedArrayToBST
             FirstDuplicateValue
             SearchForRange
             StaircaseTraversal
@@ -107,6 +105,8 @@ public class Test {
             FourSum
             WordSearch
             ClimbingStairs
+            NextGreaterElement
+            ConvertedSortedArrayToBST
          */
     }
 }

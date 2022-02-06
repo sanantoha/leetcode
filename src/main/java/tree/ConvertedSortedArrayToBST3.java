@@ -1,6 +1,6 @@
 package tree;
 
-public class ConvertedSortedArrayToBST {
+public class ConvertedSortedArrayToBST3 {
 
     // O(n) time | O(n) space
     public static TreeNode sortedArrayToBST(int[] arr) {
@@ -18,17 +18,13 @@ public class ConvertedSortedArrayToBST {
         return root;
     }
 
-    public static void main(String[] args) {
-//        TreeNode root = new TreeNode(0,
-//                new TreeNode(-10,
-//                        null,
-//                        new TreeNode(-3)),
-//                new TreeNode(5,
-//                        null,
-//                        new TreeNode(9))
-//        );
 
-        TreeNode tree = sortedArrayToBST(new int[]{-10, -3, 0, 5, 9});
+
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5,6,7,8,9, 10};
+
+        // TreeNode{val=5, left=TreeNode{val=2, left=TreeNode{val=1, left=null, right=null}, right=TreeNode{val=3, left=null, right=TreeNode{val=4, left=null, right=null}}}, right=TreeNode{val=8, left=TreeNode{val=6, left=null, right=TreeNode{val=7, left=null, right=null}}, right=TreeNode{val=9, left=null, right=TreeNode{val=10, left=null, right=null}}}}
+        TreeNode tree = sortedArrayToBST(arr);
         System.out.println(tree);
     }
 }

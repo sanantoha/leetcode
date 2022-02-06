@@ -8,11 +8,50 @@ public class NextGreaterElement5 {
 
     // O(n) time | O(n) space
     public static int[] nextGreaterElement(int[] arr) {
-        return null;
+        if (arr == null || arr.length == 0) return new int[] {};
+
+        int[] res = new int[arr.length];
+        Arrays.fill(res, -1);
+        Deque<Integer> stack = new LinkedList<>();
+
+        for (int i = 0; i < 2 * arr.length; i++) {
+            int currIdx = i % arr.length;
+
+            while (!stack.isEmpty() && arr[stack.peek()] < arr[currIdx]) {
+                int top = stack.pop();
+                res[top] = arr[currIdx];
+            }
+
+            stack.push(currIdx);
+        }
+
+        return res;
     }
 
+    // O(n) time | O(n) space
     public static int[] nextGreaterElement1(int[] arr) {
-        return null;
+        if (arr == null || arr.length == 0) return new int[] {};
+
+        int[] res = new int[arr.length];
+        Arrays.fill(res, -1);
+        Deque<Integer> stack = new LinkedList<>();
+
+        for (int i = 2 * arr.length; i >= 0; i--) {
+            int currIdx = i % arr.length;
+
+            while (!stack.isEmpty()) {
+                if (stack.peek() > arr[currIdx]) {
+                    res[currIdx] = stack.peek();
+                    break;
+                } else {
+                    stack.pop();
+                }
+            }
+
+            stack.push(arr[currIdx]);
+        }
+
+        return res;
     }
 
     public static void main(String[] args) {
