@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FirstDuplicateValue
-            SearchForRange
             StaircaseTraversal
             SortKSortedArray
             KruskalMinSpanningTree
@@ -107,6 +105,8 @@ public class Test {
             ClimbingStairs
             NextGreaterElement
             ConvertedSortedArrayToBST
+            FirstDuplicateValue
+            SearchForRange
          */
     }
 }
