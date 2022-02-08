@@ -3,29 +3,27 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StaircaseTraversal
-            SortKSortedArray
             KruskalMinSpanningTree
-            DijkstraShortestPaths
-            RotateImage
-            PalindromicSubstrings
-            KnapsackProblem
             ReverseInteger
+            DijkstraShortestPaths
+            PalindromicSubstrings
+            RotateImage
+            Pow
+            KnapsackProblem
+            ReverseString
             WaterArea
+            MaximumSubarray
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             LongestCommonSubsequence
             ThreeSum
-            ReverseString
             MedianOfTwoSortedArrays
             BalancedBrackets
             ZigZagTraverse
-            Pow
             Permutations
             ReconstructBST
             LeftViewBinaryTree
             SearchInRotatedSortedArray
             SurroundedRegions
-            MaximumSubarray
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
             LevenshteinDistance
@@ -107,6 +105,8 @@ public class Test {
             ConvertedSortedArrayToBST
             FirstDuplicateValue
             SearchForRange
+            StaircaseTraversal
+            SortKSortedArray
          */
     }
 }
