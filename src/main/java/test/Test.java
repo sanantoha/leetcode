@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KruskalMinSpanningTree
-            ReverseInteger
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
@@ -107,6 +105,8 @@ public class Test {
             SearchForRange
             StaircaseTraversal
             SortKSortedArray
+            KruskalMinSpanningTree
+            ReverseInteger
          */
     }
 }

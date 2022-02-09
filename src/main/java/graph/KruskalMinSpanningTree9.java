@@ -1,56 +1,11 @@
 package graph;
 
-import java.util.*;
+import java.util.Set;
 
-public class KruskalMinSpanningTree8 {
+public class KruskalMinSpanningTree9 {
 
-    // O(E * log(E) + V * log(E)) time | O(E) space
-    public static Set<Edge> mst(EdgeWeightedGraph graph) {
-        Set<Edge> mst = new HashSet<>();
-
-        int[] parents = makeParents(graph);
-
-        PriorityQueue<Edge> heap = new PriorityQueue<>(graph.E(), Comparator.comparingDouble(Edge::weight));
-        for (Edge edge : graph.edges()) {
-            heap.add(edge);
-        }
-
-        int i = 0;
-        while (i < graph.V() - 1) {
-            Edge minEdge = heap.remove();
-            int v = minEdge.either();
-            int u = minEdge.other(v);
-            int pV = find(parents, v);
-            int pU = find(parents, u);
-
-            if (pV != pU) {
-                mst.add(minEdge);
-                union(parents, pV, pU);
-                i++;
-            }
-        }
-
-        return mst;
-    }
-
-    private static int find(int[] parents, int v) {
-        if (parents[v] != v) return find(parents, parents[v]);
-        return v;
-    }
-
-    private static void union(int[] parents, int v, int u) {
-        int pV = find(parents, v);
-        int pU = find(parents, u);
-
-        parents[pU] = pV;
-    }
-
-    private static int[] makeParents(EdgeWeightedGraph graph) {
-        int[] parents = new int[graph.V()];
-        for (int v = 0; v < graph.V(); v++) {
-            parents[v] = v;
-        }
-        return parents;
+    public static Set<Edge> mst(EdgeWeightedGraph edge) {
+        return null;
     }
 
     public static void main(String[] args) {
