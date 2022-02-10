@@ -8,14 +8,14 @@ public class PalindromicSubstrings1 {
         if (s == null || s.length() == 0) return count;
 
         for (int i = 0; i < s.length(); i++) {
-            count += countPalindrom(s, i, i); // odd
-            count += countPalindrom(s, i, i + 1); // even
+            count += countPalindrome(s, i, i); // odd
+            count += countPalindrome(s, i, i + 1); // even
         }
 
         return count;
     }
 
-    private static int countPalindrom(String s, int l, int r) {
+    private static int countPalindrome(String s, int l, int r) {
         int count = 0;
         while (l >= 0 && r < s.length()) {
             if (s.charAt(l) != s.charAt(r)) break;
