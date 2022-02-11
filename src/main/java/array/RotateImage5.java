@@ -27,7 +27,7 @@ public class RotateImage5 {
             int l = 0;
             int r = matrix[i].length - 1;
             int[] arr = matrix[i];
-            while (l <= r) {
+            while (l < r) {
                 int tmp = arr[l];
                 arr[l] = arr[r];
                 arr[r] = tmp;

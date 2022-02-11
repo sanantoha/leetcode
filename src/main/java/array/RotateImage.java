@@ -13,10 +13,14 @@ public class RotateImage {
 
     private static void reflect(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length / 2; j++) {
-                int tmp = matrix[i][j];
-                matrix[i][j] = matrix[i][matrix.length - j - 1];
-                matrix[i][matrix.length - j - 1] = tmp;
+            int l = 0;
+            int r = matrix[i].length - 1;
+            while (l < r) {
+                int tmp = matrix[i][l];
+                matrix[i][l] = matrix[i][r];
+                matrix[i][r] = tmp;
+                l++;
+                r--;
             }
         }
     }
