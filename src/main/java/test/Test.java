@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KnapsackProblem
-            ReverseString
             WaterArea
             MaximumSubarray
             ConstructBinaryTreeFromPreorderAndInorderTraversal
@@ -107,6 +105,8 @@ public class Test {
             PalindromicSubstrings
             RotateImage
             Pow
+            KnapsackProblem
+            ReverseString
          */
     }
 }
