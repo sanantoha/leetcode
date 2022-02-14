@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WaterArea
-            MaximumSubarray
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             LongestCommonSubsequence
             ThreeSum
@@ -31,6 +29,7 @@ public class Test {
             MinHeap
             QuickSort
             AddTwoNumbers
+            WaterArea
             MergeIntervals
             RiverSizes
             CountingSort
@@ -107,6 +106,7 @@ public class Test {
             Pow
             KnapsackProblem
             ReverseString
+            MaximumSubarray
          */
     }
 }
