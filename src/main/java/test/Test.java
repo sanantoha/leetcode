@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ConstructBinaryTreeFromPreorderAndInorderTraversal
-            LongestCommonSubsequence
             ThreeSum
             MedianOfTwoSortedArrays
             BalancedBrackets
@@ -54,6 +52,7 @@ public class Test {
             MinNumberOfJumps
             NumberOfWaysToMakeChange
             Powerset
+            ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             NodeDepths
             MaxPathSumInBinaryTree
@@ -62,6 +61,7 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
+            LongestCommonSubsequence
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
