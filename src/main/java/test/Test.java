@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ThreeSum
-            MedianOfTwoSortedArrays
             BalancedBrackets
             ZigZagTraverse
             Permutations
@@ -42,6 +40,7 @@ public class Test {
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SubarraySort
+            MedianOfTwoSortedArrays
             DepthFirstSearch
             SortList
             BinaryTreeZigzagLevelOrderTraverse
@@ -107,6 +106,7 @@ public class Test {
             KnapsackProblem
             ReverseString
             MaximumSubarray
+            ThreeSum
          */
     }
 }
