@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BalancedBrackets
-            ZigZagTraverse
             Permutations
             ReconstructBST
             LeftViewBinaryTree
@@ -76,6 +74,7 @@ public class Test {
             StringWithoutAAAorBBB
             BSTSuccessorSearch
             FindClosestValueInBST
+            ZigZagTraverse
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
             InsertSort
@@ -107,6 +106,7 @@ public class Test {
             ReverseString
             MaximumSubarray
             ThreeSum
+            BalancedBrackets
          */
     }
 }
