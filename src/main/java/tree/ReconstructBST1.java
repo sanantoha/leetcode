@@ -3,14 +3,54 @@ package tree;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * https://www.algoexpert.io/questions/Reconstruct%20BST
  */
 public class ReconstructBST1 {
 
+    // O(n ^ 2) time | O(n) space
     public static TreeNode reconstructBst(List<Integer> preOrderTraversalValues) {
-        return null;
+        if (preOrderTraversalValues == null || preOrderTraversalValues.size() == 0)
+            return null;
+
+        int rootVal = preOrderTraversalValues.get(0);
+        List<Integer> lst = preOrderTraversalValues.subList(1, preOrderTraversalValues.size());
+        TreeNode root = new TreeNode(rootVal);
+        root.left = reconstructBst(lst.stream().filter(x -> x < rootVal).collect(Collectors.toList()));
+        root.right = reconstructBst(lst.stream().filter(x -> x >= rootVal).collect(Collectors.toList()));
+        return root;
+    }
+
+    public static TreeNode reconstructBst1(List<Integer> preorder) {
+        if (preorder == null || preorder.size() == 0) return null;
+        TreeInfo ti = new TreeInfo(0);
+        return reconstructBstFromRange(preorder, ti, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    private static TreeNode reconstructBstFromRange(List<Integer> preorder, TreeInfo ti, int minValue, int maxValue) {
+        if (ti.currIdx == preorder.size()) {
+            return null;
+        }
+
+        int rootVal = preorder.get(ti.currIdx);
+        if (rootVal < minValue || rootVal >= maxValue) return null;
+
+        ti.currIdx++;
+
+        TreeNode root = new TreeNode(rootVal);
+        root.left = reconstructBstFromRange(preorder, ti, minValue, rootVal);
+        root.right = reconstructBstFromRange(preorder, ti, rootVal, maxValue);
+        return root;
+    }
+
+    static class TreeInfo {
+        int currIdx;
+
+        public TreeInfo(int currIdx) {
+            this.currIdx = currIdx;
+        }
     }
 
     public static void main(String[] args) {
@@ -28,7 +68,12 @@ public class ReconstructBST1 {
         var actual = reconstructBst(preOrderTraversalValues);
         List<Integer> actualValues = getDfsOrder(actual, new ArrayList<Integer>());
         System.out.println(actualValues);
-        assert expected.equals(actualValues);
+        System.out.println(expected.equals(actualValues));
+
+        actual = reconstructBst1(preOrderTraversalValues);
+        actualValues = getDfsOrder(actual, new ArrayList<Integer>());
+        System.out.println(actualValues);
+        System.out.println(expected.equals(actualValues));
     }
 
     public static List<Integer> getDfsOrder(TreeNode node, List<Integer> values) {
