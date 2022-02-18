@@ -1,34 +1,11 @@
 package tree;
 
-import java.util.*;
+import java.util.List;
 
-public class LeftViewBinaryTree4 {
+public class LeftViewBinaryTree5 {
 
-    // O(n) time | O(n) space
     public static List<Integer> leftView(TreeNode root) {
-        if (root == null) return Collections.emptyList();
-
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
-        List<Integer> res = new ArrayList<>();
-
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-
-            boolean isFirst = true;
-
-            while (size-- > 0) {
-                TreeNode curr = queue.remove();
-                if (isFirst) {
-                    res.add(curr.val);
-                    isFirst = false;
-                }
-
-                if (curr.left != null) queue.add(curr.left);
-                if (curr.right != null) queue.add(curr.right);
-            }
-        }
-        return res;
+        return null;
     }
 
     /**
