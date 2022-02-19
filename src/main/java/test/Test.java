@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SurroundedRegions
-            SpiralMatrixTraverse
             ProductOfArrayExceptSelf
             LevenshteinDistance
             DeleteNodeInLinkedList
@@ -107,6 +105,8 @@ public class Test {
             ReconstructBST
             LeftViewBinaryTree
             SearchInRotatedSortedArray
+            SurroundedRegions
+            SpiralMatrixTraverse
          */
     }
 }
