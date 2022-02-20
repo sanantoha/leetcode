@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ProductOfArrayExceptSelf
-            LevenshteinDistance
             DeleteNodeInLinkedList
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
@@ -45,6 +43,7 @@ public class Test {
             Powerset
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
+            LevenshteinDistance
             NodeDepths
             MaxPathSumInBinaryTree
             LongestNonDecrSubseq
@@ -107,6 +106,7 @@ public class Test {
             SearchInRotatedSortedArray
             SurroundedRegions
             SpiralMatrixTraverse
+            ProductOfArrayExceptSelf
          */
     }
 }

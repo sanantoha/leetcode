@@ -35,23 +35,26 @@ public class ProductOfArrayExceptSelf {
         return ans;
     }
 
-    public int[] productExceptSelf1(int[] nums) {
-        if (nums.length == 1) return nums;
+    // O(n) time | O(n) space
+    public static int[] productExceptSelf1(int[] arr) {
+        if (arr == null || arr.length == 0) return new int[] {};
 
-        int[] ans = new int[nums.length];
-        ans[0] = 1;
+        int[] product = new int[arr.length];
 
-        for (int i = 1; i < nums.length; i++) {
-            ans[i] = nums[i - 1] * ans[i - 1];
+        int prevLeft = 1;
+        for (int i = 0; i < arr.length; i++) {
+            product[i] = prevLeft;
+            prevLeft *= arr[i];
         }
 
-        int r = 1;
-        for (int i = nums.length - 1; i >= 0; i--) {
-            ans[i] = ans[i] * r;
-            r = r * nums[i];
+        int prevRight = 1;
+        for (int i = arr.length - 1; i >= 0; i--) {
+            product[i] *= prevRight;
+            prevRight *= arr[i];
         }
 
-        return ans;
+
+        return product;
     }
 
     public static void main(String[] args) {

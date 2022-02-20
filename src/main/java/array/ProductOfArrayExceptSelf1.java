@@ -4,28 +4,31 @@ import java.util.Arrays;
 
 public class ProductOfArrayExceptSelf1 {
 
-    public static int[] productExceptSelf(int[] arr) {
-        if (arr == null || arr.length == 0) return arr;
+    // O(n) time | O(n) space
+    public static int[] product(int[] arr) {
+        if (arr == null || arr.length == 0) return new int[] {};
 
-        int[] result = new int[arr.length];
-        result[0] = 1;
+        int[] product = new int[arr.length];
 
-        for (int i = 1; i < arr.length; i++) {
-            result[i] = arr[i - 1] * result[i - 1];
+        int prevLeft = 1;
+        for (int i = 0; i < arr.length; i++) {
+            product[i] = prevLeft;
+            prevLeft *= arr[i];
         }
 
-        int r = 1;
+        int prevRight = 1;
         for (int i = arr.length - 1; i >= 0; i--) {
-            result[i] = result[i] * r;
-            r = r * arr[i];
+            product[i] *= prevRight;
+            prevRight *= arr[i];
         }
 
-        return result;
+
+        return product;
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4};
+        int[] arr = new int[] {1,2,3,4};
 
-        System.out.println(Arrays.toString(productExceptSelf(arr)));
+        System.out.println(Arrays.toString(product(arr)));
     }
 }
