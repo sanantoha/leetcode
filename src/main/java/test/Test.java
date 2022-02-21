@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DeleteNodeInLinkedList
-            ReverseWordsInString
             RemoveNthNodeFromEndOfList
             MinRewards
             IntersectionLinkedList
@@ -107,6 +105,8 @@ public class Test {
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
+            DeleteNodeInLinkedList
+            ReverseWordsInString
          */
     }
 }
