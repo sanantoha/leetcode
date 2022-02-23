@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            IntersectionLinkedList
             LRUCache
             SameBSTs
             MergeSort
@@ -107,6 +106,7 @@ public class Test {
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
             MinRewards
+            IntersectionLinkedList
          */
     }
 }
