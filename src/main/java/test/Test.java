@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LRUCache
-            SameBSTs
-            MergeSort
             CloneGraph
             MinHeap
             QuickSort
@@ -107,6 +104,9 @@ public class Test {
             RemoveNthNodeFromEndOfList
             MinRewards
             IntersectionLinkedList
+            LRUCache
+            SameBSTs
+            MergeSort
          */
     }
 }

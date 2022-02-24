@@ -5,9 +5,38 @@ import java.util.Random;
 
 public class MergeSort11 {
 
+    // O(n * log(n)) time | O(n) space
     public static int[] mergeSort(int[] arr) {
-        return null;
+        int[] result = arr.clone();
+        sort(arr, 0, arr.length - 1, result);
+        return result;
     }
+
+    private static void sort(int[] arr, int l, int r, int[] result) {
+        if (l >= r) return;
+
+        int mid = (l + r) >>> 1;
+        sort(result, l, mid, arr);
+        sort(result, mid + 1, r, arr);
+        merge(arr, l, mid, r, result);
+    }
+
+    private static void merge(int[] arr, int l, int mid, int r, int[] result) {
+        int i = l;
+        int j = mid + 1;
+        int idx = l;
+        while (i <= mid && j <= r) {
+            if (arr[i] <= arr[j]) {
+                result[idx++] = arr[i++];
+            } else {
+                result[idx++] = arr[j++];
+            }
+        }
+
+        while (i <= mid) result[idx++] = arr[i++];
+        while (j <= r) result[idx++] = arr[j++];
+    }
+
 
     public static void main(String[] args) {
         int[] arr = new int[100];
