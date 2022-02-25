@@ -1,15 +1,8 @@
 package graph;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-import tree.TreeNode;
+import java.util.*;
 
 public class CloneGraph1 {
-
     static class Node {
         public int val;
         public List<Node> neighbors;
@@ -30,24 +23,27 @@ public class CloneGraph1 {
     public static Node cloneGraph(Node node) {
         if (node == null) return null;
 
+        Map<Node, Node> clonedNodes = new HashMap<>();
+        clonedNodes.put(node, new Node(node.val));
+
         Queue<Node> queue = new LinkedList<>();
         queue.add(node);
-        Map<Node, Node> map = new HashMap<>();
-        map.put(node, new Node(node.val));
 
         while (!queue.isEmpty()) {
             Node curr = queue.remove();
-            Node currCopy = map.get(curr);
-            for (Node v : curr.neighbors) {
-                if (!map.containsKey(v)) {
-                    queue.add(v);
-                    map.put(v, new Node(v.val));
+            Node currCopy = clonedNodes.get(curr);
+
+            for (Node neighbor : curr.neighbors) {
+                Node neighborCopy = clonedNodes.get(neighbor);
+                if (neighborCopy == null) {
+                    neighborCopy = new Node(neighbor.val);
+                    clonedNodes.put(neighbor, neighborCopy);
+                    queue.add(neighbor);
                 }
-                currCopy.neighbors.add(map.get(v));
+                currCopy.neighbors.add(neighborCopy);
             }
         }
-
-        return map.get(node);
+        return clonedNodes.get(node);
     }
 
     public static void main(String[] args) {
