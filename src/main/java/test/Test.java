@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            QuickSort
-            AddTwoNumbers
             WaterArea
             MergeIntervals
             RiverSizes
@@ -107,6 +105,8 @@ public class Test {
             MergeSort
             CloneGraph
             MinHeap
+            QuickSort
+            AddTwoNumbers
          */
     }
 }
