@@ -7,10 +7,9 @@ import java.util.LinkedList;
 public class MergeIntervals1 {
 
     public static int[][] merge(int[][] intervals) {
-        if (intervals == null) return null;
-        if (intervals.length < 1) return intervals;
+        if (intervals == null || intervals.length == 0) return new int[][] {};
 
-        Arrays.sort(intervals, Comparator.comparingInt(interval -> interval[0]));
+        Arrays.sort(intervals, Comparator.comparingInt(x -> x[0]));
 
         LinkedList<int[]> merged = new LinkedList<>();
 
@@ -21,22 +20,31 @@ public class MergeIntervals1 {
                 merged.getLast()[1] = Math.max(merged.getLast()[1], interval[1]);
             }
         }
-
-        return merged.toArray(new int[0][]);
+        return merged.toArray(new int[][] {});
     }
 
     public static void main(String[] args) {
         int[][] intervals = {
-                {1,3},{2,6},{8,10},{15,18}
+                {1, 5},
+                {3, 7},
+                {4, 6},
+                {6, 8}
         };
 
         System.out.println(Arrays.deepToString(merge(intervals)));
 
 
         int[][] intervals1 = {
-                {1,4},{4,5}
+                {1,3},{2,6},{8,10},{15,18}
         };
 
         System.out.println(Arrays.deepToString(merge(intervals1)));
+
+
+        int[][] intervals2 = {
+                {1,4},{4,5}
+        };
+
+        System.out.println(Arrays.deepToString(merge(intervals2)));
     }
 }

@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WaterArea
-            MergeIntervals
             RiverSizes
             CountingSort
             DFSTreeTraverseRec
@@ -39,6 +37,7 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
+            WaterArea
             LongestCommonSubsequence
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
@@ -107,6 +106,7 @@ public class Test {
             MinHeap
             QuickSort
             AddTwoNumbers
+            MergeIntervals
          */
     }
 }
