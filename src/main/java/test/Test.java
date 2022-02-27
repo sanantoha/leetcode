@@ -16,6 +16,7 @@ public class Test {
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SubarraySort
+            DiskStacking
             MedianOfTwoSortedArrays
             DepthFirstSearch
             SortList
