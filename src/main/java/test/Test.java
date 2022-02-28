@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RiverSizes
-            CountingSort
             DFSTreeTraverseRec
             AStarAlgo
             BreadthSearchFirst
@@ -108,6 +106,8 @@ public class Test {
             QuickSort
             AddTwoNumbers
             MergeIntervals
+            RiverSizes
+            CountingSort
          */
     }
 }
