@@ -1,47 +1,54 @@
 package tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DFSTreeTraverseRec1 {
 
-    public static void preOrder(TreeNode root) {
-        if (root == null) return;
-
-        System.out.print(root.val + " ");
-
-        if (root.left != null) {
-            preOrder(root.left);
-        }
-
-        if (root.right != null) {
-            preOrder(root.right);
-        }
+    // O(n) time | O(h) space
+    public static List<Integer> preOrderRec(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        preOrderRec(root, res);
+        return res;
     }
 
-    public static void inOrder(TreeNode root) {
+    private static void preOrderRec(TreeNode root, List<Integer> res) {
         if (root == null) return;
 
-        if (root.left != null) {
-            inOrder(root.left);
-        }
-
-        System.out.print(root.val + " ");
-
-        if (root.right != null) {
-            inOrder(root.right);
-        }
+        res.add(root.val);
+        preOrderRec(root.left, res);
+        preOrderRec(root.right, res);
     }
 
-    public static void postOrder(TreeNode root) {
+
+    // O(n) time | O(h) space
+    public static List<Integer> inOrderRec(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        inOrderRec(root, res);
+        return res;
+    }
+
+    private static void inOrderRec(TreeNode root, List<Integer> res) {
         if (root == null) return;
 
-        if (root.left != null) {
-            postOrder(root.left);
-        }
+        inOrderRec(root.left, res);
+        res.add(root.val);
+        inOrderRec(root.right, res);
+    }
 
-        if (root.right != null) {
-            postOrder(root.right);
-        }
+    // O(n) time | O(h) space
+    public static List<Integer> postOrderRec(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        postOrderRec(root, res);
+        return res;
+    }
 
-        System.out.print(root.val + " ");
+    private static void postOrderRec(TreeNode root, List<Integer> res) {
+        if (root == null) return;
+
+        postOrderRec(root.left, res);
+        postOrderRec(root.right, res);
+        res.add(root.val);
     }
 
     public static void main(String[] args) {
@@ -55,14 +62,10 @@ public class DFSTreeTraverseRec1 {
                 )
         );
 
-        preOrder(root);
-
+        System.out.println(preOrderRec(root)); // 5 2 1 3 8 7 9
         System.out.println();
-
-        inOrder(root);
-
+        System.out.println(inOrderRec(root)); // 1 2 3 5 7 8 9
         System.out.println();
-
-        postOrder(root);
+        System.out.println(postOrderRec(root)); // 1 3 2 7 9 8 5
     }
 }
