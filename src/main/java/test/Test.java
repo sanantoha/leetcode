@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BreadthSearchFirst
-            HouseRobber
             PrimMinSpanningTree
             BFSTreeTraverse
             UniquePaths
@@ -108,6 +106,8 @@ public class Test {
             RiverSizes
             CountingSort
             DFSTreeTraverseRec
+            BreadthSearchFirst
+            HouseRobber
          */
     }
 }

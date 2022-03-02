@@ -3,11 +3,7 @@ package graph;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
 public class BreadthSearchFirst {
     public static void main(String[] args) {
@@ -24,29 +20,31 @@ public class BreadthSearchFirst {
         }
     }
 
-    // O(v * e) time | O(v) space
-    private static List<Integer> bfs(EdgeWeightedDigraph graph, int start) {
+    // O(V + E) time | O(V) space
+    public static List<Integer> bfs(EdgeWeightedDigraph graph, int start) {
+        if (graph == null) return Collections.emptyList();
 
-        List<Integer> ans = new ArrayList<>();
-        ans.add(start);
+        List<Integer> res = new ArrayList<>();
+
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(start);
+
         boolean[] visited = new boolean[graph.V()];
 
-        Queue<Integer> queue = new ArrayDeque<>();
-        queue.add(start);
-        visited[start] = true;
+        while (!queue.isEmpty()) {
+            int v = queue.remove();
 
-        while(!queue.isEmpty()) {
-            int vertex = queue.poll();
-            for (DirectedEdge edge : graph.adj(vertex)) {
-                int to = edge.to();
-                if (!visited[to]) {
-                    visited[to] = true;
-                    ans.add(to);
-                    queue.add(to);
+            if (visited[v]) continue;
+            visited[v] = true;
+            res.add(v);
+
+            for (DirectedEdge edge : graph.adj(v)) {
+                if (!visited[edge.to()]) {
+                    queue.add(edge.to());
                 }
             }
         }
 
-        return ans;
+        return res;
     }
 }
