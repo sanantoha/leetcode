@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PrimMinSpanningTree
-            BFSTreeTraverse
             UniquePaths
             LongestDecrSubseq
             ValidIPAddress
@@ -47,6 +45,7 @@ public class Test {
             BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
+            PrimMinSpanningTree
             StringWithoutAAAorBBB
             BSTSuccessorSearch
             FindClosestValueInBST
@@ -108,6 +107,7 @@ public class Test {
             DFSTreeTraverseRec
             BreadthSearchFirst
             HouseRobber
+            BFSTreeTraverse
          */
     }
 }
