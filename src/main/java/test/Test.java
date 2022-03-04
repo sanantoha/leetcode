@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePaths
-            LongestDecrSubseq
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             SubarraySort
@@ -40,6 +38,7 @@ public class Test {
             MinimumPassesOfMatrix
             CombinationSum
             HeapSort
+            LongestDecrSubseq
             MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
@@ -108,6 +107,7 @@ public class Test {
             BreadthSearchFirst
             HouseRobber
             BFSTreeTraverse
+            UniquePaths
          */
     }
 }
