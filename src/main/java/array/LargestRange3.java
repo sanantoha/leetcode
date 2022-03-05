@@ -19,6 +19,7 @@ public class LargestRange3 {
         int currStartRange = arr[0];
 
         for (int i = 1; i < arr.length; i++) {
+            if (arr[i - 1] == arr[i]) continue;
             int prev = arr[i - 1];
             int curr = arr[i];
             if (prev + 1 == curr) {

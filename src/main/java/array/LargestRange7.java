@@ -19,6 +19,7 @@ public class LargestRange7 {
         int currRange = 1;
 
         for (int i = 1; i < arr.length; i++) {
+            if (arr[i - 1] == arr[i]) continue;
             if (arr[i] == arr[i - 1] + 1) {
                 currRange++;
             } else {

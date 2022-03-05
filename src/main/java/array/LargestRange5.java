@@ -20,6 +20,7 @@ public class LargestRange5 {
 
 
         for (int i = 1; i < arr.length; i++) {
+            if (arr[i - 1] == arr[i]) continue;
             if (arr[i - 1] + 1 == arr[i]) {
                 currRangeLength++;
             } else {

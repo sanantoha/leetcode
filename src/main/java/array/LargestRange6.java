@@ -18,6 +18,7 @@ public class LargestRange6 {
         int end = arr[0];
 
         for (int i = 1; i < arr.length; i++) {
+            if (arr[i - 1] == arr[i]) continue;
             if (arr[i - 1] + 1 == arr[i]) {
                 length++;
             } else {

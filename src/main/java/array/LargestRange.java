@@ -18,6 +18,8 @@ public class LargestRange {
         int endVal = -1;
         int currStartVal = array[0];
         for (int i = 1; i < array.length; i++) {
+            if (array[i - 1] == array[i]) continue;
+
             if (array[i - 1] + 1 == array[i]) {
                 currMax++;
             } else {
