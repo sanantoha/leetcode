@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidIPAddress
-            PopulatingNextRightPointerInEachNode
             SubarraySort
             DiskStacking
             MedianOfTwoSortedArrays
@@ -108,6 +106,8 @@ public class Test {
             HouseRobber
             BFSTreeTraverse
             UniquePaths
+            ValidIPAddress
+            PopulatingNextRightPointerInEachNode
          */
     }
 }
