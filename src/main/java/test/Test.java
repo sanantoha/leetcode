@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SubarraySort
-            DiskStacking
             MedianOfTwoSortedArrays
             DepthFirstSearch
             SortList
@@ -79,8 +77,10 @@ public class Test {
             ReverseString
             MaximumSubarray
             ThreeSum
+            SubarraySort
             BalancedBrackets
             Permutations
+            DiskStacking
             ReconstructBST
             LeftViewBinaryTree
             SearchInRotatedSortedArray
