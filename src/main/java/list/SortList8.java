@@ -2,9 +2,50 @@ package list;
 
 public class SortList8 {
 
+    // O(n * log(n)) time | O(n) space
     public static ListNode sort(ListNode head) {
+        if (head == null || head.next == null) return head;
 
-        return null;
+        ListNode mid = getMid(head);
+
+        ListNode l = sort(head);
+        ListNode r = sort(mid);
+
+        return merge(l, r);
+    }
+
+    private static ListNode merge(ListNode l, ListNode r) {
+
+        ListNode dummy = new ListNode();
+        ListNode c = dummy;
+
+        while (l != null && r != null) {
+            if (l.val <= r.val) {
+                c.next = l;
+                l = l.next;
+            } else {
+                c.next = r;
+                r = r.next;
+            }
+            c = c.next;
+        }
+
+        c.next = (l != null) ? l : r;
+
+        return dummy.next;
+    }
+
+    private static ListNode getMid(ListNode head) {
+        ListNode fast = head.next;
+        ListNode slow = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        ListNode next = slow.next;
+        slow.next = null;
+        return next;
     }
 
     public static void main(String[] args) {

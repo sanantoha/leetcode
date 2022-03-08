@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortList
-            BinaryTreeZigzagLevelOrderTraverse
             Sqrt
             FindNodesDistanceK
             ValidateStartingCity
@@ -70,6 +68,7 @@ public class Test {
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
+            SortList
             Pow
             KnapsackProblem
             ReverseString
@@ -109,6 +108,7 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
             DepthFirstSearch
+            BinaryTreeZigzagLevelOrderTraverse
          */
     }
 }
