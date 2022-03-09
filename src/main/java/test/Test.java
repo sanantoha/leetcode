@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Sqrt
-            FindNodesDistanceK
             ValidateStartingCity
             MinNumberOfCoinsForChange
             MinNumberOfJumps
@@ -31,6 +29,8 @@ public class Test {
             MinimumPassesOfMatrix
             CombinationSum
             HeapSort
+            Sqrt
+            FindNodesDistanceK
             LongestDecrSubseq
             MaxSumIncreasingSubsequence
             BellmanFord
