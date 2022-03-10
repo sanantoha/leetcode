@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidateStartingCity
-            MinNumberOfCoinsForChange
             MinNumberOfJumps
             NumberOfWaysToMakeChange
             Powerset
@@ -76,6 +74,7 @@ public class Test {
             ThreeSum
             SubarraySort
             BalancedBrackets
+            ValidateStartingCity
             Permutations
             DiskStacking
             ReconstructBST
@@ -94,6 +93,7 @@ public class Test {
             MergeSort
             CloneGraph
             MinHeap
+            MinNumberOfCoinsForChange
             QuickSort
             AddTwoNumbers
             MergeIntervals
