@@ -6,8 +6,22 @@ package dynamic;
  */
 public class NumberOfWaysToMakeChange5 {
 
+    // O(d * n) time | O(n) space
     public static int numberOfWaysToMakeChange(int n, int[] denoms) {
-        return -1;
+        if (n <= 0 || denoms == null || denoms.length == 0) return -1;
+
+        int[] ways = new int[n + 1];
+        ways[0] = 1;
+
+        for (int denom : denoms) {
+            for (int amount = 1; amount <= n; amount++) {
+                if (amount >= denom) {
+                    ways[amount] += ways[amount - denom];
+                }
+            }
+        }
+
+        return ways[n];
     }
 
     public static void main(String[] args) {

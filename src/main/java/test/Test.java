@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfJumps
-            NumberOfWaysToMakeChange
             Powerset
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
@@ -16,6 +14,7 @@ public class Test {
             BinaryTreeDiameter
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
+            MinNumberOfJumps
             BinarySearch
             WaterArea
             LongestCommonSubsequence
@@ -53,6 +52,7 @@ public class Test {
             ReverseBinaryTree
             PhoneNumberMnemonic
             FourSum
+            NumberOfWaysToMakeChange
             WordSearch
             ClimbingStairs
             NextGreaterElement
