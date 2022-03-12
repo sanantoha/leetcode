@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Powerset
-            ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
             NodeDepths
@@ -95,6 +93,7 @@ public class Test {
             MinHeap
             MinNumberOfCoinsForChange
             QuickSort
+            Powerset
             AddTwoNumbers
             MergeIntervals
             RiverSizes
@@ -109,6 +108,7 @@ public class Test {
             MedianOfTwoSortedArrays
             DepthFirstSearch
             BinaryTreeZigzagLevelOrderTraverse
+            ConstructBinaryTreeFromPreorderAndInorderTraversal
          */
     }
 }
