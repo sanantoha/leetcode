@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseLinkedList
-            LevenshteinDistance
             NodeDepths
             MaxPathSumInBinaryTree
             BalancedBinaryTree
@@ -109,6 +107,8 @@ public class Test {
             DepthFirstSearch
             BinaryTreeZigzagLevelOrderTraverse
             ConstructBinaryTreeFromPreorderAndInorderTraversal
+            ReverseLinkedList
+            LevenshteinDistance
          */
     }
 }
