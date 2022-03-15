@@ -6,7 +6,7 @@ package tree;
 public class BalancedBinaryTree {
 
     // O(n) time | O(h) space
-    private static boolean isBalanced(TreeNode root) {
+    public static boolean isBalanced(TreeNode root) {
         return dfs(root).balanced;
     }
 

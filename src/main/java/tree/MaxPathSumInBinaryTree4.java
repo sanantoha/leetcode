@@ -16,7 +16,33 @@ public class MaxPathSumInBinaryTree4 {
 
 
     public static int maxPathSum(BinaryTree tree) {
-        return -1;
+        return getTreeInfo(tree).maxPath;
+    }
+
+    // O(n) time | O(h) space
+    private static TreeInfo getTreeInfo(BinaryTree tree) {
+        if (tree == null) return new TreeInfo(-1, 0);
+
+        TreeInfo lti = getTreeInfo(tree.left);
+        TreeInfo rti = getTreeInfo(tree.right);
+
+        int maxPathAsChildBranch = Math.max(lti.maxPathBranch, rti.maxPathBranch);
+        int maxPathAsBranch = Math.max(maxPathAsChildBranch + tree.value, tree.value);
+        int maxPathAsRoot = Math.max(lti.maxPathBranch + tree.value + rti.maxPathBranch, maxPathAsBranch);
+
+        int maxPath = Math.max(Math.max(maxPathAsRoot, lti.maxPath), rti.maxPath);
+
+        return new TreeInfo(maxPathAsBranch, maxPath);
+    }
+
+    static class TreeInfo {
+        int maxPathBranch;
+        int maxPath;
+
+        public TreeInfo(int maxPathBranch, int maxPath) {
+            this.maxPathBranch = maxPathBranch;
+            this.maxPath = maxPath;
+        }
     }
 
 

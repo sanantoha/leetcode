@@ -3,32 +3,10 @@ package tree;
 /**
  * https://leetcode.com/problems/balanced-binary-tree/submissions/
  */
-public class BalancedBinaryTree1 {
+public class BalancedBinaryTree2 {
 
-    // O(n) time | O(h) space
     public static boolean isBalanced(TreeNode root) {
-        return getTreeInfo(root).isBalanced;
-    }
-
-    private static TreeInfo getTreeInfo(TreeNode root) {
-        if (root == null) return new TreeInfo(true, 0);
-
-        TreeInfo l = getTreeInfo(root.left);
-        TreeInfo r = getTreeInfo(root.right);
-
-        boolean isBalanced = l.isBalanced && r.isBalanced && Math.abs(l.height - r.height) <= 1;
-
-        return new TreeInfo(isBalanced, Math.max(l.height, r.height) + 1);
-    }
-
-    static class TreeInfo {
-        boolean isBalanced;
-        int height;
-
-        public TreeInfo(boolean isBalanced, int height) {
-            this.isBalanced = isBalanced;
-            this.height = height;
-        }
+        return false;
     }
 
     public static void main(String[] args) {

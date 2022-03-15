@@ -3,10 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NodeDepths
-            MaxPathSumInBinaryTree
-            BalancedBinaryTree
-            LongestNonDecrSubseq
             BinaryTreeDiameter
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
@@ -38,7 +34,9 @@ public class Test {
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
             InsertSort
+            MaxPathSumInBinaryTree
             SymmetricTree
+            LongestNonDecrSubseq
             StringPermutation
             DFSTreeTraverse
             CycleLinkedList
@@ -109,6 +107,8 @@ public class Test {
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
+            NodeDepths
+            BalancedBinaryTree
          */
     }
 }
