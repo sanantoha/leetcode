@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeDiameter
-            KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             MinNumberOfJumps
             BinarySearch
@@ -109,6 +107,8 @@ public class Test {
             LevenshteinDistance
             NodeDepths
             BalancedBinaryTree
+            BinaryTreeDiameter
+            KthSmallestElementInArray
          */
     }
 }
