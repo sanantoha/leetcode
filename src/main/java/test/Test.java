@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BestTimeToBuyAndSellStock
-            MinNumberOfJumps
             BinarySearch
             WaterArea
             LongestCommonSubsequence
@@ -80,6 +78,7 @@ public class Test {
             RemoveNthNodeFromEndOfList
             MinRewards
             IntersectionLinkedList
+            MinNumberOfJumps
             LRUCache
             SameBSTs
             MergeSort
@@ -109,6 +108,7 @@ public class Test {
             BalancedBinaryTree
             BinaryTreeDiameter
             KthSmallestElementInArray
+            BestTimeToBuyAndSellStock
          */
     }
 }
