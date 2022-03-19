@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestCommonSubsequence
-            LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
             AStarAlgo
@@ -109,6 +107,8 @@ public class Test {
             BestTimeToBuyAndSellStock
             BinarySearch
             WaterArea
+            LongestCommonSubsequence
+            LowestCommonAncestorOfBinarySearchTree
          */
     }
 }
