@@ -1,82 +1,61 @@
 package dynamic;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Deque;
-import java.util.LinkedList;
 import java.util.List;
 
 public class LongestIncrSubseq3 {
 
+    public static int lis0(int[] arr) {
+        return -1;
+    }
+
     public static int lis(int[] arr) {
-        if (arr == null || arr.length == 0) return -1;
+        return -1;
+    }
 
-        int[] dp = new int[arr.length];
-        dp[0] = 1;
-
-        for (int i = 1; i < arr.length; i++) {
-            dp[i] = 1;
-            for (int j = 0; j < i; j++) {
-                if (arr[j] < arr[i] && dp[i] < dp[j] + 1) {
-                    dp[i] = dp[j] + 1;
-                }
-            }
-        }
-
-        int max = Integer.MIN_VALUE;
-        for (int v : dp) {
-            if (v > max) max = v;
-        }
-        return max;
+    public static List<Integer> lisList0(int[] arr) {
+        return null;
     }
 
     public static List<Integer> lisList(int[] arr) {
-        if (arr == null || arr.length == 0) return Collections.emptyList();
-
-        int[] dp = new int[arr.length];
-        dp[0] = 1;
-        int[] prev = new int[arr.length];
-        prev[0] = -1;
-
-        for (int i = 1; i < arr.length; i++) {
-            dp[i] = 1;
-            for (int j = 0; j < i; j++) {
-                if (arr[j] < arr[i] && dp[i] < dp[j] + 1) {
-                    dp[i] = dp[j] + 1;
-                    prev[i] = j;
-                }
-            }
-            if (dp[i] == 1) prev[i] = -1;
-        }
-
-        int max = Integer.MIN_VALUE;
-        int maxInd = 0;
-        for (int i = 0; i < dp.length; i++) {
-            if (dp[i] > max) {
-                max = dp[i];
-                maxInd = i;
-            }
-        }
-
-        int n = maxInd;
-        Deque<Integer> stack = new LinkedList<>();
-        while (n >= 0) {
-            stack.push(arr[n]);
-            n = prev[n];
-        }
-
-        return new ArrayList<>(stack);
+        return null;
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,3,2,1,5,6,7,8};
+        int[] arr0 = {1, 2, 3, 6, -100, -90, -80, -70, -60, 7, 8, 9, 10, -50, -40};
+        System.out.println(lis0(arr0));
+        System.out.println(lis(arr0));
+        System.out.println(lisList(arr0)); // 9
+        System.out.println(lisList0(arr0)); // 9
+        System.out.println("==============================");
 
+        int[] arr = {10, 22, 9, 33, 21, 50, 41, 60, 80};
+//        System.out.println(lis(arr));
         System.out.println(lis(arr));
-        System.out.println(lisList(arr));
+        System.out.println(lis0(arr));
+        System.out.println(lisList(arr)); // 6
+        System.out.println(lisList0(arr)); // 6
+        System.out.println("==============================");
 
-
-        int[] arr1 = {10, 22, 9, 33, 21, 50, 41, 60, 80};
+        //           1  2 1 1 2 3
+        int[] arr1 = {4,10,4,3,8,9}; // 3
         System.out.println(lis(arr1));
+        System.out.println(lis0(arr1));
         System.out.println(lisList(arr1));
+        System.out.println(lisList0(arr1));
+        System.out.println("==============================");
+//////
+        int[] arr2 = {10,9,2,5,3,7,101,18}; // 4
+        System.out.println(lis(arr2));
+        System.out.println(lis0(arr2));
+        System.out.println(lisList(arr2));
+        System.out.println(lisList0(arr2));
+
+        System.out.println("===============================");
+//
+        int[] arr3 = {1, -10, 20, 30, 2, 3, 4, 5}; // 5
+        System.out.println(lis(arr3));
+        System.out.println(lis0(arr3));
+        System.out.println(lisList(arr3));
+        System.out.println(lisList0(arr3));
     }
 }

@@ -2,8 +2,17 @@ package tree;
 
 public class ValidateBinarySearchTree8 {
 
+    // O(n) time | O(h) space
     public static boolean validate(TreeNode root) {
-        return false;
+        return isValid(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    private static boolean isValid(TreeNode root, long minVal, long maxVal) {
+        if (root == null) return true;
+
+        if (root.val < minVal || root.val >= maxVal) return false;
+
+        return isValid(root.left, minVal, root.val) && isValid(root.right, root.val, maxVal);
     }
 
     public static void main(String[] args) {
@@ -17,5 +26,8 @@ public class ValidateBinarySearchTree8 {
 
 
         System.out.println(validate(root));
+
+
+        System.out.println(validate(new TreeNode(0)));
     }
 }

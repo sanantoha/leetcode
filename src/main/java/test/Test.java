@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncrSubSeq
-            ValidateBinarySearchTree
             AStarAlgo
             SameTree
             MinimumPassesOfMatrix
@@ -109,6 +107,8 @@ public class Test {
             WaterArea
             LongestCommonSubsequence
             LowestCommonAncestorOfBinarySearchTree
+            LongestIncrSubSeq
+            ValidateBinarySearchTree
          */
     }
 }
