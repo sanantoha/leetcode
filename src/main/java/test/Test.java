@@ -45,6 +45,7 @@ public class Test {
             SortKSortedArray
             KruskalMinSpanningTree
             ReverseInteger
+            TopologicalSortDFSCycleGraphAsMap
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
