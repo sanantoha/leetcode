@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            HeapSort
-            Sqrt
             FindNodesDistanceK
             LongestDecrSubseq
             MaxSumIncreasingSubsequence
@@ -82,6 +80,7 @@ public class Test {
             AddTwoNumbers
             MergeIntervals
             RiverSizes
+            Sqrt
             CountingSort
             DFSTreeTraverseRec
             BreadthSearchFirst
@@ -110,6 +109,7 @@ public class Test {
             AStarAlgo
             SameTree
             MinimumPassesOfMatrix
+            HeapSort
          */
     }
 }

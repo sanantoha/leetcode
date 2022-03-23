@@ -1,21 +1,9 @@
 package math;
 
-public class Sqrt9 {
+public class Sqrt10 {
 
-    // O(log(n)) time | O(1) space
     public static int sqrt(int n) {
-        if (n < 0) return 1;
-
-        long l = 0;
-        long r = n;
-
-        while (l <= r) {
-            long mid = (l + r) >>> 1;
-            if (mid * mid <= n) {
-                l = mid + 1;
-            } else r = mid - 1;
-        }
-        return (int) l - 1;
+        return -1;
     }
 
     public static void main(String[] args) {
