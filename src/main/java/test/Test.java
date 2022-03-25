@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MaxSumIncreasingSubsequence
-            BellmanFord
             BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
@@ -110,6 +108,8 @@ public class Test {
             HeapSort
             FindNodesDistanceK
             LongestDecrSubseq
+            MaxSumIncreasingSubsequence
+            BellmanFord
          */
     }
 }
