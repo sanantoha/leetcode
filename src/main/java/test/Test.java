@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BranchSums
-            FirstPermutationIsSubstrSecondStr
             GenerateParentheses
             PrimMinSpanningTree
             StringWithoutAAAorBBB
@@ -110,6 +108,8 @@ public class Test {
             LongestDecrSubseq
             MaxSumIncreasingSubsequence
             BellmanFord
+            BranchSums
+            FirstPermutationIsSubstrSecondStr
          */
     }
 }
