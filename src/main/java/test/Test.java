@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            GenerateParentheses
             PrimMinSpanningTree
             StringWithoutAAAorBBB
             BSTSuccessorSearch
@@ -110,6 +109,7 @@ public class Test {
             BellmanFord
             BranchSums
             FirstPermutationIsSubstrSecondStr
+            GenerateParentheses
          */
     }
 }
