@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StringWithoutAAAorBBB
-            BSTSuccessorSearch
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
@@ -77,6 +75,7 @@ public class Test {
             DFSTreeTraverseRec
             BreadthSearchFirst
             HouseRobber
+            StringWithoutAAAorBBB
             BFSTreeTraverse
             UniquePaths
             ValidIPAddress
@@ -93,6 +92,7 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
+            BSTSuccessorSearch
             WaterArea
             LongestCommonSubsequence
             LowestCommonAncestorOfBinarySearchTree
