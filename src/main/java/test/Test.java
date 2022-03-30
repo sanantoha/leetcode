@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PalindromeLinkedList
-            TopologicalSortDFSCycleGraph
             InsertSort
             MaxPathSumInBinaryTree
             SymmetricTree
@@ -110,6 +108,8 @@ public class Test {
             PrimMinSpanningTree
             FindClosestValueInBST
             ZigZagTraverse
+            PalindromeLinkedList
+            TopologicalSortDFSCycleGraph
          */
     }
 }
