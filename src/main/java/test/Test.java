@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            InsertSort
-            MaxPathSumInBinaryTree
             SymmetricTree
             LongestNonDecrSubseq
             StringPermutation
@@ -48,6 +46,7 @@ public class Test {
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
+            MaxPathSumInBinaryTree
             DeleteNodeInLinkedList
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
@@ -110,6 +109,7 @@ public class Test {
             ZigZagTraverse
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
+            InsertSort
          */
     }
 }
