@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SymmetricTree
-            LongestNonDecrSubseq
-            StringPermutation
             DFSTreeTraverse
             CycleLinkedList
             LargestRange
@@ -110,6 +107,9 @@ public class Test {
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
             InsertSort
+            SymmetricTree
+            LongestNonDecrSubseq
+            StringPermutation
          */
     }
 }
