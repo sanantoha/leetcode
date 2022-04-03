@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LowestCommonAncestorOfBinaryTree
-            SelectSort
-            ReverseBinaryTree
             PhoneNumberMnemonic
             FourSum
             NumberOfWaysToMakeChange
@@ -110,6 +107,9 @@ public class Test {
             DFSTreeTraverse
             CycleLinkedList
             LargestRange
+            LowestCommonAncestorOfBinaryTree
+            SelectSort
+            ReverseBinaryTree
          */
     }
 }
