@@ -3,12 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PhoneNumberMnemonic
-            FourSum
-            NumberOfWaysToMakeChange
-            WordSearch
-            ClimbingStairs
-            NextGreaterElement
             ConvertedSortedArrayToBST
             FirstDuplicateValue
             SearchForRange
@@ -110,6 +104,12 @@ public class Test {
             LowestCommonAncestorOfBinaryTree
             SelectSort
             ReverseBinaryTree
+            PhoneNumberMnemonic
+            FourSum
+            NumberOfWaysToMakeChange
+            WordSearch
+            ClimbingStairs
+            NextGreaterElement
          */
     }
 }
