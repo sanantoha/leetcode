@@ -11,6 +11,7 @@ public class Test {
             KruskalMinSpanningTree
             ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
+            SparseMatrixMultiplication
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
