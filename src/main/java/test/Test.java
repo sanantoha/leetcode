@@ -21,6 +21,7 @@ public class Test {
             MaximumSubarray
             ThreeSum
             SubarraySort
+            RegularExpressionMatch
             BalancedBrackets
             ValidateStartingCity
             Permutations
