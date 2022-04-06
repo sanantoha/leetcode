@@ -1,11 +1,10 @@
 package test;
 
+import java.util.HashSet;
+
 public class Test {
     public static void main(String[] args) {
         /*
-            ConvertedSortedArrayToBST
-            FirstDuplicateValue
-            SearchForRange
             StaircaseTraversal
             SortKSortedArray
             KruskalMinSpanningTree
@@ -111,6 +110,9 @@ public class Test {
             WordSearch
             ClimbingStairs
             NextGreaterElement
+            ConvertedSortedArrayToBST
+            FirstDuplicateValue
+            SearchForRange
          */
     }
 }
