@@ -1,56 +1,11 @@
 package graph;
 
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.PriorityQueue;
 import java.util.Set;
 
-public class KruskalMinSpanningTree9 {
+public class KruskalMinSpanningTree10 {
 
-    public static Set<Edge> mst(EdgeWeightedGraph graph) {
-        Set<Edge> mst = new HashSet<>();
-
-        PriorityQueue<Edge> heap = new PriorityQueue<>(graph.E(), Comparator.comparingDouble(Edge::weight));
-        for (Edge edge : graph.edges()) {
-            heap.add(edge);
-        }
-
-        int[] parents = makeParents(graph);
-
-        int i = 0;
-        while (i < graph.V() - 1) {
-            Edge minEdge = heap.remove();
-            int from = minEdge.either();
-            int to = minEdge.other(from);
-            int pFrom = find(parents, from);
-            int pTo = find(parents, to);
-
-            if (pFrom != pTo) {
-                mst.add(minEdge);
-                union(parents, pFrom, pTo);
-                i++;
-            }
-        }
-        return mst;
-    }
-
-    private static int[] makeParents(EdgeWeightedGraph graph) {
-        int[] parents = new int[graph.V()];
-        for (int v = 0; v < graph.V(); v++) {
-            parents[v] = v;
-        }
-        return parents;
-    }
-
-    private static int find(int[] parents, int v) {
-        if (parents[v] != v) return find(parents, parents[v]);
-        return v;
-    }
-
-    private static void union(int[] parents, int v, int u) {
-        int pv = find(parents, v);
-        int pu = find(parents, u);
-        parents[pu] = pv;
+    public static Set<Edge> mst(EdgeWeightedGraph edge) {
+        return null;
     }
 
     public static void main(String[] args) {

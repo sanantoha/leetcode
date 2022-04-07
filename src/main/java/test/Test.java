@@ -5,9 +5,6 @@ import java.util.HashSet;
 public class Test {
     public static void main(String[] args) {
         /*
-            StaircaseTraversal
-            SortKSortedArray
-            KruskalMinSpanningTree
             ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
             SparseMatrixMultiplication
@@ -114,6 +111,9 @@ public class Test {
             ConvertedSortedArrayToBST
             FirstDuplicateValue
             SearchForRange
+            StaircaseTraversal
+            SortKSortedArray
+            KruskalMinSpanningTree
          */
     }
 }
