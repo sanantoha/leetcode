@@ -7,6 +7,7 @@ import java.util.Set;
 
 public class KruskalMinSpanningTree9 {
 
+    // O(E * log(E) + V * log(E)) time | O(E) space
     public static Set<Edge> mst(EdgeWeightedGraph graph) {
         Set<Edge> mst = new HashSet<>();
 
