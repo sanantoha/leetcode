@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseInteger
-            TopologicalSortDFSCycleGraphAsMap
-            SparseMatrixMultiplication
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
@@ -27,6 +24,7 @@ public class Test {
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
+            SparseMatrixMultiplication
             MaxPathSumInBinaryTree
             DeleteNodeInLinkedList
             ReverseWordsInString
@@ -112,6 +110,8 @@ public class Test {
             StaircaseTraversal
             SortKSortedArray
             KruskalMinSpanningTree
+            ReverseInteger
+            TopologicalSortDFSCycleGraphAsMap
          */
     }
 }
