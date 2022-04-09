@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DijkstraShortestPaths
-            PalindromicSubstrings
-            RotateImage
             SortList
             Pow
             KnapsackProblem
@@ -112,6 +109,9 @@ public class Test {
             KruskalMinSpanningTree
             ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
+            DijkstraShortestPaths
+            PalindromicSubstrings
+            RotateImage
          */
     }
 }
