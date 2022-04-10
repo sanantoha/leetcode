@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortList
-            Pow
-            KnapsackProblem
             ReverseString
             MaximumSubarray
             ThreeSum
@@ -25,6 +22,7 @@ public class Test {
             MaxPathSumInBinaryTree
             DeleteNodeInLinkedList
             ReverseWordsInString
+            KnapsackProblem
             RemoveNthNodeFromEndOfList
             MinRewards
             IntersectionLinkedList
@@ -112,6 +110,8 @@ public class Test {
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
+            SortList
+            Pow
          */
     }
 }

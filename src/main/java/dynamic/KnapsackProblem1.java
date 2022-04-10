@@ -2,6 +2,7 @@ package dynamic;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -9,15 +10,45 @@ import java.util.List;
  */
 public class KnapsackProblem1 {
 
+    // O(items * capacity) time | O(items * capacity) space
     public static List<List<Integer>> knapsackProblem(int[][] items, int capacity) {
-        // Write your code here.
-        // Replace the code below.
-        List<Integer> totalValue = Arrays.asList(10);
-        List<Integer> finalItems = Arrays.asList(1, 2);
-        var result = new ArrayList<List<Integer>>();
-        result.add(totalValue);
-        result.add(finalItems);
-        return result;
+        if (items == null || items.length == 0) return Collections.emptyList();
+
+        int[][] knapsack = new int[items.length + 1][capacity + 1];
+
+        for (int i = 1; i <= items.length; i++) {
+            for (int c = 1; c <= capacity; c++) {
+                int[] item = items[i - 1];
+                int v = item[0];
+                int w = item[1];
+                if (w > c) {
+                    knapsack[i][c] = knapsack[i - 1][c];
+                } else {
+                    knapsack[i][c] = Math.max(knapsack[i - 1][c - w] + v, knapsack[i - 1][c]);
+                }
+            }
+        }
+
+        return Arrays.asList(List.of(knapsack[items.length][capacity]), buildSequence(knapsack, items));
+    }
+
+    private static List<Integer> buildSequence(int[][] knapsack, int[][] items) {
+        int i = knapsack.length - 1;
+        int c = knapsack[i].length - 1;
+
+        List<Integer> res = new ArrayList<>();
+
+        while (i > 0) {
+            if (knapsack[i][c] == knapsack[i - 1][c]) {
+                i--;
+            } else {
+                res.add(i - 1);
+                c -= items[i - 1][1];
+                i -= 1;
+            }
+        }
+        Collections.reverse(res);
+        return res;
     }
 
     public static void main(String[] args) {
