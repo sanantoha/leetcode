@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseString
-            MaximumSubarray
-            ThreeSum
             SubarraySort
             RegularExpressionMatch
             BalancedBrackets
@@ -112,6 +109,9 @@ public class Test {
             RotateImage
             SortList
             Pow
+            ReverseString
+            MaximumSubarray
+            ThreeSum
          */
     }
 }

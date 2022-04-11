@@ -1,24 +1,9 @@
 package dynamic;
 
-public class MaximumSubarray8 {
+public class MaximumSubarray9 {
 
-    // O(n) time | O(1) space
     public static int maximumSubarray(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
-
-        int maxSub = 0;
-        int sum = 0;
-        for (int num : arr) {
-            sum += num;
-            if (sum > maxSub) {
-                maxSub = sum;
-            }
-
-            if (sum < 0) {
-                sum = 0;
-            }
-        }
-        return maxSub;
+        return -1;
     }
 
     public static void main(String[] args) {
