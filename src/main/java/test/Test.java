@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SubarraySort
-            RegularExpressionMatch
-            BalancedBrackets
             ValidateStartingCity
             Permutations
             DiskStacking
@@ -18,6 +15,7 @@ public class Test {
             SparseMatrixMultiplication
             MaxPathSumInBinaryTree
             DeleteNodeInLinkedList
+            RegularExpressionMatch
             ReverseWordsInString
             KnapsackProblem
             RemoveNthNodeFromEndOfList
@@ -39,6 +37,7 @@ public class Test {
             Sqrt
             CountingSort
             DFSTreeTraverseRec
+            SubarraySort
             BreadthSearchFirst
             HouseRobber
             StringWithoutAAAorBBB
@@ -112,6 +111,7 @@ public class Test {
             ReverseString
             MaximumSubarray
             ThreeSum
+            BalancedBrackets
          */
     }
 }
