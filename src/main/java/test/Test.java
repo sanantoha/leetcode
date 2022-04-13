@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidateStartingCity
-            Permutations
-            DiskStacking
             ReconstructBST
             LeftViewBinaryTree
             SearchInRotatedSortedArray
@@ -65,6 +62,7 @@ public class Test {
             ValidateBinarySearchTree
             AStarAlgo
             SameTree
+            ValidateStartingCity
             MinimumPassesOfMatrix
             HeapSort
             FindNodesDistanceK
@@ -85,6 +83,7 @@ public class Test {
             StringPermutation
             DFSTreeTraverse
             CycleLinkedList
+            DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
             SelectSort
@@ -112,6 +111,7 @@ public class Test {
             MaximumSubarray
             ThreeSum
             BalancedBrackets
+            Permutations
          */
     }
 }
