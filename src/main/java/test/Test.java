@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReconstructBST
-            LeftViewBinaryTree
-            SearchInRotatedSortedArray
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
@@ -49,6 +46,7 @@ public class Test {
             ReverseLinkedList
             LevenshteinDistance
             NodeDepths
+            ReconstructBST
             BalancedBinaryTree
             BinaryTreeDiameter
             KthSmallestElementInArray
@@ -112,6 +110,8 @@ public class Test {
             ThreeSum
             BalancedBrackets
             Permutations
+            LeftViewBinaryTree
+            SearchInRotatedSortedArray
          */
     }
 }
