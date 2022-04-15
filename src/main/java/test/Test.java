@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SurroundedRegions
-            SpiralMatrixTraverse
-            ProductOfArrayExceptSelf
             SparseMatrixMultiplication
             MaxPathSumInBinaryTree
             DeleteNodeInLinkedList
@@ -112,6 +109,9 @@ public class Test {
             Permutations
             LeftViewBinaryTree
             SearchInRotatedSortedArray
+            SurroundedRegions
+            SpiralMatrixTraverse
+            ProductOfArrayExceptSelf
          */
     }
 }
