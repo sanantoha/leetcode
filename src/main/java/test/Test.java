@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SparseMatrixMultiplication
-            MaxPathSumInBinaryTree
-            DeleteNodeInLinkedList
             RegularExpressionMatch
             ReverseWordsInString
             KnapsackProblem
@@ -57,6 +54,7 @@ public class Test {
             ValidateBinarySearchTree
             AStarAlgo
             SameTree
+            SparseMatrixMultiplication
             ValidateStartingCity
             MinimumPassesOfMatrix
             HeapSort
@@ -71,6 +69,7 @@ public class Test {
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
+            MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
             InsertSort
             SymmetricTree
@@ -112,6 +111,7 @@ public class Test {
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
+            DeleteNodeInLinkedList
          */
     }
 }

@@ -2,7 +2,7 @@ package tree;
 
 import java.util.ArrayDeque;
 
-public class MaxPathSumInBinaryTree6 {
+public class MaxPathSumInBinaryTree7 {
 
     static class BinaryTree {
         public int value;
@@ -15,36 +15,8 @@ public class MaxPathSumInBinaryTree6 {
     }
 
 
-    // O(n) time | O(h) space
     public static int maxPathSum(BinaryTree tree) {
-        return getTreeInfo(tree).maxPath;
-    }
-
-    private static TreeInfo getTreeInfo(BinaryTree tree) {
-        if (tree == null) {
-            return new TreeInfo(0, 0);
-        }
-
-        TreeInfo lti = getTreeInfo(tree.left);
-        TreeInfo rti = getTreeInfo(tree.right);
-
-        int maxPathAsBranchChild = Math.max(lti.maxPathAsBranch, rti.maxPathAsBranch);
-        int maxPathAsBranch = Math.max(tree.value, maxPathAsBranchChild + tree.value);
-
-        int maxPathAsRoot = Math.max(maxPathAsBranch, lti.maxPathAsBranch + tree.value + rti.maxPathAsBranch);
-        int maxPath = Math.max(Math.max(maxPathAsRoot, lti.maxPath), rti.maxPath);
-
-        return new TreeInfo(maxPathAsBranch, maxPath);
-    }
-
-    static class TreeInfo {
-        int maxPathAsBranch;
-        int maxPath;
-
-        public TreeInfo(int maxPathAsBranch, int maxPath) {
-            this.maxPathAsBranch = maxPathAsBranch;
-            this.maxPath = maxPath;
-        }
+        return -1;
     }
 
 
