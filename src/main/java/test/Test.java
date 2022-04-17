@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RegularExpressionMatch
-            ReverseWordsInString
-            KnapsackProblem
             RemoveNthNodeFromEndOfList
             MinRewards
             IntersectionLinkedList
@@ -76,6 +73,7 @@ public class Test {
             LongestNonDecrSubseq
             StringPermutation
             DFSTreeTraverse
+            KnapsackProblem
             CycleLinkedList
             DiskStacking
             LargestRange
@@ -88,6 +86,7 @@ public class Test {
             WordSearch
             ClimbingStairs
             NextGreaterElement
+            RegularExpressionMatch
             ConvertedSortedArrayToBST
             FirstDuplicateValue
             SearchForRange
@@ -112,6 +111,7 @@ public class Test {
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
             DeleteNodeInLinkedList
+            ReverseWordsInString
          */
     }
 }

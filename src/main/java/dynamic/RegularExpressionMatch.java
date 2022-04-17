@@ -9,14 +9,15 @@ import java.util.Set;
  */
 public class RegularExpressionMatch {
 
+    // O(s * p) time | O(s * p) space
     public static boolean isMatch(String s, String p) {
-        Map<String, Boolean> memo = new HashMap<>();
+        boolean[][] memo = new boolean[s.length() + 1][p.length() + 1];
         return dp(0, 0, s, p, memo);
     }
 
-    private static boolean dp(int i, int j, String s, String p, Map<String, Boolean> memo) {
+    private static boolean dp(int i, int j, String s, String p, boolean[][] memo) {
         boolean ans;
-        if (!memo.containsKey(key(i, j))) {
+        if (!memo[i][j]) {
             if (j == p.length()) {
                 ans = i == s.length();
             } else {
@@ -28,13 +29,9 @@ public class RegularExpressionMatch {
                     ans = firstMatch && dp(i + 1, j + 1, s, p, memo);
                 }
             }
-            memo.put(key(i, j), ans);
+            memo[i][j] = ans;
         }
-        return memo.get(key(i, j));
-    }
-
-    private static String key(int i, int j) {
-        return String.format("%s_%s", i, j);
+        return memo[i][j];
     }
 
     public static void main(String[] args) {
@@ -45,5 +42,7 @@ public class RegularExpressionMatch {
         System.out.println(isMatch("abcde", ".*"));
 
         System.out.println(isMatch("abcde", ".*de"));
+
+        System.out.println(!isMatch("abcde", ".*dk"));
     }
 }
