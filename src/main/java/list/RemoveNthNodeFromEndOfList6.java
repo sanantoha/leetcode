@@ -7,9 +7,9 @@ public class RemoveNthNodeFromEndOfList6 {
         if (head == null) return null;
 
         ListNode curr = head;
-        while (curr != null && n >= 0) {
-            curr = curr.next;
+        while (curr != null && n > 0) {
             n--;
+            curr = curr.next;
         }
 
         if (curr == null) {
@@ -21,7 +21,7 @@ public class RemoveNthNodeFromEndOfList6 {
 
         ListNode snd = head;
 
-        while (curr != null) {
+        while (curr.next != null) {
             curr = curr.next;
             snd = snd.next;
         }

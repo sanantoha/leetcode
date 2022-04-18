@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RemoveNthNodeFromEndOfList
-            MinRewards
-            IntersectionLinkedList
             MinNumberOfJumps
             LRUCache
             SameBSTs
@@ -112,6 +109,9 @@ public class Test {
             ProductOfArrayExceptSelf
             DeleteNodeInLinkedList
             ReverseWordsInString
+            RemoveNthNodeFromEndOfList
+            MinRewards
+            IntersectionLinkedList
          */
     }
 }
