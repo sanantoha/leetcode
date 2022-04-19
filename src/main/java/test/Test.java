@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfJumps
-            LRUCache
-            SameBSTs
             MergeSort
             CloneGraph
             CombinationSum
@@ -48,6 +45,7 @@ public class Test {
             ValidateBinarySearchTree
             AStarAlgo
             SameTree
+            MinNumberOfJumps
             SparseMatrixMultiplication
             ValidateStartingCity
             MinimumPassesOfMatrix
@@ -63,6 +61,7 @@ public class Test {
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
+            SameBSTs
             MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
             InsertSort
@@ -112,6 +111,7 @@ public class Test {
             RemoveNthNodeFromEndOfList
             MinRewards
             IntersectionLinkedList
+            LRUCache
          */
     }
 }
