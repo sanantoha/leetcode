@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MergeSort
-            CloneGraph
-            CombinationSum
             MinHeap
             MinNumberOfCoinsForChange
             QuickSort
@@ -39,6 +36,7 @@ public class Test {
             BinarySearch
             BSTSuccessorSearch
             WaterArea
+            CombinationSum
             LongestCommonSubsequence
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
@@ -112,6 +110,8 @@ public class Test {
             MinRewards
             IntersectionLinkedList
             LRUCache
+            MergeSort
+            CloneGraph
          */
     }
 }
