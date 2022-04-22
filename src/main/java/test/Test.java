@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Powerset
-            AddTwoNumbers
-            MergeIntervals
             RiverSizes
             Sqrt
             CountingSort
@@ -112,6 +109,9 @@ public class Test {
             MinHeap
             MinNumberOfCoinsForChange
             QuickSort
+            Powerset
+            AddTwoNumbers
+            MergeIntervals
          */
     }
 }
