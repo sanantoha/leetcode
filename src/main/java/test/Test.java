@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RiverSizes
-            Sqrt
-            CountingSort
             DFSTreeTraverseRec
             SubarraySort
             BreadthSearchFirst
@@ -112,6 +109,9 @@ public class Test {
             Powerset
             AddTwoNumbers
             MergeIntervals
+            RiverSizes
+            Sqrt
+            CountingSort
          */
     }
 }

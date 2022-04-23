@@ -5,7 +5,7 @@ import java.util.List;
 
 public class GenerateParentheses7 {
 
-    // O((4 ^ n) / sqrt(n)) time | O((4 ^ n) * sqrt(n)) space
+    // O((4 ^ n) / sqrt(n)) time | O((4 ^ n) / sqrt(n)) space
     public static List<String> generateParenthesis(int cnt) {
         List<String> res = new ArrayList<>();
         backtrack(cnt, 0, 0, "", res);
