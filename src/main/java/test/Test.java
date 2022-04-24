@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DFSTreeTraverseRec
-            SubarraySort
-            BreadthSearchFirst
             HouseRobber
             StringWithoutAAAorBBB
             BFSTreeTraverse
@@ -112,6 +109,9 @@ public class Test {
             RiverSizes
             Sqrt
             CountingSort
+            DFSTreeTraverseRec
+            SubarraySort
+            BreadthSearchFirst
          */
     }
 }
