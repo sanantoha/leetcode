@@ -1,11 +1,31 @@
 package tree;
 
-import java.util.List;
+import java.util.*;
 
 public class BFSTreeTraverse3 {
 
+    // O(n) time | O(n) space
     public static List<Integer> bfs(TreeNode root) {
-        return null;
+        if (root == null) return Collections.emptyList();
+
+        List<Integer> res = new ArrayList<>();
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode curr = queue.remove();
+            res.add(curr.val);
+
+            if (curr.left != null) {
+                queue.add(curr.left);
+            }
+            if (curr.right != null) {
+                queue.add(curr.right);
+            }
+        }
+
+        return res;
     }
 
     public static void main(String[] args) {

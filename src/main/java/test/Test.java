@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            HouseRobber
-            StringWithoutAAAorBBB
-            BFSTreeTraverse
             UniquePaths
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
@@ -112,6 +109,9 @@ public class Test {
             DFSTreeTraverseRec
             SubarraySort
             BreadthSearchFirst
+            HouseRobber
+            StringWithoutAAAorBBB
+            BFSTreeTraverse
          */
     }
 }
