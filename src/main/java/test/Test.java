@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePaths
-            ValidIPAddress
-            PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
             DepthFirstSearch
             BinaryTreeZigzagLevelOrderTraverse
@@ -112,6 +109,9 @@ public class Test {
             HouseRobber
             StringWithoutAAAorBBB
             BFSTreeTraverse
+            UniquePaths
+            ValidIPAddress
+            PopulatingNextRightPointerInEachNode
          */
     }
 }

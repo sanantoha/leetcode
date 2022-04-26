@@ -1,9 +1,34 @@
 package tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class PopulatingNextRightPointerInEachNode3 {
 
+    // O(n) time | O(n) space
     public static Node connect(Node root) {
-        return null;
+        if (root == null) return null;
+
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+
+            Node prev = null;
+
+            while (size-- > 0) {
+                Node node = queue.remove();
+                if (prev != null) {
+                    prev.next = node;
+                }
+                prev = node;
+
+                if (node.left != null) queue.add(node.left);
+                if (node.right != null) queue.add(node.right);
+            }
+        }
+        return root;
     }
 
     public static void main(String[] args) {
