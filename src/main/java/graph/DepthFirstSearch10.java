@@ -52,7 +52,7 @@ public class DepthFirstSearch10 {
         Deque<Integer> stack = new LinkedList<>();
         stack.push(start);
         visited[start] = true;
-        res.add(0);
+        res.add(start);
 
 
         while (!stack.isEmpty()) {

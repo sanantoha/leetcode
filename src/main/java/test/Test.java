@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MedianOfTwoSortedArrays
-            DepthFirstSearch
-            BinaryTreeZigzagLevelOrderTraverse
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
@@ -112,6 +109,9 @@ public class Test {
             UniquePaths
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
+            MedianOfTwoSortedArrays
+            DepthFirstSearch
+            BinaryTreeZigzagLevelOrderTraverse
          */
     }
 }
