@@ -7,6 +7,7 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
     static int predInd = 0;
 
+    // O(n) time | O(n) space
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
 
         Map<Integer, Integer> mapInd = new HashMap<>();

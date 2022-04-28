@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ConstructBinaryTreeFromPreorderAndInorderTraversal
-            ReverseLinkedList
-            LevenshteinDistance
             NodeDepths
             ReconstructBST
             BalancedBinaryTree
@@ -112,6 +109,9 @@ public class Test {
             MedianOfTwoSortedArrays
             DepthFirstSearch
             BinaryTreeZigzagLevelOrderTraverse
+            ConstructBinaryTreeFromPreorderAndInorderTraversal
+            ReverseLinkedList
+            LevenshteinDistance
          */
     }
 }

@@ -1,19 +1,9 @@
 package list;
 
-public class ReverseLinkedList5 {
+public class ReverseLinkedList6 {
 
-    // O(n) space | O(1) space
     public static ListNode reverse(ListNode head) {
-        ListNode curr = head;
-        ListNode prev = null;
-
-        while (curr != null) {
-            ListNode next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-        }
-        return prev;
+        return null;
     }
 
     public static void main(String[] args) {

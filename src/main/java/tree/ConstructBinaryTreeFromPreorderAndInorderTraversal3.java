@@ -7,6 +7,7 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal3 {
 
     private static int preorderIdx = 0;
 
+    // O(n) time | O(n) space
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder == null || inorder == null || preorder.length == 0 || inorder.length == 0)
             return null;
