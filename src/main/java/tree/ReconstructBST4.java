@@ -3,52 +3,15 @@ package tree;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
-/**
- * https://www.algoexpert.io/questions/Reconstruct%20BST
- */
-public class ReconstructBST3 {
+public class ReconstructBST4 {
 
-    // O(n ^ 2) time | O(h) space
     public static TreeNode reconstructBst(List<Integer> preOrderTraversalValues) {
-        if (preOrderTraversalValues == null || preOrderTraversalValues.size() == 0) return null;
-
-        int val = preOrderTraversalValues.get(0);
-        TreeNode root = new TreeNode(val);
-        List<Integer> remain = preOrderTraversalValues.subList(1, preOrderTraversalValues.size());
-        root.left = reconstructBst(remain.stream().filter(x -> x < val).collect(Collectors.toList()));
-        root.right = reconstructBst(remain.stream().filter(x -> x > val).collect(Collectors.toList()));
-        return root;
+        return null;
     }
 
-    // O(n) time | O(n) space
     public static TreeNode reconstructBst1(List<Integer> preOrderTraversalValues) {
-        if (preOrderTraversalValues == null || preOrderTraversalValues.size() == 0) return null;
-        TreeInfo ti = new TreeInfo(0);
-        return reconstructBst1(preOrderTraversalValues, ti, Integer.MIN_VALUE, Integer.MAX_VALUE);
-    }
-
-    private static TreeNode reconstructBst1(List<Integer> preOrderTraversalValues, TreeInfo ti, int min, int max) {
-        if (ti.idx == preOrderTraversalValues.size()) return null;
-
-        int val = preOrderTraversalValues.get(ti.idx);
-
-        if (val < min || val >= max) return null;
-
-        TreeNode root = new TreeNode(val);
-        ti.idx++;
-        root.left = reconstructBst1(preOrderTraversalValues, ti, min, val);
-        root.right = reconstructBst1(preOrderTraversalValues, ti, val, max);
-        return root;
-    }
-
-    static class TreeInfo {
-        int idx;
-
-        public TreeInfo(int idx) {
-            this.idx = idx;
-        }
+        return null;
     }
 
     public static void main(String[] args) {

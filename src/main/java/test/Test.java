@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NodeDepths
-            ReconstructBST
-            BalancedBinaryTree
             BinaryTreeDiameter
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
@@ -112,6 +109,9 @@ public class Test {
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
+            NodeDepths
+            ReconstructBST
+            BalancedBinaryTree
          */
     }
 }
