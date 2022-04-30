@@ -3,33 +3,10 @@ package tree;
 /**
  *   https://www.algoexpert.io/questions/Binary%20Tree%20Diameter
  */
-public class BinaryTreeDiameter7 {
+public class BinaryTreeDiameter8 {
 
-    // O(n) time | O(h) space
     public static int binaryTreeDiameter(TreeNode root) {
-        return getTreeInfo(root).diameter;
-    }
-
-    private static Ti getTreeInfo(TreeNode root) {
-        if (root == null) return new Ti(0, 0);
-
-        Ti left = getTreeInfo(root.left);
-        Ti right = getTreeInfo(root.right);
-
-        int height = Math.max(left.height, right.height) + 1;
-        int diameter = Math.max(Math.max(left.diameter, right.diameter), left.height + right.height);
-
-        return new Ti(diameter, height);
-    }
-
-    static class Ti {
-        int diameter;
-        int height;
-
-        public Ti(int diameter, int height) {
-            this.diameter = diameter;
-            this.height = height;
-        }
+        return -1;
     }
 
     public static void main(String[] args) {

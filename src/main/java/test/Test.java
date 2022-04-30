@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeDiameter
-            KthSmallestElementInArray
-            BestTimeToBuyAndSellStock
             BinarySearch
             BSTSuccessorSearch
             WaterArea
@@ -112,6 +109,9 @@ public class Test {
             NodeDepths
             ReconstructBST
             BalancedBinaryTree
+            BinaryTreeDiameter
+            KthSmallestElementInArray
+            BestTimeToBuyAndSellStock
          */
     }
 }
