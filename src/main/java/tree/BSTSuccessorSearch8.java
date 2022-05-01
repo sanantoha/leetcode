@@ -1,33 +1,11 @@
 package tree;
 
-import static tree.BSTSuccessorSearch.Node;
+import tree.BSTSuccessorSearch.Node;
 
-public class BSTSuccessorSearch7 {
+public class BSTSuccessorSearch8 {
 
-    // O(h) time | O(1) space
     public static Node findInOrderSuccessor(Node node) {
-        if (node == null) return null;
-        if (node.right != null) {
-            return findMostLeftChild(node.right);
-        }
-        return findFirstRightParent(node);
-    }
-
-    private static Node findFirstRightParent(Node node) {
-        Node curr = node;
-        while (curr.parent != null && curr.parent.right == curr) {
-            curr = curr.parent;
-        }
-        return curr.parent;
-    }
-
-    private static Node findMostLeftChild(Node node) {
-        Node curr = node;
-
-        while (curr.left != null) {
-            curr = curr.left;
-        }
-        return curr;
+        return null;
     }
 
     public static void main(String[] args) {

@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinarySearch
-            BSTSuccessorSearch
-            WaterArea
             CombinationSum
             LongestCommonSubsequence
             LowestCommonAncestorOfBinarySearchTree
@@ -112,6 +109,9 @@ public class Test {
             BinaryTreeDiameter
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
+            BinarySearch
+            BSTSuccessorSearch
+            WaterArea
          */
     }
 }
