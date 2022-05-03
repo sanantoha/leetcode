@@ -1,6 +1,6 @@
 package tree;
 
-public class ValidateBinarySearchTree8 {
+public class ValidateBinarySearchTree1 {
 
     // O(n) time | O(h) space
     public static boolean validate(TreeNode root) {

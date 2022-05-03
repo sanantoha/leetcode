@@ -1,9 +1,18 @@
 package tree;
 
-public class ValidateBinarySearchTree9 {
+public class ValidateBinarySearchTree2 {
 
+    // O(n) time | O(h) space
     public static boolean validate(TreeNode root) {
-        return false;
+        return isValid(root, Double.MIN_VALUE, Double.MAX_VALUE);
+    }
+
+    private static boolean isValid(TreeNode root, double minValue, double maxValue) {
+        if (root == null) return true;
+
+        if (root.val < minValue || root.val >= maxValue) return false;
+
+        return isValid(root.left, minValue, root.val) && isValid(root.right, root.val, maxValue);
     }
 
     public static void main(String[] args) {
