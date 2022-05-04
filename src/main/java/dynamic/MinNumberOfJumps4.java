@@ -26,6 +26,7 @@ public class MinNumberOfJumps4 {
         return jumps[array.length - 1];
     }
 
+    // O(n) time | O(1) space
     public static int minNumberOfJumps1(int[] array) {
         if (array == null || array.length == 0) return 0;
 

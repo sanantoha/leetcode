@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SameTree
-            MinNumberOfJumps
-            SparseMatrixMultiplication
             ValidateStartingCity
             MinimumPassesOfMatrix
             HeapSort
@@ -72,6 +69,7 @@ public class Test {
             IntersectionLinkedList
             LRUCache
             MergeSort
+            MinNumberOfJumps
             CloneGraph
             MinHeap
             MinNumberOfCoinsForChange
@@ -112,6 +110,8 @@ public class Test {
             LongestIncrSubSeq
             ValidateBinarySearchTree
             AStarAlgo
+            SameTree
+            SparseMatrixMultiplication
          */
     }
 }
