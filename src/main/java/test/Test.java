@@ -16,6 +16,7 @@ public class Test {
             ZigZagTraverse
             PalindromeLinkedList
             SameBSTs
+            WordLadder
             MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
             InsertSort
