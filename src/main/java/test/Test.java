@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            HeapSort
-            FindNodesDistanceK
             LongestDecrSubseq
             MaxSumIncreasingSubsequence
             BellmanFord
@@ -113,6 +111,8 @@ public class Test {
             SameTree
             SparseMatrixMultiplication
             MinimumPassesOfMatrix
+            HeapSort
+            FindNodesDistanceK
          */
     }
 }
