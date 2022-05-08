@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BellmanFord
-            BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
             PrimMinSpanningTree
@@ -113,6 +111,8 @@ public class Test {
             FindNodesDistanceK
             LongestDecrSubseq
             MaxSumIncreasingSubsequence
+            BellmanFord
+            BranchSums
          */
     }
 }
