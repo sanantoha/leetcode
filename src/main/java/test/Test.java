@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FirstPermutationIsSubstrSecondStr
-            GenerateParentheses
             PrimMinSpanningTree
             FindClosestValueInBST
             ZigZagTraverse
@@ -13,17 +11,22 @@ public class Test {
             WordLadder
             MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
+            MinimumWindowSubstring
             InsertSort
             SymmetricTree
+            SubarraySumEqualsK
             LongestNonDecrSubseq
             StringPermutation
+            FirstUniqueCharacterInString
             DFSTreeTraverse
             KnapsackProblem
             CycleLinkedList
+            LongestIncreasingPathInMatrix
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
             SelectSort
+            TopKFrequentWords
             ReverseBinaryTree
             PhoneNumberMnemonic
             FourSum
@@ -34,6 +37,7 @@ public class Test {
             RegularExpressionMatch
             ConvertedSortedArrayToBST
             FirstDuplicateValue
+            WordBreak
             SearchForRange
             StaircaseTraversal
             SortKSortedArray
@@ -113,6 +117,8 @@ public class Test {
             MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
+            FirstPermutationIsSubstrSecondStr
+            GenerateParentheses
          */
     }
 }
