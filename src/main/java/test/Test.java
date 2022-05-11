@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ZigZagTraverse
-            PalindromeLinkedList
             SameBSTs
             WordLadder
             MaxPathSumInBinaryTree
@@ -119,6 +117,8 @@ public class Test {
             GenerateParentheses
             PrimMinSpanningTree
             FindClosestValueInBST
+            ZigZagTraverse
+            PalindromeLinkedList
          */
     }
 }
