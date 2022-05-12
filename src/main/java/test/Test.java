@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SameBSTs
-            WordLadder
             MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
             MinimumWindowSubstring
@@ -78,6 +76,7 @@ public class Test {
             BreadthSearchFirst
             ValidateStartingCity
             HouseRobber
+            WordLadder
             StringWithoutAAAorBBB
             BFSTreeTraverse
             UniquePaths
@@ -96,6 +95,7 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
+            SameBSTs
             BSTSuccessorSearch
             WaterArea
             CombinationSum
