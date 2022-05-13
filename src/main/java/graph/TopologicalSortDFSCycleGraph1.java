@@ -42,7 +42,7 @@ public class TopologicalSortDFSCycleGraph1 {
         stack.push(v);
     }
 
-    // O() time | O(V) space
+    // O(E + V) time | O(V) space
     public static int[] sortIter(Digraph graph) {
         if (graph == null) return new int[] {};
 
