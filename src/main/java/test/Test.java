@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinimumWindowSubstring
-            InsertSort
             SymmetricTree
             SubarraySumEqualsK
             LongestNonDecrSubseq
@@ -119,6 +117,8 @@ public class Test {
             PalindromeLinkedList
             MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
+            MinimumWindowSubstring
+            InsertSort
          */
     }
 }
