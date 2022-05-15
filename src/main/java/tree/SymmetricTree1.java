@@ -1,47 +1,13 @@
 package tree;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class SymmetricTree1 {
 
     public static boolean isSymmetric(TreeNode root) {
-        if (root == null) return true;
-
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
-        queue.add(root);
-
-        while (!queue.isEmpty()) {
-            TreeNode l = queue.poll();
-            TreeNode r = queue.poll();
-            if (l == null && r == null) continue;
-            if (l == null || r == null) return false;
-            if (l.val != r.val) return false;
-
-            queue.add(l.left);
-            queue.add(r.right);
-
-            queue.add(l.right);
-            queue.add(r.left);
-        }
-
-        return true;
+        return false;
     }
 
     public static boolean isSymmetricRec(TreeNode root) {
-        if (root == null) return true;
-        return isSymmetricRec(root, root);
-    }
-
-    private static boolean isSymmetricRec(TreeNode l, TreeNode r) {
-        if (l == null && r == null) return true;
-        if (l == null || r == null) return false;
-
-        return (l.val == r.val) &&
-                isSymmetricRec(l.left, r.right) &&
-                isSymmetricRec(l.right, r.left);
+        return false;
     }
 
     public static void main(String[] args) {

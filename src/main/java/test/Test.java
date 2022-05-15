@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SymmetricTree
-            SubarraySumEqualsK
             LongestNonDecrSubseq
             StringPermutation
             FirstUniqueCharacterInString
@@ -119,6 +117,8 @@ public class Test {
             TopologicalSortDFSCycleGraph
             MinimumWindowSubstring
             InsertSort
+            SymmetricTree
+            SubarraySumEqualsK
          */
     }
 }

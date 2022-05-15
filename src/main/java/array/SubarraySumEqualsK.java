@@ -1,9 +1,31 @@
 package array;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class SubarraySumEqualsK {
 
+    // O(n) time | O(n) space
     public static int subarraySum(int[] nums, int k) {
-        return -1;
+        if (nums == null || nums.length == 0) return 0;
+
+        int sum = 0;
+        int count = 0;
+
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
+
+        for (int num : nums) {
+            sum += num;
+
+            if (map.containsKey(sum - k)) {
+                count += map.get(sum - k);
+            }
+
+            map.put(sum, map.getOrDefault(sum, 0) + 1);
+        }
+
+        return count;
     }
 
     /**
