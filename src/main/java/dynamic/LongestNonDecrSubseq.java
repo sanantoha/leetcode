@@ -147,5 +147,6 @@ public class LongestNonDecrSubseq {
         System.out.println(lnds(arr));
         System.out.println(lnds1(arr));
         System.out.println(lndsList(arr));
+        System.out.println(lndsList1(arr));
     }
 }
