@@ -1,80 +1,22 @@
 package tree;
 
-import java.util.*;
+import java.util.List;
 
 public class DFSTreeTraverse1 {
 
-    // O(n) time | O(n) space
     public static List<Integer> preOrder(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        if (root == null) return res;
-
-        Deque<TreeNode> stack = new LinkedList<>();
-        stack.push(root);
-
-        while (!stack.isEmpty()) {
-            TreeNode curr = stack.pop();
-
-            res.add(curr.val);
-
-            if (curr.right != null) {
-                stack.push(curr.right);
-            }
-            if (curr.left != null) {
-                stack.push(curr.left);
-            }
-        }
-
-        return res;
+        return null;
     }
 
-    // O(n) time | O(n) space
     public static List<Integer> inOrder(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        if (root == null) return res;
-
-        Deque<TreeNode> stack = new LinkedList<>();
-        TreeNode curr = root;
-
-        while (!stack.isEmpty() || curr != null) {
-            while (curr != null) {
-                stack.push(curr);
-                curr = curr.left;
-            }
-
-            curr = stack.pop();
-
-            res.add(curr.val);
-
-            curr = curr.right;
-        }
-
-        return res;
+        return null;
     }
 
-    // O(n) time | O(n) space
     public static List<Integer> postOrder(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        if (root == null) return res;
-
-        Deque<TreeNode> fst = new LinkedList<>();
-        Deque<TreeNode> snd = new LinkedList<>();
-        fst.push(root);
-
-        while (!fst.isEmpty()) {
-            TreeNode curr = fst.pop();
-            snd.push(curr);
-
-            if (curr.left != null) fst.push(curr.left);
-            if (curr.right != null) fst.push(curr.right);
-        }
-
-        while (!snd.isEmpty()) {
-            res.add(snd.pop().val);
-        }
-
-        return res;
+        return null;
     }
+
+
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(5,
@@ -87,10 +29,20 @@ public class DFSTreeTraverse1 {
                 )
         );
 
-        System.out.println(preOrder(root)); // 5 2 1 3 8 7 9
 
-        System.out.println(inOrder(root)); // 1 2 3 5 7 8 9
+        List<Integer> res = preOrder(root);
+        System.out.println(res); // 5 2 1 3 8 7 9
 
-        System.out.println(postOrder(root)); // 1 3 2 7 9 8 5
+        System.out.println("=============================");
+
+        List<Integer> res1 = inOrder(root);
+        System.out.println(res1); // 1, 2, 3, 5, 7, 8, 9
+
+
+
+        System.out.println("=============================");
+
+        List<Integer> res2 = postOrder(root);
+        System.out.println(res2); // 1 3 2 7 9 8 5
     }
 }
