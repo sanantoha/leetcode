@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KnapsackProblem
-            CycleLinkedList
             LongestIncreasingPathInMatrix
             DiskStacking
             LargestRange
@@ -33,6 +31,7 @@ public class Test {
             RotateImage
             SortList
             Pow
+            KnapsackProblem
             ReverseString
             MaximumSubarray
             ThreeSum
@@ -119,6 +118,7 @@ public class Test {
             StringPermutation
             FirstUniqueCharacterInString
             DFSTreeTraverse
+            CycleLinkedList
          */
     }
 }

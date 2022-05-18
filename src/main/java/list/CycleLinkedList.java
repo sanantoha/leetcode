@@ -6,6 +6,7 @@ import java.util.Set;
 
 public class CycleLinkedList {
 
+    // O(n) time | O(n) space
     public static boolean hasCycle(ListNode head) {
         Set<ListNode> set = new HashSet<>();
 
@@ -20,6 +21,7 @@ public class CycleLinkedList {
         return false;
     }
 
+    // O(n) time | O(1) space
     public static boolean hasCycleWithoutExtraMemory(ListNode head) {
 
         ListNode slow = head;
