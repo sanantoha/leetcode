@@ -7,53 +7,8 @@ import java.util.*;
  */
 public class DiskStacking1 {
 
-    // O(n ^ 2) time | O(n) space
     public static List<Integer[]> diskStacking(List<Integer[]> disks) {
-        if (disks == null || disks.size() == 0) {
-            return Collections.emptyList();
-        }
-
-        Collections.sort(disks, Comparator.comparingInt(x -> x[2]));
-
-        int[] heights = new int[disks.size()];
-        for (int i = 0; i < disks.size(); i++) {
-            heights[i] = disks.get(i)[2];
-        }
-        int[] prev = new int[disks.size()];
-        Arrays.fill(prev, -1);
-
-        int maxHeightIdx = 0;
-
-        for (int i = 1; i < disks.size(); i++) {
-            for (int j = 0; j < i; j++) {
-                if (less(disks.get(j), disks.get(i)) && heights[i] <= heights[j] + disks.get(i)[2]) {
-                    heights[i] = heights[j] + disks.get(i)[2];
-                    prev[i] = j;
-                }
-            }
-            if (heights[maxHeightIdx] < heights[i]) {
-                maxHeightIdx = i;
-            }
-        }
-
-        return buildList(disks, prev, maxHeightIdx);
-    }
-
-    private static List<Integer[]> buildList(List<Integer[]> disks, int[] prev, int maxIdx) {
-        List<Integer[]> res = new ArrayList<>();
-        int idx = maxIdx;
-
-        while (idx >= 0) {
-            res.add(disks.get(idx));
-            idx = prev[idx];
-        }
-
-        Collections.reverse(res);
-        return res;
-    }
-
-    private static boolean less(Integer[] d1, Integer[] d2) {
-        return d1[0] < d2[0] && d1[1] < d2[1] && d1[2] < d2[2];
+        return null;
     }
 
     public static void main(String[] args) {

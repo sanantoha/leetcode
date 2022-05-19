@@ -29,7 +29,7 @@ public class KnapsackProblem {
                 }
             }
         }
-
+//        System.out.println(Arrays.deepToString(knapsackValues));
         List<Integer> totalValue = Arrays.asList(knapsackValues[items.length][capacity]);
         List<Integer> finalItems = getFinalItems(items, knapsackValues);
         var result = new ArrayList<List<Integer>>();

@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncreasingPathInMatrix
-            DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
             SelectSort
@@ -119,6 +117,8 @@ public class Test {
             FirstUniqueCharacterInString
             DFSTreeTraverse
             CycleLinkedList
+            LongestIncreasingPathInMatrix
+            DiskStacking
          */
     }
 }
