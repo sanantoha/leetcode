@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LargestRange
-            LowestCommonAncestorOfBinaryTree
             SelectSort
             TopKFrequentWords
             ReverseBinaryTree
@@ -119,6 +117,8 @@ public class Test {
             CycleLinkedList
             LongestIncreasingPathInMatrix
             DiskStacking
+            LargestRange
+            LowestCommonAncestorOfBinaryTree
          */
     }
 }

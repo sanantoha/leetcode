@@ -2,19 +2,30 @@ package tree;
 
 public class LowestCommonAncestorOfBinaryTree1 {
 
+    // O(n) time | O(h) space
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null) return null;
 
         if (root == p || root == q) return root;
 
-        TreeNode left = lowestCommonAncestor(root.left, p, q);
-        TreeNode right = lowestCommonAncestor(root.right, p, q);
-        if (left != null && right != null) return root;
+        TreeNode l = lowestCommonAncestor(root.left, p, q);
+        TreeNode r = lowestCommonAncestor(root.right, p, q);
 
-        return left != null ? left : right;
+        if (l != null && r != null) return root;
+
+        return (l != null) ? l : r;
     }
 
     public static void main(String[] args) {
+        /*
+                 3
+              /     \
+             5       1
+           /   \    /  \
+          6     2  0    8
+               / \
+              7   4
+         */
         TreeNode node7 = new TreeNode(7);
         TreeNode node5 = new TreeNode(5,
                 new TreeNode(6),
@@ -30,6 +41,6 @@ public class LowestCommonAncestorOfBinaryTree1 {
                 node1
         );
 
-        System.out.println(lowestCommonAncestor(root, node7, node1));
+        System.out.println(lowestCommonAncestor(root, node7, node5));
     }
 }
