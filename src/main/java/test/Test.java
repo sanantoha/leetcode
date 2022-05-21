@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SelectSort
-            TopKFrequentWords
             ReverseBinaryTree
             PhoneNumberMnemonic
             FourSum
@@ -119,6 +117,8 @@ public class Test {
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
+            SelectSort
+            TopKFrequentWords
          */
     }
 }
