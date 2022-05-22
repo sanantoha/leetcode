@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseBinaryTree
-            PhoneNumberMnemonic
             FourSum
             NumberOfWaysToMakeChange
             WordSearch
@@ -119,6 +117,8 @@ public class Test {
             LowestCommonAncestorOfBinaryTree
             SelectSort
             TopKFrequentWords
+            ReverseBinaryTree
+            PhoneNumberMnemonic
          */
     }
 }
