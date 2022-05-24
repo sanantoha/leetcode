@@ -2,40 +2,8 @@ package backtracking;
 
 public class WordSearch1 {
 
-    // O(n * 3 ^ l) time | O(l) space - where l is length of word and n is total amount of cells
     public static boolean exist(char[][] board, String word) {
-        if (board == null || board.length == 0) return false;
-
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[i].length; j++) {
-                if (board[i][j] == word.charAt(0) && dfs(board, i, j, 0, word)) {
-                    return true;
-                }
-            }
-        }
-
         return false;
-    }
-
-    private static boolean dfs(char[][] board, int i, int j, int count, String word) {
-        if (count == word.length()) {
-            return true;
-        }
-
-        if (i < 0 || j < 0 || i >= board.length || j >= board[i].length ||
-            word.charAt(count) != board[i][j]) {
-            return false;
-        }
-
-        char tmp = board[i][j];
-        board[i][j] = ' ';
-
-        boolean found = dfs(board, i - 1, j, count + 1, word) ||
-                dfs(board, i, j - 1, count + 1, word) ||
-                dfs(board, i + 1, j, count + 1, word) ||
-                dfs(board, i, j + 1, count + 1, word);
-        board[i][j] = tmp;
-        return found;
     }
 
     public static void main(String[] args) {

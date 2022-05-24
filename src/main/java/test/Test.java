@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordSearch
-            ClimbingStairs
             NextGreaterElement
             RegularExpressionMatch
             ConvertedSortedArrayToBST
@@ -119,6 +117,8 @@ public class Test {
             PhoneNumberMnemonic
             FourSum
             NumberOfWaysToMakeChange
+            WordSearch
+            ClimbingStairs
          */
     }
 }
