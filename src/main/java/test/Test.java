@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NextGreaterElement
-            RegularExpressionMatch
             ConvertedSortedArrayToBST
             FirstDuplicateValue
             WordBreak
@@ -21,6 +19,7 @@ public class Test {
             Pow
             KnapsackProblem
             ReverseString
+            RegularExpressionMatch
             MaximumSubarray
             ThreeSum
             BalancedBrackets
@@ -119,6 +118,7 @@ public class Test {
             NumberOfWaysToMakeChange
             WordSearch
             ClimbingStairs
+            NextGreaterElement
          */
     }
 }
