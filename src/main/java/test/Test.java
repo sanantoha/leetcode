@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ConvertedSortedArrayToBST
-            FirstDuplicateValue
             WordBreak
             SearchForRange
             StaircaseTraversal
@@ -12,6 +10,7 @@ public class Test {
             KruskalMinSpanningTree
             ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
+            FirstDuplicateValue
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
@@ -120,6 +119,7 @@ public class Test {
             WordSearch
             ClimbingStairs
             NextGreaterElement
+            ConvertedSortedArrayToBST
          */
     }
 }
