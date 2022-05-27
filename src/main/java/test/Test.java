@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordBreak
-            SearchForRange
             StaircaseTraversal
             SortKSortedArray
             KruskalMinSpanningTree
@@ -33,6 +31,7 @@ public class Test {
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
             MinRewards
+            WordBreak
             IntersectionLinkedList
             LRUCache
             MergeSort
@@ -81,6 +80,7 @@ public class Test {
             ValidateBinarySearchTree
             AStarAlgo
             SameTree
+            SearchForRange
             SparseMatrixMultiplication
             MinimumPassesOfMatrix
             HeapSort
