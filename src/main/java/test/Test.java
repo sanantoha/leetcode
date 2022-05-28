@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StaircaseTraversal
-            SortKSortedArray
             KruskalMinSpanningTree
             ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
@@ -120,6 +118,8 @@ public class Test {
             ClimbingStairs
             NextGreaterElement
             ConvertedSortedArrayToBST
+            StaircaseTraversal
+            SortKSortedArray
          */
     }
 }
