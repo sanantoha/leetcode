@@ -8,53 +8,7 @@ import java.util.Set;
 public class KruskalMinSpanningTree1 {
 
     public static Set<Edge> mst(EdgeWeightedGraph graph) {
-        Set<Edge> mst = new HashSet<>();
-
-        int[] parent = makeSet(graph);
-
-        PriorityQueue<Edge> queue = new PriorityQueue<>(graph.E(), Comparator.comparing(Edge::weight));
-        for (Edge edge : graph.edges()) {
-            queue.add(edge);
-        }
-
-        int cnt = 0;
-        while (cnt < graph.V() - 1) {
-            Edge minEdge = queue.remove();
-            int from = minEdge.either();
-            int to = minEdge.other(from);
-
-            int fromParent = find(parent, from);
-            int toParent = find(parent, to);
-            if (fromParent != toParent) {
-                mst.add(minEdge);
-                union(parent, fromParent, toParent);
-                cnt++;
-            }
-        }
-
-        return mst;
-    }
-
-    private static void union(int[] parent, int x, int y) {
-        int xParent = find(parent, x);
-        int yParent = find(parent, y);
-
-        parent[yParent] = xParent;
-    }
-
-    private static int find(int[] parent, int v) {
-        if (parent[v] != v) {
-            return find(parent, parent[v]);
-        }
-        return v;
-    }
-
-    private static int[] makeSet(EdgeWeightedGraph graph) {
-        int[] parent = new int[graph.V()];
-        for (int v = 0; v < graph.V(); v++) {
-            parent[v] = v;
-        }
-        return parent;
+        return null;
     }
 
     public static void main(String[] args) {

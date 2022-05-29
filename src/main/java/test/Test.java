@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KruskalMinSpanningTree
-            ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
             FirstDuplicateValue
             DijkstraShortestPaths
@@ -40,6 +38,7 @@ public class Test {
             QuickSort
             Powerset
             AddTwoNumbers
+            KruskalMinSpanningTree
             MergeIntervals
             RiverSizes
             Sqrt
@@ -120,6 +119,7 @@ public class Test {
             ConvertedSortedArrayToBST
             StaircaseTraversal
             SortKSortedArray
+            ReverseInteger
          */
     }
 }
