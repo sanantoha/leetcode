@@ -71,11 +71,9 @@ public class TopologicalSortDFSCycleGraphAsMap {
 
         List<String> res = new ArrayList<>();
 
-        int idx = 0;
         while (!queue.isEmpty()) {
             String v = queue.remove();
             res.add(v);
-            idx++;
 
             for (String u : graph.getOrDefault(v, Collections.emptyList())) {
                 var count = cnt.getOrDefault(u, 0);
@@ -87,7 +85,7 @@ public class TopologicalSortDFSCycleGraphAsMap {
             }
         }
 
-        if (idx != graph.size()) throw new IllegalStateException("cycle in graph");
+        if (res.size() != graph.size()) throw new IllegalStateException("cycle in graph");
 
         return res;
     }
