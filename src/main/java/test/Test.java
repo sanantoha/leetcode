@@ -40,6 +40,7 @@ public class Test {
             Sqrt
             CountingSort
             DFSTreeTraverseRec
+            DijkstraShortestPathsAsMap
             SubarraySort
             BreadthSearchFirst
             ValidateStartingCity
