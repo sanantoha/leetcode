@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseString
-            RegularExpressionMatch
             MaximumSubarray
             ThreeSum
             BalancedBrackets
@@ -121,6 +119,8 @@ public class Test {
             SortList
             Pow
             KnapsackProblem
+            ReverseString
+            RegularExpressionMatch
          */
     }
 }
