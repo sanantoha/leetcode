@@ -3,16 +3,7 @@ package dynamic;
 public class MaximumSubarray1 {
 
     public static int maximumSubarray(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
-
-        int maxSum = Integer.MIN_VALUE;
-        int sum = 0;
-        for (int num : arr) {
-            sum += num;
-            if (sum > maxSum) maxSum = sum;
-            if (sum < 0) sum = 0;
-        }
-        return maxSum;
+        return 0;
     }
 
     public static void main(String[] args) {
