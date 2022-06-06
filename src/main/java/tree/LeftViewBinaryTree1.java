@@ -5,31 +5,7 @@ import java.util.*;
 public class LeftViewBinaryTree1 {
 
     public static List<Integer> leftView(TreeNode root) {
-        if (root == null) return Collections.emptyList();
-
-        List<Integer> res = new ArrayList<>();
-
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
-
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-
-            TreeNode first = null;
-
-            while (size-- > 0) {
-                TreeNode curr = queue.remove();
-                if (first == null) {
-                    first = curr;
-                }
-
-                if (curr.left != null) queue.add(curr.left);
-                if (curr.right != null) queue.add(curr.right);
-            }
-
-            res.add(first.val);
-        }
-        return res;
+        return null;
     }
 
     /**
