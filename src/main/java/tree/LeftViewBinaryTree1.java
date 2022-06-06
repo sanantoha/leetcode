@@ -1,13 +1,12 @@
 package tree;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class LeftViewBinaryTree1 {
 
     public static List<Integer> leftView(TreeNode root) {
+        if (root == null) return Collections.emptyList();
+
         List<Integer> res = new ArrayList<>();
 
         Queue<TreeNode> queue = new LinkedList<>();
@@ -16,27 +15,36 @@ public class LeftViewBinaryTree1 {
         while (!queue.isEmpty()) {
             int size = queue.size();
 
-            boolean isFirstInLayer = true;
+            TreeNode first = null;
 
             while (size-- > 0) {
                 TreeNode curr = queue.remove();
-                if (isFirstInLayer) {
-                    isFirstInLayer = false;
-                    res.add(curr.val);
+                if (first == null) {
+                    first = curr;
                 }
 
-                if (curr.left != null) {
-                    queue.add(curr.left);
-                }
-
-                if (curr.right != null) {
-                    queue.add(curr.right);
-                }
+                if (curr.left != null) queue.add(curr.left);
+                if (curr.right != null) queue.add(curr.right);
             }
+
+            res.add(first.val);
         }
         return res;
     }
 
+    /**
+     * left view of binary tree
+     *          1
+     *        /   \
+     *       2     3
+     *           /  \
+     *          4    8
+     *        /  \
+     *       5    6
+     *             \
+     *              7
+     *  output: [1, 2, 4, 5, 7]
+     */
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1,
                 new TreeNode(2),
