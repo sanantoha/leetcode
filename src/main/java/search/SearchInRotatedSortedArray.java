@@ -2,19 +2,18 @@ package search;
 
 public class SearchInRotatedSortedArray {
 
-    private static int findSmallestInd(int[] arr) {
-        int lo = 0;
-        int hi = arr.length - 1;
+    private static int findSmallestIdx(int[] arr) {
+        int l = 0;
+        int r = arr.length - 1;
 
-        while (lo < hi) {
-            int mid = (lo + hi) >>> 1;
-            if (arr[mid] < arr[hi]) {
-                hi = mid;
-            } else {
-                lo  = mid + 1;
-            }
+        while (l <= r) {
+            int mid = (l + r) >>> 1;
+            if (arr[mid] <= arr[r]) {
+                r = mid - 1;
+            } else l = mid + 1;
         }
-        return lo;
+
+        return l;
     }
 
     public static int search(int[] arr, int target) {
@@ -23,7 +22,7 @@ public class SearchInRotatedSortedArray {
         int lo = 0;
         int hi = arr.length - 1;
 
-        int smallInd = findSmallestInd(arr);
+        int smallInd = findSmallestIdx(arr);
         if (target >= arr[smallInd] && target <= arr[hi]) {
             lo = smallInd;
         } else {

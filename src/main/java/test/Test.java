@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchInRotatedSortedArray
-            SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
             DeleteNodeInLinkedList
@@ -121,6 +119,8 @@ public class Test {
             WordLadderII
             Permutations
             LeftViewBinaryTree
+            SearchInRotatedSortedArray
+            SurroundedRegions
          */
     }
 }
