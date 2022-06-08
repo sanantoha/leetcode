@@ -4,26 +4,8 @@ import java.util.Arrays;
 
 public class ProductOfArrayExceptSelf1 {
 
-    // O(n) time | O(n) space
     public static int[] product(int[] arr) {
-        if (arr == null || arr.length == 0) return new int[] {};
-
-        int[] product = new int[arr.length];
-
-        int prevLeft = 1;
-        for (int i = 0; i < arr.length; i++) {
-            product[i] = prevLeft;
-            prevLeft *= arr[i];
-        }
-
-        int prevRight = 1;
-        for (int i = arr.length - 1; i >= 0; i--) {
-            product[i] *= prevRight;
-            prevRight *= arr[i];
-        }
-
-
-        return product;
+        return null;
     }
 
     public static void main(String[] args) {
