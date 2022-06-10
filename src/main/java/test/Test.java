@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RemoveNthNodeFromEndOfList
-            MinRewards
             WordBreak
             IntersectionLinkedList
             LRUCache
@@ -121,6 +119,8 @@ public class Test {
             ProductOfArrayExceptSelf
             DeleteNodeInLinkedList
             ReverseWordsInString
+            RemoveNthNodeFromEndOfList
+            MinRewards
          */
     }
 }
