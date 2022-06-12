@@ -1,81 +1,19 @@
 package design;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class LRUCache1 {
 
-    private final int capacity;
-
-    private final Node head = new Node();
-    private final Node tail = new Node();
-
-    private final Map<Integer, Node> cache;
-
     public LRUCache1(int capacity) {
-        if (capacity < 0) throw new IllegalStateException("capacity has to be greater than 0");
-        this.capacity = capacity;
-        this.cache = new HashMap<>(capacity);
-        this.head.next = tail;
-        this.tail.prev = head;
+
     }
 
     public int get(int key) {
-        Node node = cache.get(key);
-        if (node != null) {
-            remove(node);
-            add(node);
-            return node.val;
-        }
         return -1;
     }
 
     public void put(int key, int value) {
-       Node node = cache.get(key);
-       if (node != null) {
-           remove(node);
-           node.val = value;
-           add(node);
-       } else {
-           if (cache.size() == capacity) {
-               cache.remove(tail.prev.key);
-               remove(tail.prev);
-           }
 
-           Node newNode = new Node();
-           newNode.key = key;
-           newNode.val = value;
-
-           cache.put(key, newNode);
-           add(newNode);
-       }
     }
 
-    private void add(Node node) {
-        Node headNext = head.next;
-
-        headNext.prev = node;
-        node.next = headNext;
-
-        head.next = node;
-        node.prev = head;
-    }
-
-    private void remove(Node node) {
-        Node next = node.next;
-        Node prev = node.prev;
-
-        prev.next = next;
-        next.prev = prev;
-    }
-
-    static class Node {
-        int key;
-        int val;
-
-        Node next;
-        Node prev;
-    }
 
     public static void main(String[] args) {
         LRUCache1 lRUCache = new LRUCache1(2);
@@ -89,6 +27,5 @@ public class LRUCache1 {
         System.out.println(lRUCache.get(1));    // return -1 (not found)
         System.out.println(lRUCache.get(3));    // return 3
         System.out.println(lRUCache.get(4));    // return 4
-
     }
 }
