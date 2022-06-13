@@ -3,6 +3,7 @@ package graph;
 import java.util.*;
 
 public class CloneGraph1 {
+
     static class Node {
         public int val;
         public List<Node> neighbors;
@@ -21,29 +22,7 @@ public class CloneGraph1 {
     }
 
     public static Node cloneGraph(Node node) {
-        if (node == null) return null;
-
-        Map<Node, Node> clonedNodes = new HashMap<>();
-        clonedNodes.put(node, new Node(node.val));
-
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(node);
-
-        while (!queue.isEmpty()) {
-            Node curr = queue.remove();
-            Node currCopy = clonedNodes.get(curr);
-
-            for (Node neighbor : curr.neighbors) {
-                Node neighborCopy = clonedNodes.get(neighbor);
-                if (neighborCopy == null) {
-                    neighborCopy = new Node(neighbor.val);
-                    clonedNodes.put(neighbor, neighborCopy);
-                    queue.add(neighbor);
-                }
-                currCopy.neighbors.add(neighborCopy);
-            }
-        }
-        return clonedNodes.get(node);
+        return null;
     }
 
     public static void main(String[] args) {

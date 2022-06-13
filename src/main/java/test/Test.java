@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfJumps
-            CloneGraph
             MinHeap
             MinNumberOfCoinsForChange
             QuickSort
@@ -33,6 +31,7 @@ public class Test {
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
+            MinNumberOfJumps
             NodeDepths
             ReconstructBST
             BalancedBinaryTree
@@ -121,6 +120,7 @@ public class Test {
             IntersectionLinkedList
             LRUCache
             MergeSort
+            CloneGraph
          */
     }
 }
