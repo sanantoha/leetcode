@@ -6,25 +6,24 @@ public class MinNumberOfCoinsForChange1 {
 
     // O(n * d) time | O(n) space
     public static int minNumberOfCoinsForChange(int n, int[] denoms) {
-        if (denoms == null || denoms.length == 0 || n < 0) return 0;
+        if (n < 0 || denoms == null || denoms.length == 0) return 0;
 
-        int[] ways = new int[n + 1];
-        Arrays.fill(ways, Integer.MAX_VALUE);
-        ways[0] = 0;
+        int[] minNums = new int[n + 1];
+        Arrays.fill(minNums, Integer.MAX_VALUE);
+        minNums[0] = 0;
 
         for (int denom : denoms) {
-            for (int amount = 1; amount < n + 1; amount++) {
+            for (int amount = 1; amount <= n; amount++) {
                 if (amount >= denom) {
-                    int toCompare = ways[amount - denom];
-                    if (toCompare != Integer.MAX_VALUE) {
-                        toCompare++;
+                    int toChange = minNums[amount - denom];
+                    if (toChange != Integer.MAX_VALUE) {
+                        toChange++;
                     }
-                    ways[amount] = Math.min(ways[amount], toCompare);
+                    minNums[amount] = Math.min(minNums[amount], toChange);
                 }
             }
         }
-
-        return ways[n] == Integer.MAX_VALUE ? -1 : ways[n];
+        return minNums[n];
     }
 
     public static void main(String[] args) {
