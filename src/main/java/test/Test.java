@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AddTwoNumbers
-            KruskalMinSpanningTree
             MergeIntervals
             RiverSizes
             Sqrt
@@ -35,6 +33,7 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
+            KruskalMinSpanningTree
             SameBSTs
             BSTSuccessorSearch
             WaterArea
@@ -121,6 +120,7 @@ public class Test {
             MinNumberOfCoinsForChange
             QuickSort
             Powerset
+            AddTwoNumbers
          */
     }
 }
