@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Sqrt
-            CountingSort
             DFSTreeTraverseRec
             DijkstraShortestPathsAsMap
             SubarraySort
@@ -121,6 +119,8 @@ public class Test {
             AddTwoNumbers
             MergeIntervals
             RiverSizes
+            Sqrt
+            CountingSort
          */
     }
 }
