@@ -1,54 +1,19 @@
 package tree;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class DFSTreeTraverseRec1 {
 
-    // O(n) time | O(h) space
     public static List<Integer> preOrderRec(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        preOrderRec(root, res);
-        return res;
+        return null;
     }
 
-    private static void preOrderRec(TreeNode root, List<Integer> res) {
-        if (root == null) return;
-
-        res.add(root.val);
-        preOrderRec(root.left, res);
-        preOrderRec(root.right, res);
-    }
-
-
-    // O(n) time | O(h) space
     public static List<Integer> inOrderRec(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        inOrderRec(root, res);
-        return res;
+        return null;
     }
 
-    private static void inOrderRec(TreeNode root, List<Integer> res) {
-        if (root == null) return;
-
-        inOrderRec(root.left, res);
-        res.add(root.val);
-        inOrderRec(root.right, res);
-    }
-
-    // O(n) time | O(h) space
     public static List<Integer> postOrderRec(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        postOrderRec(root, res);
-        return res;
-    }
-
-    private static void postOrderRec(TreeNode root, List<Integer> res) {
-        if (root == null) return;
-
-        postOrderRec(root.left, res);
-        postOrderRec(root.right, res);
-        res.add(root.val);
+        return null;
     }
 
     public static void main(String[] args) {

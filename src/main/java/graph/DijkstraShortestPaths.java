@@ -32,10 +32,10 @@ public class DijkstraShortestPaths {
             shortest[i] = Double.MAX_VALUE;
             pred[i] = -1;
         }
-        shortest[0] = 0d;
+        shortest[start] = 0d;
 
         PriorityQueue<DirectedEdge> queue = new PriorityQueue<>(graph.V(), Comparator.comparingDouble(DirectedEdge::weight));
-        queue.add(new DirectedEdge(0, start, 0d));
+        queue.add(new DirectedEdge(start, start, 0d));
 
         while(!queue.isEmpty()) {
             DirectedEdge minEdge = queue.poll(); // log(V)

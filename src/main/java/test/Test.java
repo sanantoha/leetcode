@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DFSTreeTraverseRec
-            DijkstraShortestPathsAsMap
             SubarraySort
             BreadthSearchFirst
             ValidateStartingCity
@@ -59,6 +57,7 @@ public class Test {
             TopologicalSortDFSCycleGraph
             MinimumWindowSubstring
             InsertSort
+            DijkstraShortestPathsAsMap
             SymmetricTree
             SubarraySumEqualsK
             LongestNonDecrSubseq
@@ -121,6 +120,7 @@ public class Test {
             RiverSizes
             Sqrt
             CountingSort
+            DFSTreeTraverseRec
          */
     }
 }
