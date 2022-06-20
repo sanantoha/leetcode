@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class BreadthSearchFirst1 {
+
     public static void main(String[] args) {
         try (FileReader reader = new FileReader("src/main/java/graph/bfs.txt")) {
             Scanner scanner = new Scanner(reader);
@@ -18,31 +19,7 @@ public class BreadthSearchFirst1 {
         }
     }
 
-    // O(V + E) time | O(V) space
     public static List<Integer> bfs(EdgeWeightedDigraph graph, int start) {
-        if (graph == null) return Collections.emptyList();
-
-        List<Integer> res = new ArrayList<>();
-
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(start);
-
-        boolean[] visited = new boolean[graph.V()];
-
-        while (!queue.isEmpty()) {
-            int v = queue.remove();
-
-            if (visited[v]) continue;
-            visited[v] = true;
-            res.add(v);
-
-            for (DirectedEdge edge : graph.adj(v)) {
-                if (!visited[edge.to()]) {
-                    queue.add(edge.to());
-                }
-            }
-        }
-
-        return res;
+        return null;
     }
 }
