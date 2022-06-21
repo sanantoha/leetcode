@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidateStartingCity
-            HouseRobber
             WordLadder
             StringWithoutAAAorBBB
             BFSTreeTraverse
@@ -121,6 +119,8 @@ public class Test {
             DFSTreeTraverseRec
             SubarraySort
             BreadthSearchFirst
+            ValidateStartingCity
+            HouseRobber
          */
     }
 }
