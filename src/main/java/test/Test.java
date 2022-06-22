@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordLadder
-            StringWithoutAAAorBBB
             BFSTreeTraverse
             UniquePaths
             ValidIPAddress
@@ -121,6 +119,8 @@ public class Test {
             BreadthSearchFirst
             ValidateStartingCity
             HouseRobber
+            WordLadder
+            StringWithoutAAAorBBB
          */
     }
 }
