@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BFSTreeTraverse
-            UniquePaths
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
@@ -121,6 +119,8 @@ public class Test {
             HouseRobber
             WordLadder
             StringWithoutAAAorBBB
+            BFSTreeTraverse
+            UniquePaths
          */
     }
 }
