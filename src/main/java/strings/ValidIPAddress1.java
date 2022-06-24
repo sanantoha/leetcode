@@ -1,48 +1,16 @@
 package strings;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ValidIPAddress1 {
 
     public static List<String> validIPAddresses(String str) {
-        List<String> res = new ArrayList<>();
-
-        for (int i = 1; i < Math.min(4, str.length()); i++) {
-            String[] address = new String[4];
-            address[0] = str.substring(0, i);
-            if (!isValidSection(address[0])) continue;
-
-            for (int j = i + 1; j < Math.min(i + 4, str.length()); j++) {
-                address[1] = str.substring(i, j);
-                if (!isValidSection(address[1])) continue;
-
-                for (int k = j + 1; k < Math.min(j + 4, str.length()); k++) {
-                    address[2] = str.substring(j, k);
-                    address[3] = str.substring(k);
-                    if (isValidSection(address[2]) && isValidSection(address[3])) {
-                        res.add(String.join(".", address));
-                    }
-                }
-            }
-        }
-
-        return res;
-    }
-
-    private static boolean isValidSection(String str) {
-        try {
-            int i = Integer.parseInt(str);
-            if (i < 0 || i > 255) return false;
-            return str.equals(String.valueOf(i));
-        } catch (NumberFormatException e) {
-            return false;
-        }
+        return null;
     }
 
     public static void main(String[] args) {
         String str = "1921680";
-
+        // [1.9.216.80, 1.92.16.80, 1.92.168.0, 19.2.16.80, 19.2.168.0, 19.21.6.80, 19.21.68.0, 19.216.8.0, 192.1.6.80, 192.1.68.0, 192.16.8.0]
         System.out.println(validIPAddresses(str));
     }
 }
