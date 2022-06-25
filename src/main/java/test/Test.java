@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MedianOfTwoSortedArrays
-            DepthFirstSearch
             BinaryTreeZigzagLevelOrderTraverse
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
@@ -121,6 +119,8 @@ public class Test {
             UniquePaths
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
+            MedianOfTwoSortedArrays
+            DepthFirstSearch
          */
     }
 }

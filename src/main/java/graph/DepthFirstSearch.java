@@ -28,6 +28,7 @@ public class DepthFirstSearch {
         }
     }
 
+    // O(V + E) time | O(V) space
     private static List<Integer> dfsRec(EdgeWeightedDigraph graph, int start) {
         List<Integer> ans = new ArrayList<>(graph.V());
 
