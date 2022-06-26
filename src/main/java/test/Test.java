@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeZigzagLevelOrderTraverse
-            ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
             MinNumberOfJumps
@@ -121,6 +119,8 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
             DepthFirstSearch
+            BinaryTreeZigzagLevelOrderTraverse
+            ConstructBinaryTreeFromPreorderAndInorderTraversal
          */
     }
 }
