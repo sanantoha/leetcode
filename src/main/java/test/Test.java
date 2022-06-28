@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfJumps
-            NodeDepths
             ReconstructBST
             BalancedBinaryTree
             BinaryTreeDiameter
@@ -121,6 +119,8 @@ public class Test {
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
+            MinNumberOfJumps
+            NodeDepths
          */
     }
 }
