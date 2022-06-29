@@ -23,7 +23,7 @@ public class ReconstructBST {
         return bst;
     }
 
-    // O(n) time | O(1)
+    // O(n) time | O(n)
     public static TreeNode reconstructBst1(List<Integer> preOrderTraversalValues) {
         if (preOrderTraversalValues == null || preOrderTraversalValues.size() == 0)
             return null;

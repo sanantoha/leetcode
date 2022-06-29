@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReconstructBST
-            BalancedBinaryTree
             BinaryTreeDiameter
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
@@ -39,6 +37,7 @@ public class Test {
             TopologicalSortDFSCycleGraph
             MinimumWindowSubstring
             InsertSort
+            ReconstructBST
             DijkstraShortestPathsAsMap
             SymmetricTree
             SubarraySumEqualsK
@@ -121,6 +120,7 @@ public class Test {
             LevenshteinDistance
             MinNumberOfJumps
             NodeDepths
+            BalancedBinaryTree
          */
     }
 }

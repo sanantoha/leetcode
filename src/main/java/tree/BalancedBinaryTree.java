@@ -50,6 +50,6 @@ public class BalancedBinaryTree {
                     new TreeNode(3)),
                 new TreeNode(2));
 
-        System.out.println(isBalanced(root1));
+        System.out.println(!isBalanced(root1));
     }
 }
