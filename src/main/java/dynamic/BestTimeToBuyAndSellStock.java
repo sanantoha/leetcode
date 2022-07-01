@@ -3,16 +3,15 @@ package dynamic;
 public class BestTimeToBuyAndSellStock {
 
     // O(n) time | O(1) space
-    public static int maxProfit(int[] arr) {
-        if (arr == null || arr.length == 0) return 0;
+    public static int maxProfit(int[] prices) {
+        if (prices == null || prices.length == 0) return 0;
 
         int maxProfit = 0;
-        int minV = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            int diff = arr[i] - minV;
-            if (maxProfit < diff) maxProfit = diff;
+        int minVal = prices[0];
 
-            if (minV > arr[i]) minV = arr[i];
+        for (int price : prices) {
+            maxProfit = Math.max(maxProfit, price - minVal);
+            minVal = Math.min(minVal, price);
         }
         return maxProfit;
     }
