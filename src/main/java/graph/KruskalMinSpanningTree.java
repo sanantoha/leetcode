@@ -13,12 +13,13 @@ public class KruskalMinSpanningTree {
 
         Set<Edge> mst = new HashSet<>();
 
-        // O(E * log(E))
+        // O(E * log(E)) | O(E) space
         PriorityQueue<Edge> heap = new PriorityQueue<>(graph.E(), Comparator.comparing(Edge::weight));
         for (Edge edge : graph.edges()) {
             heap.add(edge);
         }
 
+        // O(V) space
         int[] parent = makeSet(graph);
 
         int idx = 0;

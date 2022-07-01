@@ -3,6 +3,7 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
+            PrimMinSpanningTree
             KruskalMinSpanningTree
             SameBSTs
             BSTSuccessorSearch
@@ -25,7 +26,6 @@ public class Test {
             BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
-            PrimMinSpanningTree
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
