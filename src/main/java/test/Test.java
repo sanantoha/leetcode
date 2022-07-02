@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PrimMinSpanningTree
-            KruskalMinSpanningTree
             SameBSTs
             BSTSuccessorSearch
             WaterArea
@@ -121,6 +119,8 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
+            PrimMinSpanningTree
+            KruskalMinSpanningTree
          */
     }
 }

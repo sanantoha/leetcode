@@ -8,6 +8,19 @@ public class KruskalMinSpanningTree1 {
         return null;
     }
 
+    private static int find(int[] parents, int v) {
+        if (parents[v] == v) return v;
+        return find(parents, parents[v]);
+    }
+
+    private static void union(int[] parents, int v, int u) {
+        int pv = find(parents, v);
+        int pu = find(parents, u);
+
+        parents[pu] = pv;
+    }
+
+
     public static void main(String[] args) {
         EdgeWeightedGraph graph = new EdgeWeightedGraph(6);
         graph.addEdge(new Edge(0, 1, 7.0));

@@ -3,6 +3,7 @@ package graph;
 import java.util.*;
 
 public class PrimMinSpanningTree1 {
+
     public static void main(String[] args) {
         EdgeWeightedGraph graph = new EdgeWeightedGraph(6);
         graph.addEdge(new Edge(0, 1, 7.0));
@@ -42,52 +43,7 @@ public class PrimMinSpanningTree1 {
         System.out.println(mst(graph1));
     }
 
-    static class Pair {
-        Edge edge;
-        int from;
-
-        public Pair(Edge edge, int from) {
-            this.edge = edge;
-            this.from = from;
-        }
-    }
-
-    // O(E * log(V)) time | O(V) space
     public static Set<Edge> mst(EdgeWeightedGraph graph) {
-        Set<Edge> res = new HashSet<>();
-
-        boolean[] visited = new boolean[graph.V()];
-        int start = 0;
-        visited[start] = true;
-
-        PriorityQueue<Pair> pq =
-                new PriorityQueue<>(graph.V(), Comparator.comparing(p -> p.edge.weight()));
-        for (Edge edge : graph.adj(start)) {
-            pq.add(new Pair(edge, start));
-        }
-
-        int inTree = 1;
-
-        while (!pq.isEmpty() && inTree < graph.V()) {
-            Pair pair = pq.remove();
-            Edge minEdge = pair.edge;
-            int to = minEdge.other(pair.from);
-
-            if (visited[to]) continue;
-
-            visited[to] = true;
-            inTree++;
-            res.add(minEdge);
-
-            for (Edge edge : graph.adj(to)) {
-                pq.add(new Pair(edge, to));
-            }
-        }
-
-        if (inTree < graph.V()) {
-            return Collections.emptySet();
-        }
-
-        return res;
+        return null;
     }
 }
