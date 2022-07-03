@@ -4,34 +4,18 @@ import tree.BSTSuccessorSearch.Node;
 
 public class BSTSuccessorSearch1 {
 
-    // O(h) time | O(1) space
     public static Node findInOrderSuccessor(Node node) {
-        if (node == null) return null;
-
-        if (node.right != null) {
-            Node curr = node.right;
-            while (curr.left != null) {
-                curr = curr.left;
-            }
-            return curr;
-        }
-
-        Node curr = node;
-        while (curr.parent != null && curr.parent.left != curr) {
-            curr = curr.parent;
-        }
-
-        return curr.parent;
+        return null;
     }
 
     public static void main(String[] args) {
-        BSTSuccessorSearch.Node node5 = new BSTSuccessorSearch.Node(5);
-        BSTSuccessorSearch.Node node9 = new BSTSuccessorSearch.Node(9);
-        BSTSuccessorSearch.Node node11 = new BSTSuccessorSearch.Node(11);
-        BSTSuccessorSearch.Node node12 = new BSTSuccessorSearch.Node(12);
-        BSTSuccessorSearch.Node node14 = new BSTSuccessorSearch.Node(14);
-        BSTSuccessorSearch.Node node20 = new BSTSuccessorSearch.Node(20);
-        BSTSuccessorSearch.Node node25 = new BSTSuccessorSearch.Node(25);
+        Node node5 = new Node(5);
+        Node node9 = new Node(9);
+        Node node11 = new Node(11);
+        Node node12 = new Node(12);
+        Node node14 = new Node(14);
+        Node node20 = new Node(20);
+        Node node25 = new Node(25);
 
         node5.parent = node9;
 
