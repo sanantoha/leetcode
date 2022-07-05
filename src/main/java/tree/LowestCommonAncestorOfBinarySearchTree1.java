@@ -2,14 +2,8 @@ package tree;
 
 public class LowestCommonAncestorOfBinarySearchTree1 {
 
-    // O(h) time | O(h) space
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root.val < p.val && root.val < q.val) {
-            return lowestCommonAncestor(root.right, p, q);
-        } else if (root.val > p.val && root.val > q.val) {
-            return lowestCommonAncestor(root.left, p, q);
-        }
-        return root;
+        return null;
     }
 
     public static void main(String[] args) {
