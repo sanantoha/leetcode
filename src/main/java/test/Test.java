@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncrSubSeq
-            ValidateBinarySearchTree
             AStarAlgo
             SameTree
             SearchForRange
@@ -121,6 +119,8 @@ public class Test {
             CombinationSum
             LongestCommonSubsequence
             LowestCommonAncestorOfBinarySearchTree
+            LongestIncrSubSeq
+            ValidateBinarySearchTree
          */
     }
 }
