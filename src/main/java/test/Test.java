@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AStarAlgo
-            SameTree
             SearchForRange
             SparseMatrixMultiplication
             MinimumPassesOfMatrix
@@ -121,6 +119,8 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
+            AStarAlgo
+            SameTree
          */
     }
 }
