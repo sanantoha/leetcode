@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class SparseMatrixMultiplication {
 
-    // O(n ^ 3) time | O(n) space
+    // O(n * k * m) time | O(1) space
     public static int[][] multiply(int[][] mat1, int[][] mat2) {
         if (mat1 == null || mat1.length == 0 || mat2 == null || mat2.length == 0) return new int[][] {};
         int[][] res = new int[mat1.length][mat2[0].length];
@@ -25,7 +25,7 @@ public class SparseMatrixMultiplication {
         return res;
     }
 
-    // O(m1 * m2 * k) time | O(m1 * k + m2 * k) space
+    // O(n * k * m) time | O(n * k + k * m) space
     public static int[][] multiply1(int[][] mat1, int[][] mat2) {
         if (mat1 == null || mat1.length == 0 || mat2 == null || mat2.length == 0) return new int[][] {};
         int[][] res = new int[mat1.length][mat2[0].length];

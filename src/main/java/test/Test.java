@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchForRange
-            SparseMatrixMultiplication
             MinimumPassesOfMatrix
             HeapSort
             FindNodesDistanceK
@@ -24,6 +22,7 @@ public class Test {
             ReconstructBST
             DijkstraShortestPathsAsMap
             SymmetricTree
+            SparseMatrixMultiplication
             SubarraySumEqualsK
             LongestNonDecrSubseq
             StringPermutation
@@ -121,6 +120,7 @@ public class Test {
             ValidateBinarySearchTree
             AStarAlgo
             SameTree
+            SearchForRange
          */
     }
 }
