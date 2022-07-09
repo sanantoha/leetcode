@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinimumPassesOfMatrix
-            HeapSort
             FindNodesDistanceK
             LongestDecrSubseq
             MaxSumIncreasingSubsequence
@@ -121,6 +119,8 @@ public class Test {
             AStarAlgo
             SameTree
             SearchForRange
+            MinimumPassesOfMatrix
+            HeapSort
          */
     }
 }
