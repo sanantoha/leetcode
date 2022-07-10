@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FindNodesDistanceK
-            LongestDecrSubseq
             MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
@@ -121,6 +119,8 @@ public class Test {
             SearchForRange
             MinimumPassesOfMatrix
             HeapSort
+            FindNodesDistanceK
+            LongestDecrSubseq
          */
     }
 }
