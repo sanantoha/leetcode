@@ -1,14 +1,17 @@
 package graph;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class BellmanFord {
     public static void main(String[] args) {
 //        try (FileReader reader = new FileReader("src/main/java/graph/dijkstraShortestPath.txt")) {
+        // ShortestPath{shortest=[-9.0, -20.0, -18.0, -2.0, -11.0], prev=[4, 2, 4, 0, 1]}
+        // [4, 1, 2]
         try (FileReader reader = new FileReader("src/main/java/graph/bellmanFord.txt")) {
             Scanner scanner = new Scanner(reader);
 
@@ -18,10 +21,8 @@ public class BellmanFord {
             ShortestPath shortestPath = shortestPath(graph, 0);
             System.out.println(shortestPath);
 
-            System.out.println(Arrays.toString(findNegativeWeightCycle(graph, shortestPath)));
+            System.out.println(findNegativeWeightCycle(graph, shortestPath));
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -57,34 +58,27 @@ public class BellmanFord {
         }
     }
 
-    private static int[] findNegativeWeightCycle(EdgeWeightedDigraph graph, ShortestPath shortestPath) {
-        double[] shortest = shortestPath.getShortest();
-        int[] pred = shortestPath.getPrev();
+    // O(E + V) time | O(V) space
+    private static List<Integer> findNegativeWeightCycle(EdgeWeightedDigraph graph, ShortestPath sp) {
+        double[] shortest = sp.getShortest();
+        int[] prev = sp.getPrev();
         int v = -1;
         for (DirectedEdge edge : graph.edges()) {
-            if (shortest[edge.to()] > shortest[edge.from()] + edge.weight()) {
+            if (shortest[edge.from()] + edge.weight() < shortest[edge.to()]) {
                 v = edge.to();
             }
         }
-        if (v == -1) return new int[0];
 
-        boolean[] visited = new boolean[graph.V()];
-        int x = v;
-        int cnt = 0;
-        while (!visited[x]) {
-            visited[x] = true;
-            x = pred[x];
-            cnt++;
+        if (v == -1) return Collections.emptyList();
+
+        List<Integer> res = new ArrayList<>();
+        res.add(v);
+        int u = prev[v];
+        while (u != v) {
+            res.add(u);
+            u = prev[u];
         }
 
-        v = pred[x];
-        int[] cycle = new int[cnt];
-        int index = 0;
-        cycle[index++] = x;
-        while (v != x) {
-            cycle[index++] = v;
-            v = pred[v];
-        }
-        return cycle;
+        return res;
     }
 }

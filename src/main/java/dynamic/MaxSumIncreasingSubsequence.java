@@ -32,7 +32,7 @@ public class MaxSumIncreasingSubsequence {
                 maxSumIdx = i;
             }
         }
-        System.out.println(Arrays.toString(maxSum));
+
         return List.of(List.of(sum), buildList(array, prev, maxSumIdx));
     }
 

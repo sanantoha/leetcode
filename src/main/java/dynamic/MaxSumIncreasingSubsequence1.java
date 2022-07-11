@@ -1,8 +1,5 @@
 package dynamic;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -10,46 +7,9 @@ import java.util.List;
  */
 public class MaxSumIncreasingSubsequence1 {
 
-    // O(n ^ 2) time | O(n) space
-    public static List<List<Integer>> maxSumIncreasingSubsequence(int[] array) {
-        if (array == null || array.length == 0) return Collections.emptyList();
+    public static List<List<Integer>> maxSumIncreasingSubsequence(int[] arr) {
 
-        List<List<Integer>> res = new ArrayList<>();
-
-        int[] msi = new int[array.length];
-        msi[0] = array[0];
-        int[] prev = new int[array.length];
-        Arrays.fill(prev, -1);
-
-        int maxMsi = 0;
-        int maxIdx = 0;
-
-        for (int i = 1; i < array.length; i++) {
-            msi[i] = array[i];
-            for (int j = 0; j < i; j++) {
-                if (array[j] < array[i] && msi[i] < msi[j] + array[i]) {
-                    msi[i] = msi[j] + array[i];
-                    prev[i] = j;
-                }
-            }
-            if (maxMsi < msi[i]) {
-                maxMsi = msi[i];
-                maxIdx = i;
-            }
-        }
-
-        return List.of(List.of(maxMsi), buildList(array, prev, maxIdx));
-    }
-
-    private static List<Integer> buildList(int[] array, int[] prev, int maxIdx) {
-        List<Integer> res = new ArrayList<>();
-        int idx = maxIdx;
-        while (idx >= 0) {
-            res.add(array[idx]);
-            idx = prev[idx];
-        }
-        Collections.reverse(res);
-        return res;
+        return List.of(List.of(-1), List.of(1,2,3));
     }
 
     public static void main(String[] args) {
