@@ -28,7 +28,7 @@ public class FirstPermutationIsSubstrSecondStr {
         }
     }
 
-    // (n ^ 2 * n! + s1! * s2) time | O(n ^ 2 * n!) space
+    // (s1 ^ 2 * s1! + s1! * s2) time | O(s1 ^ 2 * s1!) space
     public static boolean findPermutation(String s1, String s2) {
         for (String permute : permutation(s1)) {
             if (s2.contains(permute)) return true;
@@ -63,20 +63,19 @@ public class FirstPermutationIsSubstrSecondStr {
     }
 
     private static boolean allZeros(int[] alpha) {
-        for (int i = 0; i < alpha.length; i++) {
-            if (alpha[i] != 0) return false;
+        for (int j : alpha) {
+            if (j != 0) return false;
         }
         return true;
     }
 
 
     public static void main(String[] args) {
-//        System.out.println(backtracking.permutation("abc"));
+        System.out.println(findPermutation("abc", "hdflebacworld"));
+        System.out.println(findPermutation1("abc", "hdflebacworld"));
 
-        System.out.println(findPermutation("ab", "hdflebaworld"));
 
+        System.out.println(findPermutation("abbc", "hbbcadflebdworld"));
         System.out.println(findPermutation1("abbc", "hbbcadflebdworld"));
-
-        // try sliding window approach
     }
 }
