@@ -5,20 +5,21 @@ import java.util.List;
 
 public class GenerateParentheses1 {
 
+    // O((4 ^ n) * sqrt) time | O((4 ^ n) * sqrt) space
     public static List<String> generateParenthesis(int cnt) {
-        List<String> result = new ArrayList<>();
-        backtrack(0, 0, cnt, "", result);
-        return result;
+        List<String> res = new ArrayList<>();
+        backtrack(cnt, 0, 0, "", res);
+        return res;
     }
 
-    private static void backtrack(int open, int close, int cnt, String ans, List<String> result) {
-        if (cnt * 2 == ans.length()) {
-            result.add(ans);
+    private static void backtrack(int cnt, int open, int close, String ans, List<String> res) {
+        if (cnt * 2 == open + close) {
+            res.add(ans);
             return;
         }
 
-        if (open < cnt) backtrack(open + 1, close, cnt, ans + '(', result);
-        if (close < open) backtrack(open, close + 1, cnt, ans + ')', result);
+        if (open < cnt) backtrack(cnt, open + 1, close, ans + '(', res);
+        if (close < open) backtrack(cnt, open, close + 1, ans + ')', res);
     }
 
     public static void main(String[] args) {
