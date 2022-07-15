@@ -2,9 +2,6 @@ package tree;
 
 import java.util.ArrayDeque;
 
-/**
- * https://www.algoexpert.io/questions/Max%20Path%20Sum%20In%20Binary%20Tree
- */
 public class MaxPathSumInBinaryTree1 {
 
     static class BinaryTree {
@@ -17,35 +14,9 @@ public class MaxPathSumInBinaryTree1 {
         }
     }
 
-    // O(n) time | O(h) space
+
     public static int maxPathSum(BinaryTree tree) {
-        return getTreeInfo(tree).maxPath;
-    }
-
-    private static TreeInfo getTreeInfo(BinaryTree tree) {
-        if (tree == null) {
-            return new TreeInfo(0, 0);
-        }
-
-        TreeInfo li = getTreeInfo(tree.left);
-        TreeInfo ri = getTreeInfo(tree.right);
-
-        int maxSumAsChildBranch = Math.max(li.maxSumBranch, ri.maxSumBranch);
-        int maxSumAsBranch = Math.max(maxSumAsChildBranch + tree.value, tree.value);
-        int maxSumAsRootNode = Math.max(maxSumAsBranch, li.maxSumBranch + tree.value + ri.maxSumBranch);
-
-        int maxPath = Math.max(Math.max(li.maxPath, ri.maxPath), maxSumAsRootNode);
-        return new TreeInfo(maxSumAsBranch, maxPath);
-    }
-    
-    static class TreeInfo {
-        int maxSumBranch;
-        int maxPath;
-
-        public TreeInfo(int maxSumBranch, int maxPath) {
-            this.maxSumBranch = maxSumBranch;
-            this.maxPath = maxPath;
-        }
+        return -1;
     }
 
     public static void main(String[] args) {

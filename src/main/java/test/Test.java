@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MaxPathSumInBinaryTree
-            TopologicalSortDFSCycleGraph
             MinimumWindowSubstring
             InsertSort
             ReconstructBST
@@ -121,6 +119,8 @@ public class Test {
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
+            MaxPathSumInBinaryTree
+            TopologicalSortDFSCycleGraph
          */
     }
 }
