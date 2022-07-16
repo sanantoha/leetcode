@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinimumWindowSubstring
-            InsertSort
             ReconstructBST
             DijkstraShortestPathsAsMap
             SymmetricTree
@@ -19,6 +17,7 @@ public class Test {
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
+            MinimumWindowSubstring
             SelectSort
             TopKFrequentWords
             ReverseBinaryTree
@@ -88,6 +87,7 @@ public class Test {
             ReverseLinkedList
             LevenshteinDistance
             MinNumberOfJumps
+            InsertSort
             NodeDepths
             BalancedBinaryTree
             BinaryTreeDiameter

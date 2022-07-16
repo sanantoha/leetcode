@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class InsertSort {
 
-    // Best time: O(n) time | O(1) space
+    // Best time: O(n) time | O(1) space when array is already sorted
     // Avg: O(n ^ 2) time | O(1) space
     // Worst: O(n ^ 2) time | O(1) space
     public static void insertSort(int[] arr) {
