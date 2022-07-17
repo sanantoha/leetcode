@@ -21,8 +21,6 @@ public class DepthFirstSearch {
             System.out.println(dfsRec(graph, 0));
             System.out.println(dfsIter(graph, 0));
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

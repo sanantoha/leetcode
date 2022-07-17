@@ -19,6 +19,7 @@ public class Test {
             SelectSort
             TopKFrequentWords
             ReverseBinaryTree
+            DepthFirstSearchAsMap
             PhoneNumberMnemonic
             FourSum
             NumberOfWaysToMakeChange
