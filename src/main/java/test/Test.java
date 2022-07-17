@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReconstructBST
-            DijkstraShortestPathsAsMap
             SymmetricTree
             SparseMatrixMultiplication
             SubarraySumEqualsK
@@ -121,6 +119,8 @@ public class Test {
             PalindromeLinkedList
             MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
+            ReconstructBST
+            DijkstraShortestPathsAsMap
          */
     }
 }
