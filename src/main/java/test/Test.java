@@ -39,6 +39,7 @@ public class Test {
             KnapsackProblem
             ReverseString
             RegularExpressionMatch
+            BreadthSearchFirstAsMap
             MaximumSubarray
             ThreeSum
             BalancedBrackets
