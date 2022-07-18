@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SymmetricTree
-            SparseMatrixMultiplication
             SubarraySumEqualsK
             LongestNonDecrSubseq
             StringPermutation
@@ -123,6 +121,9 @@ public class Test {
             TopologicalSortDFSCycleGraph
             ReconstructBST
             DijkstraShortestPathsAsMap
+            MinimalHeaviestSetA
+            SymmetricTree
+            SparseMatrixMultiplication
          */
     }
 }
