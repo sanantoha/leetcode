@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SubarraySumEqualsK
-            LongestNonDecrSubseq
             StringPermutation
             FirstUniqueCharacterInString
             DFSTreeTraverse
@@ -20,6 +18,7 @@ public class Test {
             DepthFirstSearchAsMap
             PhoneNumberMnemonic
             FourSum
+            SubarraySumEqualsK
             NumberOfWaysToMakeChange
             WordSearch
             ClimbingStairs
@@ -124,6 +123,7 @@ public class Test {
             MinimalHeaviestSetA
             SymmetricTree
             SparseMatrixMultiplication
+            LongestNonDecrSubseq
          */
     }
 }

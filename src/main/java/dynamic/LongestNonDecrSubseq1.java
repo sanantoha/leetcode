@@ -1,8 +1,5 @@
 package dynamic;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class LongestNonDecrSubseq1 {
@@ -24,7 +21,7 @@ public class LongestNonDecrSubseq1 {
     }
 
     public static void main(String[] args) {
-        int[] arr = {-2,-1,2, 3,4,5,2,2,2,2, 3};
+        int[] arr = {-2,-1,2, 3,4,5,2,2,2,2, 3}; // 8
 
 //        int[] arr = {-1, 3, 4, 5, 2, 2, 2, 2}; // 5
 
