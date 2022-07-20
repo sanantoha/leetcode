@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StringPermutation
-            FirstUniqueCharacterInString
             DFSTreeTraverse
             CycleLinkedList
             LongestIncreasingPathInMatrix
@@ -124,6 +122,8 @@ public class Test {
             SymmetricTree
             SparseMatrixMultiplication
             LongestNonDecrSubseq
+            StringPermutation
+            FirstUniqueCharacterInString
          */
     }
 }
