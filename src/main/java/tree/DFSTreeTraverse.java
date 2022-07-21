@@ -8,7 +8,7 @@ import java.util.List;
 
 public class DFSTreeTraverse {
 
-    // O(n) time | O(n) space
+    // O(n) time | O(h) space
     public static List<Integer> preOrder(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) return result;
@@ -33,7 +33,7 @@ public class DFSTreeTraverse {
         return result;
     }
 
-    // O(n) time | O(n) space
+    // O(n) time | O(h) space
     public static List<Integer> inOrder(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) return result;
