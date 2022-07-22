@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncreasingPathInMatrix
-            DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
             MinimumWindowSubstring
@@ -44,6 +42,7 @@ public class Test {
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
+            LongestIncreasingPathInMatrix
             DeleteNodeInLinkedList
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
@@ -124,6 +123,7 @@ public class Test {
             FirstUniqueCharacterInString
             DFSTreeTraverse
             CycleLinkedList
+            DiskStacking
          */
     }
 }

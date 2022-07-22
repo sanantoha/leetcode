@@ -11,7 +11,7 @@ public class DiskStacking {
     public static List<Integer[]> diskStacking(List<Integer[]> disks) {
         if (disks == null || disks.size() == 0) return Collections.emptyList();
 
-        Collections.sort(disks, Comparator.comparingInt(disk -> disk[2]));
+        disks.sort(Comparator.comparingInt(disk -> disk[2]));
 
         int[] heights = new int[disks.size()];
         for (int i = 0; i < disks.size(); i++) {
