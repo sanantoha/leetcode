@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinimumWindowSubstring
-            SelectSort
             TopKFrequentWords
             ReverseBinaryTree
             DepthFirstSearchAsMap
@@ -37,6 +35,7 @@ public class Test {
             Permutations
             LeftViewBinaryTree
             SearchInRotatedSortedArray
+            MinimumWindowSubstring
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
@@ -124,6 +123,7 @@ public class Test {
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
+            SelectSort
          */
     }
 }
