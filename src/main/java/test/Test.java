@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            TopKFrequentWords
-            ReverseBinaryTree
             DepthFirstSearchAsMap
             PhoneNumberMnemonic
             FourSum
@@ -57,6 +55,7 @@ public class Test {
             MergeIntervals
             RiverSizes
             Sqrt
+            TopKFrequentWords
             CountingSort
             DFSTreeTraverseRec
             SubarraySort
@@ -72,6 +71,7 @@ public class Test {
             MedianOfTwoSortedArrays
             DepthFirstSearch
             BinaryTreeZigzagLevelOrderTraverse
+            ReverseBinaryTree
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
