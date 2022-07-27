@@ -23,6 +23,7 @@ public class Test {
             RegularExpressionMatch
             BreadthSearchFirstAsMap
             MaximumSubarray
+            MinSwapsTransformStringToPalindrome
             ThreeSum
             BalancedBrackets
             WordLadderII
