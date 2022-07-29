@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ClimbingStairs
-            NextGreaterElement
             ConvertedSortedArrayToBST
             StaircaseTraversal
             SortKSortedArray
@@ -125,6 +123,8 @@ public class Test {
             SubarraySumEqualsK
             NumberOfWaysToMakeChange
             WordSearch
+            ClimbingStairs
+            NextGreaterElement
          */
     }
 }
