@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ConvertedSortedArrayToBST
-            StaircaseTraversal
             SortKSortedArray
             ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
@@ -125,6 +123,8 @@ public class Test {
             WordSearch
             ClimbingStairs
             NextGreaterElement
+            ConvertedSortedArrayToBST
+            StaircaseTraversal
          */
     }
 }
