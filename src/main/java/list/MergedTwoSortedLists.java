@@ -2,6 +2,7 @@ package list;
 
 public class MergedTwoSortedLists {
 
+    // O(l1 + l2) time | O(l1 + l2) space
     public static ListNode merge(ListNode l1, ListNode l2) {
         if (l1 == null) return l2;
         if (l2 == null) return l1;
