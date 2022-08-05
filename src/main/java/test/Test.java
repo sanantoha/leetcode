@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseString
-            RegularExpressionMatch
             BreadthSearchFirstAsMap
             MaximumSubarray
             MinSwapsTransformStringToPalindrome
@@ -33,6 +31,7 @@ public class Test {
             QuickSort
             Powerset
             AddTwoNumbers
+            RegularExpressionMatch
             MergeIntervals
             RiverSizes
             Sqrt
@@ -126,6 +125,7 @@ public class Test {
             SortList
             Pow
             KnapsackProblem
+            ReverseString
          */
     }
 }
