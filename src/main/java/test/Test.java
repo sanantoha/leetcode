@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BreadthSearchFirstAsMap
-            MaximumSubarray
             MinSwapsTransformStringToPalindrome
             ThreeSum
             BalancedBrackets
@@ -126,6 +124,8 @@ public class Test {
             Pow
             KnapsackProblem
             ReverseString
+            BreadthSearchFirstAsMap
+            MaximumSubarray
          */
     }
 }
