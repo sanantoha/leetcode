@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchInRotatedSortedArray
-            MinimumWindowSubstring
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
@@ -45,6 +43,7 @@ public class Test {
             DepthFirstSearch
             BinaryTreeZigzagLevelOrderTraverse
             ReverseBinaryTree
+            MinimumWindowSubstring
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
@@ -126,6 +125,7 @@ public class Test {
             WordLadderII
             Permutations
             LeftViewBinaryTree
+            SearchInRotatedSortedArray
          */
     }
 }
