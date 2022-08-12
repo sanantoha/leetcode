@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ProductOfArrayExceptSelf
-            LongestIncreasingPathInMatrix
             DeleteNodeInLinkedList
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
@@ -126,6 +124,8 @@ public class Test {
             SearchInRotatedSortedArray
             SurroundedRegions
             SpiralMatrixTraverse
+            ProductOfArrayExceptSelf
+            LongestIncreasingPathInMatrix
          */
     }
 }
