@@ -4,6 +4,8 @@ public class DeleteNodeInLinkedList {
 
     // O(n) time | O(1) space
     public static void deleteNode(ListNode node) {
+        if (node == null) return;
+
         ListNode curr = node;
 
         while (curr != null) {
