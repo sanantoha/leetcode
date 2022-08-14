@@ -11,7 +11,7 @@ public class RemoveNthNodeFromEndOfList1 {
 
         System.out.println(lst);
 
-        ListNode res = removeNthFromEnd(lst, 3);
+        ListNode res = removeNthFromEnd(lst, 0);
 
         System.out.println(res);
     }

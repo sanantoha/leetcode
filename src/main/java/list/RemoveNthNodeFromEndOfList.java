@@ -23,7 +23,9 @@ public class RemoveNthNodeFromEndOfList {
             snd = snd.next;
         }
 
-        snd.next = snd.next.next;
+        if (snd.next != null) {
+            snd.next = snd.next.next;
+        }
         return dummy.next;
     }
 
@@ -31,7 +33,7 @@ public class RemoveNthNodeFromEndOfList {
     public static void main(String[] args) {
         ListNode lst = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
 
-        ListNode res = removeNthFromEnd(lst, 6);
+        ListNode res = removeNthFromEnd(lst, 0);
 
         System.out.println(res);
     }
