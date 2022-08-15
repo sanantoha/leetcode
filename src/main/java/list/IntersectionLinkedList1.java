@@ -1,9 +1,5 @@
 package list;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 public class IntersectionLinkedList1 {
 
     public static ListNode getIntersectionNode(ListNode l, ListNode r) {

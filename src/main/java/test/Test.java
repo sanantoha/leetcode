@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordBreak
-            IntersectionLinkedList
             LRUCache
             MergeSort
             CloneGraph
@@ -126,6 +124,8 @@ public class Test {
             ReverseWordsInString
             RemoveNthNodeFromEndOfList
             MinRewards
+            WordBreak
+            IntersectionLinkedList
          */
     }
 }
