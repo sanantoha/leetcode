@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LRUCache
-            MergeSort
             CloneGraph
             MinHeap
             MinNumberOfCoinsForChange
@@ -126,6 +124,8 @@ public class Test {
             MinRewards
             WordBreak
             IntersectionLinkedList
+            LRUCache
+            MergeSort
          */
     }
 }
