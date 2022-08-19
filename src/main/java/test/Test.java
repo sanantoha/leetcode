@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Powerset
-            AddTwoNumbers
             RegularExpressionMatch
             MergeIntervals
             RiverSizes
@@ -126,6 +124,8 @@ public class Test {
             MinHeap
             MinNumberOfCoinsForChange
             QuickSort
+            Powerset
+            AddTwoNumbers
          */
     }
 }

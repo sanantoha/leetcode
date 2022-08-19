@@ -1,7 +1,5 @@
 package list;
 
-import java.util.List;
-
 public class AddTwoNumbers {
 
     // O(max(l1, l2)) time | O(max(l1, l2)) space
