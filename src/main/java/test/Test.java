@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RegularExpressionMatch
-            MergeIntervals
-            RiverSizes
             Sqrt
             TopKFrequentWords
             CountingSort
@@ -18,6 +15,7 @@ public class Test {
             MinSwapsTransformStringToPalindrome
             StringWithoutAAAorBBB
             BFSTreeTraverse
+            RegularExpressionMatch
             UniquePaths
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
@@ -126,6 +124,8 @@ public class Test {
             QuickSort
             Powerset
             AddTwoNumbers
+            MergeIntervals
+            RiverSizes
          */
     }
 }
