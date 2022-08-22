@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CountingSort
-            DFSTreeTraverseRec
             SubarraySort
             BreadthSearchFirst
             ValidateStartingCity
@@ -126,6 +124,8 @@ public class Test {
             RiverSizes
             Sqrt
             TopKFrequentWords
+            CountingSort
+            DFSTreeTraverseRec
          */
     }
 }
