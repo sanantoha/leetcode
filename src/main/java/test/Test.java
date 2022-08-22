@@ -19,6 +19,7 @@ public class Test {
             DepthFirstSearch
             BinaryTreeZigzagLevelOrderTraverse
             ReverseBinaryTree
+            DeepCopyArbitraryPointer
             MinimumWindowSubstring
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
