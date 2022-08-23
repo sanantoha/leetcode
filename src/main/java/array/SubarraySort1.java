@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SubarraySort1 {
 
-    public static int[] subarraySort(int[] array) {
+    public static int[] subarraySort(int[] arr) {
         return null;
     }
 

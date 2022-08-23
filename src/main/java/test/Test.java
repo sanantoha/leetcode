@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SubarraySort
-            BreadthSearchFirst
             ValidateStartingCity
             HouseRobber
             WordLadder
@@ -127,6 +125,8 @@ public class Test {
             TopKFrequentWords
             CountingSort
             DFSTreeTraverseRec
+            SubarraySort
+            BreadthSearchFirst
          */
     }
 }
