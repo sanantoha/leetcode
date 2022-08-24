@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidateStartingCity
-            HouseRobber
             WordLadder
             MinSwapsTransformStringToPalindrome
             StringWithoutAAAorBBB
@@ -127,6 +125,8 @@ public class Test {
             DFSTreeTraverseRec
             SubarraySort
             BreadthSearchFirst
+            ValidateStartingCity
+            HouseRobber
          */
     }
 }
