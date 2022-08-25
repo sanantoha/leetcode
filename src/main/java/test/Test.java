@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordLadder
-            MinSwapsTransformStringToPalindrome
             StringWithoutAAAorBBB
             BFSTreeTraverse
             RegularExpressionMatch
@@ -127,6 +125,8 @@ public class Test {
             BreadthSearchFirst
             ValidateStartingCity
             HouseRobber
+            WordLadder
+            MinSwapsTransformStringToPalindrome
          */
     }
 }

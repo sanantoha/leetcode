@@ -4,7 +4,7 @@ import java.util.*;
 
 public class WordLadder {
 
-    // O(m ^ 2 * n) time | O(m ^ 2 * n) space - where m - length of each word, n - total number of words
+    // O(n * m ^ 2) time | O(n * m ^ 2) space - where m - length of each word, n - total number of words
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
         if (beginWord == null || endWord == null || wordList == null || wordList.size() == 0 || !wordList.contains(endWord)) {
             return 0;

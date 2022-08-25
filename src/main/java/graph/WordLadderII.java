@@ -4,7 +4,7 @@ import java.util.*;
 
 public class WordLadderII {
 
-    // O(l ^ 2 * n) time | O(l ^ 2 * n) space
+    // O(n * l ^ 2) time | O(n * l ^ 2) space
     public static List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         if (beginWord == null || beginWord.isEmpty() || endWord == null ||
                 endWord.isEmpty() || !wordList.contains(endWord)) {
