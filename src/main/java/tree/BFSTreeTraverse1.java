@@ -19,6 +19,6 @@ public class BFSTreeTraverse1 {
                                 new TreeNode(13),
                                 new TreeNode(17))));
 
-        System.out.println(bfs(root));
+        System.out.println(bfs(root)); // [5, 2, 10, 1, 3, 7, 15, 13, 17]
     }
 }
