@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RegularExpressionMatch
-            UniquePaths
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
@@ -36,6 +34,7 @@ public class Test {
             ValidateBinarySearchTree
             AStarAlgo
             SameTree
+            RegularExpressionMatch
             SearchForRange
             MinimumPassesOfMatrix
             HeapSort
@@ -127,6 +126,7 @@ public class Test {
             MinSwapsTransformStringToPalindrome
             StringWithoutAAAorBBB
             BFSTreeTraverse
+            UniquePaths
          */
     }
 }
