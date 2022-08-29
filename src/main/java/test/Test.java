@@ -5,7 +5,6 @@ public class Test {
         /*
             MedianOfTwoSortedArrays
             DepthFirstSearch
-            BinaryTreeZigzagLevelOrderTraverse
             ReverseBinaryTree
             DeepCopyArbitraryPointer
             MinimumWindowSubstring
@@ -127,6 +126,7 @@ public class Test {
             UniquePaths
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
+            BinaryTreeZigzagLevelOrderTraverse
          */
     }
 }

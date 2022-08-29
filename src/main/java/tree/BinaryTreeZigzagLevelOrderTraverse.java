@@ -30,12 +30,10 @@ public class BinaryTreeZigzagLevelOrderTraverse {
                 if (curr.right != null) queue.add(curr.right);
             }
 
-            if (!subRes.isEmpty()) {
-                if (i % 2 == 1) {
-                    Collections.reverse(subRes);
-                }
-                res.add(subRes);
+            if (i % 2 == 1) {
+                Collections.reverse(subRes);
             }
+            res.add(subRes);
             i++;
         }
 
@@ -43,14 +41,15 @@ public class BinaryTreeZigzagLevelOrderTraverse {
     }
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(3,
-                new TreeNode(9),
-                new TreeNode(20,
+        TreeNode root = new TreeNode(5,
+                new TreeNode(2,
+                        new TreeNode(1),
+                        new TreeNode(3)),
+                new TreeNode(10,
+                        new TreeNode(7),
                         new TreeNode(15,
-                                new TreeNode(16),
-                                new TreeNode(17)),
-                        new TreeNode(7))
-        );
+                                new TreeNode(14),
+                                new TreeNode(17))));
 
         System.out.println(zigzagLevelOrder(root));
     }
