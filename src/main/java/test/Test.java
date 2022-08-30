@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DepthFirstSearch
-            ReverseBinaryTree
             DeepCopyArbitraryPointer
             MinimumWindowSubstring
             ConstructBinaryTreeFromPreorderAndInorderTraversal
@@ -127,6 +125,8 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
+            DepthFirstSearch
+            ReverseBinaryTree
          */
     }
 }
