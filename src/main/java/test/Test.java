@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DeepCopyArbitraryPointer
-            MinimumWindowSubstring
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             ReverseLinkedList
             LevenshteinDistance
@@ -51,6 +49,7 @@ public class Test {
             SparseMatrixMultiplication
             LongestNonDecrSubseq
             StringPermutation
+            DeepCopyArbitraryPointer
             FirstUniqueCharacterInString
             DFSTreeTraverse
             CycleLinkedList
@@ -127,6 +126,7 @@ public class Test {
             BinaryTreeZigzagLevelOrderTraverse
             DepthFirstSearch
             ReverseBinaryTree
+            MinimumWindowSubstring
          */
     }
 }
