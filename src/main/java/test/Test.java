@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ConstructBinaryTreeFromPreorderAndInorderTraversal
-            ReverseLinkedList
             LevenshteinDistance
             MinNumberOfJumps
             InsertSort
@@ -79,6 +77,7 @@ public class Test {
             Pow
             KnapsackProblem
             ReverseString
+            ConstructBinaryTreeFromPreorderAndInorderTraversal
             BreadthSearchFirstAsMap
             MaximumSubarray
             ThreeSum
@@ -127,6 +126,7 @@ public class Test {
             DepthFirstSearch
             ReverseBinaryTree
             MinimumWindowSubstring
+            ReverseLinkedList
          */
     }
 }
