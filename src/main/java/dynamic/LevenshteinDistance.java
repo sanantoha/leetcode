@@ -1,7 +1,5 @@
 package dynamic;
 
-import java.util.Arrays;
-
 /**
  * https://www.algoexpert.io/questions/Levenshtein%20Distance
  */

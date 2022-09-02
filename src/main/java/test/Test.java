@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LevenshteinDistance
-            MinNumberOfJumps
             InsertSort
             NodeDepths
             BalancedBinaryTree
@@ -44,6 +42,7 @@ public class Test {
             DijkstraShortestPathsAsMap
             MinimalHeaviestSetA
             SymmetricTree
+            MinNumberOfJumps
             SparseMatrixMultiplication
             LongestNonDecrSubseq
             StringPermutation
@@ -127,6 +126,7 @@ public class Test {
             ReverseBinaryTree
             MinimumWindowSubstring
             ReverseLinkedList
+            LevenshteinDistance
          */
     }
 }
