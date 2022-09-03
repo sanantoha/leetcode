@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            InsertSort
-            NodeDepths
             BalancedBinaryTree
             BinaryTreeDiameter
             KthSmallestElementInArray
@@ -127,6 +125,8 @@ public class Test {
             MinimumWindowSubstring
             ReverseLinkedList
             LevenshteinDistance
+            InsertSort
+            NodeDepths
          */
     }
 }
