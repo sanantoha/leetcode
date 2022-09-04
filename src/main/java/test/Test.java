@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BalancedBinaryTree
-            BinaryTreeDiameter
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
@@ -116,6 +114,7 @@ public class Test {
             StringWithoutAAAorBBB
             BFSTreeTraverse
             UniquePaths
+            BinaryTreeDiameter
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
@@ -127,6 +126,7 @@ public class Test {
             LevenshteinDistance
             InsertSort
             NodeDepths
+            BalancedBinaryTree
          */
     }
 }
