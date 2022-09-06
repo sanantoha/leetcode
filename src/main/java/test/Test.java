@@ -33,6 +33,7 @@ public class Test {
             ReconstructBST
             DijkstraShortestPathsAsMap
             MinimalHeaviestSetA
+            PrimMinSpanningTreeAsMap
             SymmetricTree
             MinNumberOfJumps
             SparseMatrixMultiplication

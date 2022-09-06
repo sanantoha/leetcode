@@ -49,6 +49,12 @@ public class GraphUtils {
             return to;
         }
 
+        T other(T v) {
+            if (from.equals(v)) return to;
+            else if (to.equals(v)) return from;
+            else throw new IllegalStateException("Illegal endpoint");
+        }
+
         W weight() {
             return weight;
         }
@@ -86,19 +92,19 @@ public class GraphUtils {
     public static String printEdgeWeightedDigraph(Map<String, List<Edge<String, Double>>> graph) {
         StringBuilder res = new StringBuilder();
         res.append(graph.size()).append(" ");
-        int edges = 0;
+        Set<Edge<String, Double>> edges = new HashSet<>();
         StringBuilder subRes = new StringBuilder();
         for (Map.Entry<String, List<Edge<String, Double>>> entry : graph.entrySet()) {
             String v = entry.getKey();
             List<Edge<String, Double>> lst = entry.getValue();
-            edges += lst.size();
+            edges.addAll(lst);
             subRes.append(v).append(": ");
             for (Edge<String, Double> edge : lst) {
                 subRes.append(edge.from()).append("->").append(edge.to()).append(" ").append(edge.weight()).append("  ");
             }
             subRes.append("\n");
         }
-        res.append(edges).append("\n");
+        res.append(edges.size()).append("\n");
         res.append(subRes);
         return res.toString();
     }
