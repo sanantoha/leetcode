@@ -4,8 +4,8 @@ public class Test {
     public static void main(String[] args) {
         /*
             KruskalMinSpanningTree
-            SameBSTs
             BSTSuccessorSearch
+            SameBSTs
             WaterArea
             CombinationSum
             LongestCommonSubsequence
