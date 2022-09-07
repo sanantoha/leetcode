@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KruskalMinSpanningTree
-            BSTSuccessorSearch
             SameBSTs
             WaterArea
             CombinationSum
@@ -128,6 +126,8 @@ public class Test {
             BestTimeToBuyAndSellStock
             BinarySearch
             PrimMinSpanningTree
+            KruskalMinSpanningTree
+            BSTSuccessorSearch
          */
     }
 }
