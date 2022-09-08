@@ -38,6 +38,7 @@ public class Test {
             DeepCopyArbitraryPointer
             FirstUniqueCharacterInString
             DFSTreeTraverse
+            KruskalMinSpanningTreeAsMap
             CycleLinkedList
             DiskStacking
             LargestRange
