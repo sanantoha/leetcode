@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SameBSTs
-            WaterArea
             CombinationSum
             LongestCommonSubsequence
             LowestCommonAncestorOfBinarySearchTree
@@ -128,6 +126,8 @@ public class Test {
             PrimMinSpanningTree
             KruskalMinSpanningTree
             BSTSuccessorSearch
+            SameBSTs
+            WaterArea
          */
     }
 }
