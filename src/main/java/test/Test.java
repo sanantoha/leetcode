@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CombinationSum
-            LongestCommonSubsequence
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
@@ -129,6 +127,8 @@ public class Test {
             BSTSuccessorSearch
             SameBSTs
             WaterArea
+            CombinationSum
+            LongestCommonSubsequence
          */
     }
 }

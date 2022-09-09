@@ -1,7 +1,5 @@
 package dynamic;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class LongestCommonSubsequence1 {
