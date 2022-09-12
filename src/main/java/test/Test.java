@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SameTree
-            RegularExpressionMatch
             SearchForRange
             MinimumPassesOfMatrix
             HeapSort
@@ -31,6 +29,7 @@ public class Test {
             StringPermutation
             DeepCopyArbitraryPointer
             FirstUniqueCharacterInString
+            RegularExpressionMatch
             DFSTreeTraverse
             KruskalMinSpanningTreeAsMap
             CycleLinkedList
@@ -129,6 +128,7 @@ public class Test {
             LongestIncrSubSeq
             ValidateBinarySearchTree
             AStarAlgo
+            SameTree
          */
     }
 }
