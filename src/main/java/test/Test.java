@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchForRange
-            MinimumPassesOfMatrix
             HeapSort
             FindNodesDistanceK
             LongestDecrSubseq
@@ -129,6 +127,8 @@ public class Test {
             ValidateBinarySearchTree
             AStarAlgo
             SameTree
+            SearchForRange
+            MinimumPassesOfMatrix
          */
     }
 }
