@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestDecrSubseq
-            MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
             FirstPermutationIsSubstrSecondStr
@@ -129,6 +127,8 @@ public class Test {
             MinimumPassesOfMatrix
             HeapSort
             FindNodesDistanceK
+            LongestDecrSubseq
+            MaxSumIncreasingSubsequence
          */
     }
 }
