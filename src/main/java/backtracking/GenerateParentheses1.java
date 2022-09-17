@@ -1,25 +1,11 @@
 package backtracking;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class GenerateParentheses1 {
 
-    // O((4 ^ n) * sqrt) time | O((4 ^ n) * sqrt) space
     public static List<String> generateParenthesis(int cnt) {
-        List<String> res = new ArrayList<>();
-        backtrack(cnt, 0, 0, "", res);
-        return res;
-    }
-
-    private static void backtrack(int cnt, int open, int close, String ans, List<String> res) {
-        if (cnt * 2 == open + close) {
-            res.add(ans);
-            return;
-        }
-
-        if (open < cnt) backtrack(cnt, open + 1, close, ans + '(', res);
-        if (close < open) backtrack(cnt, open, close + 1, ans + ')', res);
+        return null;
     }
 
     public static void main(String[] args) {
