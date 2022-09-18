@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ZigZagTraverse1 {
 
-    public static List<Integer> zigzagTraverse(List<List<Integer>> array) {
+    public static List<Integer> zigzagTraverse(List<List<Integer>> arr) {
         return null;
     }
 
