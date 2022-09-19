@@ -2,6 +2,7 @@ package list;
 
 public class PalindromeLinkedList {
 
+    // O(n) time | O(1) space
     public static boolean isPalindrome(ListNode head) {
         if (head == null) return false;
 
