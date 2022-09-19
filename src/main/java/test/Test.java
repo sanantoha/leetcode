@@ -60,6 +60,7 @@ public class Test {
             LongestIncreasingPathInMatrix
             DeleteNodeInLinkedList
             ReverseWordsInString
+            BellmanFordAsMap
             RemoveNthNodeFromEndOfList
             MinRewards
             WordBreak

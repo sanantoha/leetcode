@@ -65,7 +65,7 @@ public class BellmanFord {
         int v = -1;
         for (DirectedEdge edge : graph.edges()) {
             if (shortest[edge.from()] + edge.weight() < shortest[edge.to()]) {
-                v = edge.to();
+                v = edge.from();
             }
         }
 
