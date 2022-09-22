@@ -1,5 +1,6 @@
 package tree;
 
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -19,26 +20,26 @@ public class SymmetricTree {
         return isMirror(l.left, r.right) && isMirror(l.right, r.left);
     }
 
-    // O(n) time | O(n) time
+    // O(n) time | O(h) space
     public static boolean isSymmetric(TreeNode root) {
         if (root == null) return true;
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root.left);
-        queue.add(root.right);
+        Deque<TreeNode> stack = new LinkedList<>();
+        stack.push(root.left);
+        stack.push(root.right);
 
-        while (!queue.isEmpty()) {
-            TreeNode currL = queue.remove();
-            TreeNode currR = queue.remove();
-            if (currL == null && currR == null) continue;
-            if (currL == null || currR == null) return false;
-            if (currL.val != currR.val) return false;
-            queue.add(currL.left);
-            queue.add(currR.right);
-            queue.add(currL.right);
-            queue.add(currR.left);
+        while (!stack.isEmpty()) {
+            TreeNode c1 = stack.poll();
+            TreeNode c2 = stack.poll();
+            if (c1 == null && c2 == null) continue;
+            if (c1 == null || c2 == null) return false;
+            if (c1.val != c2.val) return false;
+
+            stack.push(c1.left);
+            stack.push(c2.right);
+            stack.push(c1.right);
+            stack.push(c2.left);
         }
-
         return true;
     }
 

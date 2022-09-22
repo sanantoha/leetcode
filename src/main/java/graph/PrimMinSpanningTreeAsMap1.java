@@ -1,11 +1,10 @@
 package graph;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 import static graph.GraphUtils.printEdgeWeightedDigraph;
+import static graph.GraphUtils.Edge;
+import static graph.GraphUtils.Pair;
 
 public class PrimMinSpanningTreeAsMap1 {
 
@@ -83,7 +82,7 @@ public class PrimMinSpanningTreeAsMap1 {
         return graph;
     }
 
-    public static Set<GraphUtils.Edge<String, Double>> mst(Map<String, List<GraphUtils.Edge<String, Double>>> graph) {
+    public static Set<Edge<String, Double>> mst(Map<String, List<Edge<String, Double>>> graph) {
         return null;
     }
 }
