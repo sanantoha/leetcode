@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfJumps
-            SparseMatrixMultiplication
             LongestNonDecrSubseq
             StringPermutation
             DeepCopyArbitraryPointer
@@ -130,6 +128,8 @@ public class Test {
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
             SymmetricTree
+            MinNumberOfJumps
+            SparseMatrixMultiplication
          */
     }
 }
