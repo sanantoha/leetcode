@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DeepCopyArbitraryPointer
-            FirstUniqueCharacterInString
             RegularExpressionMatch
             DFSTreeTraverse
             KruskalMinSpanningTreeAsMap
@@ -130,6 +128,8 @@ public class Test {
             SparseMatrixMultiplication
             LongestNonDecrSubseq
             StringPermutation
+            DeepCopyArbitraryPointer
+            FirstUniqueCharacterInString
          */
     }
 }
