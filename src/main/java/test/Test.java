@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RegularExpressionMatch
-            DFSTreeTraverse
             KruskalMinSpanningTreeAsMap
             CycleLinkedList
             DiskStacking
@@ -130,6 +128,8 @@ public class Test {
             StringPermutation
             DeepCopyArbitraryPointer
             FirstUniqueCharacterInString
+            RegularExpressionMatch
+            DFSTreeTraverse
          */
     }
 }
