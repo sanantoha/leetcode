@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KruskalMinSpanningTreeAsMap
-            CycleLinkedList
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
@@ -130,6 +128,8 @@ public class Test {
             FirstUniqueCharacterInString
             RegularExpressionMatch
             DFSTreeTraverse
+            KruskalMinSpanningTreeAsMap
+            CycleLinkedList
          */
     }
 }
