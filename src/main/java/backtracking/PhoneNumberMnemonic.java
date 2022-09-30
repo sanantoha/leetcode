@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PhoneNumberMnemonic {
 
-    // O(4 ^ n * n) time | O(4 ^ n * n) space
+    // O(n * 4 ^ n) time | O(n * 4 ^ n) space
     public static List<String> phoneNumberMnemonics(String phoneNumber) {
         List<String> result = new ArrayList<>();
         String[] letters = {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
