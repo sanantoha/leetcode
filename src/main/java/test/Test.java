@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NumberOfWaysToMakeChange
-            WordSearch
             ClimbingStairs
             NextGreaterElement
             ConvertedSortedArrayToBST
@@ -130,6 +128,8 @@ public class Test {
             PhoneNumberMnemonic
             FourSum
             SubarraySumEqualsK
+            NumberOfWaysToMakeChange
+            WordSearch
          */
     }
 }

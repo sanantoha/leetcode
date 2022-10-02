@@ -68,6 +68,6 @@ public class WordSearch {
 
         System.out.println("==========================");
 
-        System.out.println(exist(board1, "ABCEV"));
+        System.out.println(!exist(board1, "ABCEV"));
     }
 }
