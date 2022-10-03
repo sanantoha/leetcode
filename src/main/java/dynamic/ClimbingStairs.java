@@ -10,28 +10,24 @@ public class ClimbingStairs {
 
     // O(n) time | O(n) space
     public static int climbStairsDP(int n) {
-        if (n == 0) return 0;
-        if (n == 1) return 1;
+        if (n <= 0) return 0;
 
-        int[] dp = new int[n + 1];
-        dp[0] = 0;
-        dp[1] = 1;
-        dp[2] = 2;
+        int[] ways = new int[n + 1];
+        ways[0] = 1;
+        ways[1] = 1;
 
-        for (int i = 3; i < dp.length; i++) {
-            dp[i] = dp[i - 2] + dp[i - 1];
+        for (int i = 2; i <= n; i++) {
+            ways[i] = ways[i - 2] + ways[i - 1];
         }
-
-        return dp[n];
+        return ways[n];
     }
 
     public static int climbStairs(int n) {
-        if (n == 0) return 0;
-        if (n == 1) return 1;
+        if (n <= 0) return 0;
 
         int first = 1;
-        int second = 2;
-        for (int i = 3; i <= n; i++) {
+        int second = 1;
+        for (int i = 2; i <= n; i++) {
             int third = first + second;
             first = second;
             second = third;
@@ -40,21 +36,20 @@ public class ClimbingStairs {
     }
 
     public static void main(String[] args) {
-
-        System.out.println(climbStairsDP(0));
-        System.out.println(climbStairsDP(1));
-        System.out.println(climbStairsDP(2));
-        System.out.println(climbStairsDP(3));
-        System.out.println(climbStairsDP(4));
-        System.out.println(climbStairsDP(5));
+        System.out.println(climbStairsDP(0) == 0);
+        System.out.println(climbStairsDP(1) == 1);
+        System.out.println(climbStairsDP(2) == 2);
+        System.out.println(climbStairsDP(3) == 3);
+        System.out.println(climbStairsDP(4) == 5);
+        System.out.println(climbStairsDP(5) == 8);
 
         System.out.println("=======================");
 
-        System.out.println(climbStairs(0));
-        System.out.println(climbStairs(1));
-        System.out.println(climbStairs(2));
-        System.out.println(climbStairs(3));
-        System.out.println(climbStairs(4));
-        System.out.println(climbStairs(5));
+        System.out.println(climbStairs(0) == 0);
+        System.out.println(climbStairs(1) == 1);
+        System.out.println(climbStairs(2) == 2);
+        System.out.println(climbStairs(3) == 3);
+        System.out.println(climbStairs(4) == 5);
+        System.out.println(climbStairs(5) == 8);
     }
 }
