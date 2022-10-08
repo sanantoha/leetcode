@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PalindromicSubstrings
-            RotateImage
             SortList
             Pow
             KnapsackProblem
@@ -130,6 +128,8 @@ public class Test {
             TopologicalSortDFSCycleGraphAsMap
             FirstDuplicateValue
             DijkstraShortestPaths
+            PalindromicSubstrings
+            RotateImage
          */
     }
 }
