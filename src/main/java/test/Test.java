@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortList
-            Pow
             KnapsackProblem
             ReverseString
             ConstructBinaryTreeFromPreorderAndInorderTraversal
@@ -130,6 +128,8 @@ public class Test {
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
+            SortList
+            Pow
          */
     }
 }
