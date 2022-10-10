@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KnapsackProblem
-            ReverseString
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             BreadthSearchFirstAsMap
             MaximumSubarray
@@ -130,6 +128,8 @@ public class Test {
             RotateImage
             SortList
             Pow
+            KnapsackProblem
+            ReverseString
          */
     }
 }
