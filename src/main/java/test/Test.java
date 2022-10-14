@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Permutations
-            LeftViewBinaryTree
             SearchInRotatedSortedArray
             SurroundedRegions
             SpiralMatrixTraverse
@@ -130,6 +128,8 @@ public class Test {
             ThreeSum
             BalancedBrackets
             WordLadderII
+            Permutations
+            LeftViewBinaryTree
          */
     }
 }
