@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordBreak
-            IntersectionLinkedList
             LRUCache
             MergeSort
             CloneGraph
@@ -130,6 +128,8 @@ public class Test {
             BellmanFordAsMap
             RemoveNthNodeFromEndOfList
             MinRewards
+            WordBreak
+            IntersectionLinkedList
          */
     }
 }
