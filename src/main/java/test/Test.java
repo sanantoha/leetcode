@@ -44,6 +44,7 @@ public class Test {
             KruskalMinSpanningTree
             BSTSuccessorSearch
             SameBSTs
+            RotateArray
             WaterArea
             CombinationSum
             LongestCommonSubsequence
