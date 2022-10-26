@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Sqrt
-            TopKFrequentWords
             CountingSort
             DFSTreeTraverseRec
             SubarraySort
@@ -131,6 +129,8 @@ public class Test {
             AddTwoNumbers
             MergeIntervals
             RiverSizes
+            Sqrt
+            TopKFrequentWords
          */
     }
 }
