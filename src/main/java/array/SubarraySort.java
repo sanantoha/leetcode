@@ -9,7 +9,7 @@ public class SubarraySort {
 
     // O(n) time | O(1) space
     public static int[] subarraySort(int[] array) {
-        if (array == null || array.length == 0) return new int[] {-1, -1};
+        if (array == null || array.length <= 1) return new int[] {-1, -1};
 
         int minOutOfOrder = Integer.MAX_VALUE;
         int maxOutOfOrder = Integer.MIN_VALUE;
