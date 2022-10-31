@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StringWithoutAAAorBBB
-            BFSTreeTraverse
             UniquePaths
             BinaryTreeDiameter
             ValidIPAddress
@@ -131,6 +129,8 @@ public class Test {
             HouseRobber
             WordLadder
             MinSwapsTransformStringToPalindrome
+            StringWithoutAAAorBBB
+            BFSTreeTraverse
          */
     }
 }
