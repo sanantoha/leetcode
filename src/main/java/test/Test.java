@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MedianOfTwoSortedArrays
-            BinaryTreeZigzagLevelOrderTraverse
             DepthFirstSearch
             ReverseBinaryTree
             MinimumWindowSubstring
@@ -131,6 +129,8 @@ public class Test {
             BinaryTreeDiameter
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
+            MedianOfTwoSortedArrays
+            BinaryTreeZigzagLevelOrderTraverse
          */
     }
 }
