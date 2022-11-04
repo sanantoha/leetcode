@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DepthFirstSearch
-            ReverseBinaryTree
             MinimumWindowSubstring
             ReverseLinkedList
             LevenshteinDistance
@@ -131,6 +129,8 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
+            DepthFirstSearch
+            ReverseBinaryTree
          */
     }
 }

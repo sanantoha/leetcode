@@ -1,11 +1,12 @@
 package tree;
 
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class ReverseBinaryTree {
 
-    // O(n) time | O(n) space
+    // O(n) time | O(h) space
     public static void reverse(TreeNode root) {
         if (root == null) return;
 
@@ -17,14 +18,14 @@ public class ReverseBinaryTree {
         reverse(root.right);
     }
 
-    // O(n) time | O(n) space
+    // O(n) time | O(h) space
     public static void reverseIter(TreeNode root) {
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
+        Deque<TreeNode> stack = new LinkedList<>();
+        stack.add(root);
 
-        while (!queue.isEmpty()) {
-            TreeNode curr = queue.remove();
+        while (!stack.isEmpty()) {
+            TreeNode curr = stack.remove();
 
             if (curr == null) continue;
 
@@ -33,8 +34,8 @@ public class ReverseBinaryTree {
             curr.left = r;
             curr.right = l;
 
-            queue.add(curr.left);
-            queue.add(curr.right);
+            stack.add(curr.left);
+            stack.add(curr.right);
         }
     }
 
