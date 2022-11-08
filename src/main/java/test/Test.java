@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KthSmallestElementInArray
-            BestTimeToBuyAndSellStock
             BinarySearch
             PrimMinSpanningTree
             KruskalMinSpanningTree
@@ -131,6 +129,8 @@ public class Test {
             InsertSort
             NodeDepths
             BalancedBinaryTree
+            KthSmallestElementInArray
+            BestTimeToBuyAndSellStock
          */
     }
 }
