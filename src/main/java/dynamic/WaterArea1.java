@@ -1,7 +1,5 @@
 package dynamic;
 
-import java.util.Arrays;
-
 public class WaterArea1 {
 
     public static int waterArea(int[] heights) {
