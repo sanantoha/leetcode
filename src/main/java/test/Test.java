@@ -3,10 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AStarAlgo
-            SameTree
-            SearchForRange
-            MinimumPassesOfMatrix
             HeapSort
             FindNodesDistanceK
             LongestDecrSubseq
@@ -131,6 +127,10 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
+            AStarAlgo
+            SameTree
+            SearchForRange
+            MinimumPassesOfMatrix
          */
     }
 }
