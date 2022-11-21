@@ -6,6 +6,7 @@ public class Test {
             PalindromeLinkedList
             MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
+            AllPathsFromSourceTarget
             ReconstructBST
             DijkstraShortestPathsAsMap
             MinimalHeaviestSetA
