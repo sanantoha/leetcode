@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PalindromeLinkedList
-            MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
             AllPathsFromSourceTarget
             ReconstructBST
@@ -132,6 +130,8 @@ public class Test {
             GenerateParentheses
             FindClosestValueInBST
             ZigZagTraverse
+            PalindromeLinkedList
+            MaxPathSumInBinaryTree
          */
     }
 }
