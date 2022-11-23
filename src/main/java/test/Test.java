@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            TopologicalSortDFSCycleGraph
-            AllPathsFromSourceTarget
             ReconstructBST
             DijkstraShortestPathsAsMap
             MinimalHeaviestSetA
@@ -132,6 +130,8 @@ public class Test {
             ZigZagTraverse
             PalindromeLinkedList
             MaxPathSumInBinaryTree
+            TopologicalSortDFSCycleGraph
+            AllPathsFromSourceTarget
          */
     }
 }

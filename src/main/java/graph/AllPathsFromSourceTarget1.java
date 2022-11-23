@@ -1,6 +1,6 @@
 package graph;
 
-import java.util.List;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/all-paths-from-source-to-target/
@@ -13,8 +13,43 @@ import java.util.List;
  */
 public class AllPathsFromSourceTarget1 {
 
+    // O(E + k * V) time | O(N) space - where k number of paths
     public static List<List<Integer>> allPathsSourceTarget(int[][] graph) {
-        return null;
+        if (graph == null || graph.length == 0) return Collections.emptyList();
+
+        int start = 0;
+        Deque<Pair> stack = new LinkedList<>();
+        stack.push(new Pair(start, List.of(start)));
+
+        List<List<Integer>> res = new ArrayList<>();
+
+        while (!stack.isEmpty()) {
+            Pair p = stack.pop();
+            int v = p.node;
+            List<Integer> path = p.lst;
+
+            if (v == graph.length - 1) {
+                res.add(new ArrayList<>(path));
+            }
+
+            for (int u : graph[v]) {
+                List<Integer> np = new ArrayList<>(path);
+                np.add(u);
+                stack.push(new Pair(u, np));
+            }
+        }
+
+        return res;
+    }
+
+    static class Pair {
+        int node;
+        List<Integer> lst;
+
+        public Pair(int node, List<Integer> lst) {
+            this.node = node;
+            this.lst = lst;
+        }
     }
 
     public static void main(String[] args) {
@@ -26,7 +61,7 @@ public class AllPathsFromSourceTarget1 {
         };
 
         var actual = allPathsSourceTarget(graph);
-        System.out.println(actual); // [[0, 1, 3], [0, 2, 3]]
+        System.out.println(actual); // [[0, 2, 3], [0, 1, 3]]
 
         int[][] graph1 = new int[][] {
                 {4, 3, 1},
@@ -37,6 +72,6 @@ public class AllPathsFromSourceTarget1 {
         };
 
         actual = allPathsSourceTarget(graph1);
-        System.out.println(actual); // [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
+        System.out.println(actual); // [[0, 1, 4], [0, 1, 2, 3, 4], [0, 1, 3, 4], [0, 3, 4], [0, 4]]
     }
 }
