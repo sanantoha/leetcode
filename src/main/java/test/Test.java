@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReconstructBST
-            DijkstraShortestPathsAsMap
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
             SymmetricTree
@@ -132,6 +130,8 @@ public class Test {
             MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
             AllPathsFromSourceTarget
+            ReconstructBST
+            DijkstraShortestPathsAsMap
          */
     }
 }
