@@ -16,7 +16,7 @@ import java.util.Arrays;
  */
 public class MinimalHeaviestSetA {
 
-    // O(n) time | O(1) space
+    // O(n * log(n)) time | O(1) space
     private static int[] minimalHeaviestSetA(int[] arr) {
         if (arr == null || arr.length == 0) return new int[] {};
 
@@ -37,6 +37,7 @@ public class MinimalHeaviestSetA {
                 rightSum += arr[r];
             }
         }
+        System.out.println(l + " " + r);
         int[] res = new int[arr.length - r];
         System.arraycopy(arr, r, res, 0, res.length);
         return res;

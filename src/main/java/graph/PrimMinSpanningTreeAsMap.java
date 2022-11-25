@@ -82,6 +82,7 @@ public class PrimMinSpanningTreeAsMap {
         return graph;
     }
 
+    // O((E + V) * log(V)) time | O(V) space
     public static Set<Edge<String, Double>> mst(Map<String, List<Edge<String, Double>>> graph) {
         Set<Edge<String, Double>> mst = new HashSet<>();
 

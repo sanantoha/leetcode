@@ -21,7 +21,7 @@ public class MinimalHeaviestSetA1 {
     }
 
     public static void main(String[] args) {
-        int[] arr = {6, 4, 2, 4, 1, 5};
+        int[] arr = {6, 4, 2, 3, 1, 5};
 
         System.out.println(Arrays.toString(minimalHeaviestSetA(arr))); // [5, 6]
     }

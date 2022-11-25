@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinimalHeaviestSetA
-            PrimMinSpanningTreeAsMap
             SymmetricTree
             MinNumberOfJumps
             SparseMatrixMultiplication
@@ -132,6 +130,8 @@ public class Test {
             AllPathsFromSourceTarget
             ReconstructBST
             DijkstraShortestPathsAsMap
+            MinimalHeaviestSetA
+            PrimMinSpanningTreeAsMap
          */
     }
 }
