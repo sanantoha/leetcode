@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SymmetricTree
-            MinNumberOfJumps
             SparseMatrixMultiplication
             LongestNonDecrSubseq
             StringPermutation
@@ -132,6 +130,8 @@ public class Test {
             DijkstraShortestPathsAsMap
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
+            SymmetricTree
+            MinNumberOfJumps
          */
     }
 }
