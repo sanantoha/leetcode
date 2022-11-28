@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StringPermutation
-            DeepCopyArbitraryPointer
             FirstUniqueCharacterInString
             RegularExpressionMatch
             DFSTreeTraverse
@@ -132,6 +130,8 @@ public class Test {
             MinNumberOfJumps
             SparseMatrixMultiplication
             LongestNonDecrSubseq
+            StringPermutation
+            DeepCopyArbitraryPointer
          */
     }
 }
