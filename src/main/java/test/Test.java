@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DFSTreeTraverse
-            KruskalMinSpanningTreeAsMap
             CycleLinkedList
             DiskStacking
             LargestRange
@@ -132,6 +130,8 @@ public class Test {
             DeepCopyArbitraryPointer
             FirstUniqueCharacterInString
             RegularExpressionMatch
+            DFSTreeTraverse
+            KruskalMinSpanningTreeAsMap
          */
     }
 }
