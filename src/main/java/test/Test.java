@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LargestRange
-            LowestCommonAncestorOfBinaryTree
             SelectSort
             DepthFirstSearchAsMap
             PhoneNumberMnemonic
@@ -132,6 +130,8 @@ public class Test {
             KruskalMinSpanningTreeAsMap
             CycleLinkedList
             DiskStacking
+            LargestRange
+            LowestCommonAncestorOfBinaryTree
          */
     }
 }
