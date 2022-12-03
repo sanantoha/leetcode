@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SelectSort
-            DepthFirstSearchAsMap
             PhoneNumberMnemonic
             FourSum
             SubarraySumEqualsK
@@ -132,6 +130,8 @@ public class Test {
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
+            SelectSort
+            DepthFirstSearchAsMap
          */
     }
 }
