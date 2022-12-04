@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PhoneNumberMnemonic
-            FourSum
             SubarraySumEqualsK
             NumberOfWaysToMakeChange
             WordSearch
@@ -132,6 +130,8 @@ public class Test {
             LowestCommonAncestorOfBinaryTree
             SelectSort
             DepthFirstSearchAsMap
+            PhoneNumberMnemonic
+            FourSum
          */
     }
 }
