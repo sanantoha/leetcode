@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            TopologicalSortDFSCycleGraphAsMap
-            FirstDuplicateValue
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
@@ -132,6 +130,8 @@ public class Test {
             MergedTwoSortedLists
             SortKSortedArray
             ReverseInteger
+            TopologicalSortDFSCycleGraphAsMap
+            FirstDuplicateValue
          */
     }
 }
