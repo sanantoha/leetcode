@@ -3,10 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BreadthSearchFirstAsMap
-            MaximumSubarray
-            ThreeSum
-            BalancedBrackets
             WordLadderII
             Permutations
             LeftViewBinaryTree
@@ -132,6 +128,10 @@ public class Test {
             KnapsackProblem
             ReverseString
             ConstructBinaryTreeFromPreorderAndInorderTraversal
+            BreadthSearchFirstAsMap
+            MaximumSubarray
+            ThreeSum
+            BalancedBrackets
          */
     }
 }

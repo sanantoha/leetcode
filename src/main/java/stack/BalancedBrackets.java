@@ -4,7 +4,7 @@ import java.util.*;
 
 public class BalancedBrackets {
 
-    // O(n) time | O(1) space
+    // O(n) time | O(n) space
     public static boolean balancedBrackets(String str) {
         if (str == null || str.isEmpty()) return true;
 
