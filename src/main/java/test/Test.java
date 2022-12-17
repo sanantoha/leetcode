@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordLadderII
-            Permutations
             LeftViewBinaryTree
             SearchInRotatedSortedArray
             SurroundedRegions
@@ -132,6 +130,8 @@ public class Test {
             MaximumSubarray
             ThreeSum
             BalancedBrackets
+            WordLadderII
+            Permutations
          */
     }
 }
