@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BellmanFordAsMap
-            RemoveNthNodeFromEndOfList
             MinRewards
             WordBreak
             IntersectionLinkedList
@@ -132,6 +130,8 @@ public class Test {
             LongestIncreasingPathInMatrix
             DeleteNodeInLinkedList
             ReverseWordsInString
+            BellmanFordAsMap
+            RemoveNthNodeFromEndOfList
          */
     }
 }
