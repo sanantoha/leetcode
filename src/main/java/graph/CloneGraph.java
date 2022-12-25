@@ -1,11 +1,6 @@
 package graph;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
+import java.util.*;
 
 public class CloneGraph {
 
@@ -26,34 +21,30 @@ public class CloneGraph {
         }
     }
 
-    // O(V + E) time | O(V) space
+    // O(E + V) time | O(V) space
     public static Node cloneGraph(Node node) {
         if (node == null) return null;
 
-        Map<Node, Node> map = new HashMap<>();
-        map.put(node, new Node(node.val));
+        Map<Node, Node> cache = new HashMap<>();
+        cache.put(node, new Node(node.val));
 
-        Queue<Node> queue = new LinkedList<>();
-        queue.add(node);
+        Deque<Node> stack = new LinkedList<>();
+        stack.push(node);
 
-        while (!queue.isEmpty()) {
-            Node curr = queue.remove();
-            Node currClone = map.get(curr);
-
-            for (Node v : curr.neighbors) {
-                Node vClone;
-                if (map.containsKey(v)) {
-                    vClone = map.get(v);
-                } else {
-                    queue.add(v);
-                    vClone = new Node(v.val);
-                    map.put(v, vClone);
+        while (!stack.isEmpty()) {
+            Node curr = stack.pop();
+            Node currCopy = cache.get(curr);
+            for (Node child : curr.neighbors) {
+                Node childCopy = cache.get(child);
+                if (childCopy == null) {
+                    childCopy = new Node(child.val);
+                    stack.push(child);
+                    cache.put(child, childCopy);
                 }
-                currClone.neighbors.add(vClone);
+                currCopy.neighbors.add(childCopy);
             }
         }
-
-        return map.get(node);
+        return cache.get(node);
     }
 
     public static void main(String[] args) {
