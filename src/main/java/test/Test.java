@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AddTwoNumbers
-            MergeIntervals
             RiverSizes
             Sqrt
             TopKFrequentWords
@@ -132,6 +130,8 @@ public class Test {
             MinNumberOfCoinsForChange
             QuickSort
             Powerset
+            AddTwoNumbers
+            MergeIntervals
          */
     }
 }
