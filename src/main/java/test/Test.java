@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RiverSizes
-            Sqrt
             TopKFrequentWords
             CountingSort
             DFSTreeTraverseRec
@@ -132,6 +130,8 @@ public class Test {
             Powerset
             AddTwoNumbers
             MergeIntervals
+            RiverSizes
+            Sqrt
          */
     }
 }
