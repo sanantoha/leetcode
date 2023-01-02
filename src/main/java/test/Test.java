@@ -16,6 +16,7 @@ public class Test {
             ReverseBinaryTree
             MinimumWindowSubstring
             ReverseLinkedList
+            MergeBinaryTrees
             LevenshteinDistance
             InsertSort
             NodeDepths
