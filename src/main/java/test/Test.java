@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinSwapsTransformStringToPalindrome
-            StringWithoutAAAorBBB
             BFSTreeTraverse
             UniquePaths
             BinaryTreeDiameter
@@ -133,6 +131,8 @@ public class Test {
             ValidateStartingCity
             HouseRobber
             WordLadder
+            MinSwapsTransformStringToPalindrome
+            StringWithoutAAAorBBB
          */
     }
 }
