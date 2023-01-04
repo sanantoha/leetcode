@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BFSTreeTraverse
-            UniquePaths
             BinaryTreeDiameter
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
@@ -21,6 +19,7 @@ public class Test {
             BalancedBinaryTree
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
+            StableInternships
             BinarySearch
             PrimMinSpanningTree
             KruskalMinSpanningTree
@@ -133,6 +132,8 @@ public class Test {
             WordLadder
             MinSwapsTransformStringToPalindrome
             StringWithoutAAAorBBB
+            BFSTreeTraverse
+            UniquePaths
          */
     }
 }
