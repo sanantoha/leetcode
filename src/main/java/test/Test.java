@@ -3,11 +3,10 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeDiameter
-            ValidIPAddress
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
+            UniquePathIII
             DepthFirstSearch
             ReverseBinaryTree
             MinimumWindowSubstring
@@ -134,6 +133,8 @@ public class Test {
             StringWithoutAAAorBBB
             BFSTreeTraverse
             UniquePaths
+            BinaryTreeDiameter
+            ValidIPAddress
          */
     }
 }
