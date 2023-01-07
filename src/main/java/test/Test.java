@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeZigzagLevelOrderTraverse
-            UniquePathIII
             DepthFirstSearch
             ReverseBinaryTree
             MinimumWindowSubstring
@@ -135,6 +133,8 @@ public class Test {
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
+            BinaryTreeZigzagLevelOrderTraverse
+            UniquePathIII
          */
     }
 }

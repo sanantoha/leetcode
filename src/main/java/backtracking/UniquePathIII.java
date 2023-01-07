@@ -20,8 +20,42 @@ package backtracking;
  */
 public class UniquePathIII {
 
+    // O(3 ^ n) time | O(n) space
     private static int uniquePath3(int[][] grid) {
-        return -1;
+        int startRow = 0;
+        int startCol = 0;
+        int zeros = 0;
+
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == 0) zeros++;
+                else if (grid[i][j] == 1) {
+                    startRow = i;
+                    startCol = j;
+                }
+            }
+        }
+        return path(grid, startRow, startCol, zeros);
+    }
+
+    private static int path(int[][] grid, int row, int col, int zeros) {
+        if (row < 0 || col < 0 || row >= grid.length || col >= grid[row].length || grid[row][col] == -1) {
+            return 0;
+        }
+
+        if (grid[row][col] == 2) {
+            return (zeros == -1) ? 1 : 0;
+        }
+
+        grid[row][col] = -1;
+        zeros--;
+
+        int totalCount = path(grid, row - 1, col, zeros) + path(grid, row, col - 1, zeros) +
+                path(grid, row + 1, col, zeros) + path(grid, row, col + 1, zeros);
+
+        grid[row][col] = 0;
+        zeros++;
+        return totalCount;
     }
 
     public static void main(String[] args) {
@@ -32,6 +66,7 @@ public class UniquePathIII {
             };
 
         int actual = uniquePath3(grid);
+        System.out.println(actual);
         System.out.println(actual == 2);
     }
 }

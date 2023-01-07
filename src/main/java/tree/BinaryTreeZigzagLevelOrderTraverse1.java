@@ -19,7 +19,7 @@ public class BinaryTreeZigzagLevelOrderTraverse1 {
                                 new TreeNode(14),
                                 new TreeNode(17))));
 
-
+        // [[5], [10, 2], [1, 3, 7, 15], [17, 14]]
         System.out.println(zigZag(root));
     }
 }
