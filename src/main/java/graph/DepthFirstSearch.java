@@ -3,12 +3,7 @@ package graph;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class DepthFirstSearch {
     public static void main(String[] args) {
@@ -48,36 +43,27 @@ public class DepthFirstSearch {
 
     // O(V + E) time | O(V) space
     public static List<Integer> dfsIter(EdgeWeightedDigraph graph,  int start) {
-        List<Integer> ans = new ArrayList<>(graph.V());
+        List<Integer> res = new ArrayList<>();
 
         boolean[] visited = new boolean[graph.V()];
-
-        Iterator<DirectedEdge>[] adjArr = new Iterator[graph.V()];
-        for (int v = 0; v < graph.V(); v++) {
-            adjArr[v] = graph.adj(v).iterator();
-        }
-
-        visited[start] = true;
-        ans.add(start);
-
-        Deque<Integer> stack = new ArrayDeque<>();
+        Deque<Integer> stack = new LinkedList<>();
         stack.push(start);
 
-        while(!stack.isEmpty()) {
-            int vertex = stack.peek();
-            if (adjArr[vertex].hasNext()) {
-                DirectedEdge edge = adjArr[vertex].next();
-                int to = edge.to();
-                if (!visited[to]) {
-                    visited[to] = true;
-                    ans.add(to);
-                    stack.push(to);
-                }
-            } else {
-                stack.pop();
+        while (!stack.isEmpty()) {
+            int v = stack.pop();
+
+            if (visited[v]) continue;
+            visited[v] = true;
+            res.add(v);
+
+            List<DirectedEdge> lst = new ArrayList<>();
+            graph.adj(v).forEach(lst::add);
+            Collections.reverse(lst);
+            for (DirectedEdge edge : lst) {
+                stack.push(edge.to());
             }
         }
 
-        return ans;
+        return res;
     }
 }

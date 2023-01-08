@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DepthFirstSearch
-            ReverseBinaryTree
             MinimumWindowSubstring
             ReverseLinkedList
             MergeBinaryTrees
@@ -135,6 +133,8 @@ public class Test {
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
             UniquePathIII
+            DepthFirstSearch
+            ReverseBinaryTree
          */
     }
 }
