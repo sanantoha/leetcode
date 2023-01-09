@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinimumWindowSubstring
-            ReverseLinkedList
             MergeBinaryTrees
             LevenshteinDistance
             InsertSort
@@ -135,6 +133,8 @@ public class Test {
             UniquePathIII
             DepthFirstSearch
             ReverseBinaryTree
+            MinimumWindowSubstring
+            ReverseLinkedList
          */
     }
 }
