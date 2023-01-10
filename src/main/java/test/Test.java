@@ -5,7 +5,6 @@ public class Test {
         /*
             MergeBinaryTrees
             LevenshteinDistance
-            InsertSort
             NodeDepths
             BalancedBinaryTree
             KthSmallestElementInArray
@@ -135,6 +134,7 @@ public class Test {
             ReverseBinaryTree
             MinimumWindowSubstring
             ReverseLinkedList
+            InsertSort
          */
     }
 }
