@@ -3,11 +3,10 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StableInternships
-            BinarySearch
             PrimMinSpanningTree
             KruskalMinSpanningTree
             BSTSuccessorSearch
+            StableInternships
             SameBSTs
             RotateArray
             WaterArea
@@ -135,6 +134,7 @@ public class Test {
             BalancedBinaryTree
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
+            BinarySearch
          */
     }
 }
