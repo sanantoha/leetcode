@@ -5,6 +5,7 @@ import java.util.*;
 
 import static graph.GraphUtils.Edge;
 import static graph.GraphUtils.printEdgeWeightedDigraph;
+import static graph.GraphUtils.Pair;
 
 public class PrimMinSpanningTreeAsMap {
 
@@ -12,8 +13,16 @@ public class PrimMinSpanningTreeAsMap {
         Map<String, List<Edge<String, Double>>> graph = createGraph();
         System.out.println(printEdgeWeightedDigraph(graph));
         System.out.println("=========================================");
-        // [Edge{from=3, to=4, weight=2.0}, Edge{from=2, to=4, weight=3.0}, Edge{from=4, to=5, weight=2.0}, Edge{from=0, to=1, weight=7.0}, Edge{from=1, to=2, weight=3.0}]
-        System.out.println(mst(graph));
+        /*
+        6 5
+        0: 0-1 7.00000
+        1: 1-2 3.00000  0-1 7.00000
+        2: 1-2 3.00000  2-4 3.00000
+        3: 3-4 2.00000
+        4: 3-4 2.00000  4-5 2.00000  2-4 3.00000
+        5: 4-5 2.00000
+         */
+        System.out.println(printEdgeWeightedDigraph(mst(graph)));
 
         System.out.println();
         System.out.println("=========================================");
@@ -22,8 +31,17 @@ public class PrimMinSpanningTreeAsMap {
         Map<String, List<Edge<String, Double>>> graph1 = createGraph1();
         System.out.println(printEdgeWeightedDigraph(graph1));
         System.out.println("=========================================");
-        // [Edge{from=2, to=4, weight=1.0}, Edge{from=0, to=2, weight=3.0}, Edge{from=0, to=1, weight=2.0}, Edge{from=1, to=6, weight=3.0}, Edge{from=5, to=6, weight=2.0}, Edge{from=3, to=4, weight=5.0}]
-        System.out.println(mst(graph1));
+        /*
+        7 6
+        0: 0-1 2.00000  0-2 3.00000
+        1: 0-1 2.00000  1-6 3.00000
+        2: 2-4 1.00000  0-2 3.00000
+        3: 3-4 5.00000
+        4: 2-4 1.00000  3-4 5.00000
+        5: 5-6 2.00000
+        6: 5-6 2.00000  1-6 3.00000
+         */
+        System.out.println(printEdgeWeightedDigraph(mst(graph1)));
     }
 
     private static Map<String, List<Edge<String, Double>>> createGraph1() {
@@ -83,15 +101,15 @@ public class PrimMinSpanningTreeAsMap {
     }
 
     // O((E + V) * log(V)) time | O(V) space
-    public static Set<Edge<String, Double>> mst(Map<String, List<Edge<String, Double>>> graph) {
-        Set<Edge<String, Double>> mst = new HashSet<>();
+    public static Map<String, List<Edge<String, Double>>> mst(Map<String, List<Edge<String, Double>>> graph) {
+        Map<String, List<Edge<String, Double>>> mstGraph = new HashMap<>();
 
         String start = "0";
 
-        PriorityQueue<Pair> heap = new PriorityQueue<>(graph.size(), Comparator.comparingDouble(p -> p.edge.weight()));
+        PriorityQueue<Pair<Edge<String, Double>, String>> heap = new PriorityQueue<>(graph.size(), Comparator.comparingDouble(p -> p.getT1().weight()));
 
         for (Edge<String, Double> edge : graph.getOrDefault(start, new ArrayList<>())) {
-            heap.add(new Pair(edge, start));
+            heap.add(new Pair<>(edge, start));
         }
 
         Map<String, Boolean> visited = new HashMap<>();
@@ -100,35 +118,32 @@ public class PrimMinSpanningTreeAsMap {
         int inTree = 1;
 
         while (!heap.isEmpty() && inTree < graph.size()) {
-            Pair p = heap.remove();
-            Edge<String, Double> minEdge = p.edge;
-            String from = p.from;
-            String to = p.edge.other(from);
+            Pair<Edge<String, Double>, String> p = heap.remove();
+            Edge<String, Double> minEdge = p.getT1();
+            String from = p.getT2();
+            String to = minEdge.other(from);
 
             if (visited.getOrDefault(to, false)) continue;
             visited.put(to, true);
             inTree++;
-            mst.add(minEdge);
+
+            var newEdge = new Edge<>(minEdge.from(), minEdge.to(), minEdge.weight());
+            var fromLst = mstGraph.getOrDefault(from, new ArrayList<>());
+            fromLst.add(newEdge);
+            mstGraph.put(from, fromLst);
+            var toLst = mstGraph.getOrDefault(to, new ArrayList<>());
+            toLst.add(newEdge);
+            mstGraph.put(to, toLst);
 
             for (Edge<String, Double> edge : graph.getOrDefault(to, new ArrayList<>())) {
-                heap.add(new Pair(edge, to));
+                heap.add(new Pair<>(edge, to));
             }
         }
 
         if (inTree < graph.size()) {
-            return Collections.emptySet();
+            return null;
         }
 
-        return mst;
-    }
-
-    static class Pair {
-        Edge<String, Double> edge;
-        String from;
-
-        public Pair(Edge<String, Double> edge, String from) {
-            this.edge = edge;
-            this.from = from;
-        }
+        return mstGraph;
     }
 }
