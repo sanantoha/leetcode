@@ -1,17 +1,13 @@
 package graph;
 
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.PriorityQueue;
-import java.util.Set;
+import java.util.*;
 
 public class KruskalMinSpanningTree {
 
-    // There is a way to impl. with O(E * log(E) + E * log(V)) time
-    // O(E * log(E) + V * log(E)) time | O(V + E) space
-    public static Set<Edge> mst(EdgeWeightedGraph graph) {
+    // O(E * log(E)) time | O(V + E) space
+    public static EdgeWeightedGraph mst(EdgeWeightedGraph graph) {
 
-        Set<Edge> mst = new HashSet<>();
+        EdgeWeightedGraph mstGraph = new EdgeWeightedGraph(graph.V());
 
         // O(E * log(E)) | O(E) space
         PriorityQueue<Edge> heap = new PriorityQueue<>(graph.E(), Comparator.comparing(Edge::weight));
@@ -22,8 +18,7 @@ public class KruskalMinSpanningTree {
         // O(V) space
         int[] parent = makeSet(graph);
 
-        int idx = 0;
-        while (idx < graph.V() - 1) { // O(V)
+        while (!heap.isEmpty()) { // O(E)
             Edge minEdge = heap.remove(); // O(log(E))
             int x = minEdge.either();
             int y = minEdge.other(x);
@@ -32,12 +27,11 @@ public class KruskalMinSpanningTree {
             int ySet = find(parent, y);
 
             if (xSet != ySet) {
-                mst.add(minEdge);
+                mstGraph.addEdge(new Edge(x, y, minEdge.weight()));
                 union(parent, xSet, ySet);
-                idx++;
             }
         }
-        return mst;
+        return mstGraph;
     }
 
     private static int[] makeSet(EdgeWeightedGraph graph) {
@@ -62,6 +56,34 @@ public class KruskalMinSpanningTree {
         parent[yParent] = xParent;
     }
 
+    // O(E * log(E)) time | O(E + V) space
+    public static EdgeWeightedGraph mst1(EdgeWeightedGraph graph) {
+        Edge[] edges = new Edge[graph.E()];
+        int i = 0;
+        for (Edge edge : graph.edges()) {
+            edges[i++] = edge;
+        }
+        Arrays.sort(edges, Comparator.comparingDouble(Edge::weight));
+
+        int[] parents = makeSet(graph);
+
+        EdgeWeightedGraph mstGraph = new EdgeWeightedGraph(graph.V());
+
+        for (Edge edge : edges) {
+            int v = edge.either();
+            int u = edge.other(v);
+
+            int vRoot = find(parents, v);
+            int uRoot = find(parents, u);
+            if (vRoot != uRoot) {
+                mstGraph.addEdge(new Edge(v, u, edge.weight()));
+                union(parents, vRoot, uRoot);
+            }
+        }
+
+        return mstGraph;
+    }
+
     public static void main(String[] args) {
         EdgeWeightedGraph graph = new EdgeWeightedGraph(6);
         graph.addEdge(new Edge(0, 1, 7.0));
@@ -76,8 +98,19 @@ public class KruskalMinSpanningTree {
 
         System.out.println(graph);
         System.out.println("=========================================");
-        // [4-5 2.00000, 0-1 7.00000, 2-4 3.00000, 1-2 3.00000, 3-4 2.00000]
+        /*
+        6 5
+        0: 0-1 7.00000
+        1: 1-2 3.00000  0-1 7.00000
+        2: 1-2 3.00000  2-4 3.00000
+        3: 3-4 2.00000
+        4: 3-4 2.00000  4-5 2.00000  2-4 3.00000
+        5: 4-5 2.00000
+         */
         System.out.println(mst(graph));
+        System.out.println("=========================================");
+        System.out.println(mst1(graph));
+        System.out.println("=========================================");
         System.out.println("=========================================");
         System.out.println("=========================================");
 
@@ -94,8 +127,19 @@ public class KruskalMinSpanningTree {
         graph1.addEdge(new Edge(5, 6, 2.0));
 
         System.out.println(graph1);
-        // [5-6 2.00000, 0-2 3.00000, 2-4 1.00000, 0-1 2.00000, 1-6 3.00000, 3-4 5.00000]
+        /*
+        7 6
+        0: 0-1 2.00000  0-2 3.00000
+        1: 0-1 2.00000  1-6 3.00000
+        2: 2-4 1.00000  0-2 3.00000
+        3: 3-4 5.00000
+        4: 2-4 1.00000  3-4 5.00000
+        5: 5-6 2.00000
+        6: 5-6 2.00000  1-6 3.00000
+         */
         System.out.println("=========================================");
         System.out.println(mst(graph1));
+        System.out.println("=========================================");
+        System.out.println(mst1(graph1));
     }
 }

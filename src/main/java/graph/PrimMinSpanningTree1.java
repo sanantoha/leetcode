@@ -18,7 +18,15 @@ public class PrimMinSpanningTree1 {
 
         System.out.println(graph);
         System.out.println("=========================================");
-        // [4-5 2.00000, 0-1 7.00000, 2-4 3.00000, 1-2 3.00000, 3-4 2.00000]
+        /*
+        6 5
+        0: 0-1 7.00000
+        1: 1-2 3.00000  0-1 7.00000
+        2: 1-2 3.00000  2-4 3.00000
+        3: 3-4 2.00000
+        4: 3-4 2.00000  4-5 2.00000  2-4 3.00000
+        5: 4-5 2.00000
+         */
         System.out.println(mst(graph));
 
         System.out.println();
@@ -38,12 +46,21 @@ public class PrimMinSpanningTree1 {
         graph1.addEdge(new Edge(5, 6, 2.0));
 
         System.out.println(graph1);
-        // [5-6 2.00000, 0-2 3.00000, 2-4 1.00000, 0-1 2.00000, 1-6 3.00000, 3-4 5.00000]
+        /*
+        7 6
+        0: 0-1 2.00000  0-2 3.00000
+        1: 0-1 2.00000  1-6 3.00000
+        2: 2-4 1.00000  0-2 3.00000
+        3: 3-4 5.00000
+        4: 2-4 1.00000  3-4 5.00000
+        5: 5-6 2.00000
+        6: 5-6 2.00000  1-6 3.00000
+         */
         System.out.println("=========================================");
         System.out.println(mst(graph1));
     }
 
-    public static Set<Edge> mst(EdgeWeightedGraph graph) {
+    public static EdgeWeightedGraph mst(EdgeWeightedGraph graph) {
         return null;
     }
 }
