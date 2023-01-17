@@ -11,8 +11,18 @@ public class KruskalMinSpanningTreeAsMap {
         Map<String, List<GraphUtils.Edge<String, Double>>> graph = createGraph();
         System.out.println(printEdgeWeightedDigraph(graph));
         System.out.println("=========================================");
-        // [Edge{from=3, to=4, weight=2.0}, Edge{from=2, to=4, weight=3.0}, Edge{from=4, to=5, weight=2.0}, Edge{from=0, to=1, weight=7.0}, Edge{from=1, to=2, weight=3.0}]
-        System.out.println(mst(graph));
+        /*
+        6 5
+        0: 0-1 7.00000
+        1: 1-2 3.00000  0-1 7.00000
+        2: 1-2 3.00000  2-4 3.00000
+        3: 3-4 2.00000
+        4: 3-4 2.00000  4-5 2.00000  2-4 3.00000
+        5: 4-5 2.00000
+         */
+        System.out.println(printEdgeWeightedDigraph(mst(graph)));
+        System.out.println("=========================================");
+        System.out.println(printEdgeWeightedDigraph(mst1(graph)));
 
         System.out.println();
         System.out.println("=========================================");
@@ -21,8 +31,19 @@ public class KruskalMinSpanningTreeAsMap {
         Map<String, List<GraphUtils.Edge<String, Double>>> graph1 = createGraph1();
         System.out.println(printEdgeWeightedDigraph(graph1));
         System.out.println("=========================================");
-        // [Edge{from=2, to=4, weight=1.0}, Edge{from=0, to=2, weight=3.0}, Edge{from=0, to=1, weight=2.0}, Edge{from=1, to=6, weight=3.0}, Edge{from=5, to=6, weight=2.0}, Edge{from=3, to=4, weight=5.0}]
-        System.out.println(mst(graph1));
+        /*
+        7 6
+        0: 0-1 2.00000  0-2 3.00000
+        1: 0-1 2.00000  1-6 3.00000
+        2: 2-4 1.00000  0-2 3.00000
+        3: 3-4 5.00000
+        4: 2-4 1.00000  3-4 5.00000
+        5: 5-6 2.00000
+        6: 5-6 2.00000  1-6 3.00000
+         */
+        System.out.println(printEdgeWeightedDigraph(mst(graph1)));
+        System.out.println("=========================================");
+        System.out.println(printEdgeWeightedDigraph(mst1(graph1)));
     }
 
     private static Map<String, List<Edge<String, Double>>> createGraph1() {
@@ -81,9 +102,9 @@ public class KruskalMinSpanningTreeAsMap {
         return graph;
     }
 
-    // O(E * log(E) + V * log(E)) time | O(E + V) space
-    public static Set<Edge<String, Double>> mst(Map<String, List<Edge<String, Double>>> graph) {
-        Set<Edge<String, Double>> mst = new HashSet<>();
+    // O(E * log(E)) time | O(E + V) space
+    public static Map<String, List<Edge<String, Double>>> mst(Map<String, List<Edge<String, Double>>> graph) {
+        Map<String, List<Edge<String, Double>>> mstGraph = new HashMap<>();
 
         Set<Edge<String, Double>> edges = new HashSet<>();
         for (List<Edge<String, Double>> lst : graph.values()) {
@@ -95,8 +116,7 @@ public class KruskalMinSpanningTreeAsMap {
 
         Map<String, String> parents = makeSet(graph);
 
-        int idx = 0;
-        while (idx < graph.size() - 1) {
+        while (!heap.isEmpty()) {
             Edge<String, Double> minEdge = heap.remove();
             String from = minEdge.from();
             String to = minEdge.to();
@@ -104,13 +124,19 @@ public class KruskalMinSpanningTreeAsMap {
             String pFrom = find(parents, from);
             String pTo = find(parents, to);
             if (!pFrom.equals(pTo)) {
-                idx++;
-                mst.add(minEdge);
+                var newEdge = new Edge<>(from, to, minEdge.weight());
+                var fromLst = mstGraph.getOrDefault(from, new ArrayList<>());
+                fromLst.add(newEdge);
+                mstGraph.put(from, fromLst);
+                var toLst = mstGraph.getOrDefault(to, new ArrayList<>());
+                toLst.add(newEdge);
+                mstGraph.put(to, toLst);
+
                 union(parents, pFrom, pTo);
             }
         }
 
-        return mst;
+        return mstGraph;
     }
 
     private static void union(Map<String, String> parents, String v, String u) {
@@ -130,5 +156,40 @@ public class KruskalMinSpanningTreeAsMap {
     private static String find(Map<String, String> parents, String v) {
         if (parents.get(v).equals(v)) return v;
         else return find(parents, parents.get(v));
+    }
+
+    // O(E * log(E)) time | O(E + V) space
+    public static Map<String, List<GraphUtils.Edge<String, Double>>> mst1(Map<String, List<Edge<String, Double>>> graph) {
+        Map<String, List<GraphUtils.Edge<String, Double>>> mstGraph = new HashMap<>();
+
+        Set<Edge<String, Double>> edges = new HashSet<>();
+        for (List<Edge<String, Double>> lst : graph.values()) {
+            edges.addAll(lst);
+        }
+        List<Edge<String, Double>> sorted = new ArrayList<>(edges);
+        sorted.sort(Comparator.comparingDouble(Edge::weight));
+
+        Map<String, String> parents = makeSet(graph);
+
+        for (Edge<String, Double> edge : sorted) {
+            String from = edge.from();
+            String to = edge.to();
+
+            String pFrom = find(parents, from);
+            String pTo = find(parents, to);
+
+            if (!pFrom.equals(pTo)) {
+                var newEdge = new Edge<>(from, to, edge.weight());
+                var fromLst = mstGraph.getOrDefault(from, new ArrayList<>());
+                fromLst.add(newEdge);
+                mstGraph.put(from, fromLst);
+                var toLst = mstGraph.getOrDefault(to, new ArrayList<>());
+                toLst.add(newEdge);
+                mstGraph.put(to, toLst);
+                union(parents, pFrom, pTo);
+            }
+        }
+
+        return mstGraph;
     }
 }
