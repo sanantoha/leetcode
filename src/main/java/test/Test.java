@@ -14,6 +14,7 @@ public class Test {
             HeapSort
             FindNodesDistanceK
             LongestDecrSubseq
+            AllElementsInTwoBinarySearchTrees
             MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
