@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestCommonSubsequence
-            LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
             AStarAlgo
@@ -59,6 +57,7 @@ public class Test {
             SortKSortedArray
             ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
+            LongestCommonSubsequence
             FirstDuplicateValue
             DijkstraShortestPaths
             PalindromicSubstrings
@@ -136,6 +135,7 @@ public class Test {
             RotateArray
             WaterArea
             CombinationSum
+            LowestCommonAncestorOfBinarySearchTree
          */
     }
 }
