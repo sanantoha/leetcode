@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            HeapSort
-            FindNodesDistanceK
             LongestDecrSubseq
             AllElementsInTwoBinarySearchTrees
             MaxSumIncreasingSubsequence
@@ -136,6 +134,8 @@ public class Test {
             SameTree
             SearchForRange
             MinimumPassesOfMatrix
+            HeapSort
+            FindNodesDistanceK
          */
     }
 }
