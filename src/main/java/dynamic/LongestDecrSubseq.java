@@ -78,7 +78,7 @@ public class LongestDecrSubseq {
             if (prev > arr[i]) {
                 res.add(arr[i]);
             } else {
-                int j = binarySearch(res, arr[i]);
+                int j = Collections.binarySearch(res, arr[i], Comparator.reverseOrder());//binarySearch(res, arr[i]);
                 if (j < 0) {
                     j = -(j + 1);
                 }
