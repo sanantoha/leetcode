@@ -8,6 +8,20 @@ public class BranchSums1 {
         return null;
     }
 
+    public static List<Integer> branchSumsIter(TreeNode root) {
+        return null;
+    }
+
+    static class Info {
+        TreeNode tree;
+        int sum;
+
+        public Info(TreeNode root, int sum) {
+            this.tree = root;
+            this.sum = sum;
+        }
+    }
+
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1,
                 new TreeNode(2,
@@ -22,5 +36,6 @@ public class BranchSums1 {
                         new TreeNode(7)));
 
         System.out.println(branchSums(root)); // [15, 16, 18, 10, 11]
+        System.out.println(branchSumsIter(root)); // 11, 10, 18, 16, 15]
     }
 }
