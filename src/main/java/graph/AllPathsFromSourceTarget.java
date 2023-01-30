@@ -19,13 +19,13 @@ public class AllPathsFromSourceTarget {
         if (graph == null || graph.length == 0) return Collections.emptyList();
 
         int start = 0;
-        Deque<AllPathsFromSourceTarget1.Pair> stack = new LinkedList<>();
-        stack.push(new AllPathsFromSourceTarget1.Pair(start, List.of(start)));
+        Deque<Pair> stack = new LinkedList<>();
+        stack.push(new Pair(start, List.of(start)));
 
         List<List<Integer>> res = new ArrayList<>();
 
         while (!stack.isEmpty()) {
-            AllPathsFromSourceTarget1.Pair p = stack.pop();
+            Pair p = stack.pop();
             int v = p.node;
             List<Integer> path = p.lst;
 
@@ -36,7 +36,7 @@ public class AllPathsFromSourceTarget {
             for (int u : graph[v]) {
                 List<Integer> np = new ArrayList<>(path);
                 np.add(u);
-                stack.push(new AllPathsFromSourceTarget1.Pair(u, np));
+                stack.push(new Pair(u, np));
             }
         }
 
