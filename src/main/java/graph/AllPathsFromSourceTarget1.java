@@ -14,7 +14,21 @@ import java.util.*;
 public class AllPathsFromSourceTarget1 {
 
     public static List<List<Integer>> allPathsSourceTarget(int[][] graph) {
-        return List.of(List.of(0, 1, 3), List.of(0, 2, 3));
+        return null;
+    }
+
+    public static List<List<Integer>> allPathsSourceTargetRec(int[][] graph) {
+        return null;
+    }
+
+    static class Pair {
+        int vertex;
+        List<Integer> path;
+
+        public Pair(int vertex, List<Integer> path) {
+            this.vertex = vertex;
+            this.path = path;
+        }
     }
 
     public static void main(String[] args) {
@@ -26,7 +40,9 @@ public class AllPathsFromSourceTarget1 {
         };
 
         var actual = allPathsSourceTarget(graph);
-        System.out.println(actual); // [[0, 2, 3], [0, 1, 3]]
+        var actualRec = allPathsSourceTargetRec(graph);
+        System.out.println(actual); // [[0, 1, 3], [0, 2, 3]]
+        System.out.println(actualRec); // [[0, 1, 3], [0, 2, 3]]
 
         int[][] graph1 = new int[][] {
                 {4, 3, 1},
@@ -37,6 +53,8 @@ public class AllPathsFromSourceTarget1 {
         };
 
         actual = allPathsSourceTarget(graph1);
-        System.out.println(actual); // [[0, 1, 4], [0, 1, 2, 3, 4], [0, 1, 3, 4], [0, 3, 4], [0, 4]]
+        actualRec = allPathsSourceTargetRec(graph1);
+        System.out.println(actual); // [[0,4], [0,3,4], [0,1,3,4], [0,1,2,3,4], [0,1,4]]
+        System.out.println(actualRec); // [[0, 4], [0, 3, 4], [0, 1, 3, 4], [0, 1, 2, 3, 4], [0, 1, 4]]
     }
 }

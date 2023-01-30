@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AllPathsFromSourceTarget
-            ReconstructBST
             DijkstraShortestPathsAsMap
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
@@ -23,6 +21,7 @@ public class Test {
             LargestRange
             LowestCommonAncestorOfBinaryTree
             SelectSort
+            AllPathsFromSourceTarget
             DepthFirstSearchAsMap
             PhoneNumberMnemonic
             FourSum
@@ -136,6 +135,7 @@ public class Test {
             PalindromeLinkedList
             MaxPathSumInBinaryTree
             TopologicalSortDFSCycleGraph
+            ReconstructBST
          */
     }
 }
