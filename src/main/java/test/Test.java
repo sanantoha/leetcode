@@ -21,6 +21,7 @@ public class Test {
             ClimbingStairs
             NextGreaterElement
             ConvertedSortedArrayToBST
+            OneEdit
             StaircaseTraversal
             MergedTwoSortedLists
             SortKSortedArray
