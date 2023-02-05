@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RegularExpressionMatch
-            DFSTreeTraverse
             KruskalMinSpanningTreeAsMap
             CycleLinkedList
             DiskStacking
@@ -39,6 +37,7 @@ public class Test {
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             BreadthSearchFirstAsMap
             MaximumSubarray
+            RegularExpressionMatch
             ThreeSum
             BalancedBrackets
             WordLadderII
@@ -137,6 +136,7 @@ public class Test {
             StringPermutation
             DeepCopyArbitraryPointer
             FirstUniqueCharacterInString
+            DFSTreeTraverse
          */
     }
 }
