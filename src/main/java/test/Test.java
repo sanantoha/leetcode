@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            KruskalMinSpanningTreeAsMap
-            CycleLinkedList
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
@@ -137,6 +135,8 @@ public class Test {
             DeepCopyArbitraryPointer
             FirstUniqueCharacterInString
             DFSTreeTraverse
+            KruskalMinSpanningTreeAsMap
+            CycleLinkedList
          */
     }
 }

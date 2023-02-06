@@ -2,13 +2,13 @@ package graph;
 
 import java.util.*;
 
-import static graph.GraphUtils.printEdgeWeightedDigraph;
 import static graph.GraphUtils.Edge;
+import static graph.GraphUtils.printEdgeWeightedDigraph;
 
 public class KruskalMinSpanningTreeAsMap {
 
     public static void main(String[] args) {
-        Map<String, List<GraphUtils.Edge<String, Double>>> graph = createGraph();
+        Map<String, List<Edge<String, Double>>> graph = createGraph();
         System.out.println(printEdgeWeightedDigraph(graph));
         System.out.println("=========================================");
         /*
@@ -28,7 +28,7 @@ public class KruskalMinSpanningTreeAsMap {
         System.out.println("=========================================");
         System.out.println("=========================================");
 
-        Map<String, List<GraphUtils.Edge<String, Double>>> graph1 = createGraph1();
+        Map<String, List<Edge<String, Double>>> graph1 = createGraph1();
         System.out.println(printEdgeWeightedDigraph(graph1));
         System.out.println("=========================================");
         /*
@@ -104,92 +104,110 @@ public class KruskalMinSpanningTreeAsMap {
 
     // O(E * log(E)) time | O(E + V) space
     public static Map<String, List<Edge<String, Double>>> mst(Map<String, List<Edge<String, Double>>> graph) {
-        Map<String, List<Edge<String, Double>>> mstGraph = new HashMap<>();
+        if (graph == null) return Collections.emptyMap();
+
+        Map<String, List<Edge<String, Double>>> newGraph = new HashMap<>();
+
+        Map<String, String> parents = makeSet(graph);
 
         Set<Edge<String, Double>> edges = new HashSet<>();
         for (List<Edge<String, Double>> lst : graph.values()) {
             edges.addAll(lst);
         }
+        Map<String, Integer> ranks = new HashMap<>();
+        for (String v : graph.keySet()) {
+            ranks.put(v, 0);
+        }
 
-        PriorityQueue<Edge<String, Double>> heap = new PriorityQueue<>(graph.size(), Comparator.comparingDouble(Edge::weight));
+        PriorityQueue<Edge<String, Double>> heap = new PriorityQueue<>(edges.size(), Comparator.comparingDouble(Edge::weight));
         heap.addAll(edges);
-
-        Map<String, String> parents = makeSet(graph);
 
         while (!heap.isEmpty()) {
             Edge<String, Double> minEdge = heap.remove();
-            String from = minEdge.from();
-            String to = minEdge.to();
+            String v = minEdge.from();
+            String u = minEdge.other(v);
+            String pV = find(parents, v);
+            String pU = find(parents, u);
 
-            String pFrom = find(parents, from);
-            String pTo = find(parents, to);
-            if (!pFrom.equals(pTo)) {
-                var newEdge = new Edge<>(from, to, minEdge.weight());
-                var fromLst = mstGraph.getOrDefault(from, new ArrayList<>());
-                fromLst.add(newEdge);
-                mstGraph.put(from, fromLst);
-                var toLst = mstGraph.getOrDefault(to, new ArrayList<>());
-                toLst.add(newEdge);
-                mstGraph.put(to, toLst);
-
-                union(parents, pFrom, pTo);
+            if (!pV.equals(pU)) {
+                Edge<String, Double> newEdge = new Edge<>(v, u, minEdge.weight());
+                var vLst = newGraph.getOrDefault(v, new ArrayList<>());
+                vLst.add(newEdge);
+                newGraph.put(v, vLst);
+                var uLst = newGraph.getOrDefault(u, new ArrayList<>());
+                uLst.add(newEdge);
+                newGraph.put(u, uLst);
+                union(parents, ranks, pV, pU);
             }
         }
 
-        return mstGraph;
+        return newGraph;
     }
 
-    private static void union(Map<String, String> parents, String v, String u) {
-        String pV = find(parents, v);
-        String pU = find(parents, u);
-        parents.put(pU, pV);
+    private static String find(Map<String, String> parents, String v) {
+        if (v.equals(parents.get(v))) return v;
+        String res = find(parents, parents.get(v));
+        parents.put(v, res);
+        return res;
+    }
+
+    private static void union(Map<String, String> parents, Map<String, Integer> ranks, String pV, String pU) {
+        if (ranks.get(pV) > ranks.get(pU)) {
+            parents.put(pV, pU);
+        } else if (ranks.get(pV) < ranks.get(pU)) {
+            parents.put(pU, pV);
+        } else {
+            parents.put(pU, pV);
+            int r = ranks.getOrDefault(pV, 0);
+            ranks.put(pV, r + 1);
+        }
     }
 
     private static Map<String, String> makeSet(Map<String, List<Edge<String, Double>>> graph) {
         Map<String, String> parents = new HashMap<>();
-        for (String v : graph.keySet()) {
-            parents.put(v, v);
+        for (String key : graph.keySet()) {
+            parents.put(key, key);
         }
         return parents;
     }
 
-    private static String find(Map<String, String> parents, String v) {
-        if (parents.get(v).equals(v)) return v;
-        else return find(parents, parents.get(v));
-    }
-
     // O(E * log(E)) time | O(E + V) space
-    public static Map<String, List<GraphUtils.Edge<String, Double>>> mst1(Map<String, List<Edge<String, Double>>> graph) {
-        Map<String, List<GraphUtils.Edge<String, Double>>> mstGraph = new HashMap<>();
+    public static Map<String, List<Edge<String, Double>>> mst1(Map<String, List<Edge<String, Double>>> graph) {
+        if (graph == null) return Collections.emptyMap();
+
+        Map<String, List<Edge<String, Double>>> newGraph = new HashMap<>();
+        Map<String, String> parents = makeSet(graph);
 
         Set<Edge<String, Double>> edges = new HashSet<>();
         for (List<Edge<String, Double>> lst : graph.values()) {
             edges.addAll(lst);
         }
-        List<Edge<String, Double>> sorted = new ArrayList<>(edges);
-        sorted.sort(Comparator.comparingDouble(Edge::weight));
+        Map<String, Integer> ranks = new HashMap<>();
+        for (String v : graph.keySet()) {
+            ranks.put(v, 0);
+        }
 
-        Map<String, String> parents = makeSet(graph);
+        List<Edge<String, Double>> edgesList = new ArrayList<>(edges);
+        edgesList.sort(Comparator.comparingDouble(Edge::weight));
 
-        for (Edge<String, Double> edge : sorted) {
-            String from = edge.from();
-            String to = edge.to();
+        for (Edge<String, Double> minEdge : edgesList) {
+            String v = minEdge.from();
+            String u = minEdge.other(v);
+            String pV = find(parents, v);
+            String pU = find(parents, u);
 
-            String pFrom = find(parents, from);
-            String pTo = find(parents, to);
-
-            if (!pFrom.equals(pTo)) {
-                var newEdge = new Edge<>(from, to, edge.weight());
-                var fromLst = mstGraph.getOrDefault(from, new ArrayList<>());
-                fromLst.add(newEdge);
-                mstGraph.put(from, fromLst);
-                var toLst = mstGraph.getOrDefault(to, new ArrayList<>());
-                toLst.add(newEdge);
-                mstGraph.put(to, toLst);
-                union(parents, pFrom, pTo);
+            if (!pV.equals(pU)) {
+                Edge<String, Double> newEdge = new Edge<>(v, u, minEdge.weight());
+                var vLst = newGraph.getOrDefault(v, new ArrayList<>());
+                vLst.add(newEdge);
+                newGraph.put(v, vLst);
+                var uLst = newGraph.getOrDefault(u, new ArrayList<>());
+                uLst.add(newEdge);
+                newGraph.put(u, uLst);
+                union(parents, ranks, pV, pU);
             }
         }
 
-        return mstGraph;
+        return newGraph;
     }
 }
