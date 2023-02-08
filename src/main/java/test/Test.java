@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LowestCommonAncestorOfBinaryTree
-            SelectSort
             AllPathsFromSourceTarget
             DepthFirstSearchAsMap
             PhoneNumberMnemonic
@@ -137,6 +135,8 @@ public class Test {
             CycleLinkedList
             DiskStacking
             LargestRange
+            LowestCommonAncestorOfBinaryTree
+            SelectSort
          */
     }
 }
