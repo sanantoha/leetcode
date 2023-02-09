@@ -21,16 +21,6 @@ public class AllPathsFromSourceTarget1 {
         return null;
     }
 
-    static class Pair {
-        int vertex;
-        List<Integer> path;
-
-        public Pair(int vertex, List<Integer> path) {
-            this.vertex = vertex;
-            this.path = path;
-        }
-    }
-
     public static void main(String[] args) {
         int[][] graph = new int[][] {
                 {1, 2},

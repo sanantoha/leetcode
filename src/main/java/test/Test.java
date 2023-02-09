@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AllPathsFromSourceTarget
-            DepthFirstSearchAsMap
             PhoneNumberMnemonic
             FourSum
             SubarraySumEqualsK
@@ -137,6 +135,8 @@ public class Test {
             LargestRange
             LowestCommonAncestorOfBinaryTree
             SelectSort
+            AllPathsFromSourceTarget
+            DepthFirstSearchAsMap
          */
     }
 }
