@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PhoneNumberMnemonic
-            FourSum
             SubarraySumEqualsK
             NumberOfWaysToMakeChange
             WordSearch
@@ -137,6 +135,8 @@ public class Test {
             SelectSort
             AllPathsFromSourceTarget
             DepthFirstSearchAsMap
+            PhoneNumberMnemonic
+            FourSum
          */
     }
 }
