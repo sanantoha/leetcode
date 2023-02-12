@@ -35,11 +35,11 @@ public class WordSearch1 {
 
 
         String word2 = "ABCEFSADEESE";
-        System.out.println(!exist(board1, word2));
+        System.out.println(exist(board1, word2));
 
 
         System.out.println("==========================");
 
-        System.out.println(exist(board1, "ABCEV"));
+        System.out.println(!exist(board1, "ABCEV"));
     }
 }

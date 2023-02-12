@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordSearch
-            ClimbingStairs
             NextGreaterElement
             ConvertedSortedArrayToBST
             OneEdit
@@ -137,6 +135,8 @@ public class Test {
             FourSum
             SubarraySumEqualsK
             NumberOfWaysToMakeChange
+            WordSearch
+            ClimbingStairs
          */
     }
 }
