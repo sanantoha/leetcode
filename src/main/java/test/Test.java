@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NextGreaterElement
-            ConvertedSortedArrayToBST
             OneEdit
             StaircaseTraversal
             MergedTwoSortedLists
@@ -137,6 +135,8 @@ public class Test {
             NumberOfWaysToMakeChange
             WordSearch
             ClimbingStairs
+            NextGreaterElement
+            ConvertedSortedArrayToBST
          */
     }
 }
