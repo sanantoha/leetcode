@@ -2,48 +2,36 @@ package list;
 
 public class MergedTwoSortedLists {
 
-    // O(l1 + l2) time | O(l1 + l2) space
-    public static ListNode merge(ListNode l1, ListNode l2) {
+    // O(l1 + l2) time | O(1) space
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) return l2;
         if (l2 == null) return l1;
 
+        ListNode c1 = l1;
+        ListNode c2 = l2;
         ListNode dummy = new ListNode();
+        ListNode c = dummy;
 
-        ListNode currL = l1;
-        ListNode currR = l2;
-        ListNode curr = dummy;
-
-        while (currL != null && currR != null) {
-            if (currL.val <= currR.val) {
-                curr.next = new ListNode(currL.val);
-                currL = currL.next;
+        while (c1 != null && c2 != null) {
+            if (c1.val <= c2.val) {
+                c.next = c1;
+                c1 = c1.next;
             } else {
-                curr.next = new ListNode(currR.val);
-                currR = currR.next;
+                c.next = c2;
+                c2 = c2.next;
             }
-            curr = curr.next;
+            c = c.next;
         }
 
-        while (currL != null) {
-            curr.next = new ListNode(currL.val);
-            curr = curr.next;
-            currL = currL.next;
-        }
-
-        while (currR != null) {
-            curr.next = new ListNode(currR.val);
-            curr = curr.next;
-            currR = currR.next;
-        }
+        c.next = (c1 != null) ? c1 : c2;
 
         return dummy.next;
     }
 
     public static void main(String[] args) {
-        ListNode l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-        ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+        ListNode head1 = new ListNode(4, new ListNode(8, new ListNode(15, new ListNode(19))));
+        ListNode head2 = new ListNode(7, new ListNode(9, new ListNode(10, new ListNode(16))));
 
-        ListNode res = merge(l1, l2);
-        System.out.println(res);
+        System.out.println(mergeTwoLists(head1, head2));
     }
 }
