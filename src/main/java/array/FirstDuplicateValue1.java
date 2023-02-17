@@ -1,5 +1,9 @@
 package array;
 
+/**
+ * given array of integers between 1 and n, inclusive where n is the length of the array.
+ * find first duplicate and return value;
+ */
 public class FirstDuplicateValue1 {
 
     public static int firstDuplicateValue(int[] arr) {
