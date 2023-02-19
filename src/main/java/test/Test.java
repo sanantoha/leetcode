@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RotateImage
-            SortList
             Pow
             KnapsackProblem
             ReverseString
@@ -137,6 +135,8 @@ public class Test {
             FirstDuplicateValue
             DijkstraShortestPaths
             PalindromicSubstrings
+            RotateImage
+            SortList
          */
     }
 }
