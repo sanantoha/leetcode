@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BreadthSearchFirstAsMap
-            MaximumSubarray
             RegularExpressionMatch
             ThreeSum
             BalancedBrackets
@@ -137,6 +135,8 @@ public class Test {
             KnapsackProblem
             ReverseString
             ConstructBinaryTreeFromPreorderAndInorderTraversal
+            BreadthSearchFirstAsMap
+            MaximumSubarray
          */
     }
 }
