@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RegularExpressionMatch
-            ThreeSum
             BalancedBrackets
             WordLadderII
             Permutations
@@ -137,6 +135,8 @@ public class Test {
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             BreadthSearchFirstAsMap
             MaximumSubarray
+            RegularExpressionMatch
+            ThreeSum
          */
     }
 }
