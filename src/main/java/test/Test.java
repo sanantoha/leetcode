@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BalancedBrackets
-            WordLadderII
             Permutations
             LeftViewBinaryTree
             SearchInRotatedSortedArray
@@ -137,6 +135,8 @@ public class Test {
             MaximumSubarray
             RegularExpressionMatch
             ThreeSum
+            BalancedBrackets
+            WordLadderII
          */
     }
 }
