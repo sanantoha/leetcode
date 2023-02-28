@@ -3,8 +3,7 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncreasingPathInMatrix
-            DeleteNodeInLinkedList
+            LongestIncreasingPathInMatrix // move to
             ReverseWordsInString
             BellmanFordAsMap
             RemoveNthNodeFromEndOfList
@@ -137,6 +136,7 @@ public class Test {
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
+            DeleteNodeInLinkedList
          */
     }
 }
