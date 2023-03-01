@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncreasingPathInMatrix // move to
-            ReverseWordsInString
             BellmanFordAsMap
             RemoveNthNodeFromEndOfList
             MinRewards
@@ -43,6 +41,7 @@ public class Test {
             ReverseBinaryTree
             MinimumWindowSubstring
             ReverseLinkedList
+            LongestIncreasingPathInMatrix
             InsertSort
             MergeBinaryTrees
             LevenshteinDistance
@@ -137,6 +136,7 @@ public class Test {
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
             DeleteNodeInLinkedList
+            ReverseWordsInString
          */
     }
 }
