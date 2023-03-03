@@ -3,10 +3,9 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinRewards
-            WordBreak
             IntersectionLinkedList
             LRUCache
+            WordBreak
             MergeSort
             CloneGraph
             MinHeap
@@ -137,6 +136,7 @@ public class Test {
             ReverseWordsInString
             BellmanFordAsMap
             RemoveNthNodeFromEndOfList
+            MinRewards
          */
     }
 }
