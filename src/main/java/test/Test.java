@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CloneGraph
-            MinHeap
             MinNumberOfCoinsForChange
             QuickSort
             Powerset
@@ -137,6 +135,8 @@ public class Test {
             LRUCache
             WordBreak
             MergeSort
+            CloneGraph
+            MinHeap
          */
     }
 }
