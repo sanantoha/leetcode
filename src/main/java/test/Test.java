@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfCoinsForChange
-            QuickSort
             Powerset
             AddTwoNumbers
             MergeIntervals
@@ -137,6 +135,8 @@ public class Test {
             MergeSort
             CloneGraph
             MinHeap
+            MinNumberOfCoinsForChange
+            QuickSort
          */
     }
 }
