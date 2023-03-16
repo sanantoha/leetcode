@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePaths
-            BinaryTreeDiameter
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
@@ -137,6 +135,8 @@ public class Test {
             MinSwapsTransformStringToPalindrome
             StringWithoutAAAorBBB
             BFSTreeTraverse
+            UniquePaths
+            BinaryTreeDiameter
          */
     }
 }
