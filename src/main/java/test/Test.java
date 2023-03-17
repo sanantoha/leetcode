@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidIPAddress
-            PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
             UniquePathIII
@@ -137,6 +135,8 @@ public class Test {
             BFSTreeTraverse
             UniquePaths
             BinaryTreeDiameter
+            ValidIPAddress
+            PopulatingNextRightPointerInEachNode
          */
     }
 }
