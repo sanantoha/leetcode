@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePathIII
-            DepthFirstSearch
             ReverseBinaryTree
             MinimumWindowSubstring
             ReverseLinkedList
@@ -25,6 +23,7 @@ public class Test {
             RotateArray
             WaterArea
             CombinationSum
+            UniquePathIII
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
@@ -137,6 +136,7 @@ public class Test {
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
+            DepthFirstSearch
          */
     }
 }
