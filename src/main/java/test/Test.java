@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseBinaryTree
-            MinimumWindowSubstring
             ReverseLinkedList
             LongestIncreasingPathInMatrix
             InsertSort
@@ -30,6 +28,7 @@ public class Test {
             AStarAlgo
             SameTree
             SearchForRange
+            MinimumWindowSubstring
             MinimumPassesOfMatrix
             HeapSort
             FindNodesDistanceK
@@ -137,6 +136,7 @@ public class Test {
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
             DepthFirstSearch
+            ReverseBinaryTree
          */
     }
 }
