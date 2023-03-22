@@ -3,10 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseLinkedList
-            LongestIncreasingPathInMatrix
-            InsertSort
-            MergeBinaryTrees
             LevenshteinDistance
             NodeDepths
             BalancedBinaryTree
@@ -137,6 +133,10 @@ public class Test {
             BinaryTreeZigzagLevelOrderTraverse
             DepthFirstSearch
             ReverseBinaryTree
+            ReverseLinkedList
+            LongestIncreasingPathInMatrix
+            InsertSort
+            MergeBinaryTrees
          */
     }
 }
