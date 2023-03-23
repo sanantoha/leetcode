@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LevenshteinDistance
-            NodeDepths
             BalancedBinaryTree
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
@@ -16,6 +14,7 @@ public class Test {
             SameBSTs
             RotateArray
             WaterArea
+            NodeDepths
             CombinationSum
             UniquePathIII
             LowestCommonAncestorOfBinarySearchTree
@@ -137,6 +136,7 @@ public class Test {
             LongestIncreasingPathInMatrix
             InsertSort
             MergeBinaryTrees
+            LevenshteinDistance
          */
     }
 }
