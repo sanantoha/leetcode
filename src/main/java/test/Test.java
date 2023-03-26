@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PrimMinSpanningTree
-            KruskalMinSpanningTree
             BSTSuccessorSearch
             StableInternships
             SameBSTs
@@ -120,6 +118,7 @@ public class Test {
             MinSwapsTransformStringToPalindrome
             StringWithoutAAAorBBB
             BFSTreeTraverse
+            PrimMinSpanningTree
             UniquePaths
             BinaryTreeDiameter
             ValidIPAddress
@@ -137,6 +136,7 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
+            KruskalMinSpanningTree
          */
     }
 }
