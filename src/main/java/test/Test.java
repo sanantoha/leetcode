@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BSTSuccessorSearch
-            StableInternships
             SameBSTs
             RotateArray
             WaterArea
@@ -12,6 +10,7 @@ public class Test {
             CombinationSum
             UniquePathIII
             LowestCommonAncestorOfBinarySearchTree
+            StableInternships
             LongestIncrSubSeq
             ValidateBinarySearchTree
             AStarAlgo
@@ -137,6 +136,7 @@ public class Test {
             BestTimeToBuyAndSellStock
             BinarySearch
             KruskalMinSpanningTree
+            BSTSuccessorSearch
          */
     }
 }
