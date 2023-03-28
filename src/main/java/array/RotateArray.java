@@ -42,7 +42,7 @@ import java.util.Arrays;
 
 public class RotateArray {
 
-    // O(n) time | O(1) space
+    // O(n) time | O(n) space
     public static void rotate(int[] arr, int k) {
         int[] arrCopy = Arrays.copyOf(arr, arr.length);
 

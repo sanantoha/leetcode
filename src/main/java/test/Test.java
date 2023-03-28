@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SameBSTs
-            RotateArray
             WaterArea
             NodeDepths
             CombinationSum
@@ -137,6 +135,8 @@ public class Test {
             BinarySearch
             KruskalMinSpanningTree
             BSTSuccessorSearch
+            SameBSTs
+            RotateArray
          */
     }
 }
