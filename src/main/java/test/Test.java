@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CombinationSum
-            UniquePathIII
             LowestCommonAncestorOfBinarySearchTree
             StableInternships
             LongestIncrSubSeq
@@ -137,6 +135,8 @@ public class Test {
             RotateArray
             WaterArea
             NodeDepths
+            CombinationSum
+            UniquePathIII
          */
     }
 }
