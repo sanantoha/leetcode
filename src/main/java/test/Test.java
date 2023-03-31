@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LowestCommonAncestorOfBinarySearchTree
-            StableInternships
             LongestIncrSubSeq
             ValidateBinarySearchTree
             AStarAlgo
@@ -21,6 +19,7 @@ public class Test {
             BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
+            StableInternships
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
@@ -137,6 +136,7 @@ public class Test {
             NodeDepths
             CombinationSum
             UniquePathIII
+            LowestCommonAncestorOfBinarySearchTree
          */
     }
 }
