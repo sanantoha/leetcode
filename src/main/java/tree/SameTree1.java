@@ -47,7 +47,7 @@ public class SameTree1 {
                         new TreeNode(7),
                         new TreeNode(15)));
 
-        System.out.println(isSameTree(t11, t22));
-        System.out.println(isSameTreeIter(t11, t22));
+        System.out.println(!isSameTree(t11, t22));
+        System.out.println(!isSameTreeIter(t11, t22));
     }
 }
