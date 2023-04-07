@@ -18,13 +18,13 @@ public class BranchSums {
     // O(n) time | O(h) space
     public static List<Integer> branchSumsIter(TreeNode root) {
 
-        Deque<BranchSums1.Info> stack = new LinkedList<>();
-        stack.push(new BranchSums1.Info(root, 0));
+        Deque<Info> stack = new LinkedList<>();
+        stack.push(new Info(root, 0));
 
         List<Integer> res = new ArrayList<>();
 
         while (!stack.isEmpty()) {
-            BranchSums1.Info info = stack.pop();
+            Info info = stack.pop();
             TreeNode curr = info.tree;
             int sum = info.sum;
 
@@ -34,8 +34,8 @@ public class BranchSums {
                 res.add(sum);
             }
 
-            stack.push(new BranchSums1.Info(curr.left, sum));
-            stack.push(new BranchSums1.Info(curr.right, sum));
+            stack.push(new Info(curr.left, sum));
+            stack.push(new Info(curr.right, sum));
         }
         return res;
     }
@@ -51,6 +51,16 @@ public class BranchSums {
 
         backtrack(root.left, sum, res);
         backtrack(root.right, sum, res);
+    }
+
+    static class Info {
+        TreeNode tree;
+        int sum;
+
+        public Info(TreeNode tree, int sum) {
+            this.tree = tree;
+            this.sum = sum;
+        }
     }
 
     public static void main(String[] args) {

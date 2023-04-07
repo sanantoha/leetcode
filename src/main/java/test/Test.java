@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BellmanFord
-            BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
             StableInternships
@@ -137,6 +135,8 @@ public class Test {
             LongestDecrSubseq
             AllElementsInTwoBinarySearchTrees
             MaxSumIncreasingSubsequence
+            BellmanFord
+            BranchSums
          */
     }
 }
