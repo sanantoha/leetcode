@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FirstPermutationIsSubstrSecondStr
-            GenerateParentheses
             StableInternships
             FindClosestValueInBST
             ZigZagTraverse
@@ -137,6 +135,8 @@ public class Test {
             MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
+            FirstPermutationIsSubstrSecondStr
+            GenerateParentheses
          */
     }
 }
