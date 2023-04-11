@@ -4,7 +4,6 @@ public class Test {
     public static void main(String[] args) {
         /*
             MaxPathSumInBinaryTree
-            TopologicalSortDFSCycleGraph
             ReconstructBST
             DijkstraShortestPathsAsMap
             MinimalHeaviestSetA
@@ -137,6 +136,7 @@ public class Test {
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
+            TopologicalSortDFSCycleGraph
          */
     }
 }
