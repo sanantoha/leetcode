@@ -16,6 +16,7 @@ public class Test {
             DFSTreeTraverse
             KruskalMinSpanningTreeAsMap
             CycleLinkedList
+            EvaluateExpressionTree
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
