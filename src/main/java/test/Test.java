@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MaxPathSumInBinaryTree
-            ReconstructBST
             DijkstraShortestPathsAsMap
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
@@ -21,10 +19,12 @@ public class Test {
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
+            ReconstructBST
             SelectSort
             AllPathsFromSourceTarget
             DepthFirstSearchAsMap
             PhoneNumberMnemonic
+            MaxPathSumInBinaryTree
             FourSum
             SubarraySumEqualsK
             NumberOfWaysToMakeChange
