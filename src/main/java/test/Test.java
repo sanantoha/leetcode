@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestNonDecrSubseq
-            StringPermutation
             DeepCopyArbitraryPointer
             FirstUniqueCharacterInString
             DFSTreeTraverse
@@ -138,6 +136,8 @@ public class Test {
             SymmetricTree
             MinNumberOfJumps
             SparseMatrixMultiplication
+            LongestNonDecrSubseq
+            StringPermutation
          */
     }
 }
