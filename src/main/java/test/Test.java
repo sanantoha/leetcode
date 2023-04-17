@@ -4,7 +4,6 @@ public class Test {
     public static void main(String[] args) {
         /*
             DeepCopyArbitraryPointer
-            FirstUniqueCharacterInString
             DFSTreeTraverse
             KruskalMinSpanningTreeAsMap
             CycleLinkedList
@@ -138,6 +137,7 @@ public class Test {
             SparseMatrixMultiplication
             LongestNonDecrSubseq
             StringPermutation
+            FirstUniqueCharacterInString
          */
     }
 }
