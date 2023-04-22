@@ -16,6 +16,7 @@ public class Test {
             NextGreaterElement
             ConvertedSortedArrayToBST
             OneEdit
+            FindPivotIndex
             StaircaseTraversal
             MergedTwoSortedLists
             SortKSortedArray
