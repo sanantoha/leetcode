@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LowestCommonAncestorOfBinaryTree
-            ReconstructBST
             SelectSort
             AllPathsFromSourceTarget
             DepthFirstSearchAsMap
@@ -138,6 +136,8 @@ public class Test {
             EvaluateExpressionTree
             DiskStacking
             LargestRange
+            LowestCommonAncestorOfBinaryTree
+            ReconstructBST
          */
     }
 }
