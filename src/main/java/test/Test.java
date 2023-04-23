@@ -3,9 +3,8 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SelectSort
-            AllPathsFromSourceTarget
             DepthFirstSearchAsMap
+            AllPathsFromSourceTarget
             PhoneNumberMnemonic
             MaxPathSumInBinaryTree
             FourSum
@@ -139,6 +138,7 @@ public class Test {
             LargestRange
             LowestCommonAncestorOfBinaryTree
             ReconstructBST
+            SelectSort
          */
     }
 }
