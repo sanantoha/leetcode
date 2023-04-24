@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DepthFirstSearchAsMap
-            AllPathsFromSourceTarget
             PhoneNumberMnemonic
             MaxPathSumInBinaryTree
             FourSum
@@ -20,6 +18,7 @@ public class Test {
             MergedTwoSortedLists
             SortKSortedArray
             ReverseInteger
+            AllPathsFromSourceTarget
             TopologicalSortDFSCycleGraphAsMap
             LongestCommonSubsequence
             FirstDuplicateValue
@@ -139,6 +138,7 @@ public class Test {
             LowestCommonAncestorOfBinaryTree
             ReconstructBST
             SelectSort
+            DepthFirstSearchAsMap
          */
     }
 }
