@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PhoneNumberMnemonic
-            MaxPathSumInBinaryTree
             FourSum
             SubarraySumEqualsK
             NumberOfWaysToMakeChange
@@ -26,6 +24,7 @@ public class Test {
             PalindromicSubstrings
             RotateImage
             SortList
+            PhoneNumberMnemonic
             Pow
             KnapsackProblem
             ReverseString
@@ -37,6 +36,7 @@ public class Test {
             BalancedBrackets
             WordLadderII
             Permutations
+            MaxPathSumInBinaryTree
             LeftViewBinaryTree
             SearchInRotatedSortedArray
             SurroundedRegions
