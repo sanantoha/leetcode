@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FourSum
-            SubarraySumEqualsK
             NumberOfWaysToMakeChange
             WordSearch
             ClimbingStairs
@@ -24,6 +22,7 @@ public class Test {
             PalindromicSubstrings
             RotateImage
             SortList
+            SubarraySumEqualsK
             PhoneNumberMnemonic
             Pow
             KnapsackProblem
@@ -139,6 +138,7 @@ public class Test {
             ReconstructBST
             SelectSort
             DepthFirstSearchAsMap
+            FourSum
          */
     }
 }
