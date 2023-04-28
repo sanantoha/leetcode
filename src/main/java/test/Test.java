@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ClimbingStairs
-            NextGreaterElement
             ConvertedSortedArrayToBST
             OneEdit
             FindPivotIndex
@@ -139,6 +137,8 @@ public class Test {
             FourSum
             NumberOfWaysToMakeChange
             WordSearch
+            ClimbingStairs
+            NextGreaterElement
          */
     }
 }
