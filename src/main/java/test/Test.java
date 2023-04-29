@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ConvertedSortedArrayToBST
-            OneEdit
             FindPivotIndex
             StaircaseTraversal
             MergedTwoSortedLists
@@ -17,6 +15,7 @@ public class Test {
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
+            OneEdit
             SortList
             SubarraySumEqualsK
             PhoneNumberMnemonic
@@ -139,6 +138,7 @@ public class Test {
             WordSearch
             ClimbingStairs
             NextGreaterElement
+            ConvertedSortedArrayToBST
          */
     }
 }

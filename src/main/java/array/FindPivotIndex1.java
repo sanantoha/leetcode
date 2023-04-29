@@ -23,6 +23,6 @@ public class FindPivotIndex1 {
 
         System.out.println(pivotIndex(new int[] {1, 2, 3}) == -1);
 
-        System.out.println(pivotIndex(new int[] {2, 1, -1}) == -1);
+        System.out.println(pivotIndex(new int[] {2, 1, -1}) == 0);
     }
 }
