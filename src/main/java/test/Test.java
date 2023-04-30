@@ -4,7 +4,6 @@ public class Test {
     public static void main(String[] args) {
         /*
             FindPivotIndex
-            StaircaseTraversal
             MergedTwoSortedLists
             SortKSortedArray
             ReverseInteger
@@ -139,6 +138,7 @@ public class Test {
             ClimbingStairs
             NextGreaterElement
             ConvertedSortedArrayToBST
+            StaircaseTraversal
          */
     }
 }
