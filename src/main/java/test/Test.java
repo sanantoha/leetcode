@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FindPivotIndex
-            MergedTwoSortedLists
             SortKSortedArray
             ReverseInteger
             AllPathsFromSourceTarget
@@ -47,6 +45,7 @@ public class Test {
             MergeSort
             CloneGraph
             MinHeap
+            FindPivotIndex
             MinNumberOfCoinsForChange
             QuickSort
             Powerset
@@ -139,6 +138,7 @@ public class Test {
             NextGreaterElement
             ConvertedSortedArrayToBST
             StaircaseTraversal
+            MergedTwoSortedLists
          */
     }
 }
