@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AllPathsFromSourceTarget
-            TopologicalSortDFSCycleGraphAsMap
             LongestCommonSubsequence
             FirstDuplicateValue
             DijkstraShortestPaths
@@ -53,6 +51,7 @@ public class Test {
             Sqrt
             TopKFrequentWords
             CountingSort
+            AllPathsFromSourceTarget
             DFSTreeTraverseRec
             SubarraySort
             BreadthSearchFirst
@@ -139,6 +138,7 @@ public class Test {
             MergedTwoSortedLists
             SortKSortedArray
             ReverseInteger
+            TopologicalSortDFSCycleGraphAsMap
          */
     }
 }
