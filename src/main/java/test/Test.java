@@ -35,6 +35,7 @@ public class Test {
             MinRewards
             IntersectionLinkedList
             LRUCache
+            MiddleNode
             WordBreak
             MergeSort
             CloneGraph
