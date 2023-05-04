@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestCommonSubsequence
-            FirstDuplicateValue
             DijkstraShortestPaths
             PalindromicSubstrings
             RotateImage
@@ -50,6 +48,7 @@ public class Test {
             RiverSizes
             Sqrt
             TopKFrequentWords
+            FirstDuplicateValue
             CountingSort
             AllPathsFromSourceTarget
             DFSTreeTraverseRec
@@ -139,6 +138,7 @@ public class Test {
             SortKSortedArray
             ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
+            LongestCommonSubsequence
          */
     }
 }
