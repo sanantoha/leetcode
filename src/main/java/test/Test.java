@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DijkstraShortestPaths
-            PalindromicSubstrings
             RotateImage
             OneEdit
             SortList
@@ -140,6 +138,8 @@ public class Test {
             ReverseInteger
             TopologicalSortDFSCycleGraphAsMap
             LongestCommonSubsequence
+            DijkstraShortestPaths
+            PalindromicSubstrings
          */
     }
 }
