@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SortList
-            SubarraySumEqualsK
             PhoneNumberMnemonic
             Pow
             KnapsackProblem
@@ -140,6 +138,8 @@ public class Test {
             PalindromicSubstrings
             RotateImage
             OneEdit
+            SortList
+            SubarraySumEqualsK
          */
     }
 }
