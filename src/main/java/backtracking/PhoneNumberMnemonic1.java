@@ -5,6 +5,7 @@ import java.util.List;
 public class PhoneNumberMnemonic1 {
 
     public static List<String> phoneNumberMnemonics(String str) {
+        String[] letters = {"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         return null;
     }
 
