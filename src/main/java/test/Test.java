@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            StableInternships
-            DeleteNodeInLinkedList
             ReverseWordsInString
             BellmanFordAsMap
             RemoveNthNodeFromEndOfList
@@ -53,6 +51,7 @@ public class Test {
             MergeBinaryTrees
             LevenshteinDistance
             BalancedBinaryTree
+            StableInternships
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             BinarySearch
@@ -140,6 +139,7 @@ public class Test {
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
+            DeleteNodeInLinkedList
          */
     }
 }
