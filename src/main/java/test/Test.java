@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MiddleNode
-            WordBreak
             MergeSort
             CloneGraph
             MinHeap
@@ -126,6 +124,7 @@ public class Test {
             ThreeSum
             BalancedBrackets
             WordLadderII
+            WordBreak
             Permutations
             MaxPathSumInBinaryTree
             LeftViewBinaryTree
@@ -140,6 +139,7 @@ public class Test {
             MinRewards
             IntersectionLinkedList
             LRUCache
+            MiddleNode
          */
     }
 }
