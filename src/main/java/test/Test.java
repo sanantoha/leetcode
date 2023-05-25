@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfCoinsForChange
-            QuickSort
             Powerset
             AddTwoNumbers
             MergeIntervals
@@ -73,6 +71,7 @@ public class Test {
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
             DijkstraShortestPathsAsMap
+            MinNumberOfCoinsForChange
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
             SymmetricTree
@@ -140,6 +139,7 @@ public class Test {
             CloneGraph
             MinHeap
             FindPivotIndex
+            QuickSort
          */
     }
 }
