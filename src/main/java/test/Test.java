@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Powerset
-            AddTwoNumbers
             MergeIntervals
             RiverSizes
             Sqrt
@@ -140,6 +138,8 @@ public class Test {
             MinHeap
             FindPivotIndex
             QuickSort
+            Powerset
+            AddTwoNumbers
          */
     }
 }
