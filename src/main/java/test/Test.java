@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Sqrt
-            TopKFrequentWords
             FirstDuplicateValue
             RegularExpressionMatch
             CountingSort
@@ -68,6 +66,7 @@ public class Test {
             TopologicalSortDFSCycleGraph
             DijkstraShortestPathsAsMap
             MinNumberOfCoinsForChange
+            TopKFrequentWords
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
             SymmetricTree
@@ -140,6 +139,7 @@ public class Test {
             AddTwoNumbers
             MergeIntervals
             RiverSizes
+            Sqrt
          */
     }
 }
