@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CountingSort
-            AllPathsFromSourceTarget
             DFSTreeTraverseRec
             SubarraySort
             BreadthSearchFirst
@@ -58,6 +56,7 @@ public class Test {
             BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
+            AllPathsFromSourceTarget
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
@@ -140,6 +139,7 @@ public class Test {
             Sqrt
             FirstDuplicateValue
             RegularExpressionMatch
+            CountingSort
          */
     }
 }
