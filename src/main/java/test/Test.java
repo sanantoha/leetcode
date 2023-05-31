@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DFSTreeTraverseRec
-            SubarraySort
             BreadthSearchFirst
             ValidateStartingCity
             HouseRobber
@@ -140,6 +138,8 @@ public class Test {
             FirstDuplicateValue
             RegularExpressionMatch
             CountingSort
+            DFSTreeTraverseRec
+            SubarraySort
          */
     }
 }
