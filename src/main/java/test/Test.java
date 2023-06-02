@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            HouseRobber
-            WordLadder
             MinSwapsTransformStringToPalindrome
             StringWithoutAAAorBBB
             BFSTreeTraverse
@@ -140,6 +138,8 @@ public class Test {
             SubarraySort
             BreadthSearchFirst
             ValidateStartingCity
+            HouseRobber
+            WordLadder
          */
     }
 }
