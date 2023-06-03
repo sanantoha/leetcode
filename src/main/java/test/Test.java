@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinSwapsTransformStringToPalindrome
-            StringWithoutAAAorBBB
             BFSTreeTraverse
             PrimMinSpanningTree
             UniquePaths
@@ -42,6 +40,7 @@ public class Test {
             MinimumWindowSubstring
             MinimumPassesOfMatrix
             HeapSort
+            MinSwapsTransformStringToPalindrome
             FindNodesDistanceK
             LongestDecrSubseq
             AllElementsInTwoBinarySearchTrees
@@ -120,6 +119,7 @@ public class Test {
             MinRewards
             IntersectionLinkedList
             LRUCache
+            StringWithoutAAAorBBB
             MiddleNode
             MergeSort
             CloneGraph
