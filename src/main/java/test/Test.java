@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BFSTreeTraverse
             PrimMinSpanningTree
             UniquePaths
             BinaryTreeDiameter
@@ -140,6 +139,7 @@ public class Test {
             ValidateStartingCity
             HouseRobber
             WordLadder
+            BFSTreeTraverse
          */
     }
 }
