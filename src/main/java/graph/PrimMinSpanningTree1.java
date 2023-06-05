@@ -1,7 +1,5 @@
 package graph;
 
-import java.util.*;
-
 public class PrimMinSpanningTree1 {
 
     public static void main(String[] args) {
