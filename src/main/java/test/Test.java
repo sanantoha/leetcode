@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BinaryTreeZigzagLevelOrderTraverse
-            DepthFirstSearch
             ReverseBinaryTree
             ReverseLinkedList
             LongestIncreasingPathInMatrix
@@ -140,6 +138,8 @@ public class Test {
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
+            BinaryTreeZigzagLevelOrderTraverse
+            DepthFirstSearch
          */
     }
 }
