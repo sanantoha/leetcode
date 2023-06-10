@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseBinaryTree
-            ReverseLinkedList
             LongestIncreasingPathInMatrix
             InsertSort
             MergeBinaryTrees
@@ -140,6 +138,8 @@ public class Test {
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
             DepthFirstSearch
+            ReverseBinaryTree
+            ReverseLinkedList
          */
     }
 }
