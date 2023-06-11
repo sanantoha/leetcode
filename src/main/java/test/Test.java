@@ -3,15 +3,13 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncreasingPathInMatrix
-            InsertSort
             MergeBinaryTrees
+            BinarySearch
             LevenshteinDistance
             BalancedBinaryTree
             StableInternships
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
-            BinarySearch
             KruskalMinSpanningTree
             BSTSuccessorSearch
             SameBSTs
@@ -140,6 +138,8 @@ public class Test {
             DepthFirstSearch
             ReverseBinaryTree
             ReverseLinkedList
+            LongestIncreasingPathInMatrix
+            InsertSort
          */
     }
 }
