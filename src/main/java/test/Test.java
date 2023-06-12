@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MergeBinaryTrees
-            BinarySearch
             LevenshteinDistance
             BalancedBinaryTree
             StableInternships
@@ -17,6 +15,7 @@ public class Test {
             WaterArea
             NodeDepths
             CombinationSum
+            MergeBinaryTrees
             UniquePathIII
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
@@ -140,6 +139,7 @@ public class Test {
             ReverseLinkedList
             LongestIncreasingPathInMatrix
             InsertSort
+            BinarySearch
          */
     }
 }
