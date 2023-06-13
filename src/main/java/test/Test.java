@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LevenshteinDistance
             BalancedBinaryTree
             StableInternships
             KthSmallestElementInArray
@@ -140,6 +139,7 @@ public class Test {
             LongestIncreasingPathInMatrix
             InsertSort
             BinarySearch
+            LevenshteinDistance
          */
     }
 }
