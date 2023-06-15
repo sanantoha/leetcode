@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BalancedBinaryTree
-            StableInternships
-            KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             KruskalMinSpanningTree
             BSTSuccessorSearch
@@ -140,6 +137,9 @@ public class Test {
             InsertSort
             BinarySearch
             LevenshteinDistance
+            BalancedBinaryTree
+            StableInternships
+            KthSmallestElementInArray
          */
     }
 }
