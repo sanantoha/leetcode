@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BestTimeToBuyAndSellStock
-            KruskalMinSpanningTree
             BSTSuccessorSearch
             SameBSTs
             RotateArray
@@ -140,6 +138,8 @@ public class Test {
             BalancedBinaryTree
             StableInternships
             KthSmallestElementInArray
+            BestTimeToBuyAndSellStock
+            KruskalMinSpanningTree
          */
     }
 }
