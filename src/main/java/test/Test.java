@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NodeDepths
-            CombinationSum
             MergeBinaryTrees
             UniquePathIII
             LowestCommonAncestorOfBinarySearchTree
@@ -140,6 +138,8 @@ public class Test {
             SameBSTs
             RotateArray
             WaterArea
+            NodeDepths
+            CombinationSum
          */
     }
 }
