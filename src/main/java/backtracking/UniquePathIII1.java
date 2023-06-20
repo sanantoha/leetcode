@@ -32,6 +32,7 @@ public class UniquePathIII1 {
         };
 
         int actual = uniquePath3(grid);
+        System.out.println(actual);
         System.out.println(actual == 2);
     }
 }

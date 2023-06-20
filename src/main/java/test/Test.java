@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MergeBinaryTrees
             UniquePathIII
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
@@ -140,6 +139,7 @@ public class Test {
             WaterArea
             NodeDepths
             CombinationSum
+            MergeBinaryTrees
          */
     }
 }
