@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePathIII
-            LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
             AStarAlgo
@@ -109,6 +107,7 @@ public class Test {
             CountingSort
             DFSTreeTraverseRec
             SubarraySort
+            UniquePathIII
             BreadthSearchFirst
             ValidateStartingCity
             HouseRobber
@@ -140,6 +139,7 @@ public class Test {
             NodeDepths
             CombinationSum
             MergeBinaryTrees
+            LowestCommonAncestorOfBinarySearchTree
          */
     }
 }
