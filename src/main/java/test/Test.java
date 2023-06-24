@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchForRange
-            MinimumWindowSubstring
             MinimumPassesOfMatrix
             HeapSort
             MinSwapsTransformStringToPalindrome
@@ -59,6 +57,7 @@ public class Test {
             PalindromicSubstrings
             RotateImage
             OneEdit
+            MinimumWindowSubstring
             SortList
             SubarraySumEqualsK
             PhoneNumberMnemonic
@@ -140,6 +139,7 @@ public class Test {
             ValidateBinarySearchTree
             AStarAlgo
             SameTree
+            SearchForRange
          */
     }
 }
