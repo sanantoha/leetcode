@@ -19,27 +19,31 @@ public class HeapSort {
         arr[j] = tmp;
     }
 
-    private static void heapify(int[] arr, int i, int size) {
-        int l = left(i);
-        int r = right(i);
+    private static void siftDown(int[] arr, int idx, int size) {
 
-        int maxInd = i;
-        if (l <= size && arr[maxInd] < arr[l]) {
-            maxInd = l;
-        }
-        if (r <= size && arr[maxInd] < arr[r]) {
-            maxInd = r;
-        }
-
-        if (maxInd != i) {
-            swap(arr, maxInd, i);
-            heapify(arr, maxInd, size);
+        int currIdx = idx;
+        while (currIdx <= size) {
+            int l = left(currIdx);
+            int r = right(currIdx);
+            int maxIdx = currIdx;
+            if (l <= size && arr[l] > arr[maxIdx]) {
+                maxIdx = l;
+            }
+            if (r <= size && arr[r] > arr[maxIdx]) {
+                maxIdx = r;
+            }
+            if (maxIdx != currIdx) {
+                swap(arr, maxIdx, currIdx);
+                currIdx = maxIdx;
+            } else {
+                break;
+            }
         }
     }
 
     private static void buildHeap(int[] arr, int size) {
         for (int i = size / 2; 0 >= i; i--) {
-            heapify(arr, i, size);
+            siftDown(arr, i, size);
         }
     }
 
@@ -52,7 +56,7 @@ public class HeapSort {
         while(size > 0) {
             swap(arr, 0, size);
             size--;
-            heapify(arr, 0, size);
+            siftDown(arr, 0, size);
         }
     }
 
