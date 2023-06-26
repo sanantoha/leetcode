@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinSwapsTransformStringToPalindrome
-            FindNodesDistanceK
             LongestDecrSubseq
             AllElementsInTwoBinarySearchTrees
             MaxSumIncreasingSubsequence
@@ -23,6 +21,7 @@ public class Test {
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
             SymmetricTree
+            FindNodesDistanceK
             MinNumberOfJumps
             SparseMatrixMultiplication
             LongestNonDecrSubseq
@@ -140,6 +139,7 @@ public class Test {
             SearchForRange
             MinimumPassesOfMatrix
             HeapSort
+            MinSwapsTransformStringToPalindrome
          */
     }
 }

@@ -17,12 +17,100 @@ public class FindNodesDistanceK1 {
         }
     }
 
+    // O(n) time | O(n) space
     public static List<Integer> findNodesDistanceK(BinaryTree tree, int target, int k) {
-        return null;
+        if (tree == null || k < 0) return Collections.emptyList();
+
+        Map<Integer, BinaryTree> parents = new HashMap<>();
+        enrichParents(parents, null, tree);
+
+        BinaryTree targetNode = getTargetNode(parents, tree, target);
+
+        Set<BinaryTree> visited = new HashSet<>();
+        visited.add(targetNode);
+
+        Queue<Pair> queue = new LinkedList<>();
+        queue.add(new Pair(targetNode, 0));
+
+        List<Integer> res = new ArrayList<>();
+
+        while (!queue.isEmpty()) {
+            Pair p = queue.remove();
+            int distance = p.distance;
+            BinaryTree curr = p.node;
+
+            if (distance == k) {
+                res.add(curr.value);
+                while (!queue.isEmpty()) {
+                    res.add(queue.remove().node.value);
+                }
+                break;
+            }
+
+            List<BinaryTree> neighbors = new ArrayList<>();
+            neighbors.add(curr.left);
+            neighbors.add(curr.right);
+            neighbors.add(parents.get(curr.value));
+
+            for (BinaryTree node : neighbors) {
+                if (node == null || visited.contains(node)) continue;
+
+                queue.add(new Pair(node, distance + 1));
+            }
+        }
+        return res;
     }
 
+    static class Pair {
+        BinaryTree node;
+        int distance;
+
+        public Pair(BinaryTree node, int distance) {
+            this.node = node;
+            this.distance = distance;
+        }
+    }
+
+    // O(n) time | O(n) space
     public static List<Integer> findNodesDistanceKRec(BinaryTree tree, int target, int k) {
-        return null;
+        if (tree == null || k < 0) return Collections.emptyList();
+
+        Map<Integer, BinaryTree> parents = new HashMap<>();
+        enrichParents(parents, null, tree);
+
+        BinaryTree targetNode = getTargetNode(parents, tree, target);
+        Set<BinaryTree> visited = new HashSet<>();
+        List<Integer> res = new ArrayList<>();
+
+        findNodes(targetNode, 0, k, parents, visited, res);
+        return res;
+    }
+
+    private static void findNodes(BinaryTree node, int distance, int k, Map<Integer, BinaryTree> parents, Set<BinaryTree> visited, List<Integer> res) {
+        if (node == null || visited.contains(node)) return;
+        visited.add(node);
+        if (distance == k) {
+            res.add(node.value);
+        } else {
+            findNodes(node.left, distance + 1, k, parents, visited, res);
+            findNodes(node.right, distance + 1, k, parents, visited, res);
+            findNodes(parents.get(node.value), distance + 1, k, parents, visited, res);
+        }
+    }
+
+    private static BinaryTree getTargetNode(Map<Integer, BinaryTree> parents, BinaryTree tree, int target) {
+        if (tree.value == target) return tree;
+
+        BinaryTree parent = parents.get(target);
+        if (parent != null && parent.left.value == target) return parent.left;
+        return parent.right;
+    }
+
+    private static void enrichParents(Map<Integer, BinaryTree> parents, BinaryTree parent, BinaryTree tree) {
+        if (tree == null) return;
+        parents.put(tree.value, parent);
+        enrichParents(parents, tree, tree.left);
+        enrichParents(parents, tree, tree.right);
     }
 
     public static void main(String[] args) {
