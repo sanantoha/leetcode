@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestDecrSubseq
-            AllElementsInTwoBinarySearchTrees
             MaxSumIncreasingSubsequence
             BellmanFord
             BranchSums
@@ -140,6 +138,8 @@ public class Test {
             MinimumPassesOfMatrix
             HeapSort
             MinSwapsTransformStringToPalindrome
+            LongestDecrSubseq
+            AllElementsInTwoBinarySearchTrees
          */
     }
 }
