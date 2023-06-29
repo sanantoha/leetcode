@@ -12,16 +12,6 @@ public class BranchSums1 {
         return null;
     }
 
-    static class Info {
-        TreeNode tree;
-        int sum;
-
-        public Info(TreeNode root, int sum) {
-            this.tree = root;
-            this.sum = sum;
-        }
-    }
-
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1,
                 new TreeNode(2,
