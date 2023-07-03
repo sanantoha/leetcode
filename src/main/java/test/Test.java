@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DijkstraShortestPathsAsMap
-            MinNumberOfCoinsForChange
             TopKFrequentWords
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
@@ -140,6 +138,8 @@ public class Test {
             ZigZagTraverse
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
+            DijkstraShortestPathsAsMap
+            MinNumberOfCoinsForChange
          */
     }
 }
