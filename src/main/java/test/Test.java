@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            TopKFrequentWords
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
             SymmetricTree
@@ -140,6 +139,7 @@ public class Test {
             TopologicalSortDFSCycleGraph
             DijkstraShortestPathsAsMap
             MinNumberOfCoinsForChange
+            TopKFrequentWords
          */
     }
 }
