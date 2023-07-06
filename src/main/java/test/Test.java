@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SymmetricTree
-            FindNodesDistanceK
             MinNumberOfJumps
             SparseMatrixMultiplication
             LongestNonDecrSubseq
@@ -140,6 +138,8 @@ public class Test {
             TopKFrequentWords
             MinimalHeaviestSetA
             PrimMinSpanningTreeAsMap
+            SymmetricTree
+            FindNodesDistanceK
          */
     }
 }
