@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfJumps
-            SparseMatrixMultiplication
             LongestNonDecrSubseq
             StringPermutation
             FirstUniqueCharacterInString
@@ -32,6 +30,7 @@ public class Test {
             TopologicalSortDFSCycleGraphAsMap
             LongestCommonSubsequence
             DijkstraShortestPaths
+            MinNumberOfJumps
             PalindromicSubstrings
             RotateImage
             OneEdit
@@ -95,6 +94,7 @@ public class Test {
             BinaryTreeZigzagLevelOrderTraverse
             DepthFirstSearch
             ReverseBinaryTree
+            SparseMatrixMultiplication
             ReverseLinkedList
             LongestIncreasingPathInMatrix
             InsertSort
