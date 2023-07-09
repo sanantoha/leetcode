@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FirstUniqueCharacterInString
-            DeepCopyArbitraryPointer
             DFSTreeTraverse
             CycleLinkedList
             KruskalMinSpanningTreeAsMap
@@ -140,6 +138,8 @@ public class Test {
             FindNodesDistanceK
             LongestNonDecrSubseq
             StringPermutation
+            FirstUniqueCharacterInString
+            DeepCopyArbitraryPointer
          */
     }
 }
