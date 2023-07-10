@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            DFSTreeTraverse
-            CycleLinkedList
             KruskalMinSpanningTreeAsMap
             EvaluateExpressionTree
             DiskStacking
@@ -140,6 +138,8 @@ public class Test {
             StringPermutation
             FirstUniqueCharacterInString
             DeepCopyArbitraryPointer
+            DFSTreeTraverse
+            CycleLinkedList
          */
     }
 }

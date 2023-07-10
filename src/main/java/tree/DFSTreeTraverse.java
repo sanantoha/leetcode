@@ -10,27 +10,21 @@ public class DFSTreeTraverse {
 
     // O(n) time | O(h) space
     public static List<Integer> preOrder(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
-        if (root == null) return result;
 
+        List<Integer> res = new ArrayList<>();
         Deque<TreeNode> stack = new LinkedList<>();
         stack.push(root);
 
         while (!stack.isEmpty()) {
-            TreeNode curr = stack.pop();
+            TreeNode curr = stack.poll();
+            if (curr == null) continue;
+            res.add(curr.val);
 
-            result.add(curr.val);
+            stack.push(curr.right);
+            stack.push(curr.left);
 
-            if (curr.right != null) {
-                stack.push(curr.right);
-            }
-
-            if (curr.left != null) {
-                stack.push(curr.left);
-            }
         }
-
-        return result;
+        return res;
     }
 
     // O(n) time | O(h) space
@@ -57,33 +51,27 @@ public class DFSTreeTraverse {
         return result;
     }
 
-    // O(n) time | O(n) space
+    // O(n) time | O(h) space
     public static List<Integer> postOrder(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
-        if (root == null) return result;
 
-        Deque<TreeNode> fstStack = new LinkedList<>();
-        Deque<TreeNode> sndStack = new LinkedList<>();
+        List<Integer> res = new ArrayList<>();
+        Deque<TreeNode> fst = new LinkedList<>();
+        Deque<TreeNode> snd = new LinkedList<>();
+        fst.push(root);
 
-        fstStack.push(root);
+        while (!fst.isEmpty()) {
+            TreeNode curr = fst.pop();
+            if (curr == null) continue;
+            snd.push(curr);
 
-        while (!fstStack.isEmpty()) {
-            TreeNode curr = fstStack.pop();
-            sndStack.push(curr);
-
-            if (curr.left != null) {
-                fstStack.push(curr.left);
-            }
-
-            if (curr.right != null) {
-                fstStack.push(curr.right);
-            }
+            fst.push(curr.left);
+            fst.push(curr.right);
         }
 
-        while (!sndStack.isEmpty()) {
-            result.add(sndStack.pop().val);
+        while (!snd.isEmpty()) {
+            res.add(snd.pop().val);
         }
-        return result;
+        return res;
     }
 
     public static void main(String[] args) {
