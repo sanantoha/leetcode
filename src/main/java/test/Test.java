@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordSearch
-            ClimbingStairs
             NextGreaterElement
             ConvertedSortedArrayToBST
             StaircaseTraversal
@@ -140,6 +138,8 @@ public class Test {
             DepthFirstSearchAsMap
             FourSum
             NumberOfWaysToMakeChange
+            WordSearch
+            ClimbingStairs
          */
     }
 }
