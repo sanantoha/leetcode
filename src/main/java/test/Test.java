@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseInteger
-            LongestCommonSubsequence
             DijkstraShortestPaths
             MinNumberOfJumps
             PalindromicSubstrings
@@ -140,6 +138,8 @@ public class Test {
             MergedTwoSortedLists
             SortKSortedArray
             TopologicalSortDFSCycleGraphAsMap
+            ReverseInteger
+            LongestCommonSubsequence
          */
     }
 }
