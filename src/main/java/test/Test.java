@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PalindromicSubstrings
-            RotateImage
             OneEdit
             MinimumWindowSubstring
             SortList
@@ -140,6 +138,8 @@ public class Test {
             LongestCommonSubsequence
             DijkstraShortestPaths
             MinNumberOfJumps
+            PalindromicSubstrings
+            RotateImage
          */
     }
 }
