@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            OneEdit
-            MinimumWindowSubstring
             SortList
             SubarraySumEqualsK
             PhoneNumberMnemonic
@@ -140,6 +138,8 @@ public class Test {
             MinNumberOfJumps
             PalindromicSubstrings
             RotateImage
+            OneEdit
+            MinimumWindowSubstring
          */
     }
 }
