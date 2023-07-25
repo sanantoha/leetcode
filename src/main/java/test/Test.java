@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PhoneNumberMnemonic
-            Pow
             KnapsackProblem
             ReverseString
             ConstructBinaryTreeFromPreorderAndInorderTraversal
@@ -140,6 +138,8 @@ public class Test {
             MinimumWindowSubstring
             SortList
             SubarraySumEqualsK
+            PhoneNumberMnemonic
+            Pow
          */
     }
 }
