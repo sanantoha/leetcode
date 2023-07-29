@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BalancedBrackets
             WordLadderII
             WordBreak
             Permutations
@@ -140,6 +139,7 @@ public class Test {
             BreadthSearchFirstAsMap
             MaximumSubarray
             ThreeSum
+            BalancedBrackets
          */
     }
 }
