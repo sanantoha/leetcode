@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseWordsInString
-            BellmanFordAsMap
             RemoveNthNodeFromEndOfList
             MinRewards
             IntersectionLinkedList
@@ -140,6 +138,8 @@ public class Test {
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
             DeleteNodeInLinkedList
+            ReverseWordsInString
+            BellmanFordAsMap
          */
     }
 }

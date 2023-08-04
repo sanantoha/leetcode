@@ -12,7 +12,7 @@ import static graph.GraphUtils.Pair;
 public class BellmanFordAsMap {
 
     // ShortestPath{shortest=[-9.0, -20.0, -18.0, -2.0, -11.0], prev=[4, 2, 4, 0, 1]}
-    // [4, 1, 2]
+    // [1, 2, 4]
     public static void main(String[] args) {
         try (FileReader reader = new FileReader("src/main/java/graph/bellmanFord.txt")) {
             Scanner scanner = new Scanner(reader);
@@ -40,7 +40,7 @@ public class BellmanFordAsMap {
         }
         shortest.put(start, 0d);
 
-        for (int i = 0; i < graph.keySet().size() - 1; i++) {
+        for (int i = 0; i < graph.size() - 1; i++) {
             for (Edge<String, Double> edge : edges) {
                 relax(edge, shortest, prev);
             }
