@@ -4,29 +4,33 @@ public class RemoveNthNodeFromEndOfList {
 
     // O(n) time | O(1) space
     public static ListNode removeNthFromEnd(ListNode head, int n) {
+        if (head == null) return null;
 
-        ListNode dummy = new ListNode();
-        dummy.next = head;
-
-        ListNode fst = dummy;
-        ListNode snd = dummy;
-        int k = n;
-        while (fst != null && k >= 0) {
-            fst = fst.next;
+        ListNode curr = head;
+        int k = n - 1;
+        while (curr != null && k >= 0) {
+            curr = curr.next;
             k--;
         }
 
-        if (fst == null && k >= 0) return dummy.next;
+        if (curr == null) {
+            if (k < 0) return head.next;
+            else return head;
+        }
 
-        while (fst != null) {
-            fst = fst.next;
+        curr = curr.next;
+        ListNode snd = head;
+        while (curr != null) {
+            curr = curr.next;
             snd = snd.next;
         }
 
-        if (snd.next != null) {
-            snd.next = snd.next.next;
+        ListNode next = snd.next;
+        if (next != null) {
+            snd.next = next.next;
         }
-        return dummy.next;
+
+        return head;
     }
 
 
