@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            IntersectionLinkedList
-            LRUCache
             StringWithoutAAAorBBB
             MiddleNode
             MergeSort
@@ -140,6 +138,8 @@ public class Test {
             BellmanFordAsMap
             RemoveNthNodeFromEndOfList
             MinRewards
+            IntersectionLinkedList
+            LRUCache
          */
     }
 }
