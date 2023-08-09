@@ -12,6 +12,7 @@ public class MinHeap {
         heap = buildHeap(array);
     }
 
+    // O(n) time | O(n) space
     public List<Integer> buildHeap(List<Integer> array) {
         List<Integer> heap = new ArrayList<>(array);
         for (int i = array.size() / 2; i >= 0; i--) {
@@ -20,37 +21,45 @@ public class MinHeap {
         return heap;
     }
 
+    // O(log(n)) time | O(1) space
     public void siftDown(int currentIdx, int endIdx, List<Integer> heap) {
-        int l = left(currentIdx);
-        int r = right(currentIdx);
+        int idx = currentIdx;
 
-        int minIdx = currentIdx;
-        if (l <= endIdx && heap.get(minIdx) > heap.get(l)) {
-            minIdx = l;
-        }
-        if (r <= endIdx && heap.get(minIdx) > heap.get(r)) {
-            minIdx = r;
-        }
-        if (minIdx != currentIdx) {
-            Collections.swap(heap, minIdx, currentIdx);
-            siftDown(minIdx, endIdx, heap);
+        while (idx <= endIdx) {
+            int l = left(idx);
+            int r = right(idx);
+            int minIdx = idx;
+            if (l <= endIdx && heap.get(minIdx) > heap.get(l)) {
+                minIdx = l;
+            }
+            if (r <= endIdx && heap.get(minIdx) > heap.get(r)) {
+                minIdx = r;
+            }
+            if (minIdx != idx) {
+                Collections.swap(heap, minIdx, idx);
+                idx = minIdx;
+            } else break;
         }
     }
 
+    // O(log(n)) time | O(1) space
     public void siftUp(int currentIdx, List<Integer> heap) {
-        int p = parent(currentIdx);
-
-        if (p >= 0 && heap.get(p) > heap.get(currentIdx)) {
-            Collections.swap(heap, p, currentIdx);
-            siftUp(p, heap);
+        int idx = currentIdx;
+        int parent = parent(idx);
+        while (parent >= 0 && heap.get(parent) > heap.get(idx)) {
+            Collections.swap(heap, parent, idx);
+            idx = parent;
+            parent = parent(idx);
         }
     }
 
+    // O(1) time | O(1) space
     public int peek() {
         if (heap.isEmpty()) return Integer.MAX_VALUE;
         return heap.get(0);
     }
 
+    // O(log(n)) time | O(1) space
     public int remove() {
         if (heap.isEmpty()) return Integer.MAX_VALUE;
         Collections.swap(heap, 0, heap.size() - 1);
@@ -59,6 +68,7 @@ public class MinHeap {
         return val;
     }
 
+    // O(log(n)) time | O(1) space
     public void insert(int value) {
         heap.add(value);
         siftUp(heap.size() - 1, heap);
