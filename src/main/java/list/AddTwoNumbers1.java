@@ -12,6 +12,6 @@ public class AddTwoNumbers1 {
 
         System.out.println(l1);
         System.out.println(l2);
-        System.out.println(addTwoNumbers(l1, l2));
+        System.out.println(addTwoNumbers(l1, l2)); // 8 3 1 0 1 null
     }
 }

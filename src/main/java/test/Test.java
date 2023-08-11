@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AddTwoNumbers
-            MergeIntervals
             RiverSizes
             Sqrt
             FirstDuplicateValue
@@ -140,6 +138,8 @@ public class Test {
             FindPivotIndex
             QuickSort
             Powerset
+            AddTwoNumbers
+            MergeIntervals
          */
     }
 }
