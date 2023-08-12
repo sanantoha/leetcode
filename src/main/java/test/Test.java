@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RiverSizes
-            Sqrt
             FirstDuplicateValue
             RegularExpressionMatch
             CountingSort
@@ -140,6 +138,8 @@ public class Test {
             Powerset
             AddTwoNumbers
             MergeIntervals
+            RiverSizes
+            Sqrt
          */
     }
 }
