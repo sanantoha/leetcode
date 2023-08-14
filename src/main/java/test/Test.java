@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CountingSort
-            DFSTreeTraverseRec
             SubarraySort
             UniquePathIII
             BreadthSearchFirst
@@ -140,6 +138,8 @@ public class Test {
             Sqrt
             FirstDuplicateValue
             RegularExpressionMatch
+            CountingSort
+            DFSTreeTraverseRec
          */
     }
 }
