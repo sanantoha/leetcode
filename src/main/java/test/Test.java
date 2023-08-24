@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseBinaryTree
-            SparseMatrixMultiplication
             ReverseLinkedList
             LongestIncreasingPathInMatrix
             InsertSort
@@ -20,6 +18,7 @@ public class Test {
             RotateArray
             WaterArea
             NodeDepths
+            SparseMatrixMultiplication
             CombinationSum
             MergeBinaryTrees
             LowestCommonAncestorOfBinarySearchTree
@@ -140,6 +139,7 @@ public class Test {
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
             DepthFirstSearch
+            ReverseBinaryTree
          */
     }
 }
