@@ -3,7 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BalancedBinaryTree
             StableInternships
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
@@ -140,6 +139,7 @@ public class Test {
             InsertSort
             BinarySearch
             LevenshteinDistance
+            BalancedBinaryTree
          */
     }
 }
