@@ -3,9 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            NodeDepths
-            SparseMatrixMultiplication
-            CombinationSum
             MergeBinaryTrees
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
@@ -140,6 +137,9 @@ public class Test {
             SameBSTs
             RotateArray
             WaterArea
+            NodeDepths
+            SparseMatrixMultiplication
+            CombinationSum
          */
     }
 }
