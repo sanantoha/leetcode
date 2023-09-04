@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MergeBinaryTrees
-            LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
             AStarAlgo
@@ -140,6 +138,8 @@ public class Test {
             NodeDepths
             SparseMatrixMultiplication
             CombinationSum
+            MergeBinaryTrees
+            LowestCommonAncestorOfBinarySearchTree
          */
     }
 }
