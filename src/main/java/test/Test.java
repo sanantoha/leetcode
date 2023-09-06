@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AStarAlgo
-            SameTree
             SearchForRange
             MinimumPassesOfMatrix
             HeapSort
@@ -40,6 +38,7 @@ public class Test {
             LargestRange
             LowestCommonAncestorOfBinaryTree
             ReconstructBST
+            AStarAlgo
             SelectSort
             DepthFirstSearchAsMap
             FourSum
@@ -140,6 +139,7 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
+            SameTree
          */
     }
 }
