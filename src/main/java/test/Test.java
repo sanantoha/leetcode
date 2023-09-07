@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SearchForRange
-            MinimumPassesOfMatrix
             HeapSort
             MinSwapsTransformStringToPalindrome
             LongestDecrSubseq
@@ -54,6 +52,7 @@ public class Test {
             ReverseInteger
             LongestCommonSubsequence
             DijkstraShortestPaths
+            SearchForRange
             MinNumberOfJumps
             PalindromicSubstrings
             RotateImage
@@ -140,6 +139,7 @@ public class Test {
             LongestIncrSubSeq
             ValidateBinarySearchTree
             SameTree
+            MinimumPassesOfMatrix
          */
     }
 }
