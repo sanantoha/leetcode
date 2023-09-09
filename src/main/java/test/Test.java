@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinSwapsTransformStringToPalindrome
-            LongestDecrSubseq
             AllElementsInTwoBinarySearchTrees
             MaxSumIncreasingSubsequence
             BellmanFord
@@ -140,6 +138,8 @@ public class Test {
             SameTree
             MinimumPassesOfMatrix
             HeapSort
+            MinSwapsTransformStringToPalindrome
+            LongestDecrSubseq
          */
     }
 }
