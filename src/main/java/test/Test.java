@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AllElementsInTwoBinarySearchTrees
-            BellmanFord
             BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
@@ -140,6 +138,8 @@ public class Test {
             MinSwapsTransformStringToPalindrome
             LongestDecrSubseq
             MaxSumIncreasingSubsequence
+            AllElementsInTwoBinarySearchTrees
+            BellmanFord
          */
     }
 }
