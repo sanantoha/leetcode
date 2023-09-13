@@ -3,10 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            BranchSums
-            FirstPermutationIsSubstrSecondStr
-            GenerateParentheses
-            AllPathsFromSourceTarget
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
@@ -140,6 +136,10 @@ public class Test {
             MaxSumIncreasingSubsequence
             AllElementsInTwoBinarySearchTrees
             BellmanFord
+            BranchSums
+            FirstPermutationIsSubstrSecondStr
+            GenerateParentheses
+            AllPathsFromSourceTarget
          */
     }
 }

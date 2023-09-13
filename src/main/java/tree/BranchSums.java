@@ -7,14 +7,6 @@ import java.util.List;
 
 public class BranchSums {
 
-    // O(n) time | O(n) space
-    public static List<Integer> branchSums(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        if (root == null) return res;
-        backtrack(root, 0, res);
-        return res;
-    }
-
     // O(n) time | O(h) space
     public static List<Integer> branchSumsIter(TreeNode root) {
 
@@ -37,6 +29,14 @@ public class BranchSums {
             stack.push(new Info(curr.left, sum));
             stack.push(new Info(curr.right, sum));
         }
+        return res;
+    }
+
+    // O(n) time | O(h) space
+    public static List<Integer> branchSums(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        if (root == null) return res;
+        backtrack(root, 0, res);
         return res;
     }
 
@@ -77,6 +77,6 @@ public class BranchSums {
                         new TreeNode(7)));
 
         System.out.println(branchSums(root)); // [15, 16, 18, 10, 11]
-        System.out.println(branchSumsIter(root)); // 11, 10, 18, 16, 15]
+        System.out.println(branchSumsIter(root)); // [11, 10, 18, 16, 15]
     }
 }
