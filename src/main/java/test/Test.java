@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            FindClosestValueInBST
-            ZigZagTraverse
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
             DijkstraShortestPathsAsMap
@@ -140,6 +138,8 @@ public class Test {
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
             AllPathsFromSourceTarget
+            FindClosestValueInBST
+            ZigZagTraverse
          */
     }
 }
