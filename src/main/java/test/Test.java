@@ -3,14 +3,13 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            PrimMinSpanningTreeAsMap
-            SymmetricTree
             FindNodesDistanceK
-            LongestNonDecrSubseq
             StringPermutation
+            LongestNonDecrSubseq
             FirstUniqueCharacterInString
             DeepCopyArbitraryPointer
             DFSTreeTraverse
+            PrimMinSpanningTreeAsMap
             CycleLinkedList
             KruskalMinSpanningTreeAsMap
             EvaluateExpressionTree
@@ -140,6 +139,7 @@ public class Test {
             MinNumberOfCoinsForChange
             TopKFrequentWords
             MinimalHeaviestSetA
+            SymmetricTree
          */
     }
 }

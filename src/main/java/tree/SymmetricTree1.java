@@ -38,14 +38,14 @@ public class SymmetricTree1 {
                 )
         );
 
-        System.out.println(isSymmetric(root1));
-        System.out.println(isSymmetricRec(root1));
+        System.out.println(!isSymmetric(root1));
+        System.out.println(!isSymmetricRec(root1));
 
         System.out.println("==================================");
 
         TreeNode root2 = new TreeNode(2, new TreeNode(1), new TreeNode(3));
 
-        System.out.println(isSymmetric(root2));
-        System.out.println(isSymmetricRec(root2));
+        System.out.println(!isSymmetric(root2));
+        System.out.println(!isSymmetricRec(root2));
     }
 }
