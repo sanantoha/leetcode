@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            CycleLinkedList
-            KruskalMinSpanningTreeAsMap
             EvaluateExpressionTree
             DiskStacking
             LargestRange
@@ -140,6 +138,8 @@ public class Test {
             DFSTreeTraverse
             DeepCopyArbitraryPointer
             PrimMinSpanningTreeAsMap
+            CycleLinkedList
+            KruskalMinSpanningTreeAsMap
          */
     }
 }
