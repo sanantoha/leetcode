@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            EvaluateExpressionTree
-            DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
             ReconstructBST
@@ -140,6 +138,8 @@ public class Test {
             PrimMinSpanningTreeAsMap
             CycleLinkedList
             KruskalMinSpanningTreeAsMap
+            EvaluateExpressionTree
+            DiskStacking
          */
     }
 }
