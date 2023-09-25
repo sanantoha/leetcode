@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LargestRange
-            LowestCommonAncestorOfBinaryTree
             ReconstructBST
             AStarAlgo
             SelectSort
@@ -140,6 +138,8 @@ public class Test {
             KruskalMinSpanningTreeAsMap
             EvaluateExpressionTree
             DiskStacking
+            LargestRange
+            LowestCommonAncestorOfBinaryTree
          */
     }
 }
