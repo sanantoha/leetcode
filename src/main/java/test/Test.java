@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SelectSort
-            AStarAlgo
             ReconstructBST
             DepthFirstSearchAsMap
             FourSum
@@ -140,6 +138,8 @@ public class Test {
             DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
+            SelectSort
+            AStarAlgo
          */
     }
 }
