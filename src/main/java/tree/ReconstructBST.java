@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
  */
 public class ReconstructBST {
 
-    // O(n ^ 2) time | O(n) space
+    // O(n ^ 2) time | O(n ^ 2) space
     public static TreeNode reconstructBst(List<Integer> preOrderTraversalValues) {
         if (preOrderTraversalValues == null || preOrderTraversalValues.size() == 0)
             return null;

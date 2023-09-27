@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReconstructBST
-            DepthFirstSearchAsMap
             FourSum
             NumberOfWaysToMakeChange
             WordSearch
@@ -140,6 +138,8 @@ public class Test {
             LowestCommonAncestorOfBinaryTree
             SelectSort
             AStarAlgo
+            ReconstructBST
+            DepthFirstSearchAsMap
          */
     }
 }
