@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class LongestCommonSubsequence {
 
-    // O(s1 * s2 * min(s1, s2)) time | O(s1 * s2 * min(s1, s2)) time
+    // O(s1 * s2 * min(s1, s2)) time | O(s1 * s2 * min(s1, s2)) space
     public static List<Character> longestCommonSubsequence(String str1, String str2) {
         if (str1 == null || str1.length() == 0 || str2 == null || str2.length() == 0)
             return Collections.emptyList();
