@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinNumberOfJumps
-            PalindromicSubstrings
             RotateImage
             OneEdit
             MinimumWindowSubstring
@@ -22,6 +20,7 @@ public class Test {
             WordLadderII
             Permutations
             MaxPathSumInBinaryTree
+            MinNumberOfJumps
             LeftViewBinaryTree
             SearchInRotatedSortedArray
             SurroundedRegions
@@ -140,6 +139,7 @@ public class Test {
             LongestCommonSubsequence
             DijkstraShortestPaths
             SearchForRange
+            PalindromicSubstrings
          */
     }
 }
