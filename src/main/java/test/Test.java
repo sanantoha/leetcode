@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            RotateImage
-            OneEdit
             MinimumWindowSubstring
             SortList
             SubarraySumEqualsK
@@ -140,6 +138,8 @@ public class Test {
             DijkstraShortestPaths
             SearchForRange
             PalindromicSubstrings
+            RotateImage
+            OneEdit
          */
     }
 }
