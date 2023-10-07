@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinimumWindowSubstring
-            SortList
             SubarraySumEqualsK
             PhoneNumberMnemonic
             Pow
@@ -40,6 +38,7 @@ public class Test {
             QuickSort
             Powerset
             AddTwoNumbers
+            MinimumWindowSubstring
             MergeIntervals
             RiverSizes
             Sqrt
@@ -140,6 +139,7 @@ public class Test {
             PalindromicSubstrings
             RotateImage
             OneEdit
+            SortList
          */
     }
 }

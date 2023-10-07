@@ -2,7 +2,7 @@ package list;
 
 public class SortList {
 
-    // O(n * log(n)) time | O(1) space
+    // O(n * log(n)) time | O(log(n)) space - space for recursion
     public static ListNode sort(ListNode head) {
         if (head == null || head.next == null) return head;
 
