@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            SubarraySumEqualsK
-            PhoneNumberMnemonic
             Pow
             KnapsackProblem
             ReverseString
@@ -29,6 +27,7 @@ public class Test {
             MinRewards
             IntersectionLinkedList
             LRUCache
+            SubarraySumEqualsK
             StringWithoutAAAorBBB
             MiddleNode
             MergeSort
@@ -140,6 +139,7 @@ public class Test {
             RotateImage
             OneEdit
             SortList
+            PhoneNumberMnemonic
          */
     }
 }
