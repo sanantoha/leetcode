@@ -20,9 +20,11 @@ public class KnapsackProblem1 {
     }
 
     public static void main(String[] args) {
-        int[][] input = {{1, 2}, {4, 3}, {5, 6}, {6, 7}};
+        int[][] input = {{1, 2}, {4, 3}, {5, 6}, {6, 7}}; // 0 - value, 1 - weight
         int[][] expected = {{10}, {1, 3}};
-        System.out.println(compare(knapsackProblem(input, 10), expected));
+        List<List<Integer>> res = knapsackProblem(input, 10);
+        System.out.println(res);
+        System.out.println(compare(res, expected));
     }
 
     private static boolean compare(List<List<Integer>> arr1, int[][] arr2) {

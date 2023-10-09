@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            Pow
-            KnapsackProblem
             ReverseString
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             BreadthSearchFirstAsMap
@@ -140,6 +138,8 @@ public class Test {
             OneEdit
             SortList
             PhoneNumberMnemonic
+            Pow
+            KnapsackProblem
          */
     }
 }
