@@ -16,12 +16,12 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
             inOrderMapping.put(inorder[i], i);
         }
 
-        var index = new ConstructBinaryTreeFromPreorderAndInorderTraversal1.Index(0);
+        var index = new Index(0);
 
         return helper(preorder, inOrderMapping, index, 0, preorder.length - 1);
     }
 
-    private static TreeNode helper(int[] prevorder, Map<Integer, Integer> inOrderMapping, ConstructBinaryTreeFromPreorderAndInorderTraversal1.Index index, int l, int r) {
+    private static TreeNode helper(int[] prevorder, Map<Integer, Integer> inOrderMapping, Index index, int l, int r) {
         if (l > r) return null;
 
         int val = prevorder[index.idx++];
