@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            ThreeSum
-            BalancedBrackets
             WordLadderII
             Permutations
             MaxPathSumInBinaryTree
@@ -140,6 +138,8 @@ public class Test {
             ReverseString
             BreadthSearchFirstAsMap
             MaximumSubarray
+            ThreeSum
+            BalancedBrackets
          */
     }
 }
