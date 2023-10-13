@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordLadderII
-            Permutations
             MaxPathSumInBinaryTree
             MinNumberOfJumps
             LeftViewBinaryTree
@@ -140,6 +138,8 @@ public class Test {
             MaximumSubarray
             ThreeSum
             BalancedBrackets
+            WordLadderII
+            Permutations
          */
     }
 }
