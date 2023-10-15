@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LeftViewBinaryTree
-            SearchInRotatedSortedArray
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
@@ -140,6 +138,8 @@ public class Test {
             Permutations
             MaxPathSumInBinaryTree
             MinNumberOfJumps
+            LeftViewBinaryTree
+            SearchInRotatedSortedArray
          */
     }
 }
