@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinRewards
-            IntersectionLinkedList
             LRUCache
             SubarraySumEqualsK
             StringWithoutAAAorBBB
@@ -140,6 +138,8 @@ public class Test {
             ReverseWordsInString
             BellmanFordAsMap
             RemoveNthNodeFromEndOfList
+            MinRewards
+            IntersectionLinkedList
          */
     }
 }
