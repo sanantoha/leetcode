@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            LRUCache
-            SubarraySumEqualsK
             StringWithoutAAAorBBB
             MiddleNode
             MergeSort
@@ -140,6 +138,8 @@ public class Test {
             RemoveNthNodeFromEndOfList
             MinRewards
             IntersectionLinkedList
+            LRUCache
+            SubarraySumEqualsK
          */
     }
 }
