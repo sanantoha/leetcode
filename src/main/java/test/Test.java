@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            MinHeap
-            FindPivotIndex
             QuickSort
             Powerset
             AddTwoNumbers
@@ -140,6 +138,8 @@ public class Test {
             MiddleNode
             MergeSort
             CloneGraph
+            MinHeap
+            FindPivotIndex
          */
     }
 }
