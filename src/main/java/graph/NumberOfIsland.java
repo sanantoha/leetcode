@@ -1,28 +1,8 @@
 package graph;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class NumberOfIsland {
-
-    private static void dfs(int[][] grid, boolean[][] visited, int currRow, int currCol) {
-        visited[currRow][currCol] = true;
-
-        for (int pathRow = -1; pathRow < 2; pathRow++) {
-            for (int pathCol = -1; pathCol < 2; pathCol++) {
-                if (pathRow == 0 && pathCol == 0) continue;
-
-                int futureRow = currRow + pathRow;
-                int futureCol = currCol + pathCol;
-
-                if (futureRow >= 0 && futureRow < grid.length &&
-                    futureCol >= 0 && futureCol < grid[0].length &&
-                        !visited[futureRow][futureCol] && grid[futureRow][futureCol] == 1) {
-//                    visited[futureRow][futureCol] = true;
-                    dfs(grid, visited, futureRow, futureCol);
-                }
-            }
-        }
-    }
 
     // O(w * h) time | O(w * h) space
     public static int numberOfIsland(int[][] grid) {
@@ -45,6 +25,51 @@ public class NumberOfIsland {
         return totalIsland;
     }
 
+    private static void dfs(int[][] grid, boolean[][] visited, int startRow, int startCol) {
+
+        Deque<int[]> stack = new LinkedList<>();
+        stack.push(new int[] {startRow, startCol});
+
+        while (!stack.isEmpty()) {
+            int[] p = stack.pop();
+            int row = p[0];
+            int col = p[1];
+
+            if (visited[row][col]) {
+                continue;
+            }
+            visited[row][col] = true;
+
+            for (int[] np : getNeighbors(grid, row, col)) {
+                int nrow = np[0];
+                int ncol = np[1];
+                if (grid[nrow][ncol] != 1) {
+                    continue;
+                }
+                stack.push(new int[] {nrow, ncol});
+            }
+        }
+    }
+
+    private static List<int[]> getNeighbors(int[][] grid, int row, int col) {
+        List<int[]> neighbors = new ArrayList<>();
+
+        if (row > 0) {
+            neighbors.add(new int[] {row - 1, col});
+        }
+        if (col > 0) {
+            neighbors.add(new int[] {row, col - 1});
+        }
+        if (row + 1 < grid.length) {
+            neighbors.add(new int[] {row + 1, col});
+        }
+        if (col + 1 < grid[row].length) {
+            neighbors.add(new int[] {row, col + 1});
+        }
+
+        return neighbors;
+    }
+
     public static void main(String[] args) {
         int[][] grid = {
                 {0, 0, 0, 0, 1},
@@ -52,7 +77,10 @@ public class NumberOfIsland {
                 {1, 1, 0, 1, 1},
                 {0, 0, 0, 1, 1}
         };
+        int expected = 3;
 
-        System.out.println(numberOfIsland(grid));
+        int actual = numberOfIsland(grid);
+        System.out.println(actual);
+        System.out.println(actual == expected);
     }
 }
