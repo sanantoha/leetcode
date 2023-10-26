@@ -1,45 +1,60 @@
-package tree;
+package graph;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class SurroundedRegions {
 
-    // O(w * h) time | O(1) space
+    // O(w * h) time | O(w * h) space
     public static void solve(char[][] board) {
         if (board == null || board.length == 0) return;
 
-        for (int i = 0; i < board.length; i++) {
-            dfs(board, i, 0);
-            dfs(board, i, board[i].length - 1);
-        }
+        for (int row = 0; row < board.length; row++) {
+            for (int col = 0; col < board[row].length; col++) {
+                boolean rowIsBorder = row == 0 || row == board.length - 1;
+                boolean colIsBorder = col == 0 || col == board[row].length - 1;
+                boolean isBorder = rowIsBorder || colIsBorder;
 
-        for (int i = 0; i < board[0].length; i++) {
-            dfs(board, 0, i);
-            dfs(board, board.length - 1, i);
+                if (!isBorder || board[row][col] != 'O') {
+                    continue;
+                }
+
+                dfs(board, row, col);
+            }
         }
 
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
-                if (board[i][j] == 'O') board[i][j] = 'X';
-                if (board[i][j] == '*') board[i][j] = 'O';
+                if (board[i][j] == 'O') {
+                    board[i][j] = 'X';
+                } else if (board[i][j] == '*') {
+                    board[i][j] = 'O';
+                }
             }
         }
     }
 
     private static void dfs(char[][] board, int row, int col) {
-        if (board[row][col] != 'O') return;
-        board[row][col] = '*';
 
-        for (int[] fut : getNextSteps(board, row, col)) {
-            int futRow = fut[0];
-            int futCol = fut[1];
-            if (board[futRow][futCol] == 'O') {
-                dfs(board, futRow, futCol);
+        Deque<int[]> stack = new LinkedList<>();
+        stack.push(new int[] {row, col});
+
+        while (!stack.isEmpty()) {
+            int[] p = stack.pop();
+            int currRow = p[0];
+            int currCol = p[1];
+
+            board[currRow][currCol] = '*';
+
+            for (int[] fut : getNextSteps(board, currRow, currCol)) {
+                int futRow = fut[0];
+                int futCol = fut[1];
+
+                if (board[futRow][futCol] != 'O') {
+                    continue;
+                }
+                stack.push(new int[] {futRow, futCol});
             }
         }
-
     }
 
     private static List<int[]> getNextSteps(char[][] board, int row, int col) {

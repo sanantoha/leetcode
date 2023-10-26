@@ -24,6 +24,7 @@ public class NumberOfIsland {
         }
     }
 
+    // O(w * h) time | O(w * h) space
     public static int numberOfIsland(int[][] grid) {
         int totalIsland = 0;
 
