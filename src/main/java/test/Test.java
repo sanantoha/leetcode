@@ -3,8 +3,6 @@ package test;
 public class Test {
     public static void main(String[] args) {
         /*
-            AddTwoNumbers
-            MinimumWindowSubstring
             MergeIntervals
             RiverSizes
             Sqrt
@@ -140,6 +138,34 @@ public class Test {
             FindPivotIndex
             QuickSort
             Powerset
+            AddTwoNumbers
+            MinimumWindowSubstring
          */
+
+        /*
+            getClass
+            equals,
+            hashCode,
+            clone
+            notify
+            notifyAll
+            wait
+            wait(long timeout)
+            toString
+            finalize
+         */
+        // Equals contract
+        // reflexive x.equals(x)
+        // simmetric x.equals(y) should return y.equals(x)
+        // transitive x.equals(y) && y.equals(z) then x.equals(z)
+        // consistent
+        // non null for any non null x then x.equals(null) should return false
+
+        // hashCode contract
+        // if equals return true, hashCode must return the same integer result
+        // if equals return false, hashCode must not return the same integer but
+        // better for hashmap performance to return different value.
+        // consistency
+//        new Object().hashCode()
     }
 }
