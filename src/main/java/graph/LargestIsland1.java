@@ -2,7 +2,7 @@ package graph;
 
 import java.util.*;
 
-public class LagestIsland {
+public class LargestIsland1 {
 
     // O(w ^ 2 * h ^ 2) time | O(w * h) space
     public static int largestIsland(int[][] matrix) {

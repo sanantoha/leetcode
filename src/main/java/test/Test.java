@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            Sqrt
-            FirstDuplicateValue
             RegularExpressionMatch
             CountingSort
             DFSTreeTraverseRec
@@ -51,7 +49,8 @@ public class Test {
             LongestIncrSubSeq
             ValidateBinarySearchTree
             SameTree
-            LagestIsland
+            LargestIsland
+            FirstDuplicateValue
             MinimumPassesOfMatrix
             HeapSort
             MinSwapsTransformStringToPalindrome
@@ -144,6 +143,7 @@ public class Test {
             MinimumWindowSubstring
             MergeIntervals
             RiverSizes
+            Sqrt
          */
 
         /*
