@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            RegularExpressionMatch
-            CountingSort
             DFSTreeTraverseRec
             SubarraySort
             UniquePathIII
@@ -144,6 +142,8 @@ public class Test {
             MergeIntervals
             RiverSizes
             Sqrt
+            RegularExpressionMatch
+            CountingSort
          */
 
         /*
