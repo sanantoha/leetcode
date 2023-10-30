@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            DFSTreeTraverseRec
-            SubarraySort
             UniquePathIII
             BreadthSearchFirst
             ValidateStartingCity
@@ -144,6 +142,8 @@ public class Test {
             Sqrt
             RegularExpressionMatch
             CountingSort
+            DFSTreeTraverseRec
+            SubarraySort
          */
 
         /*
