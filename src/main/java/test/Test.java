@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePathIII
-            BreadthSearchFirst
             ValidateStartingCity
             HouseRobber
             WordBreak
@@ -144,6 +142,8 @@ public class Test {
             CountingSort
             DFSTreeTraverseRec
             SubarraySort
+            UniquePathIII
+            BreadthSearchFirst
          */
 
         /*
