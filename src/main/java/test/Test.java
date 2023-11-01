@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            ValidateStartingCity
-            HouseRobber
             WordBreak
             WordLadder
             BFSTreeTraverse
@@ -144,6 +142,8 @@ public class Test {
             SubarraySort
             UniquePathIII
             BreadthSearchFirst
+            ValidateStartingCity
+            HouseRobber
          */
 
         /*
