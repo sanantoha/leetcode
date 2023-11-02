@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            WordBreak
-            WordLadder
             BFSTreeTraverse
             PrimMinSpanningTree
             UniquePaths
@@ -34,6 +32,7 @@ public class Test {
             RotateArray
             WaterArea
             NodeDepths
+            WordBreak
             SparseMatrixMultiplication
             CombinationSum
             MergeBinaryTrees
@@ -144,6 +143,7 @@ public class Test {
             BreadthSearchFirst
             ValidateStartingCity
             HouseRobber
+            WordLadder
          */
 
         /*
