@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            BFSTreeTraverse
-            PrimMinSpanningTree
             UniquePaths
             BinaryTreeDiameter
             NumberOfIsland
@@ -144,6 +142,8 @@ public class Test {
             ValidateStartingCity
             HouseRobber
             WordLadder
+            BFSTreeTraverse
+            PrimMinSpanningTree
          */
 
         /*
