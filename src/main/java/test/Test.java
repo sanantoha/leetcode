@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            UniquePaths
-            BinaryTreeDiameter
             NumberOfIsland
             ValidIPAddress
             PopulatingNextRightPointerInEachNode
@@ -144,6 +142,8 @@ public class Test {
             WordLadder
             BFSTreeTraverse
             PrimMinSpanningTree
+            UniquePaths
+            BinaryTreeDiameter
          */
 
         /*
