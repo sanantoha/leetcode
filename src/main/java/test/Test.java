@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            NumberOfIsland
-            ValidIPAddress
             PopulatingNextRightPointerInEachNode
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
@@ -144,6 +142,8 @@ public class Test {
             PrimMinSpanningTree
             UniquePaths
             BinaryTreeDiameter
+            NumberOfIsland
+            ValidIPAddress
          */
 
         /*
