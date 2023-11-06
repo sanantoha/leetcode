@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            PopulatingNextRightPointerInEachNode
-            MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
             DepthFirstSearch
             ReverseBinaryTree
@@ -144,6 +142,8 @@ public class Test {
             BinaryTreeDiameter
             NumberOfIsland
             ValidIPAddress
+            PopulatingNextRightPointerInEachNode
+            MedianOfTwoSortedArrays
          */
 
         /*
