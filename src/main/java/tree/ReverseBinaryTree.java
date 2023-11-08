@@ -22,7 +22,7 @@ public class ReverseBinaryTree {
     public static void reverseIter(TreeNode root) {
 
         Deque<TreeNode> stack = new LinkedList<>();
-        stack.add(root);
+        stack.push(root);
 
         while (!stack.isEmpty()) {
             TreeNode curr = stack.remove();
@@ -34,8 +34,8 @@ public class ReverseBinaryTree {
             curr.left = r;
             curr.right = l;
 
-            stack.add(curr.left);
-            stack.add(curr.right);
+            stack.push(curr.left);
+            stack.push(curr.right);
         }
     }
 

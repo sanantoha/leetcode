@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            ReverseBinaryTree
-            ReverseLinkedList
             LongestIncreasingPathInMatrix
             InsertSort
             ConstructBinaryTreeFromPreorderAndInorderTraversal
@@ -144,6 +142,8 @@ public class Test {
             MedianOfTwoSortedArrays
             BinaryTreeZigzagLevelOrderTraverse
             DepthFirstSearch
+            ReverseBinaryTree
+            ReverseLinkedList
          */
 
         /*
