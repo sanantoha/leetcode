@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            LongestIncreasingPathInMatrix
-            InsertSort
             ConstructBinaryTreeFromPreorderAndInorderTraversal
             BinarySearch
             LevenshteinDistance
@@ -27,6 +25,7 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
+            LongestIncreasingPathInMatrix
             SameTree
             LargestIsland
             FirstDuplicateValue
@@ -40,6 +39,7 @@ public class Test {
             BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
+            InsertSort
             AllPathsFromSourceTarget
             FindClosestValueInBST
             ZigZagTraverse
