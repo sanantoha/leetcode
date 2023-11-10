@@ -5,8 +5,6 @@ import java.util.Comparator;
 public class Test {
     public static void main(String[] args) {
         /*
-            ConstructBinaryTreeFromPreorderAndInorderTraversal
-            BinarySearch
             LevenshteinDistance
             BalancedBinaryTree
             StableInternships
@@ -122,6 +120,7 @@ public class Test {
             MinimumWindowSubstring
             MergeIntervals
             RiverSizes
+            ConstructBinaryTreeFromPreorderAndInorderTraversal
             Sqrt
             RegularExpressionMatch
             CountingSort
@@ -144,6 +143,7 @@ public class Test {
             DepthFirstSearch
             ReverseBinaryTree
             ReverseLinkedList
+            BinarySearch
          */
 
         /*
