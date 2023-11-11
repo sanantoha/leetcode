@@ -1,12 +1,27 @@
 package test;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 public class Test {
+
+    record Address(String street, String city) {}
+    record Person(String name, int age, Address address) {}
+
+    public static void print(Person person) {
+        switch (person) {
+            case Person(String name, int age, Address(String street, String city)) -> {
+                System.out.println(String.format("name %s, age %s, street %s city %s", name, age, street, city));
+            }
+//            case Person p -> {
+//                System.out.println(p.name);
+//            }
+            default -> System.out.println("default");
+        }
+    }
+
     public static void main(String[] args) {
         /*
-            LevenshteinDistance
-            BalancedBinaryTree
             StableInternships
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
@@ -144,7 +159,13 @@ public class Test {
             ReverseBinaryTree
             ReverseLinkedList
             BinarySearch
+            LevenshteinDistance
+            BalancedBinaryTree
          */
+
+        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
+        System.out.println(p);
+        print(p);
 
         /*
             getClass
