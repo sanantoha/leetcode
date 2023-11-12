@@ -2,6 +2,8 @@ package test;
 
 import java.util.Comparator;
 import java.util.Objects;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.ConcurrentSkipListMap;
 
 public class Test {
 
@@ -23,8 +25,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            StableInternships
-            KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             KruskalMinSpanningTree
             BSTSuccessorSearch
@@ -159,14 +159,32 @@ public class Test {
             DepthFirstSearch
             ReverseBinaryTree
             ReverseLinkedList
+            StableInternships
             BinarySearch
             LevenshteinDistance
             BalancedBinaryTree
+            KthSmallestElementInArray
          */
 
-        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
-        System.out.println(p);
-        print(p);
+//        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
+//        System.out.println(p);
+//        print(p);
+
+        ConcurrentMap<String, String> map = new ConcurrentSkipListMap<>();
+        map.put("key", "valueOld");
+        String key = "key";
+        String oldVal = map.computeIfAbsent(key, k -> {
+            return "value";
+        });
+
+        System.out.println(oldVal);
+        System.out.println(map);
+
+        String oldVal1 = map.computeIfAbsent(key, k -> {
+            return "value1";
+        });
+        System.out.println(oldVal1);
+        System.out.println(map);
 
         /*
             getClass
