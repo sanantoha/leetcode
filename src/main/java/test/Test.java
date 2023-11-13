@@ -25,8 +25,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            BestTimeToBuyAndSellStock
-            KruskalMinSpanningTree
             BSTSuccessorSearch
             SameBSTs
             RotateArray
@@ -164,6 +162,8 @@ public class Test {
             LevenshteinDistance
             BalancedBinaryTree
             KthSmallestElementInArray
+            BestTimeToBuyAndSellStock
+            KruskalMinSpanningTree
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
