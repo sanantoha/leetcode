@@ -25,8 +25,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            BSTSuccessorSearch
-            SameBSTs
             RotateArray
             WaterArea
             NodeDepths
@@ -164,6 +162,8 @@ public class Test {
             KthSmallestElementInArray
             BestTimeToBuyAndSellStock
             KruskalMinSpanningTree
+            BSTSuccessorSearch
+            SameBSTs
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
