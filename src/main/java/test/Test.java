@@ -2,6 +2,7 @@ package test;
 
 import java.util.Comparator;
 import java.util.Objects;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ConcurrentSkipListMap;
 
@@ -25,8 +26,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            RotateArray
-            WaterArea
             NodeDepths
             WordBreak
             SparseMatrixMultiplication
@@ -49,6 +48,7 @@ public class Test {
             BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
+            WaterArea
             InsertSort
             AllPathsFromSourceTarget
             FindClosestValueInBST
@@ -164,12 +164,14 @@ public class Test {
             KruskalMinSpanningTree
             BSTSuccessorSearch
             SameBSTs
+            RotateArray
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
 //        System.out.println(p);
 //        print(p);
 
+//        CompletableFuture.supplyAsync()
         ConcurrentMap<String, String> map = new ConcurrentSkipListMap<>();
         map.put("key", "valueOld");
         String key = "key";
