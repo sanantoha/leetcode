@@ -26,8 +26,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            NodeDepths
-            WordBreak
             SparseMatrixMultiplication
             CombinationSum
             MergeBinaryTrees
@@ -165,6 +163,8 @@ public class Test {
             BSTSuccessorSearch
             SameBSTs
             RotateArray
+            NodeDepths
+            WordBreak
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
