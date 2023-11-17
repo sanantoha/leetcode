@@ -26,8 +26,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            SparseMatrixMultiplication
-            CombinationSum
             MergeBinaryTrees
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
@@ -99,6 +97,7 @@ public class Test {
             ReverseString
             BreadthSearchFirstAsMap
             MaximumSubarray
+            SparseMatrixMultiplication
             ThreeSum
             BalancedBrackets
             WordLadderII
@@ -165,6 +164,7 @@ public class Test {
             RotateArray
             NodeDepths
             WordBreak
+            CombinationSum
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
