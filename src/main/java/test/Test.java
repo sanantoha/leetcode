@@ -26,8 +26,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            MergeBinaryTrees
-            LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
             LongestIncreasingPathInMatrix
@@ -61,6 +59,7 @@ public class Test {
             LongestNonDecrSubseq
             FirstUniqueCharacterInString
             DFSTreeTraverse
+            MergeBinaryTrees
             DeepCopyArbitraryPointer
             PrimMinSpanningTreeAsMap
             CycleLinkedList
@@ -165,6 +164,7 @@ public class Test {
             NodeDepths
             WordBreak
             CombinationSum
+            LowestCommonAncestorOfBinarySearchTree
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
