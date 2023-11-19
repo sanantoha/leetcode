@@ -26,8 +26,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            LongestIncrSubSeq
-            ValidateBinarySearchTree
             LongestIncreasingPathInMatrix
             SameTree
             LargestIsland
@@ -165,6 +163,8 @@ public class Test {
             WordBreak
             CombinationSum
             LowestCommonAncestorOfBinarySearchTree
+            LongestIncrSubSeq
+            ValidateBinarySearchTree
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
