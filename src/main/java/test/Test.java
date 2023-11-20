@@ -1,6 +1,7 @@
 package test;
 
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentMap;
@@ -26,8 +27,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            LongestIncreasingPathInMatrix
-            SameTree
             LargestIsland
             FirstDuplicateValue
             MinimumPassesOfMatrix
@@ -165,6 +164,8 @@ public class Test {
             LowestCommonAncestorOfBinarySearchTree
             LongestIncrSubSeq
             ValidateBinarySearchTree
+            LongestIncreasingPathInMatrix
+            SameTree
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
@@ -188,6 +189,18 @@ public class Test {
         System.out.println(oldVal1);
         System.out.println(map);
 
+        HashMap<Integer, String> mp = new HashMap<>();
+        mp.put(1, "test");
+        mp.get(1);
+
+        int i = 65538;
+        System.out.println(Integer.toBinaryString(i));
+        System.out.println(Integer.toBinaryString(i >>> 16));
+//        System.out.println(1 << 16);
+        System.out.println("------");
+        System.out.println(i >>> 16);
+        System.out.println(i ^ (i >>> 16));
+        System.out.println(0 ^ 1);
         /*
             getClass
             equals,
