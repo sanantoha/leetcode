@@ -27,8 +27,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            LargestIsland
-            FirstDuplicateValue
             MinimumPassesOfMatrix
             HeapSort
             MinSwapsTransformStringToPalindrome
@@ -166,6 +164,8 @@ public class Test {
             ValidateBinarySearchTree
             LongestIncreasingPathInMatrix
             SameTree
+            LargestIsland
+            FirstDuplicateValue
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
