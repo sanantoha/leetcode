@@ -1,9 +1,6 @@
 package graph;
 
-import java.util.Arrays;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class TopologicalSortDFSCycleGraph {
 
@@ -13,7 +10,10 @@ public class TopologicalSortDFSCycleGraph {
         digraph.addEdge(1, 2);
         digraph.addEdge(2, 3);
         digraph.addEdge(3, 4);
-        digraph.addEdge(4, 0);
+//        digraph.addEdge(4, 0);
+
+        digraph.addEdge(2, 4);
+        digraph.addEdge(1, 3);
 
         System.out.println(digraph);
 
@@ -29,7 +29,8 @@ public class TopologicalSortDFSCycleGraph {
 
         for (int v = 0; v < digraph.V(); v++) {
             if (visited[v] == 0) {
-                dfs(digraph, visited, v, stack);
+//                dfs(digraph, visited, v, stack);
+                dfsIter(digraph, visited, v, stack);
             }
         }
 
@@ -53,6 +54,41 @@ public class TopologicalSortDFSCycleGraph {
         }
         visited[v] = 2;
         stack.push(v);
+    }
+
+    record Info(int v, int color) {}
+
+    private static void dfsIter(Digraph digraph, int[] visited, int v, Deque<Integer> res) {
+
+        Deque<Info> stack = new LinkedList<>();
+        stack.push(new Info(v, 1));
+
+        Set<Integer> set = new HashSet<>();
+
+        while (!stack.isEmpty()) {
+            Info info = stack.pop();
+
+            if (info.color == 2) {
+                visited[info.v] = 2;
+                continue;
+            }
+            if (info.color == 1) {
+                visited[info.v] = 1;
+            }
+
+            for (int u : digraph.adj(info.v)) {
+                if (visited[u] == 1) throw new IllegalStateException("Graph has cycle in vertex=" + info.v);
+                if (visited[u] == 0) {
+                    stack.push(new Info(u, 1));
+                }
+            }
+            if (!set.contains(info.v)) {
+                res.add(info.v);
+                set.add(info.v);
+            }
+
+            stack.push(new Info(info.v, 2));
+        }
     }
 
     //================================================================================================
