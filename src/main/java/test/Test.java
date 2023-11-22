@@ -27,8 +27,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            MinimumPassesOfMatrix
-            HeapSort
             MinSwapsTransformStringToPalindrome
             LongestDecrSubseq
             MaxSumIncreasingSubsequence
@@ -167,6 +165,8 @@ public class Test {
             LargestIsland
             FirstDuplicateValue
             TopologicalSort
+            MinimumPassesOfMatrix
+            HeapSort
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
