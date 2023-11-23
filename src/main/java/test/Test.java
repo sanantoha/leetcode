@@ -27,8 +27,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            MinSwapsTransformStringToPalindrome
-            LongestDecrSubseq
             MaxSumIncreasingSubsequence
             AllElementsInTwoBinarySearchTrees
             BellmanFord
@@ -167,6 +165,8 @@ public class Test {
             TopologicalSort
             MinimumPassesOfMatrix
             HeapSort
+            MinSwapsTransformStringToPalindrome
+            LongestDecrSubseq
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
