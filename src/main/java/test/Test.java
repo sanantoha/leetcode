@@ -27,8 +27,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            MaxSumIncreasingSubsequence
-            AllElementsInTwoBinarySearchTrees
             BellmanFord
             BranchSums
             FirstPermutationIsSubstrSecondStr
@@ -151,6 +149,7 @@ public class Test {
             KruskalMinSpanningTree
             BSTSuccessorSearch
             SameBSTs
+            MaxSumIncreasingSubsequence
             RotateArray
             NodeDepths
             WordBreak
@@ -167,6 +166,7 @@ public class Test {
             HeapSort
             MinSwapsTransformStringToPalindrome
             LongestDecrSubseq
+            AllElementsInTwoBinarySearchTrees
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
