@@ -27,8 +27,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            BellmanFord
-            BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
             WaterArea
@@ -167,6 +165,8 @@ public class Test {
             MinSwapsTransformStringToPalindrome
             LongestDecrSubseq
             AllElementsInTwoBinarySearchTrees
+            BellmanFord
+            BranchSums
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
