@@ -27,8 +27,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            FirstPermutationIsSubstrSecondStr
-            GenerateParentheses
             WaterArea
             InsertSort
             AllPathsFromSourceTarget
@@ -167,6 +165,8 @@ public class Test {
             AllElementsInTwoBinarySearchTrees
             BellmanFord
             BranchSums
+            FirstPermutationIsSubstrSecondStr
+            GenerateParentheses
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
