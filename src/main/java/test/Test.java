@@ -27,8 +27,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            WaterArea
-            InsertSort
             AllPathsFromSourceTarget
             FindClosestValueInBST
             ZigZagTraverse
@@ -167,6 +165,8 @@ public class Test {
             BranchSums
             FirstPermutationIsSubstrSecondStr
             GenerateParentheses
+            WaterArea
+            InsertSort
          */
 
 //        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
