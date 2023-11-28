@@ -1,34 +1,10 @@
 package test;
 
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Objects;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.ConcurrentSkipListMap;
-
 public class Test {
-
-    record Address(String street, String city) {}
-    record Person(String name, int age, Address address) {}
-
-    public static void print(Person person) {
-        switch (person) {
-            case Person(String name, int age, Address(String street, String city)) -> {
-                System.out.println(String.format("name %s, age %s, street %s city %s", name, age, street, city));
-            }
-//            case Person p -> {
-//                System.out.println(p.name);
-//            }
-            default -> System.out.println("default");
-        }
-    }
 
     public static void main(String[] args) {
 
         /*
-            AllPathsFromSourceTarget
-            FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
@@ -167,41 +143,10 @@ public class Test {
             GenerateParentheses
             WaterArea
             InsertSort
+            AllPathsFromSourceTarget
+            FindClosestValueInBST
          */
 
-//        var p = new Person("Ivan", 12, new Address("35th Avenue", "New York"));
-//        System.out.println(p);
-//        print(p);
-
-//        CompletableFuture.supplyAsync()
-        ConcurrentMap<String, String> map = new ConcurrentSkipListMap<>();
-        map.put("key", "valueOld");
-        String key = "key";
-        String oldVal = map.computeIfAbsent(key, k -> {
-            return "value";
-        });
-
-        System.out.println(oldVal);
-        System.out.println(map);
-
-        String oldVal1 = map.computeIfAbsent(key, k -> {
-            return "value1";
-        });
-        System.out.println(oldVal1);
-        System.out.println(map);
-
-        HashMap<Integer, String> mp = new HashMap<>();
-        mp.put(1, "test");
-        mp.get(1);
-
-        int i = 65538;
-        System.out.println(Integer.toBinaryString(i));
-        System.out.println(Integer.toBinaryString(i >>> 16));
-//        System.out.println(1 << 16);
-        System.out.println("------");
-        System.out.println(i >>> 16);
-        System.out.println(i ^ (i >>> 16));
-        System.out.println(0 ^ 1);
         /*
             getClass
             equals,
