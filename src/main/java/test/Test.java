@@ -5,11 +5,9 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            ZigZagTraverse
-            PalindromeLinkedList
             TopologicalSortDFSCycleGraph
-            DijkstraShortestPathsAsMap
             MinNumberOfCoinsForChange
+            DijkstraShortestPathsAsMap
             TopKFrequentWords
             MinimalHeaviestSetA
             SymmetricTree
@@ -145,6 +143,8 @@ public class Test {
             InsertSort
             AllPathsFromSourceTarget
             FindClosestValueInBST
+            ZigZagTraverse
+            PalindromeLinkedList
          */
 
         /*
