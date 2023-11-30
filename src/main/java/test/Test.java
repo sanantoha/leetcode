@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            TopologicalSortDFSCycleGraph
-            MinNumberOfCoinsForChange
             DijkstraShortestPathsAsMap
             TopKFrequentWords
             MinimalHeaviestSetA
@@ -145,6 +143,8 @@ public class Test {
             FindClosestValueInBST
             ZigZagTraverse
             PalindromeLinkedList
+            TopologicalSortDFSCycleGraph
+            MinNumberOfCoinsForChange
          */
 
         /*
