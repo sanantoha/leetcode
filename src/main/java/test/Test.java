@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            DijkstraShortestPathsAsMap
-            TopKFrequentWords
             MinimalHeaviestSetA
             SymmetricTree
             FindNodesDistanceK
@@ -145,6 +143,8 @@ public class Test {
             PalindromeLinkedList
             TopologicalSortDFSCycleGraph
             MinNumberOfCoinsForChange
+            DijkstraShortestPathsAsMap
+            TopKFrequentWords
          */
 
         /*
