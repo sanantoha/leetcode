@@ -5,15 +5,13 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            MinimalHeaviestSetA
-            SymmetricTree
-            FindNodesDistanceK
             StringPermutation
             LongestNonDecrSubseq
             FirstUniqueCharacterInString
             DFSTreeTraverse
             MergeBinaryTrees
             DeepCopyArbitraryPointer
+            SymmetricTree
             PrimMinSpanningTreeAsMap
             CycleLinkedList
             KruskalMinSpanningTreeAsMap
@@ -145,6 +143,8 @@ public class Test {
             MinNumberOfCoinsForChange
             DijkstraShortestPathsAsMap
             TopKFrequentWords
+            MinimalHeaviestSetA
+            FindNodesDistanceK
          */
 
         /*
