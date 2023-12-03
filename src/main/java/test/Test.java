@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            StringPermutation
-            LongestNonDecrSubseq
             FirstUniqueCharacterInString
             DFSTreeTraverse
             MergeBinaryTrees
@@ -145,6 +143,8 @@ public class Test {
             TopKFrequentWords
             MinimalHeaviestSetA
             FindNodesDistanceK
+            StringPermutation
+            LongestNonDecrSubseq
          */
 
         /*
