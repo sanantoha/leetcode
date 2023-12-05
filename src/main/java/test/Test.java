@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            MergeBinaryTrees
-            DeepCopyArbitraryPointer
             SymmetricTree
             PrimMinSpanningTreeAsMap
             CycleLinkedList
@@ -145,6 +143,8 @@ public class Test {
             LongestNonDecrSubseq
             FirstUniqueCharacterInString
             DFSTreeTraverse
+            MergeBinaryTrees
+            DeepCopyArbitraryPointer
          */
 
         /*
@@ -161,7 +161,7 @@ public class Test {
          */
         // Equals contract
         // reflexive x.equals(x)
-        // simmetric x.equals(y) should return y.equals(x)
+        // symmetric x.equals(y) should return y.equals(x)
         // transitive x.equals(y) && y.equals(z) then x.equals(z)
         // consistent
         // non null for any non null x then x.equals(null) should return false
