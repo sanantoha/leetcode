@@ -4,7 +4,6 @@ import java.util.*;
 
 import static graph.GraphUtils.Edge;
 import static graph.GraphUtils.printEdgeWeightedDigraph;
-import static graph.GraphUtils.Edge;
 import static graph.GraphUtils.Pair;
 
 public class PrimMinSpanningTreeAsMap1 {
@@ -15,12 +14,12 @@ public class PrimMinSpanningTreeAsMap1 {
         System.out.println("=========================================");
         /*
         6 5
-        0: 0-1 7.00000
-        1: 1-2 3.00000  0-1 7.00000
-        2: 1-2 3.00000  2-4 3.00000
-        3: 3-4 2.00000
-        4: 3-4 2.00000  4-5 2.00000  2-4 3.00000
-        5: 4-5 2.00000
+        0: 0-1 7.0
+        1: 1-2 3.0  0-1 7.0
+        2: 1-2 3.0  2-4 3.0
+        3: 3-4 2.0
+        4: 3-4 2.0  4-5 2.0  2-4 3.0
+        5: 4-5 2.0
          */
         System.out.println(printEdgeWeightedDigraph(mst(graph)));
 
@@ -33,13 +32,13 @@ public class PrimMinSpanningTreeAsMap1 {
         System.out.println("=========================================");
         /*
         7 6
-        0: 0-1 2.00000  0-2 3.00000
-        1: 0-1 2.00000  1-6 3.00000
-        2: 2-4 1.00000  0-2 3.00000
-        3: 3-4 5.00000
-        4: 2-4 1.00000  3-4 5.00000
-        5: 5-6 2.00000
-        6: 5-6 2.00000  1-6 3.00000
+        0: 0-1 2.0  0-2 3.0
+        1: 0-1 2.0  1-6 3.0
+        2: 2-4 1.0  0-2 3.0
+        3: 3-4 5.0
+        4: 2-4 1.0  3-4 5.0
+        5: 5-6 2.0
+        6: 5-6 2.0  1-6 3.0
          */
         System.out.println(printEdgeWeightedDigraph(mst(graph1)));
     }

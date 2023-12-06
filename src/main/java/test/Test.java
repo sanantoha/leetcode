@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            SymmetricTree
-            PrimMinSpanningTreeAsMap
             CycleLinkedList
             KruskalMinSpanningTreeAsMap
             EvaluateExpressionTree
@@ -34,6 +32,7 @@ public class Test {
             PalindromicSubstrings
             RotateImage
             OneEdit
+            PrimMinSpanningTreeAsMap
             SortList
             PhoneNumberMnemonic
             Pow
@@ -145,6 +144,7 @@ public class Test {
             DFSTreeTraverse
             MergeBinaryTrees
             DeepCopyArbitraryPointer
+            SymmetricTree
          */
 
         /*
