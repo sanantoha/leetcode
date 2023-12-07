@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            CycleLinkedList
-            KruskalMinSpanningTreeAsMap
             EvaluateExpressionTree
             DiskStacking
             LargestRange
@@ -145,6 +143,8 @@ public class Test {
             MergeBinaryTrees
             DeepCopyArbitraryPointer
             SymmetricTree
+            CycleLinkedList
+            KruskalMinSpanningTreeAsMap
          */
 
         /*
