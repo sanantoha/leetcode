@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            EvaluateExpressionTree
-            DiskStacking
             LargestRange
             LowestCommonAncestorOfBinaryTree
             SelectSort
@@ -18,6 +16,7 @@ public class Test {
             WordSearch
             ClimbingStairs
             NextGreaterElement
+            EvaluateExpressionTree
             ConvertedSortedArrayToBST
             StaircaseTraversal
             MergedTwoSortedLists
@@ -145,6 +144,7 @@ public class Test {
             SymmetricTree
             CycleLinkedList
             KruskalMinSpanningTreeAsMap
+            DiskStacking
          */
 
         /*
