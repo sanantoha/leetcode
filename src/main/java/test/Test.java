@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            LargestRange
-            LowestCommonAncestorOfBinaryTree
             SelectSort
             AStarAlgo
             ReconstructBST
@@ -145,6 +143,8 @@ public class Test {
             CycleLinkedList
             KruskalMinSpanningTreeAsMap
             DiskStacking
+            LargestRange
+            LowestCommonAncestorOfBinaryTree
          */
 
         /*
