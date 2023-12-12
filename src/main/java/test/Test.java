@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            FourSum
-            NumberOfWaysToMakeChange
             WordSearch
             ClimbingStairs
             NextGreaterElement
@@ -145,6 +143,8 @@ public class Test {
             AStarAlgo
             ReconstructBST
             DepthFirstSearchAsMap
+            FourSum
+            NumberOfWaysToMakeChange
          */
 
         /*
