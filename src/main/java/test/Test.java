@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            WordSearch
-            ClimbingStairs
             NextGreaterElement
             EvaluateExpressionTree
             ConvertedSortedArrayToBST
@@ -145,6 +143,8 @@ public class Test {
             DepthFirstSearchAsMap
             FourSum
             NumberOfWaysToMakeChange
+            WordSearch
+            ClimbingStairs
          */
 
         /*
