@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            NextGreaterElement
-            EvaluateExpressionTree
             ConvertedSortedArrayToBST
             StaircaseTraversal
             MergedTwoSortedLists
@@ -145,6 +143,8 @@ public class Test {
             NumberOfWaysToMakeChange
             WordSearch
             ClimbingStairs
+            NextGreaterElement
+            EvaluateExpressionTree
          */
 
         /*
