@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            ConvertedSortedArrayToBST
-            StaircaseTraversal
             MergedTwoSortedLists
             SortKSortedArray
             TopologicalSortDFSCycleGraphAsMap
@@ -145,6 +143,8 @@ public class Test {
             ClimbingStairs
             NextGreaterElement
             EvaluateExpressionTree
+            ConvertedSortedArrayToBST
+            StaircaseTraversal
          */
 
         /*
