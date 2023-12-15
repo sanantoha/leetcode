@@ -24,6 +24,7 @@ public class Test {
             BreadthSearchFirstAsMap
             MaximumSubarray
             SparseMatrixMultiplication
+            OptimalFreelancing
             ThreeSum
             BalancedBrackets
             WordLadderII
