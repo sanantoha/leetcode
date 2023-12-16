@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            MergedTwoSortedLists
-            SortKSortedArray
             TopologicalSortDFSCycleGraphAsMap
             ReverseInteger
             LongestCommonSubsequence
@@ -146,6 +144,8 @@ public class Test {
             EvaluateExpressionTree
             ConvertedSortedArrayToBST
             StaircaseTraversal
+            MergedTwoSortedLists
+            SortKSortedArray
          */
 
         /*
