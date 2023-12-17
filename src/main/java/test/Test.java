@@ -5,12 +5,10 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            TopologicalSortDFSCycleGraphAsMap
-            ReverseInteger
             LongestCommonSubsequence
+            PalindromicSubstrings
             DijkstraShortestPaths
             SearchForRange
-            PalindromicSubstrings
             RotateImage
             OneEdit
             PrimMinSpanningTreeAsMap
@@ -146,6 +144,8 @@ public class Test {
             StaircaseTraversal
             MergedTwoSortedLists
             SortKSortedArray
+            TopologicalSortDFSCycleGraphAsMap
+            ReverseInteger
          */
 
         /*

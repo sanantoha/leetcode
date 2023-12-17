@@ -29,8 +29,8 @@ public class TopologicalSortDFSCycleGraph {
 
         for (int v = 0; v < digraph.V(); v++) {
             if (visited[v] == 0) {
-//                dfs(digraph, visited, v, stack);
-                dfsIter(digraph, visited, v, stack);
+                dfs(digraph, visited, v, stack);
+//                dfsIter(digraph, visited, v, stack);
             }
         }
 
@@ -58,6 +58,7 @@ public class TopologicalSortDFSCycleGraph {
 
     record Info(int v, int color) {}
 
+    // this method does not work correctly
     private static void dfsIter(Digraph digraph, int[] visited, int v, Deque<Integer> res) {
 
         Deque<Info> stack = new LinkedList<>();
