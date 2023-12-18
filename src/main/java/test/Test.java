@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            LongestCommonSubsequence
-            PalindromicSubstrings
             DijkstraShortestPaths
             SearchForRange
             RotateImage
@@ -146,6 +144,8 @@ public class Test {
             SortKSortedArray
             TopologicalSortDFSCycleGraphAsMap
             ReverseInteger
+            LongestCommonSubsequence
+            PalindromicSubstrings
          */
 
         /*
