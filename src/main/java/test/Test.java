@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            DijkstraShortestPaths
-            SearchForRange
             RotateImage
             OneEdit
             PrimMinSpanningTreeAsMap
@@ -146,6 +144,8 @@ public class Test {
             ReverseInteger
             LongestCommonSubsequence
             PalindromicSubstrings
+            DijkstraShortestPaths
+            SearchForRange
          */
 
         /*
