@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            RotateImage
-            OneEdit
             PrimMinSpanningTreeAsMap
             SortList
             PhoneNumberMnemonic
@@ -146,6 +144,8 @@ public class Test {
             PalindromicSubstrings
             DijkstraShortestPaths
             SearchForRange
+            RotateImage
+            OneEdit
          */
 
         /*
