@@ -6,9 +6,9 @@ public class Test {
 
         /*
             PrimMinSpanningTreeAsMap
+            Pow
             SortList
             PhoneNumberMnemonic
-            Pow
             KnapsackProblem
             ReverseString
             BreadthSearchFirstAsMap
