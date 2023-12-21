@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            PrimMinSpanningTreeAsMap
-            Pow
             SortList
             PhoneNumberMnemonic
             KnapsackProblem
@@ -146,6 +144,8 @@ public class Test {
             SearchForRange
             RotateImage
             OneEdit
+            PrimMinSpanningTreeAsMap
+            Pow
          */
 
         /*
