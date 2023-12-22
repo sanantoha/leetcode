@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            SortList
-            PhoneNumberMnemonic
             KnapsackProblem
             ReverseString
             BreadthSearchFirstAsMap
@@ -146,6 +144,8 @@ public class Test {
             OneEdit
             PrimMinSpanningTreeAsMap
             Pow
+            SortList
+            PhoneNumberMnemonic
          */
 
         /*
