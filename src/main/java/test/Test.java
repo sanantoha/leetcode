@@ -5,8 +5,6 @@ public class Test {
     public static void main(String[] args) {
 
         /*
-            KnapsackProblem
-            ReverseString
             BreadthSearchFirstAsMap
             MaximumSubarray
             SparseMatrixMultiplication
@@ -146,6 +144,8 @@ public class Test {
             Pow
             SortList
             PhoneNumberMnemonic
+            KnapsackProblem
+            ReverseString
          */
 
         /*
