@@ -1,12 +1,47 @@
 package test;
 
+import java.util.List;
+
 public class Test {
 
     public static void main(String[] args) {
+        List<String> easyTasks = List.of(
+                "MaximumSubarray",
+                "BreadthSearchFirstAsMap",
+                "BalancedBrackets",
+                "LeftViewBinaryTree",
+                "DeleteNodeInLinkedList",
+                "IntersectionLinkedList",
+                "MiddleNode"
+        );
 
+        List<String> middleTasks = List.of(
+                "OptimalFreelancing",
+                "ThreeSum",
+                "Permutations",
+                "ProductOfArrayExceptSelf",
+                "ReverseWordsInString",
+                "RemoveNthNodeFromEndOfList",
+                "SubarraySumEqualsK"
+        );
+
+        List<String> hardTasks = List.of(
+                "SparseMatrixMultiplication",
+                "WordLadderII",
+                "MaxPathSumInBinaryTree",
+                "MinNumberOfJumps",
+                "SearchInRotatedSortedArray",
+                "SurroundedRegions",
+                "SpiralMatrixTraverse",
+                "BellmanFordAsMap",
+                "MinRewards",
+                "LRUCache",
+                "StringWithoutAAAorBBB",
+                "MergeSort",
+                "CloneGraph",
+                "MinHeap"
+        );
         /*
-            BreadthSearchFirstAsMap
-            MaximumSubarray
             SparseMatrixMultiplication
             OptimalFreelancing
             ThreeSum
@@ -146,6 +181,8 @@ public class Test {
             PhoneNumberMnemonic
             KnapsackProblem
             ReverseString
+            BreadthSearchFirstAsMap
+            MaximumSubarray
          */
 
         /*
