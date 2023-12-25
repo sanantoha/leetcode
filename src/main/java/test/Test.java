@@ -25,7 +25,10 @@ public class Test {
                 "ReverseWordsInString",
                 "RemoveNthNodeFromEndOfList",
                 "SubarraySumEqualsK",
-                "MergeIntervals"
+                "MergeIntervals",
+                "Sqrt",
+                "CountingSort",
+                "DFSTreeTraverseRec"
         );
 
         List<String> hardTasks = List.of(
@@ -45,7 +48,12 @@ public class Test {
                 "MinHeap",
                 "QuickSort",
                 "Powerset",
-                "MinimumWindowSubstring"
+                "MinimumWindowSubstring",
+                "RiverSizes",
+                "ConstructBinaryTreeFromPreorderAndInorderTraversal",
+                "RegularExpressionMatch",
+                "SubarraySort",
+                "UniquePathIII"
         );
         /*
             ThreeSum
