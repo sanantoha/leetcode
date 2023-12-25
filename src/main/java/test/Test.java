@@ -12,7 +12,9 @@ public class Test {
                 "LeftViewBinaryTree",
                 "DeleteNodeInLinkedList",
                 "IntersectionLinkedList",
-                "MiddleNode"
+                "MiddleNode",
+                "FindPivotIndex",
+                "AddTwoNumbers"
         );
 
         List<String> middleTasks = List.of(
@@ -22,7 +24,8 @@ public class Test {
                 "ProductOfArrayExceptSelf",
                 "ReverseWordsInString",
                 "RemoveNthNodeFromEndOfList",
-                "SubarraySumEqualsK"
+                "SubarraySumEqualsK",
+                "MergeIntervals"
         );
 
         List<String> hardTasks = List.of(
@@ -39,11 +42,12 @@ public class Test {
                 "StringWithoutAAAorBBB",
                 "MergeSort",
                 "CloneGraph",
-                "MinHeap"
+                "MinHeap",
+                "QuickSort",
+                "Powerset",
+                "MinimumWindowSubstring"
         );
         /*
-            SparseMatrixMultiplication
-            OptimalFreelancing
             ThreeSum
             BalancedBrackets
             WordLadderII
@@ -183,6 +187,8 @@ public class Test {
             ReverseString
             BreadthSearchFirstAsMap
             MaximumSubarray
+            SparseMatrixMultiplication
+            OptimalFreelancing
          */
 
         /*
