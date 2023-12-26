@@ -14,12 +14,13 @@ public class Test {
                 "IntersectionLinkedList",
                 "MiddleNode",
                 "FindPivotIndex",
-                "AddTwoNumbers"
+                "AddTwoNumbers",
+                "HouseRobber",
+                "BFSTreeTraverse"
         );
 
         List<String> middleTasks = List.of(
                 "OptimalFreelancing",
-                "ThreeSum",
                 "Permutations",
                 "ProductOfArrayExceptSelf",
                 "ReverseWordsInString",
@@ -28,7 +29,10 @@ public class Test {
                 "MergeIntervals",
                 "Sqrt",
                 "CountingSort",
-                "DFSTreeTraverseRec"
+                "DFSTreeTraverseRec",
+                "BreadthSearchFirst",
+                "UniquePaths",
+                "BinaryTreeDiameter"
         );
 
         List<String> hardTasks = List.of(
@@ -53,11 +57,15 @@ public class Test {
                 "ConstructBinaryTreeFromPreorderAndInorderTraversal",
                 "RegularExpressionMatch",
                 "SubarraySort",
-                "UniquePathIII"
+                "ThreeSum",
+                "UniquePathIII",
+                "ValidateStartingCity",
+                "WordLadder",
+                "PrimMinSpanningTree",
+                "NumberOfIsland",
+                "ValidIPAddress"
         );
         /*
-            ThreeSum
-            BalancedBrackets
             WordLadderII
             Permutations
             MaxPathSumInBinaryTree
@@ -197,6 +205,8 @@ public class Test {
             MaximumSubarray
             SparseMatrixMultiplication
             OptimalFreelancing
+            ThreeSum
+            BalancedBrackets
          */
 
         /*
