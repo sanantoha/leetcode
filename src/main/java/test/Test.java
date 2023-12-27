@@ -16,7 +16,13 @@ public class Test {
                 "FindPivotIndex",
                 "AddTwoNumbers",
                 "HouseRobber",
-                "BFSTreeTraverse"
+                "BFSTreeTraverse",
+                "PopulatingNextRightPointerInEachNode",
+                "BinaryTreeZigzagLevelOrderTraverse",
+                "BinarySearch",
+                "BalancedBinaryTree",
+                "BestTimeToBuyAndSellStock",
+                "SameBSTs"
         );
 
         List<String> middleTasks = List.of(
@@ -32,7 +38,12 @@ public class Test {
                 "DFSTreeTraverseRec",
                 "BreadthSearchFirst",
                 "UniquePaths",
-                "BinaryTreeDiameter"
+                "BinaryTreeDiameter",
+                "DepthFirstSearch",
+                "ReverseBinaryTree",
+                "ReverseLinkedList",
+                "KthSmallestElementInArray",
+                "BSTSuccessorSearch"
         );
 
         List<String> hardTasks = List.of(
@@ -63,11 +74,14 @@ public class Test {
                 "WordLadder",
                 "PrimMinSpanningTree",
                 "NumberOfIsland",
-                "ValidIPAddress"
+                "ValidIPAddress",
+                "MedianOfTwoSortedArrays",
+                "StableInternships",
+                "LevenshteinDistance",
+                "KruskalMinSpanningTree",
+                "MaxSumIncreasingSubsequence"
         );
         /*
-            WordLadderII
-            Permutations
             MaxPathSumInBinaryTree
             MinNumberOfJumps
             LeftViewBinaryTree
@@ -201,12 +215,15 @@ public class Test {
             PhoneNumberMnemonic
             KnapsackProblem
             ReverseString
+            ----------------
             BreadthSearchFirstAsMap
             MaximumSubarray
             SparseMatrixMultiplication
             OptimalFreelancing
             ThreeSum
             BalancedBrackets
+            WordLadderII
+            Permutations
          */
 
         /*
