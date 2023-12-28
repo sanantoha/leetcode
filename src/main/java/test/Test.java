@@ -22,7 +22,11 @@ public class Test {
                 "BinarySearch",
                 "BalancedBinaryTree",
                 "BestTimeToBuyAndSellStock",
-                "SameBSTs"
+                "SameBSTs",
+                "LowestCommonAncestorOfBinarySearchTree",
+                "ValidateBinarySearchTree",
+                "SameTree",
+                "FirstDuplicateValue"
         );
 
         List<String> middleTasks = List.of(
@@ -43,7 +47,12 @@ public class Test {
                 "ReverseBinaryTree",
                 "ReverseLinkedList",
                 "KthSmallestElementInArray",
-                "BSTSuccessorSearch"
+                "BSTSuccessorSearch",
+                "RotateArray",
+                "NodeDepths",
+                "WordBreak",
+                "CombinationSum",
+                "MinSwapsTransformStringToPalindrome"
         );
 
         List<String> hardTasks = List.of(
@@ -79,11 +88,16 @@ public class Test {
                 "StableInternships",
                 "LevenshteinDistance",
                 "KruskalMinSpanningTree",
-                "MaxSumIncreasingSubsequence"
+                "MaxSumIncreasingSubsequence",
+                "LongestIncrSubSeq",
+                "LongestIncreasingPathInMatrix",
+                "LargestIsland",
+                "TopologicalSort",
+                "MinimumPassesOfMatrix",
+                "HeapSort",
+                "LongestDecrSubseq"
         );
         /*
-            MaxPathSumInBinaryTree
-            MinNumberOfJumps
             LeftViewBinaryTree
             SearchInRotatedSortedArray
             SurroundedRegions
@@ -224,6 +238,8 @@ public class Test {
             BalancedBrackets
             WordLadderII
             Permutations
+            MaxPathSumInBinaryTree
+            MinNumberOfJumps
          */
 
         /*
