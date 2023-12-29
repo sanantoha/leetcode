@@ -26,7 +26,8 @@ public class Test {
                 "LowestCommonAncestorOfBinarySearchTree",
                 "ValidateBinarySearchTree",
                 "SameTree",
-                "FirstDuplicateValue"
+                "FirstDuplicateValue",
+                "InsertSort"
         );
 
         List<String> middleTasks = List.of(
@@ -52,7 +53,13 @@ public class Test {
                 "NodeDepths",
                 "WordBreak",
                 "CombinationSum",
-                "MinSwapsTransformStringToPalindrome"
+                "MinSwapsTransformStringToPalindrome",
+                "BranchSums",
+                "FindClosestValueInBST",
+                "PalindromeLinkedList",
+                "MinNumberOfCoinsForChange",
+                "MinimalHeaviestSetA",
+                "StringPermutation"
         );
 
         List<String> hardTasks = List.of(
@@ -95,11 +102,21 @@ public class Test {
                 "TopologicalSort",
                 "MinimumPassesOfMatrix",
                 "HeapSort",
-                "LongestDecrSubseq"
+                "LongestDecrSubseq",
+                "AllElementsInTwoBinarySearchTrees",
+                "BellmanFord",
+                "FirstPermutationIsSubstrSecondStr",
+                "GenerateParentheses",
+                "WaterArea",
+                "AllPathsFromSourceTarget",
+                "ZigZagTraverse",
+                "TopologicalSortDFSCycleGraph",
+                "DijkstraShortestPathsAsMap",
+                "TopKFrequentWords",
+                "FindNodesDistanceK",
+                "LongestNonDecrSubseq"
         );
         /*
-            LeftViewBinaryTree
-            SearchInRotatedSortedArray
             SurroundedRegions
             SpiralMatrixTraverse
             ProductOfArrayExceptSelf
@@ -240,6 +257,8 @@ public class Test {
             Permutations
             MaxPathSumInBinaryTree
             MinNumberOfJumps
+            LeftViewBinaryTree
+            SearchInRotatedSortedArray
          */
 
         /*
