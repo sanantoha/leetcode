@@ -27,7 +27,12 @@ public class Test {
                 "ValidateBinarySearchTree",
                 "SameTree",
                 "FirstDuplicateValue",
-                "InsertSort"
+                "InsertSort",
+                "FirstUniqueCharacterInString",
+                "SymmetricTree",
+                "CycleLinkedList",
+                "LowestCommonAncestorOfBinaryTree",
+                "SelectSort"
         );
 
         List<String> middleTasks = List.of(
@@ -59,7 +64,9 @@ public class Test {
                 "PalindromeLinkedList",
                 "MinNumberOfCoinsForChange",
                 "MinimalHeaviestSetA",
-                "StringPermutation"
+                "StringPermutation",
+                "DFSTreeTraverse",
+                "DepthFirstSearchAsMap"
         );
 
         List<String> hardTasks = List.of(
@@ -114,11 +121,17 @@ public class Test {
                 "DijkstraShortestPathsAsMap",
                 "TopKFrequentWords",
                 "FindNodesDistanceK",
-                "LongestNonDecrSubseq"
+                "LongestNonDecrSubseq",
+                "MergeBinaryTrees",
+                "DeepCopyArbitraryPointer",
+                "KruskalMinSpanningTreeAsMap",
+                "DiskStacking",
+                "LargestRange",
+                "AStarAlgo",
+                "ReconstructBST",
+                "FourSum"
         );
         /*
-            SurroundedRegions
-            SpiralMatrixTraverse
             ProductOfArrayExceptSelf
             DeleteNodeInLinkedList
             ReverseWordsInString
@@ -259,6 +272,8 @@ public class Test {
             MinNumberOfJumps
             LeftViewBinaryTree
             SearchInRotatedSortedArray
+            SurroundedRegions
+            SpiralMatrixTraverse
          */
 
         /*
