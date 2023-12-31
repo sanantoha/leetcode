@@ -32,7 +32,13 @@ public class Test {
                 "SymmetricTree",
                 "CycleLinkedList",
                 "LowestCommonAncestorOfBinaryTree",
-                "SelectSort"
+                "SelectSort",
+                "NumberOfWaysToMakeChange",
+                "ClimbingStairs",
+                "ConvertedSortedArrayToBST",
+                "ReverseInteger",
+                "Pow",
+                "ReverseString"
         );
 
         List<String> middleTasks = List.of(
@@ -66,7 +72,10 @@ public class Test {
                 "MinimalHeaviestSetA",
                 "StringPermutation",
                 "DFSTreeTraverse",
-                "DepthFirstSearchAsMap"
+                "DepthFirstSearchAsMap",
+                "SortKSortedArray",
+                "PalindromicSubstrings",
+                "OneEdit"
         );
 
         List<String> hardTasks = List.of(
@@ -129,11 +138,23 @@ public class Test {
                 "LargestRange",
                 "AStarAlgo",
                 "ReconstructBST",
-                "FourSum"
+                "FourSum",
+                "WordSearch",
+                "NextGreaterElement",
+                "EvaluateExpressionTree",
+                "StaircaseTraversal",
+                "MergedTwoSortedLists",
+                "TopologicalSortDFSCycleGraphAsMap",
+                "LongestCommonSubsequence",
+                "DijkstraShortestPaths",
+                "SearchForRange",
+                "RotateImage",
+                "PrimMinSpanningTreeAsMap",
+                "SortList",
+                "PhoneNumberMnemonic",
+                "KnapsackProblem"
         );
         /*
-            ProductOfArrayExceptSelf
-            DeleteNodeInLinkedList
             ReverseWordsInString
             BellmanFordAsMap
             RemoveNthNodeFromEndOfList
@@ -274,6 +295,8 @@ public class Test {
             SearchInRotatedSortedArray
             SurroundedRegions
             SpiralMatrixTraverse
+            ProductOfArrayExceptSelf
+            DeleteNodeInLinkedList
          */
 
         /*
