@@ -6,11 +6,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "MaximumSubarray",
-                "BreadthSearchFirstAsMap",
-                "BalancedBrackets",
-                "LeftViewBinaryTree",
-                "DeleteNodeInLinkedList",
                 "IntersectionLinkedList",
                 "MiddleNode",
                 "FindPivotIndex",
@@ -38,13 +33,15 @@ public class Test {
                 "ConvertedSortedArrayToBST",
                 "ReverseInteger",
                 "Pow",
-                "ReverseString"
+                "ReverseString",
+                "MaximumSubarray",
+                "BreadthSearchFirstAsMap",
+                "BalancedBrackets",
+                "LeftViewBinaryTree",
+                "DeleteNodeInLinkedList"
         );
 
-        List<String> middleTasks = List.of(
-                "OptimalFreelancing",
-                "Permutations",
-                "ProductOfArrayExceptSelf",
+        List<String> medium = List.of(
                 "ReverseWordsInString",
                 "RemoveNthNodeFromEndOfList",
                 "SubarraySumEqualsK",
@@ -75,17 +72,13 @@ public class Test {
                 "DepthFirstSearchAsMap",
                 "SortKSortedArray",
                 "PalindromicSubstrings",
-                "OneEdit"
+                "OneEdit",
+                "OptimalFreelancing",
+                "Permutations",
+                "ProductOfArrayExceptSelf"
         );
 
         List<String> hardTasks = List.of(
-                "SparseMatrixMultiplication",
-                "WordLadderII",
-                "MaxPathSumInBinaryTree",
-                "MinNumberOfJumps",
-                "SearchInRotatedSortedArray",
-                "SurroundedRegions",
-                "SpiralMatrixTraverse",
                 "BellmanFordAsMap",
                 "MinRewards",
                 "LRUCache",
@@ -152,7 +145,14 @@ public class Test {
                 "PrimMinSpanningTreeAsMap",
                 "SortList",
                 "PhoneNumberMnemonic",
-                "KnapsackProblem"
+                "KnapsackProblem",
+                "SparseMatrixMultiplication",
+                "WordLadderII",
+                "MaxPathSumInBinaryTree",
+                "MinNumberOfJumps",
+                "SearchInRotatedSortedArray",
+                "SurroundedRegions",
+                "SpiralMatrixTraverse"
         );
         /*
             ReverseWordsInString
@@ -324,5 +324,10 @@ public class Test {
         // better for hashmap performance to return different value.
         // consistency
 //        new Object().hashCode()
+
+        System.out.println(easyTasks.size());
+        System.out.println(medium.size());
+        System.out.println(hardTasks.size());
+        System.out.println(easyTasks.size() + medium.size() + hardTasks.size());
     }
 }
