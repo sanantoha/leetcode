@@ -6,7 +6,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "MiddleNode",
                 "FindPivotIndex",
                 "AddTwoNumbers",
                 "HouseRobber",
@@ -38,11 +37,11 @@ public class Test {
                 "BalancedBrackets",
                 "LeftViewBinaryTree",
                 "DeleteNodeInLinkedList",
-                "IntersectionLinkedList"
+                "IntersectionLinkedList",
+                "MiddleNode"
         );
 
         List<String> medium = List.of(
-                "RemoveNthNodeFromEndOfList",
                 "SubarraySumEqualsK",
                 "MergeIntervals",
                 "Sqrt",
@@ -75,11 +74,11 @@ public class Test {
                 "OptimalFreelancing",
                 "Permutations",
                 "ProductOfArrayExceptSelf",
-                "ReverseWordsInString"
+                "ReverseWordsInString",
+                "RemoveNthNodeFromEndOfList"
         );
 
         List<String> hardTasks = List.of(
-                "LRUCache",
                 "StringWithoutAAAorBBB",
                 "MergeSort",
                 "CloneGraph",
@@ -152,7 +151,8 @@ public class Test {
                 "SurroundedRegions",
                 "SpiralMatrixTraverse",
                 "BellmanFordAsMap",
-                "MinRewards"
+                "MinRewards",
+                "LRUCache"
         );
 
         /*
@@ -181,9 +181,9 @@ public class Test {
         // consistency
 //        new Object().hashCode()
 
-        System.out.println(easyTasks.size());
-        System.out.println(medium.size());
-        System.out.println(hardTasks.size());
-        System.out.println(easyTasks.size() + medium.size() + hardTasks.size());
+        System.out.println("easy tasks: " + easyTasks.size());
+        System.out.println("medium tasks: " + medium.size());
+        System.out.println("hard tasks: " + hardTasks.size());
+        System.out.println("total tasks: " + (easyTasks.size() + medium.size() + hardTasks.size()));
     }
 }
