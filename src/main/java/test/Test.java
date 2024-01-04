@@ -7,6 +7,7 @@ public class Test {
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
                 "AddTwoNumbers",
+                "GreatestCommonDivisor",
                 "HouseRobber",
                 "BFSTreeTraverse",
                 "PopulatingNextRightPointerInEachNode",
@@ -44,6 +45,7 @@ public class Test {
         List<String> medium = List.of(
                 "MergeIntervals",
                 "Sqrt",
+                "InsertGreatestCommonDivisors",
                 "CountingSort",
                 "DFSTreeTraverseRec",
                 "BreadthSearchFirst",
