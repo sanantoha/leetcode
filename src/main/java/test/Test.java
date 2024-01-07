@@ -6,7 +6,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "HouseRobber",
                 "BFSTreeTraverse",
                 "PopulatingNextRightPointerInEachNode",
                 "BinaryTreeZigzagLevelOrderTraverse",
@@ -39,7 +38,8 @@ public class Test {
                 "MiddleNode",
                 "FindPivotIndex",
                 "AddTwoNumbers",
-                "GreatestCommonDivisor"
+                "GreatestCommonDivisor",
+                "HouseRobber"
         );
 
         List<String> medium = List.of(
@@ -82,7 +82,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "MinHeap",
                 "QuickSort",
                 "Powerset",
                 "MinimumWindowSubstring",
@@ -154,7 +153,8 @@ public class Test {
                 "MinRewards",
                 "LRUCache",
                 "MergeSort",
-                "CloneGraph"
+                "CloneGraph",
+                "MinHeap"
         );
 
         /*
