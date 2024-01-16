@@ -41,10 +41,10 @@ public class ThreeSum {
                 int sum = arr[i] + arr[l] + arr[r];
                 if (sum == target) {
                     res.add(new Integer[] {arr[i], arr[l], arr[r]});
-                    while (l < r && arr[l] == arr[l + 1]) l++;
-                    while (l < r && arr[r - 1] == arr[r]) r--;
                     l++;
                     r--;
+                    while (l < r && arr[l - 1] == arr[l]) l++;
+                    while (l < r && arr[r + 1] == arr[r]) r--;
                 } else if (sum < target) {
                     l++;
                 } else {
