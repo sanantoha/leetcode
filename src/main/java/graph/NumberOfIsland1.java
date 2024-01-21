@@ -14,6 +14,10 @@ public class NumberOfIsland1 {
                 {0, 0, 0, 1, 1}
         };
 
-        System.out.println(numberOfIsland(grid));
+        int expected = 3;
+
+        int actual = numberOfIsland(grid);
+        System.out.println(actual);
+        System.out.println(actual == expected);
     }
 }
