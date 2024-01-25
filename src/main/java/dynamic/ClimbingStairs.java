@@ -22,6 +22,7 @@ public class ClimbingStairs {
         return ways[n];
     }
 
+    // O(n) time | O(1) space
     public static int climbStairs(int n) {
         if (n <= 0) return 0;
 
