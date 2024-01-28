@@ -17,6 +17,7 @@ public class KruskalMinSpanningTree {
 
         // O(V) space
         int[] parent = makeSet(graph);
+        int[] ranks = new int[graph.V()];
 
         while (!heap.isEmpty()) { // O(E)
             Edge minEdge = heap.remove(); // O(log(E))
@@ -28,7 +29,7 @@ public class KruskalMinSpanningTree {
 
             if (xSet != ySet) {
                 mstGraph.addEdge(new Edge(x, y, minEdge.weight()));
-                union(parent, xSet, ySet);
+                union(parent, ranks, xSet, ySet);
             }
         }
         return mstGraph;
@@ -49,11 +50,15 @@ public class KruskalMinSpanningTree {
         return v;
     }
 
-    private static void union(int[] parent, int x, int y) {
-        int xParent = find(parent, x);
-        int yParent = find(parent, y);
-
-        parent[yParent] = xParent;
+    private static void union(int[] parents, int[] ranks, int pV, int pU) {
+        if (ranks[pV] > ranks[pU]) {
+            parents[pU] = pV;
+        } else if (ranks[pV] < ranks[pU]) {
+            parents[pV] = pU;
+        } else {
+            parents[pU] = pV;
+            ranks[pV]++;
+        }
     }
 
     // O(E * log(E)) time | O(E + V) space
@@ -66,6 +71,7 @@ public class KruskalMinSpanningTree {
         Arrays.sort(edges, Comparator.comparingDouble(Edge::weight));
 
         int[] parents = makeSet(graph);
+        int[] ranks = new int[graph.V()];
 
         EdgeWeightedGraph mstGraph = new EdgeWeightedGraph(graph.V());
 
@@ -77,7 +83,7 @@ public class KruskalMinSpanningTree {
             int uRoot = find(parents, u);
             if (vRoot != uRoot) {
                 mstGraph.addEdge(new Edge(v, u, edge.weight()));
-                union(parents, vRoot, uRoot);
+                union(parents, ranks, vRoot, uRoot);
             }
         }
 
