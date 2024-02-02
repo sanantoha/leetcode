@@ -82,7 +82,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "LargestIsland",
                 "TopologicalSort",
                 "MinimumPassesOfMatrix",
                 "HeapSort",
@@ -102,6 +101,7 @@ public class Test {
                 "MergeBinaryTrees",
                 "DeepCopyArbitraryPointer",
                 "KruskalMinSpanningTreeAsMap",
+                "LargestIsland",
                 "DiskStacking",
                 "LargestRange",
                 "AStarAlgo",
