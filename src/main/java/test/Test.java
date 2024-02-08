@@ -42,7 +42,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "ProductOfArrayExceptSelf",
                 "ReverseWordsInString",
                 "RemoveNthNodeFromEndOfList",
                 "SubarraySumEqualsK",
@@ -78,11 +77,11 @@ public class Test {
                 "PalindromicSubstrings",
                 "OneEdit",
                 "OptimalFreelancing",
-                "Permutations"
+                "Permutations",
+                "ProductOfArrayExceptSelf"
         );
 
         List<String> hardTasks = List.of(
-                "BellmanFord",
                 "FirstPermutationIsSubstrSecondStr",
                 "GenerateParentheses",
                 "WaterArea",
@@ -154,7 +153,8 @@ public class Test {
                 "MinimumPassesOfMatrix",
                 "HeapSort",
                 "LongestDecrSubseq",
-                "AllElementsInTwoBinarySearchTrees"
+                "AllElementsInTwoBinarySearchTrees",
+                "BellmanFord"
         );
 
         /*
