@@ -23,9 +23,9 @@ public class InsertGreatestCommonDivisors {
         while (curr.next != null) {
            int gcd = gcd(curr.val, curr.next.val);
            ListNode node = new ListNode(gcd);
-            node.next = curr.next;
-            curr.next = node;
-            curr = curr.next.next;
+           node.next = curr.next;
+           curr.next = node;
+           curr = curr.next.next;
         }
 
         return head;
