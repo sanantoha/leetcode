@@ -42,7 +42,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "ReverseBinaryTree",
                 "ReverseLinkedList",
                 "KthSmallestElementInArray",
                 "BSTSuccessorSearch",
@@ -79,11 +78,11 @@ public class Test {
                 "BreadthSearchFirst",
                 "UniquePaths",
                 "BinaryTreeDiameter",
-                "DepthFirstSearch"
+                "DepthFirstSearch",
+                "ReverseBinaryTree"
         );
 
         List<String> hardTasks = List.of(
-                "LargestIsland",
                 "TopKFrequentWords",
                 "LargestRange",
                 "AStarAlgo",
@@ -115,6 +114,7 @@ public class Test {
                 "LRUCache",
                 "MergeSort",
                 "CloneGraph",
+                "LargestIsland",
                 "MinHeap",
                 "Powerset",
                 "MinimumWindowSubstring",
