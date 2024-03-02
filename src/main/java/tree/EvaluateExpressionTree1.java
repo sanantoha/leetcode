@@ -12,8 +12,23 @@ public class EvaluateExpressionTree1 {
         }
     }
 
+    // O(n) time | O(h) space
     public static int evaluateExpressionTree(BinaryTree tree) {
-        // Write your code here.
+        if (tree == null) return 0;
+        if (tree.value > 0) return tree.value;
+
+        int left = evaluateExpressionTree(tree.left);
+        int right = evaluateExpressionTree(tree.right);
+
+        if (tree.value == -1) {
+            return left + right;
+        } else if (tree.value == -2) {
+            return left - right;
+        } else if (tree.value == -3) {
+            return left / right;
+        } else if (tree.value == -4) {
+            return left * right;
+        }
         return -1;
     }
 
