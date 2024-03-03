@@ -6,7 +6,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "ConvertedSortedArrayToBST",
                 "ReverseInteger",
                 "Pow",
                 "GreatestCommonDivisor",
@@ -38,7 +37,8 @@ public class Test {
                 "LowestCommonAncestorOfBinaryTree",
                 "SelectSort",
                 "NumberOfWaysToMakeChange",
-                "ClimbingStairs"
+                "ClimbingStairs",
+                "ConvertedSortedArrayToBST"
         );
 
         List<String> medium = List.of(
@@ -84,7 +84,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "StaircaseTraversal",
                 "MergedTwoSortedLists",
                 "TopologicalSortDFSCycleGraphAsMap",
                 "LongestCommonSubsequence",
@@ -154,7 +153,8 @@ public class Test {
                 "ReconstructBST",
                 "FourSum",
                 "WordSearch",
-                "NextGreaterElement"
+                "NextGreaterElement",
+                "StaircaseTraversal"
         );
 
         /*
