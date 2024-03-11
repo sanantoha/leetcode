@@ -37,10 +37,7 @@ public class MinimalHeaviestSetA {
                 rightSum += arr[r];
             }
         }
-        System.out.println(l + " " + r);
-        int[] res = new int[arr.length - r];
-        System.arraycopy(arr, r, res, 0, res.length);
-        return res;
+        return Arrays.copyOfRange(arr, l, arr.length);
     }
 
     public static void main(String[] args) {
