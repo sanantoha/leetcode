@@ -44,6 +44,7 @@ public class Test {
         List<String> medium = List.of(
                 "ReverseLinkedList",
                 "KthSmallestElementInArray",
+                "Search2DMatrix",
                 "BSTSuccessorSearch",
                 "RotateArray",
                 "NodeDepths",

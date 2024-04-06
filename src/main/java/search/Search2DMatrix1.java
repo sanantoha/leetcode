@@ -3,22 +3,6 @@ package search;
 public class Search2DMatrix1 {
 
     public static boolean searchMatrix(int[][] matrix, int key) {
-        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return false;
-
-        int col = matrix[0].length - 1;
-        int row = 0;
-
-        while (row < matrix.length && col >= 0) {
-
-            int curr = matrix[row][col];
-
-            System.out.println(curr);
-
-            if (curr == key) return true;
-            else if (curr > key) col--;
-            else if (curr < key) row++;
-        }
-
         return false;
     }
 
