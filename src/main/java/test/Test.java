@@ -47,6 +47,7 @@ public class Test {
                 "Search2DMatrix",
                 "BSTSuccessorSearch",
                 "RotateArray",
+                "FindPeakElement",
                 "NodeDepths",
                 "WordBreak",
                 "EvaluateExpressionTree",
