@@ -2,6 +2,7 @@ package search;
 
 public class Search2DMatrix {
 
+    // O(w + h) time | O(1) space
     public static boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0) return false;
 
