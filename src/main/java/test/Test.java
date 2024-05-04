@@ -1,6 +1,8 @@
 package test;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 
 public class Test {
 
@@ -93,6 +95,7 @@ public class Test {
                 "KruskalMinSpanningTreeAsMap",
                 "DeepCopyArbitraryPointer",
                 "DiskStacking",
+                "OddEvenLinkedList",
                 "TopKFrequentWords",
                 "LargestRange",
                 "AStarAlgo",
@@ -184,7 +187,7 @@ public class Test {
         // better for hashmap performance to return different value.
         // consistency
 //        new Object().hashCode()
-
+        
         System.out.println("easy tasks: " + easyTasks.size());
         System.out.println("medium tasks: " + medium.size());
         System.out.println("hard tasks: " + hardTasks.size());
