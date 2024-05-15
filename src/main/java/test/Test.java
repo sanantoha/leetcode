@@ -51,6 +51,7 @@ public class Test {
                 "ReverseLinkedList",
                 "KthSmallestElementInArray",
                 "Search2DMatrix",
+                "KthSmallestElementInBST",
                 "BSTSuccessorSearch",
                 "RotateArray",
                 "FindPeakElement",
