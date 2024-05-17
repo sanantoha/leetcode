@@ -54,6 +54,7 @@ public class Test {
                 "RotateArray",
                 "FindPeakElement",
                 "NodeDepths",
+                "LevelOrderBinaryTreeTraverse",
                 "WordBreak",
                 "EvaluateExpressionTree",
                 "CombinationSum",

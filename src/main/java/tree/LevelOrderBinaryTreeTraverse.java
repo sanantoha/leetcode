@@ -1,58 +1,59 @@
 package tree;
 
-import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
 public class LevelOrderBinaryTreeTraverse {
 
     public static List<List<Integer>> levelOrder(TreeNode root) {
-        if (root == null) return Collections.emptyList();
+        List<List<Integer>> result = new ArrayList<>();
+        if (root == null) return result;
 
-        Queue<TreeNode> queue = new ArrayDeque<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-
-        List<List<Integer>> res = new ArrayList<>();
-        res.add(Arrays.asList(root.val));
+        result.add(Collections.singletonList(root.val));
 
         while (!queue.isEmpty()) {
             int size = queue.size();
 
-            List<Integer> lst = new ArrayList<>();
+            List<Integer> subRes = new ArrayList<>();
 
             while (size-- > 0) {
-                TreeNode node = queue.poll();
-                if (node.left != null) {
-                    queue.add(node.left);
-                    lst.add(node.left.val);
+                TreeNode curr = queue.remove();
+
+                if (curr.left != null) {
+                    queue.add(curr.left);
+                    subRes.add(curr.left.val);
                 }
-                if (node.right != null) {
-                    queue.add(node.right);
-                    lst.add(node.right.val);
+
+                if (curr.right != null) {
+                    queue.add(curr.right);
+                    subRes.add(curr.right.val);
                 }
             }
-            if (!lst.isEmpty()) {
-                res.add(lst);
-            }
+
+            if (!subRes.isEmpty()) result.add(subRes);
         }
 
-        return res;
+        return result;
     }
 
     public static void main(String[] args) {
-        TreeNode root1 = new TreeNode(1,
+        TreeNode root = new TreeNode(5,
                 new TreeNode(2,
-                        new TreeNode(4),
-                        null),
-                new TreeNode(3,
-                        null,
-                        new TreeNode(5))
-        );
+                        new TreeNode(1),
+                        new TreeNode(3)),
+                new TreeNode(10,
+                        new TreeNode(7,
+                                new TreeNode(6),
+                                new TreeNode(8)),
+                        new TreeNode(15,
+                                new TreeNode(14),
+                                new TreeNode(17))));
 
-        System.out.println(levelOrder(root1));
+        System.out.println(levelOrder(root));
     }
 }
