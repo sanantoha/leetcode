@@ -5,14 +5,13 @@ import java.util.LinkedList;
 
 public class KthSmallestElementInBST {
 
-    public static int kthSmallest(TreeNode root, int k) {
-        if (root == null) return -1;
+    public static int kthSmallestElement(TreeNode root, int k) {
+        if (root == null) return Integer.MIN_VALUE;
 
         Deque<TreeNode> stack = new LinkedList<>();
-
         TreeNode curr = root;
 
-        while(!stack.isEmpty() || curr != null) {
+        while (!stack.isEmpty() || curr != null) {
             while (curr != null) {
                 stack.push(curr);
                 curr = curr.left;
@@ -20,33 +19,28 @@ public class KthSmallestElementInBST {
 
             curr = stack.pop();
 
-            if (k - 1 <= 0) return curr.val;
+            if (k - 1 == 0) return curr.val;
             k--;
 
             curr = curr.right;
         }
 
-        return -1;
+        return Integer.MIN_VALUE;
     }
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(3,
-                new TreeNode(1,
-                        null,
-                        new TreeNode(2)),
-                new TreeNode(4));
+        TreeNode root = new TreeNode(5,
+                new TreeNode(2,
+                        new TreeNode(1),
+                        new TreeNode(3)),
+                new TreeNode(10,
+                        new TreeNode(7,
+                                new TreeNode(6),
+                                new TreeNode(8)),
+                        new TreeNode(15,
+                                new TreeNode(14),
+                                new TreeNode(17))));
 
-        System.out.println(kthSmallest(root, 1));
-
-
-        TreeNode root1 = new TreeNode(5,
-                new TreeNode(3,
-                        new TreeNode(2,
-                                new TreeNode(1),
-                                null),
-                        new TreeNode(4)),
-                new TreeNode(6));
-
-        System.out.println(kthSmallest(root1, 3));
+        System.out.println(kthSmallestElement(root, 4));
     }
 }
