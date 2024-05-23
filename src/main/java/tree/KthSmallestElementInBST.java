@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 public class KthSmallestElementInBST {
 
+    // O(k) time | O(h) space
     public static int kthSmallestElement(TreeNode root, int k) {
         if (root == null) return Integer.MIN_VALUE;
 
