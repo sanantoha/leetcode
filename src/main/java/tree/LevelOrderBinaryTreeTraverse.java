@@ -8,6 +8,7 @@ import java.util.Queue;
 
 public class LevelOrderBinaryTreeTraverse {
 
+    // O(n) time | O(n) space
     public static List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
         if (root == null) return result;
