@@ -13,6 +13,7 @@ public class OptimalFreelancing1 {
     }
 
     public static void main(String[] args) {
+        @SuppressWarnings("unchecked")
         Map<String, Integer>[] jobs = new Map[] {
                 Map.of("deadline", 2, "payment", 2),
                 Map.of("deadline", 4, "payment", 3),
