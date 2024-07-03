@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BinarySearch1 {
     
     public static int binarySearch(int[] arr, int target) {
-       return -1;
+        return -1;
     }
 
     public static void main(String[] args) {
