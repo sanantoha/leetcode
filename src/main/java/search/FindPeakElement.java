@@ -2,6 +2,7 @@ package search;
 
 public class FindPeakElement {
 
+    // O(log(n)) time | O(1) space
     public static int findPeakElement(int[] arr) {
         int lo = 0;
         int hi = arr.length - 1;
