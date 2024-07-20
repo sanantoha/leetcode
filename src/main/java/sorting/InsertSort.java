@@ -9,7 +9,7 @@ public class InsertSort {
     // Avg: O(n ^ 2) time | O(1) space
     // Worst: O(n ^ 2) time | O(1) space
     public static void insertSort(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             int value = arr[i];
             int j = i - 1;
             while (j >= 0 && arr[j] > value) {
