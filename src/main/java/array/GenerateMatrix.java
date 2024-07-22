@@ -4,8 +4,43 @@ import java.util.Arrays;
 
 public class GenerateMatrix {
 
+    // O(n ^ 2) time | O(n ^ 2) space
     private static int[][] generateMatrix(int n) {
-        return null;
+        if (n <= 0) return new int[0][];
+
+        int[][] res = new int[n][n];
+
+        int startRow = 0;
+        int startCol = 0;
+        int endRow = n - 1;
+        int endCol = n - 1;
+
+        int idx = 1;
+
+        while (startRow <= endRow && startCol <= endCol) {
+            for (int i = startCol; i <= endCol; i++) {
+                res[startRow][i] = idx++;
+            }
+            startRow++;
+
+            for (int i = startRow; i <= endRow; i++) {
+                res[i][endCol] = idx++;
+            }
+            endCol--;
+
+            if (startRow <= endRow && startCol <= endCol) {
+                for (int i = endCol; i >= startCol; i--) {
+                    res[endRow][i] = idx++;
+                }
+                endRow--;
+
+                for (int i = endRow; i >= startRow; i--) {
+                    res[i][startCol] = idx++;
+                }
+                startCol++;
+            }
+        }
+        return res;
     }
 
     public static void main(String[] args) {
