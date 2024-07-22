@@ -100,6 +100,7 @@ public class Test {
                 "AStarAlgo",
                 "FourSum",
                 "WordSearch",
+                "GenerateMatrix",
                 "NextGreaterElement",
                 "StaircaseTraversal",
                 "TopologicalSortDFSCycleGraphAsMap",
