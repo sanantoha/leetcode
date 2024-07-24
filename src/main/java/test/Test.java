@@ -94,6 +94,7 @@ public class Test {
                 "DiskStacking",
                 "OddEvenLinkedList",
                 "TopKFrequentWords",
+                "FindModeInBst",
                 "LargestRange",
                 "AStarAlgo",
                 "FourSum",
