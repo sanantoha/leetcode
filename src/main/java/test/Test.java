@@ -24,6 +24,7 @@ public class Test {
                 "ValidateBinarySearchTree",
                 "SameTree",
                 "FirstDuplicateValue",
+                "MinimumAbsoluteDifferenceInBST",
                 "FirstUniqueCharacterInString",
                 "SymmetricTree",
                 "CycleLinkedList",
