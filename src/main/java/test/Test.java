@@ -61,6 +61,7 @@ public class Test {
                 "MergeIntervals",
                 "Sqrt",
                 "QuickSort",
+                "BinaryTreeTilt",
                 "CountingSort",
                 "DFSTreeTraverseRec",
                 "BreadthSearchFirst",
