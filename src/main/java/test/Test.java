@@ -8,7 +8,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "BestTimeToBuyAndSellStock",
                 "ValidateBinarySearchTree",
                 "SameTree",
                 "FirstDuplicateValue",
@@ -41,11 +40,11 @@ public class Test {
                 "PopulatingNextRightPointerInEachNode",
                 "BinaryTreeZigzagLevelOrderTraverse",
                 "BinarySearch",
-                "BalancedBinaryTree"
+                "BalancedBinaryTree",
+                "BestTimeToBuyAndSellStock"
         );
 
         List<String> medium = List.of(
-                "GenerateParentheses",
                 "StringWithoutAAAorBBB",
                 "MergeIntervals",
                 "Sqrt",
@@ -89,11 +88,11 @@ public class Test {
                 "Permutations",
                 "ProductOfArrayExceptSelf",
                 "ReverseWordsInString",
-                "RemoveNthNodeFromEndOfList"
+                "RemoveNthNodeFromEndOfList",
+                "GenerateParentheses"
         );
 
         List<String> hardTasks = List.of(
-                "TopologicalSortDFSCycleGraphAsMap",
                 "LongestCommonSubsequence",
                 "DijkstraShortestPaths",
                 "OddEvenLinkedList",
@@ -165,7 +164,8 @@ public class Test {
                 "WordSearch",
                 "GenerateMatrix",
                 "NextGreaterElement",
-                "StaircaseTraversal"
+                "StaircaseTraversal",
+                "TopologicalSortDFSCycleGraphAsMap"
         );
 
         /*
