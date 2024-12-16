@@ -58,7 +58,7 @@ public class MinRewards {
     private static List<Integer> getLowerIdxs(int[] scores) {
         List<Integer> lowerIdxs = new ArrayList<>();
         if (scores.length == 1) {
-            lowerIdxs.add(scores[0]);
+            lowerIdxs.add(0);
             return lowerIdxs;
         }
 

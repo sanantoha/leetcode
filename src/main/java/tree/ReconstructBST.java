@@ -61,7 +61,7 @@ public class ReconstructBST {
         tree.left = new TreeNode(4);
         tree.left.left = new TreeNode(2);
         tree.left.left.left = new TreeNode(1);
-        tree.left.right = new TreeNode(3);
+        tree.left.left.right = new TreeNode(3);
         tree.right = new TreeNode(17);
         tree.right.right = new TreeNode(19);
         tree.right.right.left = new TreeNode(18);
