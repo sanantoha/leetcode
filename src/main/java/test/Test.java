@@ -1,5 +1,7 @@
 package test;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
@@ -8,7 +10,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "SameTree",
                 "FirstDuplicateValue",
                 "FirstUniqueCharacterInString",
                 "SymmetricTree",
@@ -41,11 +42,11 @@ public class Test {
                 "BinarySearch",
                 "BalancedBinaryTree",
                 "BestTimeToBuyAndSellStock",
-                "ValidateBinarySearchTree"
+                "ValidateBinarySearchTree",
+                "SameTree"
         );
 
         List<String> medium = List.of(
-                "DepthFirstSearchAsMap",
                 "SortKSortedArray",
                 "PalindromicSubstrings",
                 "OneEdit",
@@ -89,11 +90,11 @@ public class Test {
                 "MinNumberOfCoinsForChange",
                 "MinimalHeaviestSetA",
                 "StringPermutation",
-                "DFSTreeTraverse"
+                "DFSTreeTraverse",
+                "DepthFirstSearchAsMap"
         );
 
         List<String> hardTasks = List.of(
-                "ConstructBinaryTreeFromPreorderAndInorderTraversal",
                 "WordLadder",
                 "PrimMinSpanningTree",
                 "NumberOfIsland",
@@ -165,7 +166,8 @@ public class Test {
                 "ThreeSum",
                 "MaxPathSumInBinaryTree",
                 "UniquePathIII",
-                "ValidateStartingCity"
+                "ValidateStartingCity",
+                "ConstructBinaryTreeFromPreorderAndInorderTraversal"
         );
 
         /*
@@ -194,9 +196,12 @@ public class Test {
         // consistency
 //        new Object().hashCode()
         
-        System.out.println("easy tasks: " + easyTasks.size());
-        System.out.println("medium tasks: " + medium.size());
-        System.out.println("hard tasks: " + hardTasks.size());
-        System.out.println("total tasks: " + (easyTasks.size() + medium.size() + hardTasks.size()));
+//        System.out.println("easy tasks: " + easyTasks.size());
+//        System.out.println("medium tasks: " + medium.size());
+//        System.out.println("hard tasks: " + hardTasks.size());
+//        System.out.println("total tasks: " + (easyTasks.size() + medium.size() + hardTasks.size()));
+
+        System.out.println(System.currentTimeMillis());
+        System.out.println(Instant.now().toEpochMilli());
     }
 }
