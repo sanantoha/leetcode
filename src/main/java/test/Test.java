@@ -10,7 +10,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "FirstDuplicateValue",
                 "FirstUniqueCharacterInString",
                 "SymmetricTree",
                 "CycleLinkedList",
@@ -43,11 +42,11 @@ public class Test {
                 "BalancedBinaryTree",
                 "BestTimeToBuyAndSellStock",
                 "ValidateBinarySearchTree",
-                "SameTree"
+                "SameTree",
+                "FirstDuplicateValue"
         );
 
         List<String> medium = List.of(
-                "SortKSortedArray",
                 "PalindromicSubstrings",
                 "OneEdit",
                 "FindPeakElement",
@@ -91,11 +90,11 @@ public class Test {
                 "MinimalHeaviestSetA",
                 "StringPermutation",
                 "DFSTreeTraverse",
-                "DepthFirstSearchAsMap"
+                "DepthFirstSearchAsMap",
+                "SortKSortedArray"
         );
 
         List<String> hardTasks = List.of(
-                "WordLadder",
                 "PrimMinSpanningTree",
                 "NumberOfIsland",
                 "ValidIPAddress",
@@ -167,7 +166,8 @@ public class Test {
                 "MaxPathSumInBinaryTree",
                 "UniquePathIII",
                 "ValidateStartingCity",
-                "ConstructBinaryTreeFromPreorderAndInorderTraversal"
+                "ConstructBinaryTreeFromPreorderAndInorderTraversal",
+                "WordLadder"
         );
 
         /*
@@ -202,6 +202,6 @@ public class Test {
 //        System.out.println("total tasks: " + (easyTasks.size() + medium.size() + hardTasks.size()));
 
         System.out.println(System.currentTimeMillis());
-        System.out.println(Instant.now().toEpochMilli());
+        System.out.println(Instant.now());
     }
 }
