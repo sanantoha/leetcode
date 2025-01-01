@@ -1,7 +1,10 @@
 package test;
 
-import java.time.Instant;
-import java.time.LocalDateTime;
+import java.text.DateFormat;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+import java.time.temporal.ChronoField;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
@@ -10,7 +13,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "FirstUniqueCharacterInString",
                 "SymmetricTree",
                 "CycleLinkedList",
                 "LowestCommonAncestorOfBinaryTree",
@@ -43,11 +45,11 @@ public class Test {
                 "BestTimeToBuyAndSellStock",
                 "ValidateBinarySearchTree",
                 "SameTree",
-                "FirstDuplicateValue"
+                "FirstDuplicateValue",
+                "FirstUniqueCharacterInString"
         );
 
         List<String> medium = List.of(
-                "PalindromicSubstrings",
                 "OneEdit",
                 "FindPeakElement",
                 "InsertGreatestCommonDivisors",
@@ -91,14 +93,14 @@ public class Test {
                 "StringPermutation",
                 "DFSTreeTraverse",
                 "DepthFirstSearchAsMap",
-                "SortKSortedArray"
+                "SortKSortedArray",
+                "PalindromicSubstrings"
         );
 
         List<String> hardTasks = List.of(
-                "PrimMinSpanningTree",
-                "NumberOfIsland",
                 "ValidIPAddress",
                 "RegularExpressionMatch",
+                "NumberOfIsland",
                 "SubarraySort",
                 "MedianOfTwoSortedArrays",
                 "StableInternships",
@@ -167,7 +169,8 @@ public class Test {
                 "UniquePathIII",
                 "ValidateStartingCity",
                 "ConstructBinaryTreeFromPreorderAndInorderTraversal",
-                "WordLadder"
+                "WordLadder",
+                "PrimMinSpanningTree"
         );
 
         /*
