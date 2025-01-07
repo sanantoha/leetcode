@@ -13,7 +13,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "NumberOfWaysToMakeChange",
                 "ClimbingStairs",
                 "ConvertedSortedArrayToBST",
                 "ReverseInteger",
@@ -46,11 +45,11 @@ public class Test {
                 "CycleLinkedList",
                 "LowestCommonAncestorOfBinaryTree",
                 "SelectSort",
-                "LowestCommonAncestorOfBinarySearchTree"
+                "LowestCommonAncestorOfBinarySearchTree",
+                "NumberOfWaysToMakeChange"
         );
 
         List<String> medium = List.of(
-                "ProductOfArrayExceptSelf",
                 "ReverseWordsInString",
                 "RemoveNthNodeFromEndOfList",
                 "GenerateParentheses",
@@ -94,11 +93,11 @@ public class Test {
                 "FindPeakElement",
                 "InsertGreatestCommonDivisors",
                 "OptimalFreelancing",
-                "Permutations"
+                "Permutations",
+                "ProductOfArrayExceptSelf"
         );
 
         List<String> hardTasks = List.of(
-                "StableInternships",
                 "LevenshteinDistance",
                 "MaxSumIncreasingSubsequence",
                 "KruskalMinSpanningTree",
@@ -170,7 +169,8 @@ public class Test {
                 "RegularExpressionMatch",
                 "NumberOfIsland",
                 "SubarraySort",
-                "MedianOfTwoSortedArrays"
+                "MedianOfTwoSortedArrays",
+                "StableInternships"
         );
 
         /*
