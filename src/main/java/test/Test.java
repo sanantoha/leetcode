@@ -1,19 +1,12 @@
 package test;
 
-import java.text.DateFormat;
-import java.time.*;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.temporal.ChronoField;
-import java.util.HashMap;
+import java.time.Instant;
 import java.util.List;
-import java.util.Optional;
 
 public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "ConvertedSortedArrayToBST",
                 "ReverseInteger",
                 "Pow",
                 "MinimumAbsoluteDifferenceInBST",
@@ -46,11 +39,11 @@ public class Test {
                 "SelectSort",
                 "LowestCommonAncestorOfBinarySearchTree",
                 "NumberOfWaysToMakeChange",
-                "ClimbingStairs"
+                "ClimbingStairs",
+                "ConvertedSortedArrayToBST"
         );
 
         List<String> medium = List.of(
-                "RemoveNthNodeFromEndOfList",
                 "GenerateParentheses",
                 "StringWithoutAAAorBBB",
                 "MergeIntervals",
@@ -94,11 +87,11 @@ public class Test {
                 "OptimalFreelancing",
                 "Permutations",
                 "ProductOfArrayExceptSelf",
-                "ReverseWordsInString"
+                "ReverseWordsInString",
+                "RemoveNthNodeFromEndOfList"
         );
 
         List<String> hardTasks = List.of(
-                "MaxSumIncreasingSubsequence",
                 "KruskalMinSpanningTree",
                 "LongestIncrSubSeq",
                 "LongestIncreasingPathInMatrix",
@@ -170,7 +163,8 @@ public class Test {
                 "SubarraySort",
                 "MedianOfTwoSortedArrays",
                 "StableInternships",
-                "LevenshteinDistance"
+                "LevenshteinDistance",
+                "MaxSumIncreasingSubsequence"
         );
 
         /*
