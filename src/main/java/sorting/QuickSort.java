@@ -27,6 +27,7 @@ public class QuickSort {
         return j;
     }
 
+    // O(n * log(n)) time | O(log(n)) space
     public static void quickSort(int[] arr, int lo, int hi) {
         if (lo >= hi) return;
         int q = partition(arr, lo, hi);
