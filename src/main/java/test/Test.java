@@ -1,5 +1,6 @@
 package test;
 
+import javax.imageio.stream.FileImageInputStream;
 import java.time.Instant;
 import java.util.List;
 
@@ -7,7 +8,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "SymmetricTree",
                 "CycleLinkedList",
                 "LowestCommonAncestorOfBinaryTree",
                 "SelectSort",
@@ -40,11 +40,11 @@ public class Test {
                 "ValidateBinarySearchTree",
                 "SameTree",
                 "FirstDuplicateValue",
-                "FirstUniqueCharacterInString"
+                "FirstUniqueCharacterInString",
+                "SymmetricTree"
         );
 
         List<String> medium = List.of(
-                "MinSwapsTransformStringToPalindrome",
                 "BranchSums",
                 "FindClosestValueInBST",
                 "PalindromeLinkedList",
@@ -88,11 +88,11 @@ public class Test {
                 "EvaluateExpressionTree",
                 "CombinationSum",
                 "SubarraySumEqualsK",
-                "MergedTwoSortedLists"
+                "MergedTwoSortedLists",
+                "MinSwapsTransformStringToPalindrome"
         );
 
         List<String> hardTasks = List.of(
-                "WordSearch",
                 "GenerateMatrix",
                 "NextGreaterElement",
                 "StaircaseTraversal",
@@ -164,7 +164,8 @@ public class Test {
                 "FourSum",
                 "DiskStacking",
                 "DeepCopyArbitraryPointer",
-                "AStarAlgo"
+                "AStarAlgo",
+                "WordSearch"
         );
 
         /*
