@@ -21,5 +21,7 @@ public class GreatestCommonDivisor {
         System.out.println(gcd(17, 11) == 1);
 
         System.out.println(gcd(5, 15) == 5);
+
+        System.out.println(gcd(2, 3));
     }
 }
