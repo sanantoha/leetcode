@@ -1,14 +1,16 @@
 package test;
 
-import javax.imageio.stream.FileImageInputStream;
 import java.time.Instant;
+import java.time.ZoneId;
 import java.util.List;
+import java.time.ZonedDateTime;
+import java.time.ZoneOffset;
+import java.util.TimeZone;
 
 public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "HouseRobber",
                 "BFSTreeTraverse",
                 "PopulatingNextRightPointerInEachNode",
                 "BinaryTreeZigzagLevelOrderTraverse",
@@ -41,11 +43,11 @@ public class Test {
                 "IntersectionLinkedList",
                 "MiddleNode",
                 "FindPivotIndex",
-                "AddTwoNumbers"
+                "AddTwoNumbers",
+                "HouseRobber"
         );
 
         List<String> medium = List.of(
-                "OneEdit",
                 "FindPeakElement",
                 "OptimalFreelancing",
                 "Permutations",
@@ -89,11 +91,11 @@ public class Test {
                 "DFSTreeTraverse",
                 "DepthFirstSearchAsMap",
                 "SortKSortedArray",
-                "PalindromicSubstrings"
+                "PalindromicSubstrings",
+                "OneEdit"
         );
 
         List<String> hardTasks = List.of(
-                "LongestDecrSubseq",
                 "AllElementsInTwoBinarySearchTrees",
                 "BellmanFord",
                 "FirstPermutationIsSubstrSecondStr",
@@ -165,7 +167,8 @@ public class Test {
                 "LongestIncreasingPathInMatrix",
                 "TopologicalSort",
                 "MinimumPassesOfMatrix",
-                "HeapSort"
+                "HeapSort",
+                "LongestDecrSubseq"
         );
 
         /*
@@ -199,7 +202,24 @@ public class Test {
 //        System.out.println("hard tasks: " + hardTasks.size());
 //        System.out.println("total tasks: " + (easyTasks.size() + medium.size() + hardTasks.size()));
 
-        System.out.println(System.currentTimeMillis());
-        System.out.println(Instant.now());
+//        System.out.println(System.currentTimeMillis());
+//        System.out.println(Instant.now());
+
+        TimeZone.setDefault(TimeZone.getTimeZone("Asia/Dubai"));
+        System.setProperty("user.timezone", "Asia/Dubai");
+
+        // 2023-04-27 07:39:32.0
+        System.out.println(TimeZone.getDefault());
+        System.out.println(System.getProperty("user.timezone"));
+
+        long t = 1682581172000L;
+        Instant instant = Instant.ofEpochMilli(t); // 2024-01-08T00:00:00Z
+//        ZonedDateTime utc = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);          // 2024-01-08T00:00Z
+        ZonedDateTime dubai = ZonedDateTime.ofInstant(instant, ZoneId.of("Asia/Dubai"));
+        System.out.println(Instant.ofEpochMilli(t).atZone(ZoneId.of("UTC")));
+        System.out.println(Instant.ofEpochMilli(t).atZone(ZoneId.systemDefault()));
+        System.out.println(ZonedDateTime.ofInstant(Instant.ofEpochMilli(t), ZoneOffset.UTC));
+//        System.out.println(utc);
+//        System.out.println(dubai);
     }
 }
