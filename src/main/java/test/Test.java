@@ -11,7 +11,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "SameTree",
                 "FirstDuplicateValue",
                 "InsertSort",
                 "FirstUniqueCharacterInString",
@@ -44,11 +43,11 @@ public class Test {
                 "BinarySearch",
                 "BalancedBinaryTree",
                 "BestTimeToBuyAndSellStock",
-                "ValidateBinarySearchTree"
+                "ValidateBinarySearchTree",
+                "SameTree"
         );
 
         List<String> medium = List.of(
-                "MergeIntervals",
                 "Sqrt",
                 "QuickSort",
                 "ProductOfArrayExceptSelf",
@@ -92,11 +91,11 @@ public class Test {
                 "ReverseWordsInString",
                 "RemoveNthNodeFromEndOfList",
                 "GenerateParentheses",
-                "StringWithoutAAAorBBB"
+                "StringWithoutAAAorBBB",
+                "MergeIntervals"
         );
 
         List<String> hardTasks = List.of(
-                "DijkstraShortestPathsAsMap",
                 "FindNodesDistanceK",
                 "LongestNonDecrSubseq",
                 "MergeBinaryTrees",
@@ -168,7 +167,8 @@ public class Test {
                 "AllPathsFromSourceTarget",
                 "FirstPermutationIsSubstrSecondStr",
                 "ZigZagTraverse",
-                "TopologicalSortDFSCycleGraph"
+                "TopologicalSortDFSCycleGraph",
+                "DijkstraShortestPathsAsMap"
         );
 
         /*
