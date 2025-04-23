@@ -6,12 +6,12 @@ import java.util.List;
 import java.time.ZonedDateTime;
 import java.time.ZoneOffset;
 import java.util.TimeZone;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "SymmetricTree",
                 "CycleLinkedList",
                 "LowestCommonAncestorOfBinaryTree",
                 "SelectSort",
@@ -44,11 +44,11 @@ public class Test {
                 "SameTree",
                 "FirstDuplicateValue",
                 "InsertSort",
-                "FirstUniqueCharacterInString"
+                "FirstUniqueCharacterInString",
+                "SymmetricTree"
         );
 
         List<String> medium = List.of(
-                "CountingSort",
                 "DFSTreeTraverseRec",
                 "BreadthSearchFirst",
                 "UniquePaths",
@@ -92,11 +92,11 @@ public class Test {
                 "MergeIntervals",
                 "Sqrt",
                 "QuickSort",
-                "ProductOfArrayExceptSelf"
+                "ProductOfArrayExceptSelf",
+                "CountingSort"
         );
 
         List<String> hardTasks = List.of(
-                "TopKFrequentWords",
                 "LargestRange",
                 "LongestNonDecrSubseq",
                 "FourSum",
@@ -168,7 +168,8 @@ public class Test {
                 "DijkstraShortestPathsAsMap",
                 "FindNodesDistanceK",
                 "MergeBinaryTrees",
-                "KruskalMinSpanningTreeAsMap"
+                "KruskalMinSpanningTreeAsMap",
+                "TopKFrequentWords"
         );
 
         /*
@@ -205,21 +206,29 @@ public class Test {
 //        System.out.println(System.currentTimeMillis());
 //        System.out.println(Instant.now());
 
-        TimeZone.setDefault(TimeZone.getTimeZone("Asia/Dubai"));
-        System.setProperty("user.timezone", "Asia/Dubai");
+//        TimeZone.setDefault(TimeZone.getTimeZone("Asia/Dubai"));
+//        System.setProperty("user.timezone", "Asia/Dubai");
 
         // 2023-04-27 07:39:32.0
-        System.out.println(TimeZone.getDefault());
-        System.out.println(System.getProperty("user.timezone"));
+//        System.out.println(TimeZone.getDefault());
+//        System.out.println(System.getProperty("user.timezone"));
 
-        long t = 1682581172000L;
-        Instant instant = Instant.ofEpochMilli(t); // 2024-01-08T00:00:00Z
+//        long t = 1682581172000L;
+//        Instant instant = Instant.ofEpochMilli(t); // 2024-01-08T00:00:00Z
 //        ZonedDateTime utc = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);          // 2024-01-08T00:00Z
-        ZonedDateTime dubai = ZonedDateTime.ofInstant(instant, ZoneId.of("Asia/Dubai"));
-        System.out.println(Instant.ofEpochMilli(t).atZone(ZoneId.of("UTC")));
-        System.out.println(Instant.ofEpochMilli(t).atZone(ZoneId.systemDefault()));
-        System.out.println(ZonedDateTime.ofInstant(Instant.ofEpochMilli(t), ZoneOffset.UTC));
+//        ZonedDateTime dubai = ZonedDateTime.ofInstant(instant, ZoneId.of("Asia/Dubai"));
+//        System.out.println(Instant.ofEpochMilli(t).atZone(ZoneId.of("UTC")));
+//        System.out.println(Instant.ofEpochMilli(t).atZone(ZoneId.systemDefault()));
+//        System.out.println(ZonedDateTime.ofInstant(Instant.ofEpochMilli(t), ZoneOffset.UTC));
 //        System.out.println(utc);
 //        System.out.println(dubai);
+
+        long timestamp = Instant.now().toEpochMilli();
+        System.out.println(timestamp);
+        System.out.println(Instant.now().toEpochMilli());
+        System.out.println(Instant.now().toEpochMilli());
+        int randomBits = ThreadLocalRandom.current().nextInt(100);  // 0-99
+        long uniqueValue = (timestamp / 100) * 100 + randomBits;
+        System.out.println(uniqueValue);
     }
 }
