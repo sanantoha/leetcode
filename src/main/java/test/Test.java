@@ -12,7 +12,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "GreatestCommonDivisor",
                 "ConvertedSortedArrayToBST",
                 "ReverseInteger",
                 "Pow",
@@ -45,11 +44,11 @@ public class Test {
                 "SelectSort",
                 "LowestCommonAncestorOfBinarySearchTree",
                 "NumberOfWaysToMakeChange",
-                "ClimbingStairs"
+                "ClimbingStairs",
+                "GreatestCommonDivisor"
         );
 
         List<String> medium = List.of(
-                "ReverseLinkedList",
                 "KthSmallestElementInArray",
                 "Search2DMatrix",
                 "KthSmallestElementInBST",
@@ -93,11 +92,11 @@ public class Test {
                 "UniquePaths",
                 "BinaryTreeDiameter",
                 "DepthFirstSearch",
-                "ReverseBinaryTree"
+                "ReverseBinaryTree",
+                "ReverseLinkedList"
         );
 
         List<String> hardTasks = List.of(
-                "AStarAlgo",
                 "GenerateMatrix",
                 "NextGreaterElement",
                 "StaircaseTraversal",
@@ -169,7 +168,8 @@ public class Test {
                 "FourSum",
                 "DiskStacking",
                 "DeepCopyArbitraryPointer",
-                "WordSearch"
+                "WordSearch",
+                "AStarAlgo"
         );
 
         /*
@@ -224,6 +224,7 @@ public class Test {
 //        System.out.println(dubai);
 
         long timestamp = Instant.now().toEpochMilli();
+        System.out.println(Instant.now().getEpochSecond());
         System.out.println(timestamp);
         System.out.println(Instant.now().toEpochMilli());
         System.out.println(Instant.now().toEpochMilli());
