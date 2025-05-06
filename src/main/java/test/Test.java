@@ -2,17 +2,15 @@ package test;
 
 import java.time.Instant;
 import java.time.ZoneId;
-import java.util.List;
+import java.util.*;
 import java.time.ZonedDateTime;
 import java.time.ZoneOffset;
-import java.util.TimeZone;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "Pow",
                 "MinimumAbsoluteDifferenceInBST",
                 "ReverseString",
                 "MaximumSubarray",
@@ -45,11 +43,11 @@ public class Test {
                 "ClimbingStairs",
                 "GreatestCommonDivisor",
                 "ConvertedSortedArrayToBST",
-                "ReverseInteger"
+                "ReverseInteger",
+                "Pow"
         );
 
         List<String> medium = List.of(
-                "KthSmallestElementInBST",
                 "BSTSuccessorSearch",
                 "RotateArray",
                 "NodeDepths",
@@ -93,7 +91,8 @@ public class Test {
                 "ReverseBinaryTree",
                 "ReverseLinkedList",
                 "KthSmallestElementInArray",
-                "Search2DMatrix"
+                "Search2DMatrix",
+                "KthSmallestElementInBST"
         );
 
         List<String> hardTasks = List.of(
@@ -197,7 +196,7 @@ public class Test {
         // better for hashmap performance to return different value.
         // consistency
 //        new Object().hashCode()
-        
+
 //        System.out.println("easy tasks: " + easyTasks.size());
 //        System.out.println("medium tasks: " + medium.size());
 //        System.out.println("hard tasks: " + hardTasks.size());
@@ -223,13 +222,22 @@ public class Test {
 //        System.out.println(utc);
 //        System.out.println(dubai);
 
-        long timestamp = Instant.now().toEpochMilli();
-        System.out.println(Instant.now().getEpochSecond());
-        System.out.println(timestamp);
-        System.out.println(Instant.now().toEpochMilli());
-        System.out.println(Instant.now().toEpochMilli());
-        int randomBits = ThreadLocalRandom.current().nextInt(100);  // 0-99
-        long uniqueValue = (timestamp / 100) * 100 + randomBits;
-        System.out.println(uniqueValue);
+        List<Long> res = new ArrayList<>();
+
+        for (int i = 0; i < 15; i++) {
+            Long v = getRoundedInstanceNow();
+            res.add(v);
+            System.out.println(v);
+        }
+        System.out.println("res:");
+        System.out.println(Collections.min(res));
+        System.out.println(Collections.max(res));
+    }
+
+    public static Long getRoundedInstanceNow() {
+        var baseTimestamp = Instant.now().getEpochSecond() * 1000;
+        // inclusive of -10000, exclusive of 10001
+        var randomOffsetMillis = ThreadLocalRandom.current().nextInt(-10000, 10001);
+        return baseTimestamp + randomOffsetMillis;
     }
 }
