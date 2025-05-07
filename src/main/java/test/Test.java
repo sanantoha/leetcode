@@ -11,7 +11,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "MinimumAbsoluteDifferenceInBST",
                 "ReverseString",
                 "MaximumSubarray",
                 "BreadthSearchFirstAsMap",
@@ -44,7 +43,8 @@ public class Test {
                 "GreatestCommonDivisor",
                 "ConvertedSortedArrayToBST",
                 "ReverseInteger",
-                "Pow"
+                "Pow",
+                "MinimumAbsoluteDifferenceInBST"
         );
 
         List<String> medium = List.of(
