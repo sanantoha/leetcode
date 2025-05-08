@@ -96,7 +96,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "NextGreaterElement",
                 "StaircaseTraversal",
                 "TopologicalSortDFSCycleGraphAsMap",
                 "LongestCommonSubsequence",
@@ -168,7 +167,8 @@ public class Test {
                 "DeepCopyArbitraryPointer",
                 "WordSearch",
                 "AStarAlgo",
-                "GenerateMatrix"
+                "GenerateMatrix",
+                "NextGreaterElement"
         );
 
         /*
