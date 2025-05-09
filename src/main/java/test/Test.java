@@ -11,7 +11,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "ReverseString",
                 "MaximumSubarray",
                 "BreadthSearchFirstAsMap",
                 "BalancedBrackets",
@@ -44,7 +43,8 @@ public class Test {
                 "ConvertedSortedArrayToBST",
                 "ReverseInteger",
                 "Pow",
-                "MinimumAbsoluteDifferenceInBST"
+                "MinimumAbsoluteDifferenceInBST",
+                "ReverseString"
         );
 
         List<String> medium = List.of(
@@ -96,7 +96,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "StaircaseTraversal",
                 "TopologicalSortDFSCycleGraphAsMap",
                 "LongestCommonSubsequence",
                 "DijkstraShortestPaths",
@@ -168,7 +167,8 @@ public class Test {
                 "WordSearch",
                 "AStarAlgo",
                 "GenerateMatrix",
-                "NextGreaterElement"
+                "NextGreaterElement",
+                "StaircaseTraversal"
         );
 
         /*
