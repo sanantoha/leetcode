@@ -48,7 +48,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "NodeDepths",
                 "InsertGreatestCommonDivisors",
                 "LevelOrderBinaryTreeTraverse",
                 "WordBreak",
@@ -92,7 +91,8 @@ public class Test {
                 "Search2DMatrix",
                 "KthSmallestElementInBST",
                 "BSTSuccessorSearch",
-                "RotateArray"
+                "RotateArray",
+                "NodeDepths"
         );
 
         List<String> hardTasks = List.of(
