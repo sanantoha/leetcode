@@ -197,47 +197,9 @@ public class Test {
         // consistency
 //        new Object().hashCode()
 
-//        System.out.println("easy tasks: " + easyTasks.size());
-//        System.out.println("medium tasks: " + medium.size());
-//        System.out.println("hard tasks: " + hardTasks.size());
-//        System.out.println("total tasks: " + (easyTasks.size() + medium.size() + hardTasks.size()));
-
-//        System.out.println(System.currentTimeMillis());
-//        System.out.println(Instant.now());
-
-//        TimeZone.setDefault(TimeZone.getTimeZone("Asia/Dubai"));
-//        System.setProperty("user.timezone", "Asia/Dubai");
-
-        // 2023-04-27 07:39:32.0
-//        System.out.println(TimeZone.getDefault());
-//        System.out.println(System.getProperty("user.timezone"));
-
-//        long t = 1682581172000L;
-//        Instant instant = Instant.ofEpochMilli(t); // 2024-01-08T00:00:00Z
-//        ZonedDateTime utc = ZonedDateTime.ofInstant(instant, ZoneOffset.UTC);          // 2024-01-08T00:00Z
-//        ZonedDateTime dubai = ZonedDateTime.ofInstant(instant, ZoneId.of("Asia/Dubai"));
-//        System.out.println(Instant.ofEpochMilli(t).atZone(ZoneId.of("UTC")));
-//        System.out.println(Instant.ofEpochMilli(t).atZone(ZoneId.systemDefault()));
-//        System.out.println(ZonedDateTime.ofInstant(Instant.ofEpochMilli(t), ZoneOffset.UTC));
-//        System.out.println(utc);
-//        System.out.println(dubai);
-
-        List<Long> res = new ArrayList<>();
-
-        for (int i = 0; i < 15; i++) {
-            Long v = getRoundedInstanceNow();
-            res.add(v);
-            System.out.println(v);
-        }
-        System.out.println("res:");
-        System.out.println(Collections.min(res));
-        System.out.println(Collections.max(res));
-    }
-
-    public static Long getRoundedInstanceNow() {
-        var baseTimestamp = Instant.now().getEpochSecond() * 1000;
-        // inclusive of -10000, exclusive of 10001
-        var randomOffsetMillis = ThreadLocalRandom.current().nextInt(-10000, 10001);
-        return baseTimestamp + randomOffsetMillis;
+        System.out.println("easy tasks: " + easyTasks.size());
+        System.out.println("medium tasks: " + medium.size());
+        System.out.println("hard tasks: " + hardTasks.size());
+        System.out.println("total tasks: " + (easyTasks.size() + medium.size() + hardTasks.size()));
     }
 }
