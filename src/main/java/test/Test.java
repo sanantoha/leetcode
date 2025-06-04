@@ -96,7 +96,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "DijkstraShortestPaths",
                 "SearchForRange",
                 "RotateImage",
                 "PrimMinSpanningTreeAsMap",
@@ -168,7 +167,8 @@ public class Test {
                 "NextGreaterElement",
                 "StaircaseTraversal",
                 "TopologicalSortDFSCycleGraphAsMap",
-                "LongestCommonSubsequence"
+                "LongestCommonSubsequence",
+                "DijkstraShortestPaths"
         );
 
         /*
