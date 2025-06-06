@@ -11,7 +11,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "BinarySearch",
                 "BalancedBinaryTree",
                 "BestTimeToBuyAndSellStock",
                 "ValidateBinarySearchTree",
@@ -44,7 +43,8 @@ public class Test {
                 "HouseRobber",
                 "BFSTreeTraverse",
                 "PopulatingNextRightPointerInEachNode",
-                "BinaryTreeZigzagLevelOrderTraverse"
+                "BinaryTreeZigzagLevelOrderTraverse",
+                "BinarySearch"
         );
 
         List<String> medium = List.of(
