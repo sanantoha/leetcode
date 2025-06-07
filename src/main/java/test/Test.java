@@ -1,17 +1,11 @@
 package test;
 
-import java.time.Instant;
-import java.time.ZoneId;
-import java.util.*;
-import java.time.ZonedDateTime;
-import java.time.ZoneOffset;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.List;
 
 public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "BalancedBinaryTree",
                 "BestTimeToBuyAndSellStock",
                 "ValidateBinarySearchTree",
                 "SameTree",
@@ -44,7 +38,8 @@ public class Test {
                 "BFSTreeTraverse",
                 "PopulatingNextRightPointerInEachNode",
                 "BinaryTreeZigzagLevelOrderTraverse",
-                "BinarySearch"
+                "BinarySearch",
+                "BalancedBinaryTree"
         );
 
         List<String> medium = List.of(
