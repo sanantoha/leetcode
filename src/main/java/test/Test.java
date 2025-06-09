@@ -6,7 +6,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "ValidateBinarySearchTree",
                 "SameTree",
                 "FirstDuplicateValue",
                 "InsertSort",
@@ -39,7 +38,8 @@ public class Test {
                 "BinaryTreeZigzagLevelOrderTraverse",
                 "BinarySearch",
                 "BalancedBinaryTree",
-                "BestTimeToBuyAndSellStock"
+                "BestTimeToBuyAndSellStock",
+                "ValidateBinarySearchTree"
         );
 
         List<String> medium = List.of(
