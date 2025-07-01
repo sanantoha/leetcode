@@ -43,7 +43,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "EvaluateExpressionTree",
                 "CombinationSum",
                 "SubarraySumEqualsK",
                 "MergedTwoSortedLists",
@@ -87,7 +86,8 @@ public class Test {
                 "NodeDepths",
                 "InsertGreatestCommonDivisors",
                 "LevelOrderBinaryTreeTraverse",
-                "WordBreak"
+                "WordBreak",
+                "EvaluateExpressionTree"
         );
 
         List<String> hardTasks = List.of(
