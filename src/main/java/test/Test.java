@@ -6,7 +6,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "MiddleNode",
                 "FindPivotIndex",
                 "AddTwoNumbers",
                 "HouseRobber",
@@ -39,7 +38,8 @@ public class Test {
                 "BalancedBrackets",
                 "LeftViewBinaryTree",
                 "DeleteNodeInLinkedList",
-                "IntersectionLinkedList"
+                "IntersectionLinkedList",
+                "MiddleNode"
         );
 
         List<String> medium = List.of(
