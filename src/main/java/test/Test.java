@@ -87,7 +87,8 @@ public class Test {
                 "InsertGreatestCommonDivisors",
                 "LevelOrderBinaryTreeTraverse",
                 "WordBreak",
-                "EvaluateExpressionTree"
+                "EvaluateExpressionTree",
+                "SubTreeOfAnotherTree"
         );
 
         List<String> hardTasks = List.of(
