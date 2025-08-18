@@ -43,7 +43,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "BinaryTreeTilt",
                 "FindClosestValueInBST",
                 "PalindromeLinkedList",
                 "MinNumberOfCoinsForChange",
@@ -88,7 +87,8 @@ public class Test {
                 "SubarraySumEqualsK",
                 "MergedTwoSortedLists",
                 "MinSwapsTransformStringToPalindrome",
-                "BranchSums"
+                "BranchSums",
+                "BinaryTreeTilt"
         );
 
         List<String> hardTasks = List.of(
