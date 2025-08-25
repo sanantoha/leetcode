@@ -92,7 +92,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "SearchInRotatedSortedArray",
                 "SurroundedRegions",
                 "SpiralMatrixTraverse",
                 "BellmanFordAsMap",
@@ -164,7 +163,8 @@ public class Test {
                 "SortList",
                 "PhoneNumberMnemonic",
                 "SparseMatrixMultiplication",
-                "WordLadderII"
+                "WordLadderII",
+                "SearchInRotatedSortedArray"
         );
 
         /*
