@@ -92,7 +92,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "Powerset",
                 "MinNumberOfJumps",
                 "MinimumWindowSubstring",
                 "OddEvenLinkedList",
@@ -164,7 +163,8 @@ public class Test {
                 "MergeSort",
                 "CloneGraph",
                 "LargestIsland",
-                "MinHeap"
+                "MinHeap",
+                "Powerset"
         );
 
         /*
