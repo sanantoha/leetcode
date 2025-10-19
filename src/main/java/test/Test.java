@@ -6,7 +6,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "ConvertedSortedArrayToBST",
                 "ReverseInteger",
                 "Pow",
                 "MinimumAbsoluteDifferenceInBST",
@@ -39,7 +38,8 @@ public class Test {
                 "LowestCommonAncestorOfBinarySearchTree",
                 "NumberOfWaysToMakeChange",
                 "ClimbingStairs",
-                "GreatestCommonDivisor"
+                "GreatestCommonDivisor",
+                "ConvertedSortedArrayToBST"
         );
 
         List<String> medium = List.of(
