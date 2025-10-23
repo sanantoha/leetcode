@@ -92,7 +92,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "ThreeSum",
                 "UniquePathIII",
                 "ValidateStartingCity",
                 "KnapsackProblem",
@@ -164,7 +163,8 @@ public class Test {
                 "OddEvenLinkedList",
                 "RiverSizes",
                 "SameBSTs",
-                "LRUCache"
+                "LRUCache",
+                "ThreeSum"
         );
 
         /*
