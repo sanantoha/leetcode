@@ -4,7 +4,6 @@ import java.util.List;
 
 public class Test {
 
-    // RottenOranges
     // ApartmentHunting
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
@@ -166,7 +165,8 @@ public class Test {
                 "SameBSTs",
                 "LRUCache",
                 "ThreeSum",
-                "UniquePathIII"
+                "UniquePathIII",
+                "RottingOranges"
         );
 
         /*
