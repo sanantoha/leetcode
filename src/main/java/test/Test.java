@@ -7,7 +7,6 @@ public class Test {
     // ApartmentHunting
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "LeftViewBinaryTree",
                 "DeleteNodeInLinkedList",
                 "IntersectionLinkedList",
                 "MiddleNode",
@@ -40,7 +39,8 @@ public class Test {
                 "ReverseString",
                 "MaximumSubarray",
                 "BreadthSearchFirstAsMap",
-                "BalancedBrackets"
+                "BalancedBrackets",
+                "LeftViewBinaryTree"
         );
 
         List<String> medium = List.of(
