@@ -166,7 +166,8 @@ public class Test {
                 "LRUCache",
                 "ThreeSum",
                 "UniquePathIII",
-                "RottingOranges"
+                "RottingOranges",
+                "ApartmentHunting"
         );
 
         /*
