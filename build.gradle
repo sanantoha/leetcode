@@ -1,13 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'leetcode'
 version '1.0-SNAPSHOT'
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
 }
 
 repositories {
@@ -16,4 +17,12 @@ repositories {
 
 dependencies {
     implementation 'junit:junit:4.13.2'
+}
+
+application {
+    mainClass = 'test.Test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
 }
