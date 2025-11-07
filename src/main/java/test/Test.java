@@ -93,7 +93,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "KnapsackProblem",
                 "ConstructBinaryTreeFromPreorderAndInorderTraversal",
                 "WordLadder",
                 "PrimMinSpanningTree",
@@ -167,7 +166,8 @@ public class Test {
                 "UniquePathIII",
                 "RottingOranges",
                 "ApartmentHunting",
-                "ValidateStartingCity"
+                "ValidateStartingCity",
+                "KnapsackProblem"
         );
 
         /*
