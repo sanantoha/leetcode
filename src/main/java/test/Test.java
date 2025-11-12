@@ -43,7 +43,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "OneEdit",
                 "FindPeakElement",
                 "OptimalFreelancing",
                 "Permutations",
@@ -88,7 +87,8 @@ public class Test {
                 "DFSTreeTraverse",
                 "DepthFirstSearchAsMap",
                 "SortKSortedArray",
-                "PalindromicSubstrings"
+                "PalindromicSubstrings",
+                "OneEdit"
         );
 
         List<String> hardTasks = List.of(
