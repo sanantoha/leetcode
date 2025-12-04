@@ -92,7 +92,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "MaxPathSumInBinaryTree",
                 "FindModeInBst",
                 "MedianOfTwoSortedArrays",
                 "MaxSumIncreasingSubsequence",
@@ -167,7 +166,8 @@ public class Test {
                 "ValidIPAddress",
                 "RegularExpressionMatch",
                 "NumberOfIsland",
-                "SubarraySort"
+                "SubarraySort",
+                "MaxPathSumInBinaryTree"
         );
 
         /*
