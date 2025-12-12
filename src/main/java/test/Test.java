@@ -43,7 +43,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "RemoveNthNodeFromEndOfList",
                 "GenerateParentheses",
                 "StringWithoutAAAorBBB",
                 "MergeIntervals",
@@ -88,7 +87,8 @@ public class Test {
                 "FindPeakElement",
                 "OptimalFreelancing",
                 "Permutations",
-                "ReverseWordsInString"
+                "ReverseWordsInString",
+                "RemoveNthNodeFromEndOfList"
         );
 
         List<String> hardTasks = List.of(
