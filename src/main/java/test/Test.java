@@ -6,7 +6,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "CycleLinkedList",
                 "LowestCommonAncestorOfBinaryTree",
                 "SelectSort",
                 "LowestCommonAncestorOfBinarySearchTree",
@@ -39,7 +38,8 @@ public class Test {
                 "FirstDuplicateValue",
                 "InsertSort",
                 "FirstUniqueCharacterInString",
-                "SymmetricTree"
+                "SymmetricTree",
+                "CycleLinkedList"
         );
 
         List<String> medium = List.of(
