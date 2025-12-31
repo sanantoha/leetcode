@@ -127,6 +127,7 @@ public class Test {
                 "SearchForRange",
                 "RotateImage",
                 "PrimMinSpanningTreeAsMap",
+                "CourseSchedule",
                 "SortList",
                 "PhoneNumberMnemonic",
                 "SparseMatrixMultiplication",
