@@ -43,7 +43,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "Sqrt",
                 "QuickSort",
                 "ProductOfArrayExceptSelf",
                 "CountingSort",
@@ -56,6 +55,7 @@ public class Test {
                 "ReverseLinkedList",
                 "KthSmallestElementInArray",
                 "Search2DMatrix",
+                "Sqrt",
                 "KthSmallestElementInBST",
                 "BSTSuccessorSearch",
                 "RotateArray",
