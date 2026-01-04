@@ -43,7 +43,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "QuickSort",
                 "ProductOfArrayExceptSelf",
                 "CountingSort",
                 "DFSTreeTraverseRec",
@@ -88,7 +87,8 @@ public class Test {
                 "RemoveNthNodeFromEndOfList",
                 "GenerateParentheses",
                 "StringWithoutAAAorBBB",
-                "MergeIntervals"
+                "MergeIntervals",
+                "QuickSort"
         );
 
         List<String> hardTasks = List.of(
