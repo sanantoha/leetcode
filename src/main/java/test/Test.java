@@ -6,7 +6,6 @@ public class Test {
 
     public static void main(String[] args) {
         List<String> easyTasks = List.of(
-                "Pow",
                 "MinimumAbsoluteDifferenceInBST",
                 "ReverseString",
                 "MaximumSubarray",
@@ -39,7 +38,8 @@ public class Test {
                 "ClimbingStairs",
                 "GreatestCommonDivisor",
                 "ConvertedSortedArrayToBST",
-                "ReverseInteger"
+                "ReverseInteger",
+                "Pow"
         );
 
         List<String> medium = List.of(
