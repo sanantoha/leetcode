@@ -43,7 +43,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "DFSTreeTraverseRec",
                 "BreadthSearchFirst",
                 "UniquePaths",
                 "BinaryTreeDiameter",
@@ -88,7 +87,8 @@ public class Test {
                 "MergeIntervals",
                 "QuickSort",
                 "ProductOfArrayExceptSelf",
-                "CountingSort"
+                "CountingSort",
+                "DFSTreeTraverseRec"
         );
 
         List<String> hardTasks = List.of(
