@@ -168,7 +168,8 @@ public class Test {
                 "MedianOfTwoSortedArrays",
                 "MaxSumIncreasingSubsequence",
                 "KruskalMinSpanningTree",
-                "LongestIncrSubSeq"
+                "LongestIncrSubSeq",
+                "RelativeSortArray"
         );
 
         /*

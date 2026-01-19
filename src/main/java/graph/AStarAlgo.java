@@ -2,7 +2,8 @@ package graph;
 
 import java.util.*;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AStarAlgo {
 
@@ -154,10 +155,10 @@ public class AStarAlgo {
         int[][] actual = aStarAlgorithm(startRow, startCol, endRow, endCol, graph);
         System.out.println(Arrays.deepToString(actual));
 
-        assertTrue(expected.length == actual.length);
+        assertEquals(expected.length, actual.length);
         for (int i = 0; i < expected.length; i++) {
             for (int j = 0; j < expected[i].length; j++) {
-                assertTrue(expected[i][j] == actual[i][j]);
+                assertEquals(expected[i][j], actual[i][j]);
             }
         }
 
