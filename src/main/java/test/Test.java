@@ -92,7 +92,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "StableInternships",
                 "LevenshteinDistance",
                 "LongestIncreasingPathInMatrix",
                 "TopologicalSort",
@@ -169,7 +168,8 @@ public class Test {
                 "MaxSumIncreasingSubsequence",
                 "KruskalMinSpanningTree",
                 "LongestIncrSubSeq",
-                "RelativeSortArray"
+                "RelativeSortArray",
+                "StableInternships"
         );
 
         /*
