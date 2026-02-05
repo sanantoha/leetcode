@@ -18,8 +18,8 @@ public class ReverseBinaryTree1 {
                 new TreeNode(10,
                         new TreeNode(7),
                         new TreeNode(15,
-                                new TreeNode(14),
-                                new TreeNode(17))));
+                                new TreeNode(13),
+                                new TreeNode(20))));
 
         System.out.println(root);
 
@@ -36,8 +36,8 @@ public class ReverseBinaryTree1 {
                 new TreeNode(10,
                         new TreeNode(7),
                         new TreeNode(15,
-                                new TreeNode(14),
-                                new TreeNode(17))));
+                                new TreeNode(13),
+                                new TreeNode(20))));
 
         System.out.println(root1);
 
