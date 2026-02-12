@@ -92,7 +92,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "AllElementsInTwoBinarySearchTrees",
                 "BellmanFord",
                 "WaterArea",
                 "AllPathsFromSourceTarget",
@@ -169,7 +168,8 @@ public class Test {
                 "TopologicalSort",
                 "MinimumPassesOfMatrix",
                 "HeapSort",
-                "LongestDecrSubseq"
+                "LongestDecrSubseq",
+                "AllElementsInTwoBinarySearchTrees"
         );
 
         /*
