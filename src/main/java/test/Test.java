@@ -43,7 +43,6 @@ public class Test {
         );
 
         List<String> medium = List.of(
-                "Sqrt",
                 "KthSmallestElementInBST",
                 "BSTSuccessorSearch",
                 "RotateArray",
@@ -88,7 +87,8 @@ public class Test {
                 "ReverseBinaryTree",
                 "ReverseLinkedList",
                 "KthSmallestElementInArray",
-                "Search2DMatrix"
+                "Search2DMatrix",
+                "Sqrt"
         );
 
         List<String> hardTasks = List.of(
