@@ -92,7 +92,6 @@ public class Test {
         );
 
         List<String> hardTasks = List.of(
-                "FirstPermutationIsSubstrSecondStr",
                 "ZigZagTraverse",
                 "TopologicalSortDFSCycleGraph",
                 "DijkstraShortestPathsAsMap",
@@ -169,7 +168,8 @@ public class Test {
                 "AllElementsInTwoBinarySearchTrees",
                 "BellmanFord",
                 "WaterArea",
-                "AllPathsFromSourceTarget"
+                "AllPathsFromSourceTarget",
+                "FirstPermutationIsSubstrSecondStr"
         );
 
         /*
